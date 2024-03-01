@@ -1,11 +1,11 @@
 ---
-layout: cv_minho
-title: Minho Lee
-description: Summer Intern 2023
-img: assets/img/intern_minho.jpg
-importance: 2
-github: https://www.linkedin.com/in/%EB%AF%BC%ED%98%B8-%EC%9D%B4-63aa35286/
-category: Alumni
+layout: page
+title: Jihwan Bang
+description: PhD Student, Spring 2023<br>Co-advised by Prof. Jae-Gil Lee
+img: assets/img/bio-jihwan.png
+redirect: https://hwany-j.github.io/
+importance: 1
+category: Student
 ---
 
 Every project has a beautiful feature showcase page.

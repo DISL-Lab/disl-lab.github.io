@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Hwanjun Song
-description: Amazon AWS AI (USA), Ph.D
-img: assets/img/bio-song.jpg
-redirect: https://songhwanjun.github.io/
-importance: 3
-category: Collaborators
+title: Yuho Lee
+description: MS Student <br> Fall 2023
+img: assets/img/bio-yuho.png
+redirect:
+importance: 1
+category: Student
 ---
 
 Every project has a beautiful feature showcase page.

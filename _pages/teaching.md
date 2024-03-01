@@ -7,6 +7,12 @@ nav: true
 nav_order: 4
 ---
 
+(2024/Spring) DS801, Data Engineering for Big Data Analytics
+
+(2024/Fall) Introduction to Data Science
+
+(2024/Fall) Large Language Models (tentative)
+
 [//]: # (For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.)
 
 [//]: # ()

@@ -1,11 +1,11 @@
 ---
-layout: cv_sangheon
-title: Sangheon Lee
-description: UST Intern 2024
-img: assets/img/shlee.jpg
-importance: 2
-github:
-category: Students
+layout: page
+title: Jihwan Oh
+description: MS Student <br> Spring 2024
+img: assets/img/bio-jihwanoh.png
+redirect: 
+importance: 1
+category: Student
 ---
 
 Every project has a beautiful feature showcase page.

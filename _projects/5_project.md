@@ -1,11 +1,11 @@
 ---
-layout: cv_gihwan
-title: Gihwan Kim
-description: Winter Intern 2024
-img: assets/img/gihwan.jpg
-importance: 2
-github:
-category: Students
+layout: page
+title: Heeyoen Kim
+description: MS Student <br> Spring 2024
+img: assets/img/bio-heeyoen.png
+redirect: 
+importance: 1
+category: Student
 ---
 
 Every project has a beautiful feature showcase page.

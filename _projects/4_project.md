@@ -1,11 +1,11 @@
 ---
-layout: cv_sehyeon
-title: Sehyeon Oh
-description: Winter Intern 2024
-img: assets/img/sh_oh.jpg
-importance: 2
-github: 
-category: Students
+layout: page
+title: Taewon Yun
+description: MS Student <br> Fall 2023
+img: assets/bio/bio-taewon.png
+redirect:
+importance: 1
+category: Student
 ---
 
 Every project has a beautiful feature showcase page.
