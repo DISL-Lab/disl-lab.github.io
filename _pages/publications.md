@@ -16,7 +16,7 @@ nav_order: 2
 
 </div>
 
-<h2>All Peer-reviewed Journals and Proceedings</h2>
+<h2>International Conferences and Journals</h2>
 
 <div class="publications">
 
