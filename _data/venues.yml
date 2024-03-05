@@ -22,3 +22,97 @@
 
 "FGCS":
   color: "#CD853F"
+
+
+# datamining
+"WWW":
+  color: "#DC143C"
+
+"WWW (Oral)":
+  color: "#DC143C"
+
+"KDD":
+  color: "#DC143C"
+
+"KDD (Oral)":
+  color: "#DC143C"
+
+"PAKDD":
+  color: "#DC143C"
+
+"ICDM":
+  color: "#DC143C"
+
+"CIKM":
+  color: "#DC143C"
+
+"CIKM (Oral)":
+  color: "#DC143C"
+
+"VLDBJ":
+  color: "#DC143C" 
+
+"SIGMOD":
+  color: "#DC143C"
+
+"SIGMOD (Oral)":
+  color: "#DC143C"
+
+# machine learning
+
+# computer vision
+"ECCV":
+  color: "#DAA520"
+
+"ICCV":
+  color: "#DAA520"
+
+"ICCV (Oral)":
+  color: "#DAA520"
+
+"SSRN":
+  color: "#DAA520"
+
+"CVPR":
+  color: "#DAA520"
+
+"BMVC":
+  color: "#DAA520"
+
+# ai
+"AAAI":
+  color: "#1E90FF"
+
+"AAAI (Oral)":
+  color: "#1E90FF"
+
+"NeurIPS":
+  color: "#1E90FF"
+
+"ML":
+  color: "#1E90FF"
+
+"ICML":
+  color: "#1E90FF"
+
+"ICML (Oral)":
+  color: "#1E90FF"
+
+"ICML (Spotlight)":
+  color: "#1E90FF"
+
+"ICLR":
+  color: "#1E90FF"
+
+"TNNLS":
+  color: "#1E90FF"
+
+# nlp
+"EMNLP":
+  color: "#CD853F"
+
+# arxiv
+"arVix":
+  color: "#00369f"
+
+# journal

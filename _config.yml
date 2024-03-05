@@ -278,8 +278,8 @@ display_categories: ['blockquotes'] # these categories will be displayed on the 
 
 scholar:
 
-  last_name: Lee
-  first_name: Jemin
+  last_name: Song
+  first_name: Hwanjun
 
   style: apa
   locale: en
