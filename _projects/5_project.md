@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Heeyoen Kim
+title: Heeyeon Kim
 description: MS Student <br> Spring 2024
 img: assets/img/bio-heeyoen.png
 redirect: 
