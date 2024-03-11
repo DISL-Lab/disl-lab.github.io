@@ -1,17 +1,11 @@
 ---
 layout: page
-permalink: /teaching/
-title: Teaching
-description: Materials for courses you taught. Replace this text with your description.
+permalink: /schedule/
+title: Schedule
+description: This is our Google Caldendar, which shows all the DISL Lab's schedules.
 nav: true
-nav_order: 4
+nav_order: 5
 ---
-
-(2024/Spring) DS801, Data Engineering for Big Data Analytics
-
-(2024/Fall) Introduction to Data Science
-
-(2024/Fall) Large Language Models (tentative)
 
 <iframe src="https://calendar.google.com/calendar/embed?src=3049e30209b79b3474c81a501fa0923e4fc01f97b404cb4ae631b306c07cca88%40group.calendar.google.com&ctz=Asia%2FSeoul" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 
