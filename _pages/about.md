@@ -20,5 +20,4 @@ Welcome to the `DISL Lab`. We are dedicated to pioneering advancements in the fi
 
 The foundation role of `data` remains unwavering, even as AI trends evolve rapidly. Our research interests involve making innovations with cutting-edge technologies in various domains, including computer vision (CV) and natural language processing (NLP). Our research scope is expansive and adapts with the advancements in AI. Currently, our primary focus lies in tackling novel challenges in data for `natural language generation`, including how to evaluate LLM's outputs, how to expedite the Transformer's inference, and etc. Additionally, we are actively exploring `data-robust` and `data-efficient` AI modeling, including learning with imperfect data, and AI traning and inference under real-world setup, which encompasses continual learning and online adaptation.
 
-2024년도 2학기 대학원 진학 희망자에 대한 학부 연구생 혹은 석/박사과정 모집합니다. 관심있는 학생은 제게 CV 및 연구 관심사를 메일로 보내주시기 바랍니다.
-We are actively seeking PhD and MS students for the year 2024. If you are interested in working with me (ghkswns91 at gmail dot com), please send me your CV and research interests.
+Please see the Join tab if you are interested in applying for Intern, MS, PhD, and PostDoc positions. 
