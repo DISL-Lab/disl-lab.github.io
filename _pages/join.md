@@ -29,7 +29,7 @@ We cultivate a `flat working culture` to enable seamless communication with our 
 We are gradually expanding our computing resources. Presently, our lab possesses `a single node of A5000 with 4 GPUs` (4xA5000) and `a single node of H100 with 8 GPUs (8xH100)`. We have plans to acquire additional GPUs, including A100 and A6000, once we secure research funding later this year.
 
 #### Meeting and Seminar
-Formally, we hold two regular appointments. A `quick sync-up` lasting 30 minutes for all students every Monday, and a `research seminar` lasting 1 hour every Thursday. For research projects with a clear submission target, we organize a `weekly meeting series` based on the needs of the students involved. Additionally, we have two `non-regular meeting` slots, each lasting 1 hour, available on Fridays. These slots are open for any students to schedule meetings with our supervisor as needed.
+Formally, we hold two regular appointments. A `quick sync-up` lasting 30 minutes for all students every Monday, and a `research seminar` lasting 1 hour every Thursday (see [our Youtube channel](https://www.youtube.com/channel/UCrEpnN7_2BmrHsPWns_Vx3Q)). For research projects with a clear submission target, we organize a `weekly meeting series` based on the needs of the students involved. Additionally, we have two `non-regular meeting` slots, each lasting 1 hour, available on Fridays. These slots are open for any students to schedule meetings with our supervisor as needed.
 
 #### Strong Collaborator
 We maintain strong connections with both industry and academia, collaborating with all the organizations listed below in the past. If you need other connection, we encourage you to invite them as collaborators.
