@@ -123,6 +123,10 @@
 "NAACL-poster":
   color: "#CD853F"
 
+# nlp
+"ACL-main":
+  color: "#CD853F"
+
 # arxiv
 "arVix":
   color: "#00369f"
