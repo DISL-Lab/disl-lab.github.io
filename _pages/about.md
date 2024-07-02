@@ -22,4 +22,6 @@ The foundation role of `data` remains unwavering, even as AI trends evolve rapid
 
 Please see the Join tab if you are interested in applying for Intern, MS, PhD, and PostDoc positions. 
 
+We are advocating a new research scholar for ATML fellowship. See [ATML Fellowship](https://bhanml.github.io/atml_fellowships_2024.pdf).
+
 You can catch up our recent research interest on [our Youtube channel](https://www.youtube.com/channel/UCrEpnN7_2BmrHsPWns_Vx3Q).

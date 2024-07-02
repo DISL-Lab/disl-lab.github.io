@@ -62,13 +62,13 @@
 
 # computer vision
 "ECCV":
-  color: "#DAA520"
+  color: "#2AA520"
 
 "ICCV":
-  color: "#DAA520"
+  color: "#2AA520"
 
 "ICCV (Oral)":
-  color: "#DAA520"
+  color: "#2AA520"
 
 "PR":
   color: "#DAA520"
@@ -77,10 +77,10 @@
   color: "#DAA520"
 
 "CVPR":
-  color: "#DAA520"
+  color: "#2AA520"
 
 "BMVC":
-  color: "#DAA520"
+  color: "#2AA520"
 
 # ai
 "AAAI":
