@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Yuho Lee
-description: MS Student <br> Fall 2023
-img: assets/img/bio-yuho.png
-redirect:
-importance: 1
+title: Hyangsuk Min
+description: PhD Student <br> Fall 2024
+img: assets/img/bio-hyangsuk.png
+redirect: 
+importance: 2
 category: Student
 ---
 

@@ -4,7 +4,7 @@ title: Jeonghwan Choi
 description: MS Student <br> Spring 2024
 img: assets/img/bio-junghwan.png
 redirect: 
-importance: 1
+importance: 80
 category: Student
 ---
 

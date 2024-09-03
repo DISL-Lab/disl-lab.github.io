@@ -3,7 +3,7 @@ layout: page
 permalink: /AICA/
 title: AICA
 nav: true
-nav_order: 6
+nav_order: 7
 display_categories: [Present, Past]
 horizontal: false
 ---

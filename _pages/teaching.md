@@ -9,6 +9,5 @@ nav_order: 4
 
 (2024/Spring) DS801, Data Engineering for Big Data Analytics
 
-(2024/Fall) Introduction to Data Science
+(2024/Fall) IE261, Introduction to Data Science for IE
 
-(2024/Fall) Large Language Models (tentative)

@@ -4,7 +4,7 @@ title: Jihwan Oh
 description: MS Student <br> Spring 2024
 img: assets/img/bio-jihwanoh.png
 redirect: 
-importance: 1
+importance: 700
 category: Student
 ---
 

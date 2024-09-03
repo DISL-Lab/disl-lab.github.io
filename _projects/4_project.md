@@ -4,7 +4,7 @@ title: Taewon Yun
 description: MS Student <br> Fall 2023
 img: assets/bio/bio-taewon.png
 redirect:
-importance: 1
+importance: 70
 category: Student
 ---
 

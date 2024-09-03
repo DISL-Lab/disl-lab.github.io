@@ -4,7 +4,7 @@ title: Hwanjun Song
 description: Assistant Professor<br>Lab Director
 img: assets/img/bio-hwanjun.png
 redirect: https://songhwanjun.github.io/
-importance: 1
+importance: 0
 category: Director
 ---
 
