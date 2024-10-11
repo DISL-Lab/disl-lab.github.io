@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Jiaqi Deng
-description: MS Student <br> Fall 2024
-img: assets/img/bio-jiaqi.png
-redirect: 
-importance: 1000
+title: Minjeong Ban
+description: MS Student <br> Spring 2025
+img: assets/img/bio-minjeong.png
+redirect:
+importance: 1010
 category: Student
 ---
 
