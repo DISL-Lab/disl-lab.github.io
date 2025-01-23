@@ -1,8 +1,7 @@
 ---
 layout: post
-date: 2024-01-15 15:59:00-0400
+date: 2025-1-23 15:59:00-0400
 inline: true
 related_posts: false
 ---
-We received a silver price at the `Samsung Humantech Paper Award` (Signal Processing / NLP / Paper: [Robust Early-exiting](https://aclanthology.org/2023.emnlp-main.362/))
-
+Two papers on Hallucination and Preference Optimization were accepted at the `Main` conference of the `NAACL`.

@@ -1,9 +1,7 @@
 ---
 layout: post
-date: 2024-01-10 15:59:00-0400
+date: 2025-1-22 15:59:00-0400
 inline: true
 related_posts: false
 ---
-A research paper on Time-series Anomaly Detection accepted at `TheWebConf (WWW) 2024`
-
-
+A research paper on RAG-based Test Time Adaptation n was accepted at `ICLR 2025`.
