@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Jeonghwan Choi
-description: MS Student <br> Spring 2024
+description: PhD Student <br> Spring 2025
 img: assets/img/bio-junghwan.png
 redirect: 
 importance: 80
