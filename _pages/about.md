@@ -5,7 +5,7 @@ permalink: /
 subtitle: Department of Industrial and Systems Engineering & Graduate School of Data Science, KAIST, South Korea
 profile:
   align: right
-  image: kaist.png
+  image: kaist2.png
   image_circular: false # crops the image to make it circular
   address: >
     <p>E2 #3110, 291 Daehak-ro, Yuseong-gu, Daejeon, South Korea</p>
