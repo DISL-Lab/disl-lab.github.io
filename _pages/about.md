@@ -3,25 +3,32 @@ layout: about
 title: About
 permalink: /
 subtitle: Department of Industrial and Systems Engineering & Graduate School of Data Science, KAIST, South Korea
-profile:
-  align: right
-  image: kaist2.png
-  image_circular: false # crops the image to make it circular
-  address: >
-    <p>E2 #3110, 291 Daehak-ro, Yuseong-gu, Daejeon, South Korea</p>
-
 
 news: true  # includes a list of news items
 latest_posts: false  # includes a list of the newest posts
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
 ---
-Welcome to the `DISL Lab`. We are dedicated to pioneering advancements in the field of artificial intelligence (AI). Our vision is centered on the pursuit of `data-centric` approaches that enhance the perofrmance of AI algorithms and systems.
 
-The foundation role of `data` remains unwavering, even as AI trends evolve rapidly. Our research interests involve making innovations with cutting-edge technologies in various domains, including computer vision (CV) and natural language processing (NLP). Our research scope is expansive and adapts with the advancements in AI. Currently, our primary focus lies in tackling novel challenges in data for `natural language generation`, including how to evaluate LLM's outputs, how to expedite the Transformer's inference, and etc. Additionally, we are actively exploring `data-robust` and `data-efficient` AI modeling, including learning with imperfect data, and AI traning and inference under real-world setup, which encompasses continual learning and online adaptation.
 
-Please see the Join tab if you are interested in applying for Intern, MS, PhD, and PostDoc positions. 
+<div style="display: flex; align-items: center; margin-bottom: 2rem;">
+  <div style="flex: 2; padding-right: 1rem;">
+    <img src="/assets/img/kaist2.png" alt="Project 1" style="width: 100%; max-width: 400px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+  </div>
+  <div style="flex: 2;">
+    <p style="font-size: 1.0rem; margin-bottom: 0.5rem;">
+      Welcome to DISLab. We are dedicated to pioneering advancements in the field of artificial intelligence (AI), with a clear focus on data-centric approaches. Rather than relying solely on model optimization, our vision is to enhance the performance, reliability, and trustworthiness of AI systems by improving the data quality, data structure, and data utilization.
+    </p>
+    <p style="font-size: 1.0rem; margin-bottom: 0.5rem;">
+      Currently, at DISLab, we aim to build trustworthy Agentic AI systems capable of reasoning, acting, and adapting in complex real-world settings. Our research centers around the following key areas: 
+    </p>
+  </div>
+</div>
+- `Human-AI Alignment`: Aligning large language models (LLMs) with human intent through feedback modeling, preference learning, and evaluation-oriented data design.
+- `Collaborative Intelligence`: Enabling AI agents to make informed decisions by accessing and utilizing external knowledge, such as in retrieval-augmented generation (RAG), with an emphasis on structured and relevant information.
+- `Data Quality & Robustness`: Improving AI performance by focusing on learning from imperfect data, handling noisy or low-resource conditions, and enabling continual and online adaptation in real-world environments.
+- `Automated Evaluation`: Developing scalable automatic evaluation frameworks that reflect human judgment, to assess the outputs and behaviors of generative AI models effectively.
 
-We are advocating a new research scholar for ATML fellowship. See [ATML Fellowship](https://bhanml.github.io/atml_fellowships_2024.pdf).
+Please refer to the "Join" tab if you are interested in applying for Intern, MS, PhD, or PostDoc positions. We encourage prospective members to complete a 3–6 month internship prior to officially joining the lab.
 
 You can catch up our recent research interest on [our Youtube channel](https://www.youtube.com/channel/UCrEpnN7_2BmrHsPWns_Vx3Q).

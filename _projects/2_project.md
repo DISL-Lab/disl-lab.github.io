@@ -4,7 +4,7 @@ title: Jihwan Bang
 description: PhD Student, Spring 2023<br>Co-advised by Prof. Jae-Gil Lee
 img: assets/img/bio-jihwan.png
 redirect: https://hwany-j.github.io/
-importance: 1
+importance: 20
 category: Student
 ---
 

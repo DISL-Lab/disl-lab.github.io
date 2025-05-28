@@ -4,7 +4,7 @@ title: Jeonghwan Choi
 description: PhD Student <br> Spring 2025
 img: assets/img/bio-junghwan.png
 redirect: 
-importance: 80
+importance: 40
 category: Student
 ---
 

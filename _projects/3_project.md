@@ -4,7 +4,7 @@ title: Hyangsuk Min
 description: PhD Student <br> Fall 2024
 img: assets/img/bio-hyangsuk.png
 redirect: 
-importance: 2
+importance: 30
 category: Student
 ---
 

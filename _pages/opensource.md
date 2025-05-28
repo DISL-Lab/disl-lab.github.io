@@ -6,7 +6,18 @@ description: We are conducting research with opensource policy. So far, we have 
 nav: true
 nav_order: 4
 ---
+
+## Large Language Models
+
+###### SummLlama: Faithful Summarization Model [[Link]](https://huggingface.co/DISLab/SummLlama3.2-3B)
+
+###### Ext2Gen: Robust Generation Model for RAG [[Link]](https://huggingface.co/DISLab/Ext2Gen-8B-R2)
+<br>
+
+
 ## Benchmark Datasets
+
+###### UniSumEval: Benchmark Data for Text Summarization [[Link]](https://github.com/disl-lab/unisumeval-v1.0)
 
 ###### ToFuEval: Hallucination Benchmark Data [[Link]](https://github.com/amazon-science/tofueval)
 
@@ -14,6 +25,11 @@ nav_order: 4
 <br>
 
 ## Algorithms
+
+#### Retrieval for RAG
+
+###### Word2Passage: Accurate Retrieval Method [[Link]](https://github.com/DISL-Lab/Word2Passage)
+<br>
 
 #### Transformers
 
