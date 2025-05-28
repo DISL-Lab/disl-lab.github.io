@@ -185,7 +185,7 @@ horizontal: false
 
 <div class="card-container">
   <div class="card">
-    <img src="/assets/img/bio-intern-m.png" alt="Seunghwan Bang">
+    <img src="/assets/img/bio-seonghwan.jpg" alt="Seunghwan Bang">
     <div style="padding: 10px;">
       <h5>Seunghwan Bang</h5>
       <p>Winter 2024~</p>

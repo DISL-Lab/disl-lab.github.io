@@ -60,12 +60,11 @@ social: false
     <p style="font-size: 1.0rem; margin-bottom: 0.5rem;">
       Welcome to DISLab. We are dedicated to pioneering advancements in the field of artificial intelligence (AI), with a clear focus on data-centric approaches. Rather than relying solely on model optimization, our vision is to enhance the performance, reliability, and trustworthiness of AI systems by improving the data quality, data structure, and data utilization.
     </p>
-    <p style="font-size: 1.0rem; margin-bottom: 0.5rem;">
+    <p style="font-size: 1.0rem; margin-bottom: -1.0rem;">
       Currently, at DISLab, we aim to build trustworthy Agentic AI systems capable of reasoning, acting, and adapting in complex real-world settings. Our research centers around the following key areas: 
     </p>
   </div>
 </div>
-
 - `Human-AI Alignment`: Aligning large language models (LLMs) with human intent through feedback modeling, preference learning, and evaluation-oriented data design.  
 - `Collaborative Intelligence`: Enabling AI agents to make informed decisions by accessing and utilizing external knowledge, such as in retrieval-augmented generation (RAG), with an emphasis on structured and relevant information.  
 - `Data Quality & Robustness`: Improving AI performance by focusing on learning from imperfect data, handling noisy or low-resource conditions, and enabling continual and online adaptation in real-world environments.  
