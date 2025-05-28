@@ -36,5 +36,5 @@ In addition, we are operating an `international joint paper reading group` every
 #### Strong Collaborator
 We maintain strong connections with both industry and academia, collaborating with all the organizations listed below in the past. If you need other connection, we encourage you to invite them as collaborators.
 * Industry: Amazon Web Services Inc., Google Research, NAVER AI Labs
-* Academia: Soeul National University (SNU), Korea University, GIST, POSTECH, CNU, UBC 
+* Academia: Seoul National University (SNU), Korea University, GIST, POSTECH, CNU, UBC 
 * Research Institute: ETRI, KISTI, IBS

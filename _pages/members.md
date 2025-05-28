@@ -104,7 +104,6 @@ horizontal: false
     <div style="padding: 10px;">
       <h5>Hyangsuk Min</h5>
       <p>Fall 2024~</p>
-      <p class="small-note">Co-advised by Prof. Jae-Gil Lee</p>
     </div>
   </div>
   <div class="card">
