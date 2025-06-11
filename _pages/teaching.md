@@ -13,4 +13,4 @@ nav_order: 5
 
 (2025/Spring) IE260, Data Structure and Analysis
 
-(2024/Fall) DS801, Data Engineering for Big Data Analytics
+(2025/Fall) DS801, Data Engineering for Big Data Analytics
