@@ -122,26 +122,28 @@ horizontal: false
       <p class="small-note">Co-advised by Se-Young Yun</p>
     </div>
   </div>
-</div>
-
-<br>
-##### MS Students
-
-<div class="card-container">
   <div class="card">
     <img src="/assets/img/bio-yuho.png" alt="Yuho Lee">
     <div style="padding: 10px;">
       <h5>Yuho Lee</h5>
-      <p>Fall 2023~</p>
+      <p>Fall 2025~</p>
     </div>
   </div>
   <div class="card">
     <img src="/assets/img/bio-taewon.png" alt="Taewon Yun">
     <div style="padding: 10px;">
       <h5>Taewon Yun</h5>
-      <p>Fall 2023~</p>
+      <p>Fall 2025~</p>
     </div>
   </div>
+
+</div>
+
+<br>
+##### MS Students
+
+
+<div class="card-container">
   <div class="card">
     <img src="/assets/img/bio-heeyeon.png" alt="Heeyeon Kim">
     <div style="padding: 10px;">
