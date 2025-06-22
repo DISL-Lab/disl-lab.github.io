@@ -205,3 +205,7 @@ horizontal: false
 ##### Graduates
 
 Spring 2025, Jeonghwan Choi: PhD Program at KAIST
+
+Fall 2025, Yuho Lee: PhD Program at KAIST
+
+Fall 2025, Taewon Yun: PhD Program at KAIST
