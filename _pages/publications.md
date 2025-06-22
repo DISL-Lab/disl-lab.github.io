@@ -231,7 +231,7 @@ nav_order: 2
       Seunghwan Bang, and Hwanjun Song*
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
-      International ACM SIGIR Conference on Research and Development in Information Retrieval (Top Conference, GENNEXT Workshop), 2025
+      International ACM SIGIR Conference on Research and Development in Information Retrieval (GENNEXT Workshop), 2025
     </p>
     <div style="font-size: 0.8rem; color: #555; margin-top: 0.0rem;">
     [<a href="https://arxiv.org/abs/2502.14541" style="text-decoration: none; color: #1a73e8;">PDF</a>] 
@@ -277,7 +277,7 @@ nav_order: 2
       <span style="color: #1a73e8; font-weight: bold;">(with Amazon)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
-      Annual Meeting of the Association for Computational Linguistics (Top Conference, Main), 2025
+      Annual Meeting of the Association for Computational Linguistics (Main), 2025
     </p>
     <div style="font-size: 0.8rem; color: #555; margin-top: 0.0rem;">
     [<a href="#" style="text-decoration: none; color: #1a73e8;">PDF</a>] 
@@ -323,7 +323,7 @@ nav_order: 2
       <span style="color: #1a73e8; font-weight: bold;">(with Meta)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
-      In Annual Meeting of the Association for Computational Linguistics (Top Conference, Findings), 2025
+      In Annual Meeting of the Association for Computational Linguistics (Findings), 2025
     </p>
     <div style="font-size: 0.8rem; color: #555; margin-top: 0.0rem;">
     [<a href="#" style="text-decoration: none; color: #1a73e8;">PDF</a>] 
@@ -369,7 +369,7 @@ nav_order: 2
       <span style="color: #1a73e8; font-weight: bold;">(with UVM)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
-      In International Conference on Knowledge Discovery and Data Mining (Top Conference), 2025
+      In International Conference on Knowledge Discovery and Data Mining, 2025
     </p>
     <div style="font-size: 0.8rem; color: #555; margin-top: 0.0rem;">
     [<a href="#" style="text-decoration: none; color: #1a73e8;">PDF</a>] 
@@ -457,10 +457,10 @@ nav_order: 2
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
       Hwanjun Song*, Taewon Yun, Yuho Lee, Jihwan Oh, Gihun Lee, Jason Cai, and Hang Su
-      <span style="color: #1a73e8; font-weight: bold;">(with Amazon)</span>
+      <span style="color: #1a73e8; font-weight: bold;">(with Amazon, HyperConnect)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
-      In Annual Conference of the North American Chapter of the Association for Computational Linguistics (Top Conference, Main), 2025
+      In Annual Conference of the North American Chapter of the Association for Computational Linguistics (Main), 2025
     </p>
     <div style="font-size: 0.8rem; color: #555; margin-top: 0.0rem;">
     [<a href="https://aclanthology.org/2025.naacl-long.38.pdf" style="text-decoration: none; color: #1a73e8;">PDF</a>] 
@@ -507,7 +507,7 @@ nav_order: 2
       <span style="color: #1a73e8; font-weight: bold;">(with Amazon)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
-      In Annual Conference of the North American Chapter of the Association for Computational Linguistics (Top Conference, Main), 2025
+      In Annual Conference of the North American Chapter of the Association for Computational Linguistics (Main), 2025
     </p>
     <div style="font-size: 0.8rem; color: #555; margin-top: 0.0rem;">
     [<a href="https://arxiv.org/pdf/2502.08514" style="text-decoration: none; color: #1a73e8;">PDF</a>] 
@@ -551,7 +551,7 @@ nav_order: 2
       Youngjun Lee, Doyoung Kim, Junhyeok Kang, Jihwan Bang, Hwanjun Song, and Jae-Gil Lee*
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
-      In International Conference on Learning Representations (Top Conference), 2025
+      In International Conference on Learning Representations, 2025
     </p>
     <div style="font-size: 0.8rem; color: #555; margin-top: 0.0rem;">
     [<a href="https://openreview.net/pdf?id=V3zobHnS61" style="text-decoration: none; color: #1a73e8;">PDF</a>] 
@@ -647,7 +647,7 @@ nav_order: 2
       <span style="color: #1a73e8; font-weight: bold;">(with Amazon)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
-     In International Conference on Empirical Methods in Natural Language Processing (Top Conference, Findings), 2024
+     In International Conference on Empirical Methods in Natural Language Processing (Findings), 2024
     </p>
     <div style="font-size: 0.8rem; color: #555; margin-top: 0.0rem;">
     [<a href="https://arxiv.org/pdf/2409.19898" style="text-decoration: none; color: #1a73e8;">PDF</a>] 
@@ -694,7 +694,7 @@ nav_order: 2
       <span style="color: #1a73e8; font-weight: bold;">(with UVM)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
-      In Advances in Neural Information Processing Systems (Top Conference), 2024
+      In Advances in Neural Information Processing Systems, 2024
     </p>
     <div style="font-size: 0.8rem; color: #555; margin-top: 0.0rem;">
     [<a href="https://openreview.net/pdf?id=WK2KxPAMQv" style="text-decoration: none; color: #1a73e8;">PDF</a>] 
@@ -739,7 +739,7 @@ nav_order: 2
       <span style="color: #1a73e8; font-weight: bold;">(with Amazon, USYD)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
-     In International Conference on European Conference on Computer Vision (Top Conference), 2024
+     In International Conference on European Conference on Computer Vision, 2024
     </p>
     <div style="font-size: 0.8rem; color: #555; margin-top: 0.0rem;">
     [<a href="https://arxiv.org/pdf/2407.11449" style="text-decoration: none; color: #1a73e8;">PDF</a>] 
@@ -873,7 +873,7 @@ nav_order: 2
       <span style="color: #1a73e8; font-weight: bold;">(with Amazon)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
-      In Annual Meeting of the Association for Computational Linguistics (Top Conference, Main), 2024
+      In Annual Meeting of the Association for Computational Linguistics (Main), 2024
     </p>
     <div style="font-size: 0.8rem; color: #555; margin-top: 0.0rem;">
     [<a href="#" style="text-decoration: none; color: #1a73e8;">PDF</a>] 
@@ -918,7 +918,7 @@ nav_order: 2
       <span style="color: #1a73e8; font-weight: bold;">(with Amazon)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
-      In Annual Meeting of the Association for Computational Linguistics (Top Conference, Main), 2024
+      In Annual Meeting of the Association for Computational Linguistics (Main), 2024
     </p>
     <div style="font-size: 0.8rem; color: #555; margin-top: 0.0rem;">
     [<a href="#" style="text-decoration: none; color: #1a73e8;">PDF</a>] 
@@ -963,7 +963,7 @@ nav_order: 2
       Doyoung Kim, Susik Yoon, Dongmin Park, Youngjun Lee, Hwanjun Song, Jihwan Bang, and Jae-Gil Lee*
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
-      In International Conference on Machine Learning (Top Conference), 2024
+      In International Conference on Machine Learning, 2024
     </p>
     <div style="font-size: 0.8rem; color: #555; margin-top: 0.0rem;">
     [<a href="https://openreview.net/pdf?id=WK2KxPAMQv" style="text-decoration: none; color: #1a73e8;">PDF</a>] 
@@ -1008,7 +1008,7 @@ nav_order: 2
       <span style="color: #1a73e8; font-weight: bold;">(with Amazon)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
-     In Annual Conference of the North American Chapter of the Association for Computational Linguistics (Top Conference, Main), 2024
+     In Annual Conference of the North American Chapter of the Association for Computational Linguistics (Main), 2024
     </p>
     <div style="font-size: 0.8rem; color: #555; margin-top: 0.0rem;">
     [<a href="#" style="text-decoration: none; color: #1a73e8;">PDF</a>] 
@@ -1053,7 +1053,7 @@ nav_order: 2
       <span style="color: #1a73e8; font-weight: bold;">(with Amazon)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
-     In Annual Conference of the North American Chapter of the Association for Computational Linguistics (Top Conference, Main), 2024
+     In Annual Conference of the North American Chapter of the Association for Computational Linguistics (Main), 2024
     </p>
     <div style="font-size: 0.8rem; color: #555; margin-top: 0.0rem;">
     [<a href="#" style="text-decoration: none; color: #1a73e8;">PDF</a>] 
@@ -1099,7 +1099,7 @@ nav_order: 2
       <span style="color: #1a73e8; font-weight: bold;">(with Amazon)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
-     In Annual Conference of the North American Chapter of the Association for Computational Linguistics (Top Conference, Main), 2024
+     In Annual Conference of the North American Chapter of the Association for Computational Linguistics (Main), 2024
     </p>
     <div style="font-size: 0.8rem; color: #555; margin-top: 0.0rem;">
     [<a href="#" style="text-decoration: none; color: #1a73e8;">PDF</a>] 
@@ -1145,7 +1145,7 @@ nav_order: 2
       <span style="color: #1a73e8; font-weight: bold;">(with UVM)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
-     In Proceedings of The Web Conference (Top Conference), 2024
+     In Proceedings of The Web Conference, 2024
     </p>
     <div style="font-size: 0.8rem; color: #555; margin-top: 0.0rem;">
     [<a href="#" style="text-decoration: none; color: #1a73e8;">PDF</a>] 
@@ -1190,7 +1190,7 @@ nav_order: 2
       Doyoung Kim, Dongmin Park, Yooju Shin, Jihwan Bang, Hwanjun Song, and Jae-Gil Lee*
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
-     In AAAI Conference on Artificial Intelligence (Top Conference), 2024
+     In AAAI Conference on Artificial Intelligence, 2024
     </p>
     <div style="font-size: 0.8rem; color: #555; margin-top: 0.0rem;">
     [<a href="#" style="text-decoration: none; color: #1a73e8;">PDF</a>] 
@@ -1236,7 +1236,7 @@ nav_order: 2
       <span style="color: #1a73e8; font-weight: bold;">(with Amazon)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
-    In AAAI Conference on Artificial Intelligence (Top Conference), 2024
+    In AAAI Conference on Artificial Intelligence, 2024
     </p>
     <div style="font-size: 0.8rem; color: #555; margin-top: 0.0rem;">
     [<a href="#" style="text-decoration: none; color: #1a73e8;">PDF</a>] 
@@ -1290,7 +1290,7 @@ nav_order: 2
       <span style="color: #1a73e8; font-weight: bold;">(with Amazon)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
-     In International Conference on Empirical Methods in Natural Language Processing (Top Conference, Findings), 2023
+     In International Conference on Empirical Methods in Natural Language Processing (Findings), 2023
     </p>
     <div style="font-size: 0.8rem; color: #555; margin-top: 0.0rem;">
     [<a href="https://aclanthology.org/2023.findings-emnlp.468/" style="text-decoration: none; color: #1a73e8;">PDF</a>] 
@@ -1337,7 +1337,7 @@ nav_order: 2
       <span style="color: #1a73e8; font-weight: bold;">(with Amazon)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
-     In International Conference on Empirical Methods in Natural Language Processing (Top Conference, Main), 2023
+     In International Conference on Empirical Methods in Natural Language Processing (Main), 2023
     </p>
     <div style="font-size: 0.8rem; color: #555; margin-top: 0.0rem;">
     [<a href="#" style="text-decoration: none; color: #1a73e8;">PDF</a>]
@@ -1382,7 +1382,7 @@ nav_order: 2
       Dongmin Park, Seola Choi, Doyoung Kim, Hwanjun Song, and Jae-Gil Lee*
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
-     In Advances in Neural Information Processing Systems (Top Conference), 2023
+     In Advances in Neural Information Processing Systems, 2023
     </p>
     <div style="font-size: 0.8rem; color: #555; margin-top: 0.0rem;">
     [<a href="#" style="text-decoration: none; color: #1a73e8;">PDF</a>] 
@@ -1427,7 +1427,7 @@ nav_order: 2
       <span style="color: #1a73e8; font-weight: bold;">(with NAVER, Amazon, SNU)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
-     In International Conference on Computer Vision (Top Conference), 2023
+     In International Conference on Computer Vision, 2023
     </p>
     <div style="font-size: 0.8rem; color: #555; margin-top: 0.0rem;">
     [<a href="#" style="text-decoration: none; color: #1a73e8;">PDF</a>] 
@@ -1473,7 +1473,7 @@ nav_order: 2
       <span style="color: #1a73e8; font-weight: bold;">(with UVM)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
-     In International Conference on Machine Learning (Top Conference), 2023
+     In International Conference on Machine Learning, 2023
     </p>
     <div style="font-size: 0.8rem; color: #555; margin-top: 0.0rem;">
     [<a href="#" style="text-decoration: none; color: #1a73e8;">PDF</a>] 
@@ -1519,7 +1519,7 @@ nav_order: 2
       <span style="color: #1a73e8; font-weight: bold;">(with NAVER)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
-    In International Conference on Computer Vision and Pattern Recognition (Top Conference), 2023
+    In International Conference on Computer Vision and Pattern Recognition, 2023
     </p>
     <div style="font-size: 0.8rem; color: #555; margin-top: 0.0rem;">
     [<a href="#" style="text-decoration: none; color: #1a73e8;">PDF</a>] 
@@ -1565,7 +1565,7 @@ nav_order: 2
       <span style="color: #1a73e8; font-weight: bold;">(with NAVER, GIST)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
-     In International Conference on Learning Representations (Top Conference), 2023
+     In International Conference on Learning Representations, 2023
     </p>
     <div style="font-size: 0.8rem; color: #555; margin-top: 0.0rem;">
     [<a href="#" style="text-decoration: none; color: #1a73e8;">PDF</a>] 
@@ -1664,7 +1664,7 @@ nav_order: 2
       <span style="color: #1a73e8; font-weight: bold;">(with NAVER)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
-     In Advances in Neural Information Processing Systems (Top Conference), 2022
+     In Advances in Neural Information Processing Systems, 2022
     </p>
     <div style="font-size: 0.8rem; color: #555; margin-top: 0.0rem;">
     [<a href="https://openreview.net/pdf?id=WK2KxPAMQv" style="text-decoration: none; color: #1a73e8;">PDF</a>] 
@@ -1709,7 +1709,7 @@ nav_order: 2
       <span style="color: #1a73e8; font-weight: bold;">(with NAVER)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
-     In Advances in Neural Information Processing Systems (Top Conference), 2022
+     In Advances in Neural Information Processing Systems, 2022
     </p>
     <div style="font-size: 0.8rem; color: #555; margin-top: 0.0rem;">
     [<a href="https://openreview.net/pdf?id=WK2KxPAMQv" style="text-decoration: none; color: #1a73e8;">PDF</a>] 
@@ -1755,7 +1755,7 @@ nav_order: 2
       <span style="color: #1a73e8; font-weight: bold;">(with NAVER)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
-     In International Conference on Data Mining (Top Conference), 2022
+     In International Conference on Data Mining, 2022
     </p>
     <div style="font-size: 0.8rem; color: #555; margin-top: 0.0rem;">
     [<a href="#" style="text-decoration: none; color: #1a73e8;">PDF</a>] 
@@ -1800,7 +1800,7 @@ nav_order: 2
       <span style="color: #1a73e8; font-weight: bold;">(with NAVER)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
-    In International Conference on Information and Knowledge Management (Top Conference), 2022
+    In International Conference on Information and Knowledge Management, 2022
     </p>
     <div style="font-size: 0.8rem; color: #555; margin-top: 0.0rem;">
     [<a href="#" style="text-decoration: none; color: #1a73e8;">PDF</a>] 
@@ -1846,7 +1846,7 @@ nav_order: 2
       <span style="color: #1a73e8; font-weight: bold;">(with NAVER)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
-    In International Conference on Information and Knowledge Management (Top Conference), 2022
+    In International Conference on Information and Knowledge Management, 2022
     </p>
     <div style="font-size: 0.8rem; color: #555; margin-top: 0.0rem;">
     [<a href="#" style="text-decoration: none; color: #1a73e8;">PDF</a>] 
@@ -1892,7 +1892,7 @@ nav_order: 2
       <span style="color: #1a73e8; font-weight: bold;">(with NAVER)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
-    In International Conference on Information and Knowledge Management (Top Conference), 2022
+    In International Conference on Information and Knowledge Management, 2022
     </p>
     <div style="font-size: 0.8rem; color: #555; margin-top: 0.0rem;">
     [<a href="#" style="text-decoration: none; color: #1a73e8;">PDF</a>] 
@@ -1986,7 +1986,7 @@ nav_order: 2
       <span style="color: #1a73e8; font-weight: bold;">(with NAVER)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
-    In International Conference on Machine Learning (Top Conference), 2022
+    In International Conference on Machine Learning, 2022
     </p>
     <div style="font-size: 0.8rem; color: #555; margin-top: 0.0rem;">
     [<a href="#" style="text-decoration: none; color: #1a73e8;">PDF</a>] 
@@ -2033,7 +2033,7 @@ nav_order: 2
       <span style="color: #1a73e8; font-weight: bold;">(with NAVER, SNU)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
-    In International Conference on Machine Learning (Top Conference), 2022
+    In International Conference on Machine Learning, 2022
     </p>
     <div style="font-size: 0.8rem; color: #555; margin-top: 0.0rem;">
     [<a href="#" style="text-decoration: none; color: #1a73e8;">PDF</a>] 
@@ -2081,7 +2081,7 @@ nav_order: 2
       <span style="color: #1a73e8; font-weight: bold;">(with UVM)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
-   In International Conference on Learning Representations (Top Conference), 2022
+   In International Conference on Learning Representations, 2022
     </p>
     <div style="font-size: 0.8rem; color: #555; margin-top: 0.0rem;">
     [<a href="#" style="text-decoration: none; color: #1a73e8;">PDF</a>] 
@@ -2126,7 +2126,7 @@ nav_order: 2
       <span style="color: #1a73e8; font-weight: bold;">(with NAVER, Google)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
-  In International Conference on Learning Representations (Top Conference), 2022
+  In International Conference on Learning Representations, 2022
     </p>
     <div style="font-size: 0.8rem; color: #555; margin-top: 0.0rem;">
     [<a href="#" style="text-decoration: none; color: #1a73e8;">PDF</a>] 
@@ -2173,7 +2173,7 @@ nav_order: 2
       <span style="color: #1a73e8; font-weight: bold;">(with NAVER)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
-  In AAAI Conference on Artificial Intelligence (Top Conference), 2022
+  In AAAI Conference on Artificial Intelligence, 2022
     </p>
     <div style="font-size: 0.8rem; color: #555; margin-top: 0.0rem;">
     [<a href="#" style="text-decoration: none; color: #1a73e8;">PDF</a>] 
@@ -2219,7 +2219,7 @@ nav_order: 2
       <span style="color: #1a73e8; font-weight: bold;">(with NAVER)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
- In AAAI Conference on Artificial Intelligence (Top Conference), 2022
+ In AAAI Conference on Artificial Intelligence, 2022
     </p>
     <div style="font-size: 0.8rem; color: #555; margin-top: 0.0rem;">
     [<a href="#" style="text-decoration: none; color: #1a73e8;">PDF</a>] 
@@ -2264,7 +2264,7 @@ nav_order: 2
       <span style="color: #1a73e8; font-weight: bold;">(with NAVER, GIST)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
-   In International Conference on Computer Vision and Pattern Recognition (Top Conference), 2022
+   In International Conference on Computer Vision and Pattern Recognition, 2022
     </p>
     <div style="font-size: 0.8rem; color: #555; margin-top: 0.0rem;">
     [<a href="#" style="text-decoration: none; color: #1a73e8;">PDF</a>] 
@@ -2320,7 +2320,7 @@ nav_order: 2
       <span style="color: #1a73e8; font-weight: bold;">(with NAVER, Google)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
- In Advances in Neural Information Processing Systems (Top Conference), 2021
+ In Advances in Neural Information Processing Systems, 2021
     </p>
     <div style="font-size: 0.8rem; color: #555; margin-top: 0.0rem;">
     [<a href="#" style="text-decoration: none; color: #1a73e8;">PDF</a>]
@@ -2413,7 +2413,7 @@ nav_order: 2
       <span style="color: #1a73e8; font-weight: bold;">(with NAVER)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
-     In International Conference on Knowledge Discovery and Data Mining (Top Conference), 2021
+     In International Conference on Knowledge Discovery and Data Mining, 2021
      </p>
     <div style="font-size: 0.8rem; color: #555; margin-top: 0.0rem;">
     [<a href="#" style="text-decoration: none; color: #1a73e8;">PDF</a>] 
@@ -2460,7 +2460,7 @@ nav_order: 2
       <span style="color: #1a73e8; font-weight: bold;">(with NAVER)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
-     In International Conference on Knowledge Discovery and Data Mining (Top Conference, Tutorial), 2021
+     In International Conference on Knowledge Discovery and Data Mining (Tutorial), 2021
      </p>
     <div style="font-size: 0.8rem; color: #555; margin-top: 0.0rem;">
     [<a href="#" style="text-decoration: none; color: #1a73e8;">PDF</a>] 
@@ -2505,7 +2505,7 @@ nav_order: 2
     Minseok Kim, Hwanjun Song, Doyoung Kim, Kijung Shin, and Jae-Gil Lee*
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
- In AAAI Conference on Artificial Intelligence (Top Conference), 2021
+ In AAAI Conference on Artificial Intelligence, 2021
     </p>
     <div style="font-size: 0.8rem; color: #555; margin-top: 0.0rem;">
     [<a href="#" style="text-decoration: none; color: #1a73e8;">PDF</a>] 
@@ -2558,7 +2558,7 @@ nav_order: 2
       Hwanjun Song, Minseok Kim, Sundong Kim, and Jae-Gil Lee*
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
-    In International Conference on Information and Knowledge Management (Top Conference), 2020
+    In International Conference on Information and Knowledge Management, 2020
     </p>
     <div style="font-size: 0.8rem; color: #555; margin-top: 0.0rem;">
     [<a href="#" style="text-decoration: none; color: #1a73e8;">PDF</a>] 
@@ -2648,7 +2648,7 @@ nav_order: 2
       <span style="color: #1a73e8; font-weight: bold;">(with NAVER)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
-     In International Conference on Knowledge Discovery and Data Mining (Top Conference), 2020
+     In International Conference on Knowledge Discovery and Data Mining, 2020
      </p>
     <div style="font-size: 0.8rem; color: #555; margin-top: 0.0rem;">
     [<a href="#" style="text-decoration: none; color: #1a73e8;">PDF</a>] 
@@ -2738,7 +2738,7 @@ nav_order: 2
       <span style="color: #1a73e8; font-weight: bold;">(with UVM)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
-     In Proceedings of The Web Conference (Top Conference), 2020
+     In Proceedings of The Web Conference, 2020
     </p>
     <div style="font-size: 0.8rem; color: #555; margin-top: 0.0rem;">
     [<a href="#" style="text-decoration: none; color: #1a73e8;">PDF</a>] 
@@ -2783,7 +2783,7 @@ nav_order: 2
       Hwanjun Song, Minseok Kim, and Jae-Gil Lee*
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
-      In International Conference on Machine Learning (Top Conference), 2019
+      In International Conference on Machine Learning, 2019
     </p>
     <div style="font-size: 0.8rem; color: #555; margin-top: 0.0rem;">
     [<a href="https://openreview.net/pdf?id=WK2KxPAMQv" style="text-decoration: none; color: #1a73e8;">PDF</a>] 
@@ -2828,7 +2828,7 @@ nav_order: 2
       Hwanjun Song, and Jae-Gil Lee*
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
-      In International Conference on Management of Data (Top Conference), 2018
+      In International Conference on Management of Data, 2018
     </p>
     <div style="font-size: 0.8rem; color: #555; margin-top: 0.0rem;">
     [<a href="#" style="text-decoration: none; color: #1a73e8;">PDF</a>] 
@@ -2872,7 +2872,7 @@ nav_order: 2
       YHwanjun Song, Jae-Gil Lee*, and Wook-Shin Han
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
-      In International Conference on Knowledge Discovery and Data Mining (Top Conference), 2017
+      In International Conference on Knowledge Discovery and Data Mining, 2017
     </p>
     <div style="font-size: 0.8rem; color: #555; margin-top: 0.0rem;">
     [<a href="#" style="text-decoration: none; color: #1a73e8;">PDF</a>] 
