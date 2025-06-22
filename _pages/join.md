@@ -11,8 +11,6 @@ horizontal: false
 
 Prospective students interested in joining our lab or with inquiries, please contact us at <u>songhwanjun@kaist.ac.kr</u>. 
 
-We are not hiring MS/PhD students or postdocs this 2025 Spring, but will have a few positions for next Fall. We are open to hire international students as well.
-
 All candidates must submit their `CV`and a one-page `research statement`, covering but not limited to:
 * **Previous Research Experience:** We encourage all candidates to have research experience, such as participating in research projects as interns or employees. Please include a brief overview of your previous research, your role, and the outcomes achieved. This section is optional for interns.
 * **Research Interest and Potential Topics:** Candidates should focus on topics related to our recent works listed in the Publication tab. Applicants who have not read any of our papers are discouraged from applying for the roles. Kindly provide abstracts for potential topics based on more than two papers of interest. 

@@ -70,8 +70,12 @@ social: false
 - `Data Quality & Robustness`: Improving AI performance by focusing on learning from imperfect data, handling noisy or low-resource conditions, and enabling continual and online adaptation in real-world environments.  
 - `Automated Evaluation`: Developing scalable automatic evaluation frameworks that reflect human judgment, to assess the outputs and behaviors of generative AI models effectively.
 
-<p style="font-size: 1.0rem; margin-top: 1.5rem;">
+<p style="font-size: 1.0rem; margin-top: 1.0rem;">
 Please refer to the "Join" tab if you are interested in applying for Intern, MS, PhD, or PostDoc positions. We encourage prospective members to complete a 3–6 month internship prior to officially joining the lab.
+</p>
+
+<p style="font-size: 1.0rem; margin-top: 1.0rem; color: red; font-weight: bold; font-style: italic;">
+We are not hiring MS/PhD students for 2026, as all positions are filled. For 2027 Spring, please apply for an internship. Priority will be given to interns from our group.
 </p>
 
 <p style="font-size: 1.0rem;">
