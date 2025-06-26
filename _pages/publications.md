@@ -59,6 +59,51 @@ nav_order: 2
 
 <div class="project-block">
   <div class="img-col">
+    <img src="/assets/img/paper/25_iccv_gcm.png" alt="Project 1">
+  </div>
+  <div class="text-col">
+    <h3 style="font-size: 0.9rem; margin-bottom: 0.2rem; font-weight: bold;">
+    <span style="
+        display: inline-block;
+        background-color:rgb(163, 19, 176);  /* 원하는 색으로 변경 가능 */
+        color: white;
+        font-weight: bold;
+        font-size: 0.75rem;
+        padding: 0.2rem 0.6rem;
+        border-radius: 6px;
+        margin-right: 0.1rem;
+    ">
+        ICCV
+    </span>
+    <span style="
+        display: inline-block;
+        background-color:rgb(80, 13, 114);  /* 원하는 색으로 변경 가능 */
+        color: white;
+        font-weight: bold;
+        font-size: 0.75rem;
+        padding: 0.2rem 0.6rem;
+        border-radius: 6px;
+        margin-right: 0.1rem;
+    ">
+        Vision
+    </span>
+     Robust Dataset Condensation using Supervised Contrastive Learning
+    </h3>
+    <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
+      Nicole Hee-Yeon Kim and Hwanjun Song*
+    </p>
+    <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
+     In International Conference on Computer Vision, 2025
+    </p>
+    <div style="font-size: 0.8rem; color: #555; margin-top: 0.0rem;">
+    [<a href="#" style="text-decoration: none; color: #1a73e8;">PDF</a>] 
+    </div>
+  </div>
+</div>
+
+
+<div class="project-block">
+  <div class="img-col">
     <img src="/assets/img/paper/25-colm-yun.png" alt="Project 1">
   </div>
   <div class="text-col">
@@ -2316,7 +2361,7 @@ nav_order: 2
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
    Dongmin Park, Hwanjun Song, MinSeok Kim, and Jae-Gil Lee*
-      <span style="color: #1a73e8; font-weight: bold;">(with NAVER, Google)</span>
+      <span style="color: #1a73e8; font-weight: bold;">(with NAVER)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
  In Advances in Neural Information Processing Systems, 2021
@@ -2363,7 +2408,7 @@ nav_order: 2
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
      Hwanjun Song*, Eunyoung Kim, Varun Jampan, Deqing Sun, Jae-Gil Lee, and Ming-Hsuan Yang
-      <span style="color: #1a73e8; font-weight: bold;">(with NAVER)</span>
+      <span style="color: #1a73e8; font-weight: bold;">(with NAVER, Google)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
     In British Machine Vision Conference, 2021
@@ -2555,6 +2600,7 @@ nav_order: 2
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
       Hwanjun Song, Minseok Kim, Sundong Kim, and Jae-Gil Lee*
+      <span style="color: #1a73e8; font-weight: bold;">(with IBS)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
     In International Conference on Information and Knowledge Management, 2020
@@ -2599,6 +2645,7 @@ nav_order: 2
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
    Hwanjun Song, Sundong Kim, Minseok Kim, and Jae-Gil Lee*
+      <span style="color: #1a73e8; font-weight: bold;">(with IBS)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
     Machine Learning (SCIE, IF=5.414), 2020
@@ -2644,7 +2691,6 @@ nav_order: 2
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
     Minseok Kim, Junhyeok Kang, Doyoung Kim, Hwanjun Song, Hyangsuk Min, Youngeun Nam, Dongmin Park, and Jae-Gil Lee*
-      <span style="color: #1a73e8; font-weight: bold;">(with NAVER)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
      In International Conference on Knowledge Discovery and Data Mining, 2020
@@ -2689,7 +2735,7 @@ nav_order: 2
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
    Sundong Kim, Hwanjun Song, Sejin Kim, Beomyoung Kim, and Jae-Gil Lee*
-      <span style="color: #1a73e8; font-weight: bold;">(with NAVER)</span>
+      <span style="color: #1a73e8; font-weight: bold;">(with IBS)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
      In Pacific-Asia Conference on Knowledge Discovery and Data Mining, 2020
@@ -2734,7 +2780,6 @@ nav_order: 2
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
      Dongmin Park, Hwanjun Song, Minseok Kim, and Jae-Gil Lee*
-      <span style="color: #1a73e8; font-weight: bold;">(with UVM)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
      In Proceedings of The Web Conference, 2020
@@ -2868,7 +2913,7 @@ nav_order: 2
       PAMAE: Parallel k-Medoids Clustering with High Accuracy and Efficiency
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-      YHwanjun Song, Jae-Gil Lee*, and Wook-Shin Han
+      Hwanjun Song, Jae-Gil Lee*, and Wook-Shin Han
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
       In International Conference on Knowledge Discovery and Data Mining, 2017

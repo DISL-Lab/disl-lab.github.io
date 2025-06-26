@@ -3,7 +3,7 @@ layout: page
 permalink: /Join/
 title: Join
 nav: true
-nav_order: 7
+nav_order: 6
 display_categories: [Present, Past]
 horizontal: false
 ---
