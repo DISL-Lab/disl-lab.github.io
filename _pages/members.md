@@ -95,7 +95,7 @@ horizontal: false
     <img src="/assets/img/bio-jihwan.png" alt="Jihwan Bang">
     <div style="padding: 10px;">
       <h5>Jihwan Bang</h5>
-      <p>Spring 2023~</p>
+      <p>Qualcomm, Spring 2023~</p>
       <p class="small-note">Co-advised by Prof. Jae-Gil Lee</p>
     </div>
   </div>
@@ -103,14 +103,14 @@ horizontal: false
     <img src="/assets/img/bio-hyangsuk.png" alt="Hyangsuk Min">
     <div style="padding: 10px;">
       <h5>Hyangsuk Min</h5>
-      <p>Fall 2024~</p>
+      <p>Full Time, Fall 2024~</p>
     </div>
   </div>
   <div class="card">
     <img src="/assets/img/bio-jeonghwan.png" alt="Jeonghwan Choi">
     <div style="padding: 10px;">
       <h5>Jeonghwan Choi</h5>
-      <p>Spring 2025~</p>
+      <p>Full Time, Spring 2025~</p>
       <p class="small-note">MS-PhD Integrated</p>
     </div>
   </div>
@@ -118,7 +118,7 @@ horizontal: false
     <img src="/assets/img/bio-yujin.png" alt="Yujin Kim">
     <div style="padding: 10px;">
       <h5>Yujin Kim</h5>
-      <p>Spring 2025~</p>
+      <p>Full Time, Spring 2025~</p>
       <p class="small-note">Co-advised by Se-Young Yun</p>
     </div>
   </div>
@@ -126,14 +126,14 @@ horizontal: false
     <img src="/assets/img/bio-yuho.png" alt="Yuho Lee">
     <div style="padding: 10px;">
       <h5>Yuho Lee</h5>
-      <p>Fall 2025~</p>
+      <p>Full Time, Fall 2025~</p>
     </div>
   </div>
   <div class="card">
     <img src="/assets/img/bio-taewon.png" alt="Taewon Yun">
     <div style="padding: 10px;">
       <h5>Taewon Yun</h5>
-      <p>Fall 2025~</p>
+      <p>Full Time, Fall 2025~</p>
     </div>
   </div>
 
@@ -148,35 +148,35 @@ horizontal: false
     <img src="/assets/img/bio-heeyeon.png" alt="Heeyeon Kim">
     <div style="padding: 10px;">
       <h5>Heeyeon Kim</h5>
-      <p>Spring 2024~</p>
+      <p>Full Time, Spring 2024~</p>
     </div>
   </div>
   <div class="card">
     <img src="/assets/img/bio-jihwanoh.png" alt="Jihwan Oh">
     <div style="padding: 10px;">
       <h5>Jihwan Oh</h5>
-      <p>Spring 2024~</p>
+      <p>Full Time, Spring 2024~</p>
     </div>
   </div>
   <div class="card">
     <img src="/assets/img/bio-jiaqi.png" alt="Jiaqi Deng">
     <div style="padding: 10px;">
       <h5>Jiaqi Deng</h5>
-      <p>Fall 2024~</p>
+      <p>Full Time, Fall 2024~</p>
     </div>
   </div>
   <div class="card">
     <img src="/assets/img/bio-minjeong.png" alt="Minjeong Ban">
     <div style="padding: 10px;">
       <h5>Minjeong Ban</h5>
-      <p>Spring 2025~</p>
+      <p>Full Time, Spring 2025~</p>
     </div>
   </div>
   <div class="card">
     <img src="/assets/img/bio-kibeom.png" alt="Kibum Kim">
     <div style="padding: 10px;">
       <h5>Kibum Kim</h5>
-      <p>Spring 2025~</p>
+      <p>Hankook Tire, Spring 2025~</p>
     </div>
   </div>
 </div>
