@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: Publications
-description: We publish our research in high-impact conferences and journals within the field of Computer Science. We have collaborated top IT tech companies such as AWS AI Labs, Google Research, and NAVER AI Lab. <br>As of now, we published more than 50+ CS top confernces in various domains, including NLP (EMNLP), CV (ICCV, CVPR), ML (NeurIPS, ICLR, ICML, AAAI), DM (KDD, CIKM, ICDM, WWW, SIGMOD). <br><br>Asterisk (*) denotes corresponding authors. We are currently working on fixing the broken link on this page.
+description: We publish our research in high-impact conferences and journals within the field of Computer Science. We have collaborated top IT tech companies such as AWS AI Labs, Google Research, and NAVER AI Lab. <br>As of now, we published more than 50+ CS top confernces in various domains, including NLP (ACL, EMNLP, NAACL), CV (ICCV, CVPR), ML (NeurIPS, ICLR, ICML, AAAI), DM (KDD, CIKM, ICDM, WWW, SIGMOD). <br><br>Asterisk (*) denotes corresponding authors. We are currently working on fixing the broken link on this page.
 
 nav: true
 nav_order: 2
@@ -59,51 +59,6 @@ nav_order: 2
 
 <div class="project-block">
   <div class="img-col">
-    <img src="/assets/img/paper/25-colm-yun.png" alt="Project 1">
-  </div>
-  <div class="text-col">
-    <h3 style="font-size: 0.9rem; margin-bottom: 0.2rem; font-weight: bold;">
-    <span style="
-        display: inline-block;
-        background-color:rgb(239, 53, 53);  /* 원하는 색으로 변경 가능 */
-        color: white;
-        font-weight: bold;
-        font-size: 0.75rem;
-        padding: 0.2rem 0.6rem;
-        border-radius: 6px;
-        margin-right: 0.1rem;
-    ">
-        arXiv
-    </span>
-    <span style="
-        display: inline-block;
-        background-color:rgb(197, 38, 179);  /* 원하는 색으로 변경 가능 */
-        color: white;
-        font-weight: bold;
-        font-size: 0.75rem;
-        padding: 0.2rem 0.6rem;
-        border-radius: 6px;
-        margin-right: 0.1rem;
-    ">
-        NLP
-    </span>
-      ReFeed: Multi-Dimensional Summarization Refinement with Reflective Reasoning on Feedback
-    </h3>
-    <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-      Taewon Yun, Jihwan Oh, Hyangsuk Min, Yuho Lee, Jihwan Bang, Jason Cai, and Hwanjun Song*
-      <span style="color: #1a73e8; font-weight: bold;">(with Amazon)</span>
-    </p>
-    <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
-      In arXiv preprint arXiv:2503.21332, 2025
-    </p>
-    <div style="font-size: 0.8rem; color: #555; margin-top: 0.0rem;">
-    [<a href="https://arxiv.org/abs/2503.21332" style="text-decoration: none; color: #1a73e8;">PDF</a>] 
-    </div>
-  </div>
-</div>
-
-<div class="project-block">
-  <div class="img-col">
     <img src="/assets/img/paper/25-cikm-song.png" alt="Project 1">
   </div>
   <div class="text-col">
@@ -149,6 +104,51 @@ nav_order: 2
 </div>
 
 <h2 style="margin-bottom: 1.5rem;">International Conferences and Journals</h2>
+
+<div class="project-block">
+  <div class="img-col">
+    <img src="/assets/img/paper/25-colm-yun.png" alt="Project 1">
+  </div>
+  <div class="text-col">
+    <h3 style="font-size: 0.9rem; margin-bottom: 0.2rem; font-weight: bold;">
+    <span style="
+        display: inline-block;
+        background-color:rgb(7, 95, 41);  /* 원하는 색으로 변경 가능 */
+        color: white;
+        font-weight: bold;
+        font-size: 0.75rem;
+        padding: 0.2rem 0.6rem;
+        border-radius: 6px;
+        margin-right: 0.1rem;
+    ">
+        COLM
+    </span>
+    <span style="
+        display: inline-block;
+        background-color:rgb(197, 38, 179);  /* 원하는 색으로 변경 가능 */
+        color: white;
+        font-weight: bold;
+        font-size: 0.75rem;
+        padding: 0.2rem 0.6rem;
+        border-radius: 6px;
+        margin-right: 0.1rem;
+    ">
+        NLP
+    </span>
+      ReFeed: Multi-Dimensional Summarization Refinement with Reflective Reasoning on Feedback
+    </h3>
+    <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
+      Taewon Yun, Jihwan Oh, Hyangsuk Min, Yuho Lee, Jihwan Bang, Jason Cai, and Hwanjun Song*
+      <span style="color: #1a73e8; font-weight: bold;">(with Amazon)</span>
+    </p>
+    <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
+      In Conference on Language Modeling, 2025
+    </p>
+    <div style="font-size: 0.8rem; color: #555; margin-top: 0.0rem;">
+    [<a href="https://arxiv.org/abs/2503.21332" style="text-decoration: none; color: #1a73e8;">PDF</a>] 
+    </div>
+  </div>
+</div>
 
 <div class="project-block">
   <div class="img-col">
@@ -248,7 +248,7 @@ nav_order: 2
     <h3 style="font-size: 0.9rem; margin-bottom: 0.2rem; font-weight: bold;">
     <span style="
         display: inline-block;
-        background-color:rgb(7, 95, 41);  /* 원하는 색으로 변경 가능 */
+        background-color:rgb(196, 138, 4);  /* 원하는 색으로 변경 가능 */
         color: white;
         font-weight: bold;
         font-size: 0.75rem;
@@ -2213,8 +2213,7 @@ nav_order: 2
       Meta-Learning for Online Update of Recommender Systems
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-    Hwanjun Song*, Deqing Sun, Sanghyuk Chun, Varun Jampani, Dongyoon Han, Byeongho Heo, Wonjae Kim, and Ming-Hsuan Minseok Kim, Hwanjun Song, Yooju Shin, Dongmin Park, Kijung Shin, and Jae-Gil Lee*
-      <span style="color: #1a73e8; font-weight: bold;">(with NAVER)</span>
+    Minseok Kim, Hwanjun Song, Yooju Shin, Dongmin Park, Kijung Shin, and Jae-Gil Lee*
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
   In AAAI Conference on Artificial Intelligence, 2022
