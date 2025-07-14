@@ -189,17 +189,36 @@ horizontal: false
     <img src="/assets/img/bio-seonghwan.jpg" alt="Seunghwan Bang">
     <div style="padding: 10px;">
       <h5>Seunghwan Bang</h5>
-      <p>Winter 2024~</p>
+      <p>Window 2024, Summer 2025</p>
     </div>
   </div>
   <div class="card">
     <img src="/assets/img/bio-mingyu.png" alt="Mingyu Choi">
     <div style="padding: 10px;">
       <h5>Mingyu Choi</h5>
-      <p>Winter 2024~</p>
+      <p>Window 2024, Summer 2025</p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="/assets/img/bio_jisoo_kim.jpg" alt="Mingyu Choi">
+    <div style="padding: 10px;">
+      <h5>Jisoo Kim</h5>
+      <p>Summer 2025~</p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="/assets/img/bio_gyeonghun_sun.jpg" alt="Mingyu Choi">
+    <div style="padding: 10px;">
+      <h5>Gyeonghun Sun</h5>
+      <p>Summer 2025~</p>
     </div>
   </div>
 </div>
+
+<br>
+##### Internship
+
+Summer 2025, Yuho Lee: Amazon Web Services Inc, Bedrock, US, Santa Clara
 
 <br>
 ##### Graduates
