@@ -63,7 +63,7 @@ Here are our current ongoing research projects, mainly focusing on (1) Human-AI 
       This project aims to construct benchmark datasets and develop an automated evaluation system for the reliable assessment of AI-generated text. Ultimately, it seeks to devise methodologies that reduce hallucinations and biases in generative language models while enhancing completeness and conciseness.
     </p>
     <p style="font-size: 0.75rem; font-family: 'Roboto', monospace; color: #555;">
-      Duration: 2024.04 – 2027.03 &nbsp;&nbsp;|&nbsp;&nbsp; Funding: KRW 600M
+      Duration: 2024.04 – 2027.03 &nbsp;&nbsp;|&nbsp;&nbsp; Funding: KRW 600M &nbsp;&nbsp;|&nbsp;&nbsp; Principal Investigator
     </p>
   </div>
 </div>
@@ -80,7 +80,7 @@ Here are our current ongoing research projects, mainly focusing on (1) Human-AI 
       This project, through a Korea-Canada international joint research collaboration (KAIST-GIST-UBC), aims to significantly enhance the reliability of AI models by constructing expert-reviewed, high-quality, value-aligned benchmark datasets specialized in language, mathematics, and medicine, and by developing core technologies for high-performance automated value alignment evaluation.
     </p>
     <p style="font-size: 0.75rem; font-family: 'Roboto', monospace; color: #555;">
-      Duration: 2024.09 – 2027.08 &nbsp;&nbsp;|&nbsp;&nbsp; Funding: KRW 1.5B
+      Duration: 2024.09 – 2027.08 &nbsp;&nbsp;|&nbsp;&nbsp; Funding: KRW 1.5B &nbsp;&nbsp;|&nbsp;&nbsp; Principal Investigator
     </p>
   </div>
 </div>
@@ -97,7 +97,7 @@ Here are our current ongoing research projects, mainly focusing on (1) Human-AI 
       Retrieval-Augmented Generation (RAG) is effective in improving the response accuracy of large language models (LLMs) and reducing hallucinations. However, existing approaches may not be optimal for the science and technology domain. This project aims to identify the unique requirements of domain-specific RAG for scientific and technical information, and to enhance the accuracy and reliability of RAG systems in this domain by developing optimized retrieval strategies, generation techniques, and evaluation metrics.
     </p>
     <p style="font-size: 0.75rem; font-family: 'Roboto', monospace; color: #555;">
-      Duration: 2025.06 – 2025.12 &nbsp;&nbsp;|&nbsp;&nbsp; Funding: KRW 180M
+      Duration: 2025.06 – 2025.12 &nbsp;&nbsp;|&nbsp;&nbsp; Funding: KRW 180M &nbsp;&nbsp;|&nbsp;&nbsp; Collaborating Investigator
     </p>
   </div>
 </div>
@@ -116,7 +116,7 @@ Here are our current ongoing research projects, mainly focusing on (1) Human-AI 
       This project aims to develop data construction algorithms that effectively support Retrieval-Augmented Generation (RAG) systems specialized for science and technology–focused large language models (LLMs). RAG enhances the accuracy and reliability of generative AI by incorporating information retrieved from external sources, and has recently gained significant attention as a key technique for improving model trustworthiness.
     </p>
     <p style="font-size: 0.75rem; font-family: 'Roboto', monospace; color: #555;">
-      Duration: 2024.06 – 2024.12 &nbsp;&nbsp;|&nbsp;&nbsp; Funding: KRW 80M
+      Duration: 2024.06 – 2024.12 &nbsp;&nbsp;|&nbsp;&nbsp; Funding: KRW 80M &nbsp;&nbsp;|&nbsp;&nbsp; Collaborating Investigator
     </p>
   </div>
 </div>

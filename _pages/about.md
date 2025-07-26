@@ -52,6 +52,10 @@ social: false
 }
 </style>
 
+<p style="font-size: 1.0rem; margin-top: 1.0rem; color: red; font-weight: bold; font-style: italic;">
+인턴십은 상시 모집이며, 관심 있는 학생은 아래 양식을 작성해 주세요 (Internship applications are accepted on a rolling basis. If you are interested, please complete the form below) <a href="https://docs.google.com/forms/d/e/1FAIpQLSezVnp3eepLI4CTD3_lLABNwDtvFue6EqhXKq1zhK5zLW9ZsQ/viewform?usp=sharing&ouid=114425768257170495941" target="_blank">[Link]</a>.
+</p>
+
 <div class="responsive-flex">
   <div class="img-col">
     <img src="/assets/img/kaist2.png" alt="Project 1">
@@ -74,9 +78,9 @@ social: false
 Please refer to the "Join" tab if you are interested in applying for Intern, MS, PhD, or PostDoc positions. We encourage prospective members to complete a 3–6 month internship prior to officially joining the lab.
 </p>
 
-<p style="font-size: 1.0rem; margin-top: 1.0rem; color: red; font-weight: bold; font-style: italic;">
-We are not hiring MS/PhD students for 2026, as all positions are filled. For 2027 Spring, please apply for an internship. Priority will be given to interns from our group.
-</p>
+
+We are not recruiting MS/PhD students for Spring 2026, as all positions have been filled. If you are interested in joining our lab for graduate studies, we strongly encourage you to apply for an internship first, as priority will be given to those with prior research experience in our group.
+
 
 <p style="font-size: 1.0rem;">
 You can catch up our recent research interest on <a href="https://www.youtube.com/channel/UCrEpnN7_2BmrHsPWns_Vx3Q" target="_blank">our Youtube channel</a>.
