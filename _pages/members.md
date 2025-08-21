@@ -92,14 +92,6 @@ horizontal: false
 
 <div class="card-container">
   <div class="card">
-    <img src="/assets/img/bio-jihwan.png" alt="Jihwan Bang">
-    <div style="padding: 10px;">
-      <h5>Jihwan Bang</h5>
-      <p>Qualcomm, Spring 2023~</p>
-      <p class="small-note">Co-advised by Prof. Jae-Gil Lee</p>
-    </div>
-  </div>
-  <div class="card">
     <img src="/assets/img/bio-hyangsuk.png" alt="Hyangsuk Min">
     <div style="padding: 10px;">
       <h5>Hyangsuk Min</h5>
@@ -112,14 +104,6 @@ horizontal: false
       <h5>Jeonghwan Choi</h5>
       <p>Full Time, Spring 2025~</p>
       <p class="small-note">MS-PhD Integrated</p>
-    </div>
-  </div>
-  <div class="card">
-    <img src="/assets/img/bio-yujin.png" alt="Yujin Kim">
-    <div style="padding: 10px;">
-      <h5>Yujin Kim</h5>
-      <p>Full Time, Spring 2025~</p>
-      <p class="small-note">Co-advised by Se-Young Yun</p>
     </div>
   </div>
   <div class="card">
@@ -184,6 +168,27 @@ horizontal: false
     <div style="padding: 10px;">
       <h5>Shayekh Bin Islam</h5>
       <p>Full Time, Fall 2025~</p>
+    </div>
+  </div>
+</div>
+
+<br>
+##### Jointly Supervised Students
+<div class="card-container">
+  <div class="card">
+    <img src="/assets/img/bio-jihwan.png" alt="Jihwan Bang">
+    <div style="padding: 10px;">
+      <h5>Jihwan Bang</h5>
+      <p>Qualcomm, Spring 2023~</p>
+      <p class="small-note">Co-advised by Prof. Jae-Gil Lee</p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="/assets/img/bio-yujin.png" alt="Yujin Kim">
+    <div style="padding: 10px;">
+      <h5>Yujin Kim</h5>
+      <p>Full Time, Spring 2025~</p>
+      <p class="small-note">Co-advised by Se-Young Yun</p>
     </div>
   </div>
 </div>
