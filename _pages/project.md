@@ -123,14 +123,14 @@ Here are our current ongoing research projects, mainly focusing on (1) Human-AI 
 
 <div class="project-block">
   <div class="img-col">
-    <img src="/assets/img/ict-logo.png" alt="Project 1">
+    <img src="/assets/img/ict-logo3.png" alt="Project 1">
   </div>
   <div class="text-col">
     <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">
       네이버 클라우드 컨소시엄: 옴니 파운데이션 모델 (Omni Foundation Model) 
     </h3>    
     <p style="font-size: 0.8rem; margin-bottom: 0.5rem;">
-      The Ministry of Science and ICT, together with NIPA, NIA, and IITP, is launching the “Independent AI Foundation Model” project to select capable domestic companies for developing globally impactful homegrown AI foundation models (Details are confidential).
+      The Ministry of Science and ICT, together with NIPA, NIA, and IITP, is launching the “Independent AI Foundation Model” project to select capable domestic companies for developing globally impactful homegrown AI foundation models. <br><br>Details are confidential.
     </p>
     <p style="font-size: 0.75rem; font-family: 'Roboto', monospace; color: #555;">
       Duration: 2025.08 – 2025.12 (1st Round) &nbsp;&nbsp;|&nbsp;&nbsp; Collaborating Researcher
