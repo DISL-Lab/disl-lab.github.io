@@ -906,7 +906,7 @@ nav_order: 2
       Prompt-Guided DETR with RoI-Pruned Masked Attention for Open-Vocabulary Object Detection
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-     Hwanjun Song*, and Jihwan Bang
+     {Hwanjun Song* and Jihwan Bang}
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
       Pattern Recognition (SCIE, IF=8.0), 2024
