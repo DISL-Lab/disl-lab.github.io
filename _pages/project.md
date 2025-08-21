@@ -51,22 +51,6 @@ nav_order: 3
 
 Here are our current ongoing research projects, mainly focusing on (1) Human-AI Alignment; (2) Collaborative Intelligence; (3) Data Quality and Robustness; and (4) Automated Evaluation.
 
-<div class="project-block">
-  <div class="img-col">
-    <img src="/assets/img/iitp-logo.png" alt="Project 1">
-  </div>
-  <div class="text-col">
-    <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">
-      튜링 테스트 그 너머: 확장하고 적응하는 인간 수준 게임 플레잉 에이전트 연구 (Beyond the Turing Test: Human-Level Game-Playing Agents with Generalization and Adaptation)
-    </h3>
-    <p style="font-size: 0.8rem; margin-bottom: 0.5rem;">
-      This project develops a human-level game-playing agent, grounded in AGI’s core principles of adaptation and expansion, capable of competing and cooperating with humans in any game environment. The agent will autonomously design learning curricula, acquire knowledge without forgetting, model game causality, and adapt rapidly via language instructions. The resulting technology will be deployed as an API for commercial games, enhancing the competitiveness of Korea’s gaming industry.
-    </p>
-    <p style="font-size: 0.75rem; font-family: 'Roboto', monospace; color: #555;">
-      Duration: 2025.08 – 2028.12 &nbsp;&nbsp;|&nbsp;&nbsp; Funding: KRW 4.03B &nbsp;&nbsp;|&nbsp;&nbsp; Co-Principal Investigator
-    </p>
-  </div>
-</div>
 
 <div class="project-block">
   <div class="img-col">
@@ -84,6 +68,7 @@ Here are our current ongoing research projects, mainly focusing on (1) Human-AI 
     </p>
   </div>
 </div>
+
 
 <div class="project-block">
   <div class="img-col">
@@ -118,6 +103,41 @@ Here are our current ongoing research projects, mainly focusing on (1) Human-AI 
     </p>
   </div>
 </div>
+
+<div class="project-block">
+  <div class="img-col">
+    <img src="/assets/img/iitp-logo.png" alt="Project 1">
+  </div>
+  <div class="text-col">
+    <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">
+      튜링 테스트 그 너머: 확장하고 적응하는 인간 수준 게임 플레잉 에이전트 연구 (Beyond the Turing Test: Human-Level Game-Playing Agents with Generalization and Adaptation)
+    </h3>
+    <p style="font-size: 0.8rem; margin-bottom: 0.5rem;">
+      This project develops a human-level game-playing agent, grounded in AGI’s core principles of adaptation and expansion, capable of competing and cooperating with humans in any game environment. The agent will autonomously design learning curricula, acquire knowledge without forgetting, model game causality, and adapt rapidly via language instructions. The resulting technology will be deployed as an API for commercial games, enhancing the competitiveness of Korea’s gaming industry.
+    </p>
+    <p style="font-size: 0.75rem; font-family: 'Roboto', monospace; color: #555;">
+      Duration: 2025.08 – 2028.12 &nbsp;&nbsp;|&nbsp;&nbsp; Funding: KRW 4.03B &nbsp;&nbsp;|&nbsp;&nbsp; Co-Principal Investigator
+    </p>
+  </div>
+</div>
+
+<div class="project-block">
+  <div class="img-col">
+    <img src="/assets/img/ict-logo.png" alt="Project 1">
+  </div>
+  <div class="text-col">
+    <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">
+      네이버 클라우드 컨소시엄: 옴니 파운데이션 모델 (Omni Foundation Model) 
+    </h3>    
+    <p style="font-size: 0.8rem; margin-bottom: 0.5rem;">
+      The Ministry of Science and ICT, together with NIPA, NIA, and IITP, is launching the “Independent AI Foundation Model” project to select capable domestic companies for developing globally impactful homegrown AI foundation models (Details are confidential).
+    </p>
+    <p style="font-size: 0.75rem; font-family: 'Roboto', monospace; color: #555;">
+      Duration: 2025.08 – 2025.12 (1st Round) &nbsp;&nbsp;|&nbsp;&nbsp; Collaborating Researcher
+    </p>
+  </div>
+</div>
+
 
 ### Completed research projects 
 

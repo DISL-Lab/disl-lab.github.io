@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: Publications
-description: We publish our research in high-impact conferences and journals within the field of Computer Science. We have collaborated top IT tech companies such as AWS AI Labs, Google Research, and NAVER AI Lab. <br>As of now, we published more than 50+ CS top confernces in various domains, including NLP (ACL, EMNLP, NAACL), CV (ICCV, CVPR), ML (NeurIPS, ICLR, ICML, AAAI), DM (KDD, CIKM, ICDM, WWW, SIGMOD). <br><br>Asterisk (*) denotes corresponding authors. We are currently working on fixing the broken link on this page.
+description: We publish our research in high-impact conferences and journals within the field of Computer Science. We have collaborated top IT tech companies such as AWS AI Labs, Google Research, and NAVER AI Lab. <br>As of now, we published more than 50+ CS top confernces in various domains, including NLP (ACL, EMNLP, NAACL), CV (ICCV, CVPR), ML (NeurIPS, ICLR, ICML, AAAI), DM (KDD, CIKM, ICDM, WWW, SIGMOD). <br>Asterisk (*) denotes corresponding authors and co-first authorship is denoted by {}.
 
 nav: true
 nav_order: 2
@@ -107,6 +107,90 @@ nav_order: 2
 
 <div class="project-block">
   <div class="img-col">
+    <img src="/assets/img/paper/25-emnlp-hamlet.png" alt="Project 1">
+  </div>
+  <div class="text-col">
+    <h3 style="font-size: 0.9rem; margin-bottom: 0.2rem; font-weight: bold;">
+    <span style="
+        display: inline-block;
+        background-color:rgb(7, 95, 41);  /* 원하는 색으로 변경 가능 */
+        color: white;
+        font-weight: bold;
+        font-size: 0.75rem;
+        padding: 0.2rem 0.6rem;
+        border-radius: 6px;
+        margin-right: 0.1rem;
+    ">
+        EMNLP
+    </span>
+    <span style="
+        display: inline-block;
+        background-color:rgb(197, 38, 179);  /* 원하는 색으로 변경 가능 */
+        color: white;
+        font-weight: bold;
+        font-size: 0.75rem;
+        padding: 0.2rem 0.6rem;
+        border-radius: 6px;
+        margin-right: 0.1rem;
+    ">
+        NLP
+    </span>
+      Towards a Holistic and Automated Evaluation Framework for Multi-Level Comprehension of LLMs in Book-Length Contexts
+    </h3>
+    <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
+      {Yuho Lee, Jiaqi Deng}, Nicole Hee-yeon Kim, Hyangsuk Min, Taewon Yun, Minjeong Ban, Yul Kim, and Hwanjun Song*
+    </p>
+    <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
+     In International Conference on Empirical Methods in Natural Language Processing (Main), 2025
+    </p>
+    <div style="font-size: 0.8rem; color: #555; margin-top: 0.0rem;">
+    </div>
+  </div>
+</div>
+
+<div class="project-block">
+  <div class="img-col">
+    <img src="/assets/img/paper/25-emnlp-han.png" alt="Project 1">
+  </div>
+  <div class="text-col">
+    <h3 style="font-size: 0.9rem; margin-bottom: 0.2rem; font-weight: bold;">
+    <span style="
+        display: inline-block;
+        background-color:rgb(7, 95, 41);  /* 원하는 색으로 변경 가능 */
+        color: white;
+        font-weight: bold;
+        font-size: 0.75rem;
+        padding: 0.2rem 0.6rem;
+        border-radius: 6px;
+        margin-right: 0.1rem;
+    ">
+        EMNLP
+    </span>
+    <span style="
+        display: inline-block;
+        background-color:rgb(197, 38, 179);  /* 원하는 색으로 변경 가능 */
+        color: white;
+        font-weight: bold;
+        font-size: 0.75rem;
+        padding: 0.2rem 0.6rem;
+        border-radius: 6px;
+        margin-right: 0.1rem;
+    ">
+        Recommendation
+    </span>
+      Rethinking LLM-Based Recommendations: A Personalized Query-Driven Parallel Integration
+    </h3>
+    <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
+      Donghee Han, Hwanjun Song*, and Mun Young Yi*
+    </p>
+    <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
+     In International Conference on Empirical Methods in Natural Language Processing (Findings), 2025
+    </p>
+  </div>
+</div>
+
+<div class="project-block">
+  <div class="img-col">
     <img src="/assets/img/paper/25-colm-yun.png" alt="Project 1">
   </div>
   <div class="text-col">
@@ -144,9 +228,7 @@ nav_order: 2
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
       In Conference on Language Modeling, 2025
     </p>
-    <div style="font-size: 0.8rem; color: #555; margin-top: 0.0rem;">
     [<a href="https://arxiv.org/abs/2503.21332" style="text-decoration: none; color: #1a73e8;">PDF</a>] 
-    </div>
   </div>
 </div>
 
@@ -318,7 +400,7 @@ nav_order: 2
       Towards Multi-dimensional Evaluation of LLM Summarization across Domains and Languages
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-      Hyangsuk Min, Yuho Lee, Minjeong Ban, Jiaqi Deng, Nicole Hee-Yeon Kim, Taewon Yun, Hang Su, Jason Cai, and Hwanjun Song*
+      {Hyangsuk Min, Yuho Lee}, Minjeong Ban, Jiaqi Deng, Nicole Hee-Yeon Kim, Taewon Yun, Hang Su, Jason Cai, and Hwanjun Song*
       <span style="color: #1a73e8; font-weight: bold;">(with Amazon)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
@@ -688,7 +770,7 @@ nav_order: 2
       UniSumEval: Towards Unified, Fine-grained, Multi-dimensional Summarization Evaluation for LLMs
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-      Yuho Lee, Taewon Yun, Jason Cai, Hang Su, and Hwanjun Song*
+      {Yuho Lee, Taewon Yun}, Jason Cai, Hang Su, and Hwanjun Song*
       <span style="color: #1a73e8; font-weight: bold;">(with Amazon)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
@@ -1377,7 +1459,7 @@ nav_order: 2
      Fast and Robust Early-Exiting Framework for Autoregressive Language Models with Synchronized Parallel Decoding
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-     Sangmin Bae, Jongwoo Ko, Hwanjun Song*, and Se-Young Yun*
+     {Sangmin Bae, Jongwoo Ko}, Hwanjun Song*, and Se-Young Yun*
       <span style="color: #1a73e8; font-weight: bold;">(with Amazon)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
@@ -1559,7 +1641,7 @@ nav_order: 2
     Re-thinking Federated Active Learning based on Inter-class Diversity
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-     SangMook Kim, Sangmin Bae, Hwanjun Song*, and Se-Young Yun*
+     {SangMook Kim, Sangmin Bae}, Hwanjun Song*, and Se-Young Yun*
       <span style="color: #1a73e8; font-weight: bold;">(with NAVER)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
@@ -1749,7 +1831,7 @@ nav_order: 2
       Understanding Cross-Domain Few-Shot Learning: An Experimental Study
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-      Jaehoon Oh, Sungnyun Kim, Namgyu Ho, Jin-Hwa Kim, Hwanjun Song*, and Se-Young Yun*
+      {Jaehoon Oh, Sungnyun Kim, Namgyu Ho}, Jin-Hwa Kim, Hwanjun Song*, and Se-Young Yun*
       <span style="color: #1a73e8; font-weight: bold;">(with NAVER)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
@@ -1932,7 +2014,7 @@ nav_order: 2
    ReFine: Re-randomization before Fine-tuning for Cross-domain Few-shot Learning
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-      Jaehoon Oh, Sungnyun Kim, Namgyu Ho, Jin-Hwa Kim, Hwanjun Song*, and Se-Young Yun*
+      {Jaehoon Oh, Sungnyun Kim, Namgyu Ho}, Jin-Hwa Kim, Hwanjun Song*, and Se-Young Yun*
       <span style="color: #1a73e8; font-weight: bold;">(with NAVER)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
