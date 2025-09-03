@@ -35,15 +35,22 @@ nav_order: 3
 
 /* 모바일: 이미지 위, 텍스트 아래 */
 @media (max-width: 768px) {
-  .project-block {
-    flex-direction: column;
-  }
+.project-block .img-col {
+  flex: 1 1 35%;
+  max-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* fallback */
+}
 
-  .project-block .img-col,
-  .project-block .text-col {
-    flex: 1 1 100%;
-    max-width: 100%;
-  }
+.project-block img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  object-fit: contain; /* keeps aspect ratio nicely */
+}
 }
 </style>
 
@@ -138,6 +145,22 @@ Here are our current ongoing research projects, mainly focusing on (1) Human-AI 
   </div>
 </div>
 
+<div class="project-block">
+  <div class="img-col">
+    <img src="/assets/img/etri-logo.png" alt="Project 1">
+  </div>
+  <div class="text-col">
+    <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">
+      VLM 기반 PDF 문서 이해 및 도로 노선 좌표 자동화 기술 개발 (Development of VLM-based PDF Document Understanding and Automated Road Alignment Coordinate Extraction Technology)
+    </h3>    
+    <p style="font-size: 0.8rem; margin-bottom: 0.5rem;">
+      This project aims to build an intelligent system that can automatically recognize diverse information contained in road-related planning and design documents (PDFs), including map images, tables, and structured text—and use it to answer user queries. In particular, it seeks to implement a system capable of efficiently understanding and analyzing complex documents that combine images and text, by leveraging recent advances in multimodal artificial intelligence based on Visual Language Models (VLMs).
+    </p>
+    <p style="font-size: 0.75rem; font-family: 'Roboto', monospace; color: #555;">
+      Duration: 2025.09 – 2025.11 &nbsp;&nbsp;|&nbsp;&nbsp; Funding: KRW 51M &nbsp;&nbsp;|&nbsp;&nbsp; Principal Investigator
+    </p>
+  </div>
+</div>
 
 ### Completed research projects 
 
