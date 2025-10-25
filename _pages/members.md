@@ -164,7 +164,7 @@ horizontal: false
     </div>
   </div>
   <div class="card">
-    <img src="/assets/img/unknown-sutdent.png" alt="Shayekh Bin Islam">
+    <img src="/assets/img/bio-shayekh.png" alt="Shayekh Bin Islam">
     <div style="padding: 10px;">
       <h5>Shayekh Bin Islam</h5>
       <p>Full Time, Fall 2025~</p>
@@ -201,28 +201,28 @@ horizontal: false
     <img src="/assets/img/bio-seonghwan.jpg" alt="Seunghwan Bang">
     <div style="padding: 10px;">
       <h5>Seunghwan Bang</h5>
-      <p>Window 2024, Summer 2025</p>
+      <p>Winter 2024, Summer 2025, Fall 2025</p>
     </div>
   </div>
   <div class="card">
     <img src="/assets/img/bio-mingyu.png" alt="Mingyu Choi">
     <div style="padding: 10px;">
       <h5>Mingyu Choi</h5>
-      <p>Window 2024, Summer 2025</p>
+      <p>Winter 2024, Summer 2025, Fall 2025</p>
     </div>
   </div>
   <div class="card">
     <img src="/assets/img/bio_jisoo_kim.jpg" alt="Mingyu Choi">
     <div style="padding: 10px;">
       <h5>Jisoo Kim</h5>
-      <p>Summer 2025~</p>
+      <p>Summer 2025, Fall 2025</p>
     </div>
   </div>
   <div class="card">
     <img src="/assets/img/bio_gyeonghun_sun.jpg" alt="Mingyu Choi">
     <div style="padding: 10px;">
       <h5>Gyeonghun Sun</h5>
-      <p>Summer 2025~</p>
+      <p>Summer 2025, Fall 2025</p>
     </div>
   </div>
 </div>

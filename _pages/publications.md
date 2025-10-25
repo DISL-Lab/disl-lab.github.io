@@ -48,14 +48,16 @@ nav_order: 2
 }
 </style>
 
+<h2 style="margin-bottom: 1.5rem;">International Conferences and Journals</h2>
+
+
 <div style="display: flex; align-items: center; margin-top: 2rem; margin-bottom: 0.5rem;">
   <div style="flex: 1; border-top: 1px solid #ddd;"></div>
   <div style="margin-left: 0.5rem; font-size: 1.5rem; color: #e0e0e0;">
-    2025
+    2026
   </div>
 </div>
 
-<h2 style="margin-bottom: 1.5rem;">Preprint</h2>
 
 <div class="project-block">
   <div class="img-col">
@@ -65,7 +67,7 @@ nav_order: 2
     <h3 style="font-size: 0.9rem; margin-bottom: 0.2rem; font-weight: bold;">
     <span style="
         display: inline-block;
-        background-color:rgb(239, 53, 53);  /* 원하는 색으로 변경 가능 */
+        background-color:rgb(196, 138, 4);  /* 원하는 색으로 변경 가능 */
         color: white;
         font-weight: bold;
         font-size: 0.75rem;
@@ -73,11 +75,11 @@ nav_order: 2
         border-radius: 6px;
         margin-right: 0.1rem;
     ">
-        arXiv
+        WSDM
     </span>
     <span style="
         display: inline-block;
-        background-color:rgb(197, 38, 179);  /* 원하는 색으로 변경 가능 */
+        background-color:rgb(163, 163, 9);  /* 원하는 색으로 변경 가능 */
         color: white;
         font-weight: bold;
         font-size: 0.75rem;
@@ -87,14 +89,14 @@ nav_order: 2
     ">
         NLP
     </span>
-      Ext2Gen: Alignment through Unified Extraction and Generation for Robust Retrieval-Augmented Generation
+      Aligning Extraction and Generation for Robust Retrieval-Augmented Generation
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
       Hwanjun Song*, Jeonghwan Choi, and Minseok Kim
       <span style="color: #1a73e8; font-weight: bold;">(with Meta)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
-      In arXiv preprint arXiv:2503.04789, 2025
+     In International Conference on Web Search and Data Mining (Full Paper), 2025
     </p>
     <div style="font-size: 0.8rem; color: #555; margin-top: 0.0rem;">
     [<a href="https://arxiv.org/abs/2503.04789" style="text-decoration: none; color: #1a73e8;">PDF</a>] 
@@ -103,7 +105,15 @@ nav_order: 2
   </div>
 </div>
 
-<h2 style="margin-bottom: 1.5rem;">International Conferences and Journals</h2>
+
+<div style="display: flex; align-items: center; margin-top: 2rem; margin-bottom: 0.5rem;">
+  <div style="flex: 1; border-top: 1px solid #ddd;"></div>
+  <div style="margin-left: 0.5rem; font-size: 1.5rem; color: #e0e0e0;">
+    2025
+  </div>
+</div>
+
+
 
 <div class="project-block">
   <div class="img-col">
