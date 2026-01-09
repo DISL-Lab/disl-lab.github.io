@@ -52,34 +52,30 @@ social: false
 }
 </style>
 
-<p style="font-size: 1.0rem; margin-top: 1.0rem; color: red; font-weight: bold; font-style: italic;">
-인턴십은 상시 모집이며, 관심 있는 학생은 아래 양식을 작성해 주세요 (Internship applications are accepted on a rolling basis. If you are interested, please complete the form below) <a href="https://docs.google.com/forms/d/e/1FAIpQLSezVnp3eepLI4CTD3_lLABNwDtvFue6EqhXKq1zhK5zLW9ZsQ/viewform?usp=sharing&ouid=114425768257170495941" target="_blank">[Link]</a>.
-</p>
-
 <div class="responsive-flex">
   <div class="img-col">
     <img src="/assets/img/kaist2.png" alt="Project 1">
   </div>
   <div class="text-col">
-    <p style="font-size: 1.0rem; margin-bottom: 0.5rem;">
-      Welcome to DISLab. We are dedicated to pioneering advancements in the field of artificial intelligence (AI), with a clear focus on data-centric approaches. Rather than relying solely on model optimization, our vision is to enhance the performance, reliability, and trustworthiness of AI systems by improving the data quality, data structure, and data utilization.
-    </p>
     <p style="font-size: 1.0rem; margin-bottom: -1.0rem;">
-      Currently, at DISLab, we aim to build trustworthy Agentic AI systems capable of reasoning, acting, and adapting in complex real-world settings. Our research centers around the following key areas: 
+      Welcome to DISLab! We are dedicated to building trustworthy Agentic AI systems grounded in data-centric intelligence. We believe that intelligence does not emerge from model scale alone, but from how data is perceived, structured, remembered, and used throughout an agent's lifecycle. We studies how data quality, data structure, and data utilization fundamentally shape an agent’s ability to reason, act, and adapt in complex real-world environments. Our goal is to design AI agents that can operate reliably under noisy inputs, long contexts, and imperfect information.
     </p>
   </div>
 </div>
-- `Human-AI Alignment`: Aligning large language models (LLMs) with human intent through feedback modeling, preference learning, and evaluation-oriented data design.  
-- `Collaborative Intelligence`: Enabling AI agents to make informed decisions by accessing and utilizing external knowledge, such as in retrieval-augmented generation (RAG), with an emphasis on structured and relevant information.  
-- `Data Quality & Robustness`: Improving AI performance by focusing on learning from imperfect data, handling noisy or low-resource conditions, and enabling continual and online adaptation in real-world environments.  
-- `Automated Evaluation`: Developing scalable automatic evaluation frameworks that reflect human judgment, to assess the outputs and behaviors of generative AI models effectively.
+<p style="font-size: 1.0rem; margin-top: 0.0rem; margin-bottom: 0.4rem;">
+  To this end, our research is organized around four core components of Agentic AI:
+</p>
+- `Agent Perception`: Understanding multi-modal and long-context signals across text, images, video, and other sensory inputs to perceive complex environments.
+- `Agent Intelligence`: Developing reasoning and decision-making capabilities that integrate world understanding with value alignment to enable purposeful and safe agent behavior.  
+- `Agent Memory`: Designing memory and information compression mechanisms that organize, store, and retrieve knowledge over long horizons for consistent agent behaviors.  
+- `Agent Modeling`: Building efficient and controllable agent models through knowledge distillation, compression, safety guardrails, and automatic evaluatio.
 
-<p style="font-size: 1.0rem; margin-top: 1.0rem;">
-Please refer to the "Join" tab if you are interested in applying for Intern, MS, PhD, or PostDoc positions. We encourage prospective members to complete a 3–6 month internship prior to officially joining the lab.
+<p style="font-size: 1.0rem; margin-top: 1.0rem; color: red; font-weight: bold; font-style: italic;">
+인턴십은 상시 모집이며, 관심 있는 학생은 아래 양식을 작성하고 저에게 이메일 보내주세요 (Internships are offered on a rolling basis. Interested students are encouraged to complete the form below and email it to me). <a href="https://docs.google.com/forms/d/e/1FAIpQLSezVnp3eepLI4CTD3_lLABNwDtvFue6EqhXKq1zhK5zLW9ZsQ/viewform?usp=sharing&ouid=114425768257170495941" target="_blank">[Link]</a>.
 </p>
 
+We are not recruiting MS/PhD students for Fall 2026, as all positions have been filled. If you are interested in joining our lab for graduate studies, we strongly encourage you to apply for an internship first, as priority will be given to those with prior research experience in our group.
 
-We are not recruiting MS/PhD students for Spring 2026, as all positions have been filled. If you are interested in joining our lab for graduate studies, we strongly encourage you to apply for an internship first, as priority will be given to those with prior research experience in our group.
 
 
 <p style="font-size: 1.0rem;">

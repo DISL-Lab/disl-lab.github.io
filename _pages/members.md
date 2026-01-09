@@ -88,11 +88,23 @@ horizontal: false
 </div>
 
 <br>
-##### PhD Students
+##### Lab Manager (Postdoctoral Researcher)
+<div class="card-container">
+  <div class="card">
+    <img src="/assets/img/bio_female.png" alt="Your Spot">
+    <div style="padding: 10px;">
+      <h5>Comming Soon</h5>
+      <p>March 2026~</p>
+    </div>
+  </div>
+</div>
+
+<br>
+##### Senior Researchers (PhD Students)
 
 <div class="card-container">
   <div class="card">
-    <img src="/assets/img/bio-hyangsuk.png" alt="Hyangsuk Min">
+    <img src="/assets/img/bio_hyangsuk.jpeg" alt="Hyangsuk Min">
     <div style="padding: 10px;">
       <h5>Hyangsuk Min</h5>
       <p>Full Time, Fall 2024~</p>
@@ -101,7 +113,7 @@ horizontal: false
   <div class="card">
     <img src="/assets/img/bio-jeonghwan.png" alt="Jeonghwan Choi">
     <div style="padding: 10px;">
-      <h5>Jeonghwan Choi</h5>
+      <h5>Jeonghwan Choi (👑)</h5>
       <p>Full Time, Spring 2025~</p>
       <p class="small-note">MS-PhD Integrated</p>
     </div>
@@ -118,13 +130,30 @@ horizontal: false
     <div style="padding: 10px;">
       <h5>Taewon Yun</h5>
       <p>Full Time, Fall 2025~</p>
+    </div>  </div>
+
+  <div class="card">
+    <img src="/assets/img/bio-jihwanoh.png" alt="Jihwan Oh">
+    <div style="padding: 10px;">
+      <h5>Jihwan Oh</h5>
+      <p>Full Time, Spring 2026~</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="/assets/img/bio_jisu.png" alt="Jisu Shin">
+    <div style="padding: 10px;">
+      <h5>Jisu Shin</h5>
+      <p>Full Time, Spring 2026~</p>
     </div>
   </div>
 
 </div>
 
+
+
 <br>
-##### MS Students
+##### Junior Researchers (MS Students)
 
 
 <div class="card-container">
@@ -132,13 +161,6 @@ horizontal: false
     <img src="/assets/img/bio-heeyeon.png" alt="Heeyeon Kim">
     <div style="padding: 10px;">
       <h5>Heeyeon Kim</h5>
-      <p>Full Time, Spring 2024~</p>
-    </div>
-  </div>
-  <div class="card">
-    <img src="/assets/img/bio-jihwanoh.png" alt="Jihwan Oh">
-    <div style="padding: 10px;">
-      <h5>Jihwan Oh</h5>
       <p>Full Time, Spring 2024~</p>
     </div>
   </div>
@@ -170,6 +192,20 @@ horizontal: false
       <p>Full Time, Fall 2025~</p>
     </div>
   </div>
+  <div class="card">
+    <img src="/assets/img/bio-mingyu.png" alt="Mingyu Choi">
+    <div style="padding: 10px;">
+      <h5>Mingyu Choi</h5>
+      <p>Full Time, Spring 2026~</p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="/assets/img/bio_gyeonghun_sun.jpg" alt="Mingyu Choi">
+    <div style="padding: 10px;">
+      <h5>Gyeonghun Sun</h5>
+      <p>Full Time, Spring 2026~</p>
+    </div>
+  </div>
 </div>
 
 <br>
@@ -194,37 +230,57 @@ horizontal: false
 </div>
 
 <br>
-##### Interns
+##### Research Interns
 
 <div class="card-container">
   <div class="card">
     <img src="/assets/img/bio-seonghwan.jpg" alt="Seunghwan Bang">
     <div style="padding: 10px;">
       <h5>Seunghwan Bang</h5>
-      <p>Winter 2024, Summer 2025, Fall 2025</p>
+      <p>Janurary 2025~</p>
     </div>
   </div>
+
   <div class="card">
-    <img src="/assets/img/bio-mingyu.png" alt="Mingyu Choi">
-    <div style="padding: 10px;">
-      <h5>Mingyu Choi</h5>
-      <p>Winter 2024, Summer 2025, Fall 2025</p>
-    </div>
-  </div>
-  <div class="card">
-    <img src="/assets/img/bio_jisoo_kim.jpg" alt="Mingyu Choi">
+    <img src="/assets/img/bio_jisoo_kim.jpg" alt="Jisoo Kim">
     <div style="padding: 10px;">
       <h5>Jisoo Kim</h5>
-      <p>Summer 2025, Fall 2025</p>
+      <p>July 2025~</p>
     </div>
   </div>
+
   <div class="card">
-    <img src="/assets/img/bio_gyeonghun_sun.jpg" alt="Mingyu Choi">
+    <img src="/assets/img/bio_jibin.jpg" alt="Hwang Jibin">
     <div style="padding: 10px;">
-      <h5>Gyeonghun Sun</h5>
-      <p>Summer 2025, Fall 2025</p>
+      <h5>Jibin Hwang</h5>
+      <p>Janurary 2026~</p>
     </div>
   </div>
+
+  <div class="card">
+    <img src="/assets/img/bio_hyeonseng.jpeg" alt="Hyeonseong Park">
+    <div style="padding: 10px;">
+      <h5>Hyeonseong Park</h5>
+      <p>Janurary 2026~</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="/assets/img/unknown-sutdent.png" alt="Your Spot">
+    <div style="padding: 10px;">
+      <h5>Coming Soon</h5>
+      <p>March 2026~</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="/assets/img/unknown-sutdent.png" alt="Your Spot">
+    <div style="padding: 10px;">
+      <h5>Your Spot</h5>
+      <p>2026~</p>
+  </div>
+  </div>
+
 </div>
 
 <br>
