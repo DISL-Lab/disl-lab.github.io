@@ -91,9 +91,9 @@ horizontal: false
 ##### Lab Manager (Postdoctoral Researcher)
 <div class="card-container">
   <div class="card">
-    <img src="/assets/img/bio_female.png" alt="Your Spot">
+    <img src="/assets/img/bio_jeesu_jung.png" alt="Your Spot">
     <div style="padding: 10px;">
-      <h5>Comming Soon</h5>
+      <h5>Jeesu Jung</h5>
       <p>March 2026~</p>
     </div>
   </div>

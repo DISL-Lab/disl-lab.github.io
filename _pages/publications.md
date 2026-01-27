@@ -58,6 +58,47 @@ nav_order: 2
   </div>
 </div>
 
+<div class="project-block">
+  <div class="img-col">
+    <img src="/assets/img/paper/26-iclr-ban.png" alt="Project 1">
+  </div>
+  <div class="text-col">
+    <h3 style="font-size: 0.9rem; margin-bottom: 0.2rem; font-weight: bold;">
+    <span style="
+        display: inline-block;
+        background-color:rgb(225, 132, 33);  /* 원하는 색으로 변경 가능 */
+        color: white;
+        font-weight: bold;
+        font-size: 0.75rem;
+        padding: 0.2rem 0.6rem;
+        border-radius: 6px;
+        margin-right: 0.1rem;
+    ">
+        ICLR
+    </span>
+    <span style="
+        display: inline-block;
+        background-color:rgb(163, 163, 9);  /* 원하는 색으로 변경 가능 */
+        color: white;
+        font-weight: bold;
+        font-size: 0.75rem;
+        padding: 0.2rem 0.6rem;
+        border-radius: 6px;
+        margin-right: 0.1rem;
+    ">
+        NLP
+    </span>
+      Completing Missing Annotation: Multi-Agent Debate for Accurate and Scalable Relevant Assessment for IR Benchmarks
+    </h3>
+    <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
+      Minjeong Ban, Jeonghwan Choi, Hyangsuk Min, Nicole Hee-Yeon Kim, Minseok Kim, Jae-Gil Lee, and Hwanjun Song*
+      <span style="color: #1a73e8; font-weight: bold;">(with Meta)</span>
+    </p>
+    <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
+     In International Conference on Learning Representations (To Appear), 2026
+    </p>
+  </div>
+</div>
 
 <div class="project-block">
   <div class="img-col">
@@ -96,7 +137,7 @@ nav_order: 2
       <span style="color: #1a73e8; font-weight: bold;">(with Meta)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
-     In International Conference on Web Search and Data Mining (Full Paper), 2025
+     In International Conference on Web Search and Data Mining (Full Paper), 2026
     </p>
     <div style="font-size: 0.8rem; color: #555; margin-top: 0.0rem;">
     [<a href="https://arxiv.org/abs/2503.04789" style="text-decoration: none; color: #1a73e8;">PDF</a>] 
