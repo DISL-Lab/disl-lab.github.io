@@ -288,6 +288,10 @@ horizontal: false
 
 Summer 2025, Yuho Lee: Amazon Web Services Inc, Bedrock, US, Santa Clara
 
+Summer 2026, Yujin Kim: NVIDIA Corp., US, Santa Clara
+
+Summer 2026, Taewon Yun: Amazon Web Services Inc, Agentic AI, US, New York
+
 <br>
 ##### Graduates
 
@@ -296,3 +300,6 @@ Spring 2025, Jeonghwan Choi: PhD Program at KAIST
 Fall 2025, Yuho Lee: PhD Program at KAIST
 
 Fall 2025, Taewon Yun: PhD Program at KAIST
+
+Fall 2025, Jihwan Oh: PhD Program at KAIST
+

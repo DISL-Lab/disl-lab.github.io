@@ -68,7 +68,7 @@ social: false
 - `Agent Perception`: Understanding multi-modal and long-context signals across text, images, video, and other sensory inputs to perceive complex environments.
 - `Agent Intelligence`: Developing reasoning and decision-making capabilities that integrate world understanding with value alignment to enable purposeful and safe agent behavior.  
 - `Agent Memory`: Designing memory and information compression mechanisms that organize, store, and retrieve knowledge over long horizons for consistent agent behaviors.  
-- `Agent Modeling`: Building efficient and controllable agent models through knowledge distillation, compression, safety guardrails, and automatic evaluatio.
+- `Agent Modeling`: Building efficient and controllable agent models through knowledge distillation, compression, safety guardrails, and automatic evaluation.
 
 <p style="font-size: 1.0rem; margin-top: 1.0rem; color: red; font-weight: bold; font-style: italic;">
 인턴십은 상시 모집이며, 관심 있는 학생은 아래 양식을 작성하고 저에게 이메일 보내주세요 (Internships are offered on a rolling basis. Interested students are encouraged to complete the form below and email it to me). <a href="https://docs.google.com/forms/d/e/1FAIpQLSezVnp3eepLI4CTD3_lLABNwDtvFue6EqhXKq1zhK5zLW9ZsQ/viewform?usp=sharing&ouid=114425768257170495941" target="_blank">[Link]</a>.
