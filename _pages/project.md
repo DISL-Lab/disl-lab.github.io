@@ -175,7 +175,7 @@ Here are our current on-going and completed research projects.
       This project is supported by GS Retail (in GS Holdings Corp.). The project details are confidencial.
     </p>
     <p style="font-size: 0.75rem; font-family: 'Roboto', monospace; color: #555;">
-      Duration: 2026.01 – 2026.05 &nbsp;&nbsp; |&nbsp;&nbsp; Funding: US 50M |&nbsp;&nbsp; Principal Researcher
+      Duration: 2026.01 – 2026.05 &nbsp;&nbsp; |&nbsp;&nbsp; Funding: KRW 50M |&nbsp;&nbsp; Principal Researcher
     </p>
   </div>
 </div>
