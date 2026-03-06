@@ -158,13 +158,6 @@ horizontal: false
 
 <div class="card-container">
   <div class="card">
-    <img src="/assets/img/bio-heeyeon.png" alt="Heeyeon Kim">
-    <div style="padding: 10px;">
-      <h5>Heeyeon Kim</h5>
-      <p>Full Time, Spring 2024~</p>
-    </div>
-  </div>
-  <div class="card">
     <img src="/assets/img/bio-jiaqi.png" alt="Jiaqi Deng">
     <div style="padding: 10px;">
       <h5>Jiaqi Deng</h5>
@@ -193,7 +186,7 @@ horizontal: false
     </div>
   </div>
   <div class="card">
-    <img src="/assets/img/bio-mingyu.png" alt="Mingyu Choi">
+    <img src="/assets/img/bio_mingyu_choi.jpg" alt="Mingyu Choi">
     <div style="padding: 10px;">
       <h5>Mingyu Choi</h5>
       <p>Full Time, Spring 2026~</p>
@@ -266,18 +259,26 @@ horizontal: false
   </div>
 
   <div class="card">
-    <img src="/assets/img/unknown-sutdent.png" alt="Your Spot">
+    <img src="/assets/img/bio_juseon_do.png" alt="Your Spot">
     <div style="padding: 10px;">
-      <h5>Coming Soon</h5>
+      <h5>Juseon Do</h5>
       <p>March 2026~</p>
     </div>
   </div>
 
   <div class="card">
-    <img src="/assets/img/unknown-sutdent.png" alt="Your Spot">
+    <img src="/assets/img/bio_yeeun_choi.jpeg" alt="Your Spot">
     <div style="padding: 10px;">
-      <h5>Your Spot</h5>
-      <p>2026~</p>
+      <h5>Yeeun Choi </h5>
+      <p>March 2026~</p>
+  </div>
+  </div>
+
+  <div class="card">
+    <img src="/assets/img/bio_hayoon.jpg" alt="Your Spot">
+    <div style="padding: 10px;">
+      <h5>Mingyu Choi</h5>
+      <p>March 2026~</p>
   </div>
   </div>
 
@@ -302,4 +303,6 @@ Fall 2025, Yuho Lee: PhD Program at KAIST
 Fall 2025, Taewon Yun: PhD Program at KAIST
 
 Fall 2025, Jihwan Oh: PhD Program at KAIST
+
+Fall 2025, Heeyoen Kim
 

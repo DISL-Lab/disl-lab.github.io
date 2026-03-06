@@ -128,17 +128,17 @@ Here are our current on-going and completed research projects.
 
 <div class="project-block">
   <div class="img-col">
-    <img src="/assets/img/ict-logo3.png" alt="Project 1">
+    <img src="/assets/img/icon_upstage.png" alt="Project 1">
   </div>
   <div class="text-col">
     <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">
-      네이버 클라우드 컨소시엄: 옴니 파운데이션 모델 (Omni Foundation Model) 
+      독자 파운데이션 모델 (with Upstage AI Consortium) 
     </h3>    
     <p style="font-size: 0.8rem; margin-bottom: 0.5rem;">
       The Ministry of Science and ICT, together with NIPA, NIA, and IITP, is launching the “Independent AI Foundation Model” project to select capable domestic companies for developing globally impactful homegrown AI foundation models. <br><br>Details are confidential.
     </p>
     <p style="font-size: 0.75rem; font-family: 'Roboto', monospace; color: #555;">
-      Duration: 2025.08 – 2025.12 (1st Round) &nbsp;&nbsp;|&nbsp;&nbsp; Collaborating Researcher
+      Duration: 2026.03 – &nbsp;&nbsp;|&nbsp;&nbsp; Collaborating Researcher
     </p>
   </div>
 </div>
@@ -229,6 +229,23 @@ Here are our current on-going and completed research projects.
     </p>
     <p style="font-size: 0.75rem; font-family: 'Roboto', monospace; color: #555;">
       Duration: 2025.09 – 2025.11 &nbsp;&nbsp;|&nbsp;&nbsp; Funding: KRW 51M &nbsp;&nbsp;|&nbsp;&nbsp; Principal Investigator
+    </p>
+  </div>
+</div>
+
+<div class="project-block">
+  <div class="img-col">
+    <img src="/assets/img/ict-logo3.png" alt="Project 1">
+  </div>
+  <div class="text-col">
+    <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">
+      네이버 클라우드 컨소시엄: 옴니 파운데이션 모델 (Omni Foundation Model) 
+    </h3>    
+    <p style="font-size: 0.8rem; margin-bottom: 0.5rem;">
+      The Ministry of Science and ICT, together with NIPA, NIA, and IITP, is launching the “Independent AI Foundation Model” project to select capable domestic companies for developing globally impactful homegrown AI foundation models. <br><br>Details are confidential.
+    </p>
+    <p style="font-size: 0.75rem; font-family: 'Roboto', monospace; color: #555;">
+      Duration: 2025.08 – 2025.12 (1st Round) &nbsp;&nbsp;|&nbsp;&nbsp; Collaborating Researcher
     </p>
   </div>
 </div>
