@@ -48,6 +48,94 @@ nav_order: 2
 }
 </style>
 
+<h2 style="margin-bottom: 1.5rem;">Preprint</h2>
+
+
+<div class="project-block">
+  <div class="img-col">
+    <img src="/assets/img/paper/26-colm-retailsim.png" alt="Project 1">
+  </div>
+  <div class="text-col">
+    <h3 style="font-size: 0.9rem; margin-bottom: 0.2rem; font-weight: bold;">
+    <span style="
+        display: inline-block;
+        background-color:rgb(7, 95, 41);  /* 원하는 색으로 변경 가능 */
+        color: white;
+        font-weight: bold;
+        font-size: 0.75rem;
+        padding: 0.2rem 0.6rem;
+        border-radius: 6px;
+        margin-right: 0.1rem;
+    ">
+        arXiv
+    </span>
+    <span style="
+        display: inline-block;
+        background-color:rgb(197, 38, 179);  /* 원하는 색으로 변경 가능 */
+        color: white;
+        font-weight: bold;
+        font-size: 0.75rem;
+        padding: 0.2rem 0.6rem;
+        border-radius: 6px;
+        margin-right: 0.1rem;
+    ">
+        NLP
+    </span>
+      What Makes a Sale? Rethinking End-to-End Seller–Buyer Retail Dynamics with LLM Agents
+    </h3>
+    <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
+      Jeonghwan Choi, Jibin Hwang, Gyeonghun Sun, Minjeong Ban, Taewon Yun,Hyeonjae Cheon, and Hwanjun Song*
+      <span style="color: #1a73e8; font-weight: bold;">(with GS Retail)</span>
+    </p>
+    <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
+     arXiv preprint arXiv (To Appear), 2026
+    </p>
+  </div>
+</div>
+
+
+<div class="project-block">
+  <div class="img-col">
+    <img src="/assets/img/paper/26-eccv-vaex.png" alt="Project 1">
+  </div>
+  <div class="text-col">
+    <h3 style="font-size: 0.9rem; margin-bottom: 0.2rem; font-weight: bold;">
+   <span style="
+        display: inline-block;
+        background-color:rgb(7, 95, 41);  /* 원하는 색으로 변경 가능 */
+        color: white;
+        font-weight: bold;
+        font-size: 0.75rem;
+        padding: 0.2rem 0.6rem;
+        border-radius: 6px;
+        margin-right: 0.1rem;
+    ">
+        arXiv
+    </span>
+    <span style="
+        display: inline-block;
+        background-color:rgb(80, 13, 114);  /* 원하는 색으로 변경 가능 */
+        color: white;
+        font-weight: bold;
+        font-size: 0.75rem;
+        padding: 0.2rem 0.6rem;
+        border-radius: 6px;
+        margin-right: 0.1rem;
+    ">
+        Video
+    </span>
+      Reasoning over Video: Evaluating How MLLMs Extract, Integrate, and Reconstruct Spatiotemporal Evidence
+    </h3>
+    <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
+      Seunghwan Bang, and Hwanjun Song*
+    </p>
+    <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
+     arXiv preprint arXiv:2603.13091, 2026
+    </p>
+  </div>
+</div>
+
+
 <h2 style="margin-bottom: 1.5rem;">International Conferences and Journals</h2>
 
 
@@ -231,89 +319,6 @@ nav_order: 2
   </div>
 </div>
 
-<div class="project-block">
-  <div class="img-col">
-    <img src="/assets/img/paper/26-colm-retailsim.png" alt="Project 1">
-  </div>
-  <div class="text-col">
-    <h3 style="font-size: 0.9rem; margin-bottom: 0.2rem; font-weight: bold;">
-    <span style="
-        display: inline-block;
-        background-color:rgb(7, 95, 41);  /* 원하는 색으로 변경 가능 */
-        color: white;
-        font-weight: bold;
-        font-size: 0.75rem;
-        padding: 0.2rem 0.6rem;
-        border-radius: 6px;
-        margin-right: 0.1rem;
-    ">
-        arXiv
-    </span>
-    <span style="
-        display: inline-block;
-        background-color:rgb(197, 38, 179);  /* 원하는 색으로 변경 가능 */
-        color: white;
-        font-weight: bold;
-        font-size: 0.75rem;
-        padding: 0.2rem 0.6rem;
-        border-radius: 6px;
-        margin-right: 0.1rem;
-    ">
-        NLP
-    </span>
-      What Makes a Sale? Rethinking End-to-End Seller–Buyer Retail Dynamics with LLM Agents
-    </h3>
-    <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-      Jeonghwan Choi, Jibin Hwang, Gyeonghun Sun, Minjeong Ban, Taewon Yun,Hyeonjae Cheon, and Hwanjun Song*
-      <span style="color: #1a73e8; font-weight: bold;">(with GS Retail)</span>
-    </p>
-    <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
-     arXiv preprint arXiv (To Appear), 2026
-    </p>
-  </div>
-</div>
-
-
-<div class="project-block">
-  <div class="img-col">
-    <img src="/assets/img/paper/26-eccv-vaex.png" alt="Project 1">
-  </div>
-  <div class="text-col">
-    <h3 style="font-size: 0.9rem; margin-bottom: 0.2rem; font-weight: bold;">
-   <span style="
-        display: inline-block;
-        background-color:rgb(7, 95, 41);  /* 원하는 색으로 변경 가능 */
-        color: white;
-        font-weight: bold;
-        font-size: 0.75rem;
-        padding: 0.2rem 0.6rem;
-        border-radius: 6px;
-        margin-right: 0.1rem;
-    ">
-        arXiv
-    </span>
-    <span style="
-        display: inline-block;
-        background-color:rgb(80, 13, 114);  /* 원하는 색으로 변경 가능 */
-        color: white;
-        font-weight: bold;
-        font-size: 0.75rem;
-        padding: 0.2rem 0.6rem;
-        border-radius: 6px;
-        margin-right: 0.1rem;
-    ">
-        Video
-    </span>
-      Reasoning over Video: Evaluating How MLLMs Extract, Integrate, and Reconstruct Spatiotemporal Evidence
-    </h3>
-    <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-      Seunghwan Bang, and Hwanjun Song*
-    </p>
-    <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
-     arXiv preprint arXiv:2603.13091, 2026
-    </p>
-  </div>
-</div>
 
 <div class="project-block">
   <div class="img-col">

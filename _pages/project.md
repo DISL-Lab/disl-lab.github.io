@@ -122,7 +122,7 @@ Here are our current on-going and completed research projects.
       This project aims to develop core technologies for an AI co-scientist that enables scalable, automated understanding and synthesis of scientific literature, supporting systematic knowledge discovery, structured organization of research landscapes, and continuous adaptation to evolving research trends.
     </p>
     <p style="font-size: 0.75rem; font-family: 'Roboto', monospace; color: #555;">
-      Duration: 2026.04 – 2027.03 &nbsp;&nbsp;|&nbsp;&nbsp; Funding: KRW 170M &nbsp;&nbsp;|&nbsp;&nbsp; Collaborating Investigator
+      Duration: 2026.04 – 2027.03 &nbsp;&nbsp;|&nbsp;&nbsp; Funding: KRW 170M &nbsp;&nbsp;|&nbsp;&nbsp; Principal Investigator
     </p>
   </div>
 </div>
