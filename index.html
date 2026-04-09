@@ -10,7 +10,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Data Intelligence System Lab (DISLab)</title>
+    <title>Data Intelligence System Lab</title>
     <meta name="author" content="Hwanjun  Song">
     <meta name="description" content="">
     <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website">
@@ -41,11 +41,6 @@
     <link rel="canonical" href="http://localhost:4000/">
 
     <!-- Dark Mode -->
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/native.css" media="none" id="highlight_theme_dark">
-
-    <script src="/assets/js/theme.js"></script>
-    <script src="/assets/js/dark_mode.js"></script>
     
 
   </head>
@@ -104,14 +99,6 @@
               <li class="nav-item ">
                 <a class="nav-link" href="/teaching/">Teaching</a>
               </li>
-
-              <!-- Toogle theme mode -->
-              <li class="toggle-container">
-                <button id="light-toggle" title="Change theme">
-                  <i class="fas fa-moon"></i>
-                  <i class="fas fa-sun"></i>
-                </button>
-              </li>
             </ul>
           </div>
         </div>
@@ -143,140 +130,345 @@
 
           <div class="clearfix">
             <style>
-.responsive-flex {
+/* Title styling */
+.post-header .post-title {
+  font-size: 2rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #4285f4, #34a853);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.3rem;
+}
+
+.post-header .desc {
+  font-size: 0.9rem;
+  color: #777;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+.hero-section {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: flex-start;
-  gap: 1.5rem;
+  align-items: center;
+  gap: 0.8rem;
   margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e8f0fe 100%);
+  border-radius: 16px;
+  border: 1px solid #e0e7ef;
 }
 
-/* 이미지 영역 */
-.responsive-flex .img-col {
-  flex: 1 1 40%;
-  max-width: 400px;
+.hero-section .img-col {
+  flex: 1 1 100%;
+  max-width: 100%;
+  text-align: center;
 }
 
-/* 텍스트 영역 */
-.responsive-flex .text-col {
-  flex: 1 1 55%;
+.hero-section .text-col {
+  flex: 1 1 100%;
 }
 
-/* 모바일에서 세로 정렬 */
+.hero-section img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+.hero-section .text-col p {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: #444;
+  margin: 0;
+}
+
 @media (max-width: 768px) {
-  .responsive-flex {
+  .hero-section {
     flex-direction: column;
+    padding: 1.2rem;
   }
-
-  .responsive-flex .img-col,
-  .responsive-flex .text-col {
+  .hero-section .img-col,
+  .hero-section .text-col {
     flex: 1 1 100%;
     max-width: 100%;
   }
 }
 
-.responsive-flex img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+/* Research Pillars */
+.pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.pillar-card {
+  padding: 1.2rem;
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  border-radius: 12px;
+  border-top: 3px solid transparent;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.pillar-card:hover {
+  box-shadow: 0 8px 25px rgba(0,0,0,0.07);
+  transform: translateY(-3px);
+}
+
+.pillar-card:nth-child(1) { border-top-color: #4285f4; }
+.pillar-card:nth-child(2) { border-top-color: #34a853; }
+.pillar-card:nth-child(3) { border-top-color: #fbbc04; }
+.pillar-card:nth-child(4) { border-top-color: #ea4335; }
+
+.pillar-card .pillar-title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin: 0 0 0.4rem 0;
+  color: #222;
+}
+
+.pillar-card:nth-child(1) .pillar-title { color: #4285f4; }
+.pillar-card:nth-child(2) .pillar-title { color: #34a853; }
+.pillar-card:nth-child(3) .pillar-title { color: #b8960c; }
+.pillar-card:nth-child(4) .pillar-title { color: #ea4335; }
+
+.pillar-card .pillar-desc {
+  font-size: 0.8rem;
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* CTA Boxes */
+.cta-box {
+  padding: 1.2rem 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.cta-box.recruit {
+  background: linear-gradient(135deg, #fff5f5 0%, #fee2e2 100%);
+  border: 1px solid #fecaca;
+  color: #991b1b;
+}
+
+.cta-box.recruit a {
+  color: #dc2626;
+  font-weight: 600;
+}
+
+.cta-box.info {
+  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+  border: 1px solid #bbf7d0;
+  color: #166534;
+}
+
+.cta-box.note {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  color: #555;
+  font-size: 0.85rem;
+}
+
+.cta-box.note a {
+  color: #4285f4;
+  font-weight: 600;
+}
+
+.section-label {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.8rem;
 }
 </style>
 
-<div class="responsive-flex">
+<div class="hero-section">
   <div class="img-col">
-    <img src="/assets/img/kaist2.png" alt="Project 1">
+    <img src="/assets/img/lab-2026-2.png" alt="DISLab 2026">
+    <p style="font-size: 0.75rem; color: #999; text-align: center; margin: 0.3rem 0 0 0; font-style: italic;">2026 Strawberry Party at KAIST</p>
   </div>
   <div class="text-col">
-    <p style="font-size: 1.0rem; margin-bottom: -1.0rem;">
-      Welcome to DISLab! We are dedicated to building trustworthy Agentic AI systems grounded in data-centric intelligence. We believe that intelligence does not emerge from model scale alone, but from how data is perceived, structured, remembered, and used throughout an agent's lifecycle. We studies how data quality, data structure, and data utilization fundamentally shape an agent’s ability to reason, act, and adapt in complex real-world environments. Our goal is to design AI agents that can operate reliably under noisy inputs, long contexts, and imperfect information.
+    <p>
+      Welcome to <span style="background-color: #e8f0fe; padding: 0.1rem 0.4rem; border-radius: 3px; font-weight: 700;">DISLab</span>! We are dedicated to building trustworthy Agentic AI systems grounded in <span style="background-color: #fff8e1; padding: 0.1rem 0.4rem; border-radius: 3px; font-weight: 600;">data-centric</span> intelligence. We believe that intelligence does not emerge from model scale alone, but from how data is perceived, structured, remembered, and used throughout an agent's lifecycle. We study how <span style="background-color: #e6f4ea; padding: 0.1rem 0.4rem; border-radius: 3px; font-weight: 600;">data quality</span>, <span style="background-color: #e6f4ea; padding: 0.1rem 0.4rem; border-radius: 3px; font-weight: 600;">data structure</span>, and <span style="background-color: #e6f4ea; padding: 0.1rem 0.4rem; border-radius: 3px; font-weight: 600;">data utilization</span> fundamentally shape an agent's ability to reason, act, and adapt in complex real-world environments. Our goal is to design AI agents that can operate reliably under noisy inputs, long contexts, and imperfect information.
     </p>
   </div>
 </div>
-<p style="font-size: 1.0rem; margin-top: 0.0rem; margin-bottom: 0.4rem;">
-  To this end, our research is organized around four core components of Agentic AI:
-</p>
-<ul>
-  <li>
-<code class="language-plaintext highlighter-rouge">Agent Perception</code>: Understanding multi-modal and long-context signals across text, images, video, and other sensory inputs to perceive complex environments.</li>
-  <li>
-<code class="language-plaintext highlighter-rouge">Agent Intelligence</code>: Developing reasoning and decision-making capabilities that integrate world understanding with value alignment to enable purposeful and safe agent behavior.</li>
-  <li>
-<code class="language-plaintext highlighter-rouge">Agent Memory</code>: Designing memory and information compression mechanisms that organize, store, and retrieve knowledge over long horizons for consistent agent behaviors.</li>
-  <li>
-<code class="language-plaintext highlighter-rouge">Agent Modeling</code>: Building efficient and controllable agent models through knowledge distillation, compression, safety guardrails, and automatic evaluation.</li>
-</ul>
 
-<p style="font-size: 1.0rem; margin-top: 1.0rem; color: red; font-weight: bold; font-style: italic;">
-인턴십은 상시 모집이며, 관심 있는 학생은 아래 양식을 작성하고 저에게 이메일 보내주세요 (Internships are offered on a rolling basis. Interested students are encouraged to complete the form below and email it to me). <a href="https://docs.google.com/forms/d/e/1FAIpQLSezVnp3eepLI4CTD3_lLABNwDtvFue6EqhXKq1zhK5zLW9ZsQ/viewform?usp=sharing&amp;ouid=114425768257170495941" target="_blank" rel="external nofollow noopener">[Link]</a>.
-</p>
+<p class="section-label">Our research is organized around four core components of Agentic AI:</p>
 
-<p>We are not recruiting MS/PhD students for Fall 2026, as all positions have been filled. If you are interested in joining our lab for graduate studies, we strongly encourage you to apply for an internship first, as priority will be given to those with prior research experience in our group.</p>
+<div class="pillars-grid">
+  <div class="pillar-card">
+    <p class="pillar-title">Agent Perception</p>
+    <p class="pillar-desc">Understanding multi-modal and long-context signals across text, images, video, and other sensory inputs to perceive complex environments.</p>
+  </div>
+  <div class="pillar-card">
+    <p class="pillar-title">Agent Intelligence</p>
+    <p class="pillar-desc">Developing reasoning and decision-making capabilities that integrate world understanding with value alignment to enable purposeful and safe agent behavior.</p>
+  </div>
+  <div class="pillar-card">
+    <p class="pillar-title">Agent Memory</p>
+    <p class="pillar-desc">Designing memory and information compression mechanisms that organize, store, and retrieve knowledge over long horizons for consistent agent behaviors.</p>
+  </div>
+  <div class="pillar-card">
+    <p class="pillar-title">Agent Modeling</p>
+    <p class="pillar-desc">Building efficient and controllable agent models through knowledge distillation, compression, safety guardrails, and automatic evaluation.</p>
+  </div>
+</div>
 
-<p style="font-size: 1.0rem;">
-You can catch up our recent research interest on <a href="https://www.youtube.com/channel/UCrEpnN7_2BmrHsPWns_Vx3Q" target="_blank" rel="external nofollow noopener">our Youtube channel</a>.
-</p>
+<div class="cta-box recruit">
+  <strong>Internship (상시 모집)</strong><br>
+  관심 있는 학생은 아래 양식을 작성하고 저에게 이메일 보내주세요.<br>
+  Internships are offered on a rolling basis. Interested students are encouraged to complete the form and email me.
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSezVnp3eepLI4CTD3_lLABNwDtvFue6EqhXKq1zhK5zLW9ZsQ/viewform?usp=sharing&amp;ouid=114425768257170495941" target="_blank" rel="external nofollow noopener">[Apply Here]</a>
+</div>
+
+<div class="cta-box note">
+  We are not recruiting MS/PhD students for Fall 2026, as all positions have been filled. If you are interested in joining our lab for graduate studies, we strongly encourage you to apply for an internship first, as priority will be given to those with prior research experience in our group.
+</div>
+
+<div class="cta-box info">
+  You can catch up on our recent research on <a href="https://www.youtube.com/channel/UCrEpnN7_2BmrHsPWns_Vx3Q" target="_blank" style="color: #166534; font-weight: 600;" rel="external nofollow noopener">our YouTube channel</a>.
+</div>
 
           </div>
 
           <!-- News -->
           <h2><a href="/news/" style="color: inherit;">News</a></h2>          <div class="news">
-            <div class="table-responsive" style="max-height: 60vw">
-              <table class="table table-sm table-borderless">
+            <style>
+              .news-list {
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+              }
+              .news-item {
+                display: flex;
+                align-items: flex-start;
+                gap: 1rem;
+                padding: 0.8rem 1rem;
+                background: #fff;
+                border: 1px solid #f0f0f0;
+                border-radius: 10px;
+                transition: all 0.3s ease;
+              }
+              .news-item:hover {
+                border-color: #e0e0e0;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+                transform: translateX(4px);
+              }
+              .news-date {
+                font-size: 0.72rem;
+                font-weight: 600;
+                color: #fff;
+                background: #4285f4;
+                padding: 0.2rem 0.6rem;
+                border-radius: 6px;
+                white-space: nowrap;
+                flex-shrink: 0;
+                margin-top: 0.1rem;
+              }
+              .news-content {
+                font-size: 0.85rem;
+                color: #444;
+                line-height: 1.6;
+              }
+              .news-content a {
+                color: #4285f4;
+                font-weight: 500;
+              }
+              .news h2 a {
+                font-size: 1.3rem;
+                font-weight: 700;
+                background: linear-gradient(135deg, #4285f4, #34a853);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                text-decoration: none;
+              }
+              .news-scroll {
+                max-height: 400px;
+                overflow-y: auto;
+                padding-right: 0.3rem;
+              }
+              .news-scroll::-webkit-scrollbar {
+                width: 4px;
+              }
+              .news-scroll::-webkit-scrollbar-track {
+                background: transparent;
+              }
+              .news-scroll::-webkit-scrollbar-thumb {
+                background: #ddd;
+                border-radius: 4px;
+              }
+              @media (max-width: 768px) {
+                .news-item {
+                  flex-direction: column;
+                  gap: 0.3rem;
+                }
+              }
+            </style>
+            <div class="news-scroll">
+              <div class="news-list">
               
-                <tr>
-                  <th scope="row">Apr 7, 2026</th>
-                  <td>
-                    Four papers on <code class="language-plaintext highlighter-rouge">Alignment Tuning</code>, <code class="language-plaintext highlighter-rouge">Long CoT</code>, <code class="language-plaintext highlighter-rouge">RAG</code>, and <code class="language-plaintext highlighter-rouge">Recommender</code> were accepted at <code class="language-plaintext highlighter-rouge">ACL 2026</code>.
+                <div class="news-item">
+                  <span class="news-date">Apr 7, 2026</span>
+                  <span class="news-content">
+                    Six papers on Alignment Tuning, Reasoning, and Analysis were accepted at ACL 2026.
 
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">Feb 26, 2026</th>
-                  <td>
-                    <code class="language-plaintext highlighter-rouge">Hwanjun</code> was appointed as an <code class="language-plaintext highlighter-rouge">Ewon Assistant Professor</code> (Mar. 2026 – Feb. 2029), a distinction awarded to outstanding assistant professors at KAIST.
+                  </span>
+                </div>
+                <div class="news-item">
+                  <span class="news-date">Feb 26, 2026</span>
+                  <span class="news-content">
+                    Hwanjun was appointed as an Ewon Assistant Professor (Mar. 2026 – Feb. 2029), a distinguished tenure-track assistant professor at KAIST.
 
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">Feb 25, 2026</th>
-                  <td>
-                    <code class="language-plaintext highlighter-rouge">Hwanjun</code> was honored with the <code class="language-plaintext highlighter-rouge">Reviewer Certificate</code> for IEEE Transactions on Pattern Analysis and Machine Intelligence (IEEE TPAMI).
+                  </span>
+                </div>
+                <div class="news-item">
+                  <span class="news-date">Feb 25, 2026</span>
+                  <span class="news-content">
+                    Hwanjun was honored with the Reviewer Certificate for IEEE Transactions on Pattern Analysis and Machine Intelligence (IEEE TPAMI).
 
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">Feb 6, 2026</th>
-                  <td>
-                    Our two students (<code class="language-plaintext highlighter-rouge">Yujin</code> and <code class="language-plaintext highlighter-rouge">Taewon</code>) will be joining as Interns at <code class="language-plaintext highlighter-rouge">NVIDIA</code> (US, Santa Clara) and <code class="language-plaintext highlighter-rouge">AWS AI</code> (US, New York) this summer.
+                  </span>
+                </div>
+                <div class="news-item">
+                  <span class="news-date">Feb 6, 2026</span>
+                  <span class="news-content">
+                    Our two students (Yujin and Taewon) will be joining as Interns at NVIDIA (US, Santa Clara) and AWS AI (US, New York) this summer.
 
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">Jan 28, 2026</th>
-                  <td>
-                    A paper on <code class="language-plaintext highlighter-rouge">Information Retrieval</code> was accepted at <code class="language-plaintext highlighter-rouge">ICLR 2026</code>.
+                  </span>
+                </div>
+                <div class="news-item">
+                  <span class="news-date">Jan 28, 2026</span>
+                  <span class="news-content">
+                    A paper on Information Retrieval was accepted at ICLR 2026.
 
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">Jan 11, 2026</th>
-                  <td>
-                    <code class="language-plaintext highlighter-rouge">Hwanjun</code> received the <code class="language-plaintext highlighter-rouge">KAIST Technology Innovation Award</code> based on outstanding technological achievements in 2025.
+                  </span>
+                </div>
+                <div class="news-item">
+                  <span class="news-date">Jan 11, 2026</span>
+                  <span class="news-content">
+                    Hwanjun received the KAIST Technology Innovation Award based on outstanding technological achievements in 2025.
 
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">Jan 3, 2026</th>
-                  <td>
-                    A paper on <code class="language-plaintext highlighter-rouge">Robust Retrieval-augmented Generation</code> was accepted at <code class="language-plaintext highlighter-rouge">WSDM 2026</code>.
+                  </span>
+                </div>
+                <div class="news-item">
+                  <span class="news-date">Jan 3, 2026</span>
+                  <span class="news-content">
+                    A paper on Robust Retrieval-augmented Generation was accepted at WSDM 2026.
 
-                  </td>
-                </tr>
-              </table>
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
+
 
           <!-- Latest posts -->
           
@@ -295,7 +487,7 @@ You can catch up our recent research interest on <a href="https://www.youtube.co
     <!-- Footer -->    
     <footer class="fixed-bottom">
       <div class="container mt-0">
-        © Copyright 2026 Hwanjun  Song. Last updated: April 07, 2026.
+        © Copyright 2026 Hwanjun  Song. Last updated: April 10, 2026.
       </div>
     </footer>
 

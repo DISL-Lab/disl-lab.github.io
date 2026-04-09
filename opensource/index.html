@@ -10,9 +10,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Opensource | Data Intelligence System Lab (DISLab)</title>
+    <title>Opensource | Data Intelligence System Lab</title>
     <meta name="author" content="Hwanjun  Song">
-    <meta name="description" content="We are conducting research with opensource policy. So far, we have engaged many opensource projects for datasets and algorithms. See the details below.">
+    <meta name="description" content="">
     <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website">
 
 
@@ -42,11 +42,6 @@
 
     <!-- Dark Mode -->
     
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/native.css" media="none" id="highlight_theme_dark">
-
-    <script src="/assets/js/theme.js"></script>
-    <script src="/assets/js/dark_mode.js"></script>
-    
 
   </head>
 
@@ -59,7 +54,7 @@
       <!-- Nav Bar -->
       <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
         <div class="container">
-          <a class="navbar-brand title font-weight-lighter" href="/">Data Intelligence System Lab (DISLab)</a>
+          <a class="navbar-brand title font-weight-lighter" href="/">Data Intelligence System Lab</a>
           <!-- Navbar Toggle -->
           <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="sr-only">Toggle navigation</span>
@@ -93,14 +88,6 @@
               <li class="nav-item ">
                 <a class="nav-link" href="/teaching/">Teaching</a>
               </li>
-
-              <!-- Toogle theme mode -->
-              <li class="toggle-container">
-                <button id="light-toggle" title="Change theme">
-                  <i class="fas fa-moon"></i>
-                  <i class="fas fa-sun"></i>
-                </button>
-              </li>
             </ul>
           </div>
         </div>
@@ -123,80 +110,309 @@
 
           <header class="post-header">
             <h1 class="post-title">Opensource</h1>
-            <p class="post-description">We are conducting research with opensource policy. So far, we have engaged many opensource projects for datasets and algorithms. See the details below.</p>
+            <p class="post-description"></p>
           </header>
 
           <article>
-            <h2 id="large-language-models">Large Language Models</h2>
+            <style>
+/* Title styling */
+.post-header .post-title {
+  font-size: 2rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #4285f4, #34a853);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.3rem;
+}
 
-<h6 id="summllama-faithful-summarization-model-link">SummLlama: Faithful Summarization Model <a href="https://huggingface.co/DISLab/SummLlama3.2-3B" rel="external nofollow noopener" target="_blank">[Link]</a>
-</h6>
+.post-header .post-description {
+  font-size: 0.9rem;
+  color: #777;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
 
-<h6 id="ext2gen-robust-generation-model-for-rag-link">Ext2Gen: Robust Generation Model for RAG <a href="https://huggingface.co/DISLab/Ext2Gen-8B-R2" rel="external nofollow noopener" target="_blank">[Link]</a>
-</h6>
-<p><br></p>
+.os-section-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #333;
+  border-left: 4px solid #4285f4;
+  padding-left: 0.8rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
 
-<h2 id="benchmark-datasets">Benchmark Datasets</h2>
+.os-subsection-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #555;
+  margin-top: 1.5rem;
+  margin-bottom: 0.8rem;
+  padding-left: 0.5rem;
+}
 
-<h6 id="unisumeval-benchmark-data-for-text-summarization-link">UniSumEval: Benchmark Data for Text Summarization <a href="https://github.com/disl-lab/unisumeval-v1.0" rel="external nofollow noopener" target="_blank">[Link]</a>
-</h6>
+.os-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 0.8rem;
+  margin-bottom: 1rem;
+}
 
-<h6 id="tofueval-hallucination-benchmark-data-link">ToFuEval: Hallucination Benchmark Data <a href="https://github.com/amazon-science/tofueval" rel="external nofollow noopener" target="_blank">[Link]</a>
-</h6>
+.os-card {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 1rem 1.2rem;
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  border-radius: 10px;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  text-decoration: none;
+  color: inherit;
+}
 
-<h6 id="animal-10n-data-real-world-data-with-noisy-labels-link">ANIMAL-10N Data: Real-world Data with Noisy Labels <a href="https://dm.kaist.ac.kr/datasets/animal-10n/" rel="external nofollow noopener" target="_blank">[Link]</a>
-</h6>
-<p><br></p>
+.os-card:hover {
+  box-shadow: 0 6px 20px rgba(0,0,0,0.07), 0 2px 8px rgba(0,0,0,0.04);
+  border-color: #e0e0e0;
+  transform: translateY(-2px);
+  text-decoration: none;
+  color: inherit;
+}
 
-<h2 id="algorithms">Algorithms</h2>
+.os-card-icon {
+  font-size: 1.6rem;
+  flex-shrink: 0;
+  width: 40px;
+  text-align: center;
+}
 
-<h4 id="retrieval-for-rag">Retrieval for RAG</h4>
+.os-card-body {
+  flex: 1;
+  min-width: 0;
+}
 
-<h6 id="word2passage-accurate-retrieval-method-link">Word2Passage: Accurate Retrieval Method <a href="https://github.com/DISL-Lab/Word2Passage" rel="external nofollow noopener" target="_blank">[Link]</a>
-</h6>
-<p><br></p>
+.os-card-title {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #222;
+  margin: 0;
+  line-height: 1.3;
+}
 
-<h4 id="transformers">Transformers</h4>
+.os-card-desc {
+  font-size: 0.78rem;
+  color: #888;
+  margin: 0.2rem 0 0 0;
+}
 
-<h6 id="vidt-a-fully-transformer-based-object-detector-link">ViDT: A Fully Transformer-based Object Detector <a href="https://github.com/naver-ai/vidt" rel="external nofollow noopener" target="_blank">[Link]</a>
-</h6>
+.os-card-arrow {
+  color: #bbb;
+  font-size: 0.9rem;
+  transition: transform 0.2s ease;
+  flex-shrink: 0;
+}
 
-<h6 id="fast-autoregressive-decoding-link">Fast Autoregressive Decoding <a href="https://github.com/raymin0223/fast_robust_early_exit" rel="external nofollow noopener" target="_blank">[Link]</a>
-</h6>
+.os-card:hover .os-card-arrow {
+  transform: translateX(3px);
+  color: #4285f4;
+}
 
-<h6 id="discal-calibrated-distillation--link">DisCal: Calibrated Distillation  <a href="https://github.com/amazon-science/discal" rel="external nofollow noopener" target="_blank">[Link]</a>
-</h6>
+.os-badge {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 600;
+  padding: 0.1rem 0.4rem;
+  border-radius: 4px;
+  margin-left: 0.4rem;
+  vertical-align: middle;
+}
 
-<h6 id="medusa-rgb-d-transformer-based-object-detector-link">MEDUSA: RGB-D Transformer-based Object Detector <a href="https://github.com/songhwanjun/MEDUSA" rel="external nofollow noopener" target="_blank">[Link]</a>
-</h6>
-<p><br></p>
+.badge-hf {
+  background: #fff3cd;
+  color: #856404;
+}
 
-<h4 id="robust-deep-learning">Robust Deep Learning</h4>
+.badge-gh {
+  background: #e8e8e8;
+  color: #333;
+}
 
-<h6 id="awesome-noisy-labels-link">Awesome Noisy Labels <a href="https://github.com/songhwanjun/Awesome-Noisy-Labels" rel="external nofollow noopener" target="_blank">[Link]</a>
-</h6>
+.badge-web {
+  background: #e8f0fe;
+  color: #1a73e8;
+}
 
-<h6 id="selfie-robust-training-against-noisy-labels-link">SELFIE: Robust Training against Noisy Labels <a href="https://github.com/kaist-dmlab/SELFIE" rel="external nofollow noopener" target="_blank">[Link]</a>
-</h6>
+@media (max-width: 768px) {
+  .os-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
 
-<h6 id="prune4rel-robust-data-pruning-link">Prune4Rel: Robust Data Pruning <a href="https://github.com/kaist-dmlab/Prune4Rel" rel="external nofollow noopener" target="_blank">[Link]</a>
-</h6>
+<div style="background: linear-gradient(135deg, #f8f9fa 0%, #e8f0fe 100%); border-radius: 12px; padding: 1.5rem 2rem; margin-bottom: 2rem; border: 1px solid #e0e7ef;">
+  <p style="font-size: 0.95rem; color: #444; line-height: 1.7; margin: 0;">
+    We are conducting research with an open-source policy. So far, we have released many open-source projects for <strong>models</strong>, <strong>benchmark datasets</strong>, and <strong>algorithms</strong>.
+  </p>
+</div>
 
-<h6 id="mqnet-open-set-active-learning-link">MQNet: Open-set Active Learning <a href="https://github.com/kaist-dmlab/MQNet" rel="external nofollow noopener" target="_blank">[Link]</a>
-</h6>
+<h3 class="os-section-title">Large Language Models</h3>
 
-<h6 id="fedrn-federated-learning-with-noisy-labels-link">FedRN: Federated Learning with Noisy Labels <a href="https://github.com/elvinkim/fedrn" rel="external nofollow noopener" target="_blank">[Link]</a>
-</h6>
-<p><br></p>
+<div class="os-grid">
+  <a class="os-card" href="https://huggingface.co/DISLab/SummLlama3.2-3B" target="_blank" rel="external nofollow noopener">
+    <div class="os-card-body">
+      <p class="os-card-title">SummLlama <span class="os-badge badge-hf">HuggingFace</span></p>
+      <p class="os-card-desc">Faithful Summarization Model</p>
+    </div>
+    <div class="os-card-arrow">→</div>
+  </a>
 
-<h4 id="continual-learning">Continual Learning</h4>
+  <a class="os-card" href="https://huggingface.co/DISLab/Ext2Gen-8B-R2" target="_blank" rel="external nofollow noopener">
+    <div class="os-card-body">
+      <p class="os-card-title">Ext2Gen <span class="os-badge badge-hf">HuggingFace</span></p>
+      <p class="os-card-desc">Robust Generation Model for RAG</p>
+    </div>
+    <div class="os-card-arrow">→</div>
+  </a>
+</div>
 
-<h6 id="dap-instance-level-prompt-based-cl-with-transformers-link">DAP: Instance-level Prompt-based CL with Transformers <a href="https://github.com/naver-ai/dap-cl" rel="external nofollow noopener" target="_blank">[Link]</a>
-</h6>
+<h3 class="os-section-title">Benchmark Datasets</h3>
 
-<h6 id="sdp-scheduled-data-prior-for-continual-learning-link">SDP: Scheduled Data Prior for Continual Learning <a href="https://github.com/yonseivnl/sdp" rel="external nofollow noopener" target="_blank">[Link]</a>
-</h6>
+<div class="os-grid">
+  <a class="os-card" href="https://github.com/disl-lab/unisumeval-v1.0" target="_blank" rel="external nofollow noopener">
+    <div class="os-card-body">
+      <p class="os-card-title">UniSumEval <span class="os-badge badge-gh">GitHub</span></p>
+      <p class="os-card-desc">Benchmark Data for Text Summarization</p>
+    </div>
+    <div class="os-card-arrow">→</div>
+  </a>
 
+  <a class="os-card" href="https://github.com/amazon-science/tofueval" target="_blank" rel="external nofollow noopener">
+    <div class="os-card-body">
+      <p class="os-card-title">ToFuEval <span class="os-badge badge-gh">GitHub</span></p>
+      <p class="os-card-desc">Hallucination Benchmark Data</p>
+    </div>
+    <div class="os-card-arrow">→</div>
+  </a>
+
+  <a class="os-card" href="https://dm.kaist.ac.kr/datasets/animal-10n/" target="_blank" rel="external nofollow noopener">
+    <div class="os-card-body">
+      <p class="os-card-title">ANIMAL-10N <span class="os-badge badge-web">Web</span></p>
+      <p class="os-card-desc">Real-world Data with Noisy Labels</p>
+    </div>
+    <div class="os-card-arrow">→</div>
+  </a>
+</div>
+
+<h3 class="os-section-title">Algorithms</h3>
+
+<h4 class="os-subsection-title">Retrieval for RAG</h4>
+<div class="os-grid">
+  <a class="os-card" href="https://github.com/DISL-Lab/Word2Passage" target="_blank" rel="external nofollow noopener">
+    <div class="os-card-body">
+      <p class="os-card-title">Word2Passage <span class="os-badge badge-gh">GitHub</span></p>
+      <p class="os-card-desc">Accurate Retrieval Method</p>
+    </div>
+    <div class="os-card-arrow">→</div>
+  </a>
+</div>
+
+<h4 class="os-subsection-title">Transformers</h4>
+<div class="os-grid">
+  <a class="os-card" href="https://github.com/naver-ai/vidt" target="_blank" rel="external nofollow noopener">
+    <div class="os-card-body">
+      <p class="os-card-title">ViDT <span class="os-badge badge-gh">GitHub</span></p>
+      <p class="os-card-desc">A Fully Transformer-based Object Detector</p>
+    </div>
+    <div class="os-card-arrow">→</div>
+  </a>
+
+  <a class="os-card" href="https://github.com/raymin0223/fast_robust_early_exit" target="_blank" rel="external nofollow noopener">
+    <div class="os-card-body">
+      <p class="os-card-title">Fast Autoregressive Decoding <span class="os-badge badge-gh">GitHub</span></p>
+      <p class="os-card-desc">Fast &amp; Robust Early Exit</p>
+    </div>
+    <div class="os-card-arrow">→</div>
+  </a>
+
+  <a class="os-card" href="https://github.com/amazon-science/discal" target="_blank" rel="external nofollow noopener">
+    <div class="os-card-body">
+      <p class="os-card-title">DisCal <span class="os-badge badge-gh">GitHub</span></p>
+      <p class="os-card-desc">Calibrated Distillation</p>
+    </div>
+    <div class="os-card-arrow">→</div>
+  </a>
+
+  <a class="os-card" href="https://github.com/songhwanjun/MEDUSA" target="_blank" rel="external nofollow noopener">
+    <div class="os-card-body">
+      <p class="os-card-title">MEDUSA <span class="os-badge badge-gh">GitHub</span></p>
+      <p class="os-card-desc">RGB-D Transformer-based Object Detector</p>
+    </div>
+    <div class="os-card-arrow">→</div>
+  </a>
+</div>
+
+<h4 class="os-subsection-title">Robust Deep Learning</h4>
+<div class="os-grid">
+  <a class="os-card" href="https://github.com/songhwanjun/Awesome-Noisy-Labels" target="_blank" rel="external nofollow noopener">
+    <div class="os-card-body">
+      <p class="os-card-title">Awesome Noisy Labels <span class="os-badge badge-gh">GitHub</span></p>
+      <p class="os-card-desc">Curated List of Noisy Label Research</p>
+    </div>
+    <div class="os-card-arrow">→</div>
+  </a>
+
+  <a class="os-card" href="https://github.com/kaist-dmlab/SELFIE" target="_blank" rel="external nofollow noopener">
+    <div class="os-card-body">
+      <p class="os-card-title">SELFIE <span class="os-badge badge-gh">GitHub</span></p>
+      <p class="os-card-desc">Robust Training against Noisy Labels</p>
+    </div>
+    <div class="os-card-arrow">→</div>
+  </a>
+
+  <a class="os-card" href="https://github.com/kaist-dmlab/Prune4Rel" target="_blank" rel="external nofollow noopener">
+    <div class="os-card-body">
+      <p class="os-card-title">Prune4Rel <span class="os-badge badge-gh">GitHub</span></p>
+      <p class="os-card-desc">Robust Data Pruning</p>
+    </div>
+    <div class="os-card-arrow">→</div>
+  </a>
+
+  <a class="os-card" href="https://github.com/kaist-dmlab/MQNet" target="_blank" rel="external nofollow noopener">
+    <div class="os-card-body">
+      <p class="os-card-title">MQNet <span class="os-badge badge-gh">GitHub</span></p>
+      <p class="os-card-desc">Open-set Active Learning</p>
+    </div>
+    <div class="os-card-arrow">→</div>
+  </a>
+
+  <a class="os-card" href="https://github.com/elvinkim/fedrn" target="_blank" rel="external nofollow noopener">
+    <div class="os-card-body">
+      <p class="os-card-title">FedRN <span class="os-badge badge-gh">GitHub</span></p>
+      <p class="os-card-desc">Federated Learning with Noisy Labels</p>
+    </div>
+    <div class="os-card-arrow">→</div>
+  </a>
+</div>
+
+<h4 class="os-subsection-title">Continual Learning</h4>
+<div class="os-grid">
+  <a class="os-card" href="https://github.com/naver-ai/dap-cl" target="_blank" rel="external nofollow noopener">
+    <div class="os-card-body">
+      <p class="os-card-title">DAP <span class="os-badge badge-gh">GitHub</span></p>
+      <p class="os-card-desc">Instance-level Prompt-based CL with Transformers</p>
+    </div>
+    <div class="os-card-arrow">→</div>
+  </a>
+
+  <a class="os-card" href="https://github.com/yonseivnl/sdp" target="_blank" rel="external nofollow noopener">
+    <div class="os-card-body">
+      <p class="os-card-title">SDP <span class="os-badge badge-gh">GitHub</span></p>
+      <p class="os-card-desc">Scheduled Data Prior for Continual Learning</p>
+    </div>
+    <div class="os-card-arrow">→</div>
+  </a>
+</div>
 
           </article>
 
@@ -208,7 +424,7 @@
     <!-- Footer -->    
     <footer class="fixed-bottom">
       <div class="container mt-0">
-        © Copyright 2026 Hwanjun  Song. Last updated: April 07, 2026.
+        © Copyright 2026 Hwanjun  Song. Last updated: April 10, 2026.
       </div>
     </footer>
 
