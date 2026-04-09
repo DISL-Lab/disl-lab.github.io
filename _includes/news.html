@@ -1,8 +1,80 @@
           <div class="news">
+            <style>
+              .news-list {
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+              }
+              .news-item {
+                display: flex;
+                align-items: flex-start;
+                gap: 1rem;
+                padding: 0.8rem 1rem;
+                background: #fff;
+                border: 1px solid #f0f0f0;
+                border-radius: 10px;
+                transition: all 0.3s ease;
+              }
+              .news-item:hover {
+                border-color: #e0e0e0;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+                transform: translateX(4px);
+              }
+              .news-date {
+                font-size: 0.72rem;
+                font-weight: 600;
+                color: #fff;
+                background: #4285f4;
+                padding: 0.2rem 0.6rem;
+                border-radius: 6px;
+                white-space: nowrap;
+                flex-shrink: 0;
+                margin-top: 0.1rem;
+              }
+              .news-content {
+                font-size: 0.85rem;
+                color: #444;
+                line-height: 1.6;
+              }
+              .news-content a {
+                color: #4285f4;
+                font-weight: 500;
+              }
+              .news h2 a {
+                font-size: 1.3rem;
+                font-weight: 700;
+                background: linear-gradient(135deg, #4285f4, #34a853);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                text-decoration: none;
+              }
+              .news-scroll {
+                max-height: 400px;
+                overflow-y: auto;
+                padding-right: 0.3rem;
+              }
+              .news-scroll::-webkit-scrollbar {
+                width: 4px;
+              }
+              .news-scroll::-webkit-scrollbar-track {
+                background: transparent;
+              }
+              .news-scroll::-webkit-scrollbar-thumb {
+                background: #ddd;
+                border-radius: 4px;
+              }
+              @media (max-width: 768px) {
+                .news-item {
+                  flex-direction: column;
+                  gap: 0.3rem;
+                }
+              }
+            </style>
             {% if site.news != blank -%}
             {%- assign news_size = site.news | size -%}
-            <div class="table-responsive" {% if include.limit and site.announcements.scrollable and news_size > 3 %}style="max-height: 60vw"{% endif %}>
-              <table class="table table-sm table-borderless">
+            <div class="news-scroll">
+              <div class="news-list">
               {%- assign news = site.news | reverse -%}
               {% if include.limit and site.announcements.limit %}
               {% assign news_limit = site.announcements.limit %}
@@ -10,18 +82,18 @@
               {% assign news_limit = news_size %}
               {% endif %}
               {% for item in news limit: news_limit %}
-                <tr>
-                  <th scope="row">{{ item.date | date: "%b %-d, %Y" }}</th>
-                  <td>
+                <div class="news-item">
+                  <span class="news-date">{{ item.date | date: "%b %-d, %Y" }}</span>
+                  <span class="news-content">
                     {% if item.inline -%}
                       {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
                     {%- else -%}
-                      <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+                      <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
                     {%- endif %}
-                  </td>
-                </tr>
+                  </span>
+                </div>
               {%- endfor %}
-              </table>
+              </div>
             </div>
           {%- else -%}
             <p>No news so far...</p>

@@ -2,7 +2,7 @@
 layout: page
 title: Members
 permalink: /projects/
-description: 
+description: ""
 nav: true
 nav_order: 1
 display_categories: 
@@ -10,299 +10,567 @@ horizontal: false
 ---
 
 <style>
-.card-container {
+/* Title styling */
+.post-header .post-title {
+  font-size: 2rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #4285f4, #34a853);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.3rem;
+}
+
+.post-header .post-description {
+  font-size: 0.9rem;
+  color: #777;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+.member-section-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #555;
+  letter-spacing: 0.03em;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e8f0fe 100%);
+  border-radius: 8px;
+  border: none;
+  text-align: center;
+}
+
+.member-section-title .count {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #4285f4;
+  background: #e8f0fe;
+  padding: 0.1rem 0.5rem;
+  border-radius: 10px;
+  margin-left: 0.5rem;
+  vertical-align: middle;
+}
+
+.member-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
-  justify-content: flex-start;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-bottom: 1.5rem;
 }
 
-.card {
-  border: 1px solid #ddd;
-  border-radius: 8px;
+.member-card {
+  width: 170px;
+}
+
+.member-card {
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
   text-align: center;
-  flex: 1 1 100%;
-  max-width: 100%;
+  position: relative;
 }
 
-.card img {
+.member-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #4285f4, #34a853, #fbbc04, #ea4335);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.member-card:hover::before {
+  opacity: 1;
+}
+
+.member-card:hover {
+  box-shadow: 0 12px 30px rgba(0,0,0,0.1), 0 4px 12px rgba(0,0,0,0.05);
+  border-color: transparent;
+  transform: translateY(-5px);
+}
+
+.member-card .img-wrapper {
   width: 100%;
-  height: auto;
-  max-height: 200px;
+  padding: 1.2rem 1.2rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.member-card .img-wrapper img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
   object-fit: cover;
+  border: 3px solid #f0f0f0;
+  transition: all 0.4s ease;
 }
 
-.card h5 {
+.member-card:hover .img-wrapper img {
+  transform: scale(1.06);
+  border-color: #4285f4;
+  box-shadow: 0 4px 15px rgba(66,133,244,0.2);
+}
+
+.member-card .info {
+  padding: 0.8rem 0.8rem 1rem;
+}
+
+.member-card .name {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: #222;
   margin: 0;
-  font-size: 1rem;
 }
 
-.card p {
-  margin: 5px 0 0;
+.member-card .role {
+  font-size: 0.72rem;
+  color: #666;
+  margin: 0.2rem 0 0 0;
+  line-height: 1.4;
+}
+
+.member-card .note {
   font-size: 0.65rem;
+  color: #999;
+  margin: 0.15rem 0 0 0;
+  font-style: italic;
+}
+
+/* Lead Student */
+.member-card.lead {
+  border: 2px solid #4285f4;
+  background: linear-gradient(135deg, #fff 0%, #f0f4ff 100%);
+}
+
+.member-card.lead .img-wrapper img {
+  border-color: #4285f4;
+}
+
+.member-card.lead .name::after {
+  content: 'Lead Student';
+  display: inline-block;
+  font-size: 0.55rem;
+  font-weight: 600;
+  color: #fff;
+  background: #4285f4;
+  padding: 0.1rem 0.4rem;
+  border-radius: 4px;
+  margin-left: 0.4rem;
+  vertical-align: middle;
+}
+
+/* Director */
+.member-card.director {
+  border: 2px solid #e8a817;
+  background: linear-gradient(135deg, #fff 0%, #fffbf0 100%);
+}
+
+.member-card.director .img-wrapper img {
+  border-color: #e8a817;
+}
+
+.member-card.director:hover .img-wrapper img {
+  border-color: #e8a817;
+  box-shadow: 0 4px 15px rgba(232,168,23,0.25);
+}
+
+.member-card.director .name::after {
+  content: 'Director';
+  display: inline-block;
+  font-size: 0.55rem;
+  font-weight: 600;
+  color: #fff;
+  background: #e8a817;
+  padding: 0.1rem 0.4rem;
+  border-radius: 4px;
+  margin-left: 0.4rem;
+  vertical-align: middle;
+}
+
+/* Info list (Internship, Graduates) */
+.info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.7rem 1rem;
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.info-item:hover {
+  border-color: #e0e0e0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transform: translateX(4px);
+}
+
+.info-item .semester {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #fff;
+  background: #4285f4;
+  padding: 0.15rem 0.5rem;
+  border-radius: 5px;
+  white-space: nowrap;
+}
+
+.info-item .semester.intern-badge {
+  background: #34a853;
+}
+
+.info-item .detail {
+  font-size: 0.85rem;
   color: #444;
 }
 
-.card p.small-note {
-  font-size: 0.6rem;
-  color: #777;
-  margin-top: 2px;
+.info-item .detail strong {
+  color: #222;
 }
 
-/* 화면 ≥600px: 최대 2열 */
-@media (min-width: 600px) {
-  .card {
-    flex: 1 1 calc(50% - 20px);
-    max-width: calc(50% - 20px);
+.info-item .company {
+  font-size: 0.75rem;
+  color: #888;
+  margin-left: auto;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .member-grid {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 0.8rem;
   }
-}
-
-/* 화면 ≥1024px: 최대 4열 */
-@media (min-width: 1024px) {
-  .card {
-    flex: 1 1 calc(25% - 20px);
-    max-width: calc(25% - 20px);
+  .member-card .img-wrapper img {
+    width: 90px;
+    height: 90px;
+  }
+  .info-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.3rem;
+  }
+  .info-item .company {
+    margin-left: 0;
   }
 }
 </style>
 
-##### Lab Director and Staff
 
-<div class="card-container">
-  <div class="card">
-    <img src="/assets/img/bio-hwanjun.png" alt="Hwanjun Song">
-    <div style="padding: 10px;">
-      <h5>Hwanjun Song</h5>
-      <p>Assistant Professor<br>Lab Director</p>
+<h3 class="member-section-title">Lab Director & Staff</h3>
+
+<div class="member-grid">
+  <div class="member-card director">
+    <div class="img-wrapper">
+      <img src="/assets/img/bio-hwanjun.png" alt="Hwanjun Song">
+    </div>
+    <div class="info">
+      <p class="name">Hwanjun Song</p>
+      <p class="role">Ewon Assistant Professor</p>
+      <p class="role">Lab Director</p>
     </div>
   </div>
-  <div class="card">
-    <img src="/assets/img/bio-sunmin.png" alt="Sun-Min Jeong">
-    <div style="padding: 10px;">
-      <h5>Sun-Min Jeong</h5>
-      <p>Administrative Staff<br>Spring 2025~</p>
+  <div class="member-card">
+    <div class="img-wrapper">
+      <img src="/assets/img/bio-sunmin.png" alt="Sun-Min Jeong">
     </div>
-  </div>
-</div>
-
-<br>
-##### Lab Manager (Postdoctoral Researcher)
-<div class="card-container">
-  <div class="card">
-    <img src="/assets/img/bio_jeesu_jung.png" alt="Your Spot">
-    <div style="padding: 10px;">
-      <h5>Jeesu Jung</h5>
-      <p>March 2026~</p>
+    <div class="info">
+      <p class="name">Sun-Min Jeong</p>
+      <p class="role">Administrative Staff</p>
+      <p class="role">Spring 2025~</p>
     </div>
   </div>
 </div>
 
-<br>
-##### Senior Researchers (PhD Students)
 
-<div class="card-container">
-  <div class="card">
-    <img src="/assets/img/bio_hyangsuk.jpeg" alt="Hyangsuk Min">
-    <div style="padding: 10px;">
-      <h5>Hyangsuk Min</h5>
-      <p>Full Time, Fall 2024~</p>
-    </div>
-  </div>
-  <div class="card">
-    <img src="/assets/img/bio-jeonghwan.png" alt="Jeonghwan Choi">
-    <div style="padding: 10px;">
-      <h5>Jeonghwan Choi (👑)</h5>
-      <p>Full Time, Spring 2025~</p>
-      <p class="small-note">MS-PhD Integrated</p>
-    </div>
-  </div>
-  <div class="card">
-    <img src="/assets/img/bio-yuho.png" alt="Yuho Lee">
-    <div style="padding: 10px;">
-      <h5>Yuho Lee</h5>
-      <p>Full Time, Fall 2025~</p>
-    </div>
-  </div>
-  <div class="card">
-    <img src="/assets/img/bio-taewon.png" alt="Taewon Yun">
-    <div style="padding: 10px;">
-      <h5>Taewon Yun</h5>
-      <p>Full Time, Fall 2025~</p>
-    </div>  </div>
+<h3 class="member-section-title">Lab Manager (Postdoctoral Researcher)</h3>
 
-  <div class="card">
-    <img src="/assets/img/bio-jihwanoh.png" alt="Jihwan Oh">
-    <div style="padding: 10px;">
-      <h5>Jihwan Oh</h5>
-      <p>Full Time, Spring 2026~</p>
+<div class="member-grid">
+  <div class="member-card">
+    <div class="img-wrapper">
+      <img src="/assets/img/bio_jeesu_jung.png" alt="Jeesu Jung">
     </div>
-  </div>
-
-  <div class="card">
-    <img src="/assets/img/bio_jisu.png" alt="Jisu Shin">
-    <div style="padding: 10px;">
-      <h5>Jisu Shin</h5>
-      <p>Full Time, Spring 2026~</p>
-    </div>
-  </div>
-
-</div>
-
-
-
-<br>
-##### Junior Researchers (MS Students)
-
-
-<div class="card-container">
-  <div class="card">
-    <img src="/assets/img/bio-jiaqi.png" alt="Jiaqi Deng">
-    <div style="padding: 10px;">
-      <h5>Jiaqi Deng</h5>
-      <p>Full Time, Fall 2024~</p>
-    </div>
-  </div>
-  <div class="card">
-    <img src="/assets/img/bio-minjeong.png" alt="Minjeong Ban">
-    <div style="padding: 10px;">
-      <h5>Minjeong Ban</h5>
-      <p>Full Time, Spring 2025~</p>
-    </div>
-  </div>
-  <div class="card">
-    <img src="/assets/img/bio-kibeom.png" alt="Kibum Kim">
-    <div style="padding: 10px;">
-      <h5>Kibum Kim</h5>
-      <p>Hankook Tire, Spring 2025~</p>
-    </div>
-  </div>
-  <div class="card">
-    <img src="/assets/img/bio-shayekh.png" alt="Shayekh Bin Islam">
-    <div style="padding: 10px;">
-      <h5>Shayekh Bin Islam</h5>
-      <p>Full Time, Fall 2025~</p>
-    </div>
-  </div>
-  <div class="card">
-    <img src="/assets/img/bio_mingyu_choi.jpg" alt="Mingyu Choi">
-    <div style="padding: 10px;">
-      <h5>Mingyu Choi</h5>
-      <p>Full Time, Spring 2026~</p>
-    </div>
-  </div>
-  <div class="card">
-    <img src="/assets/img/bio_gyeonghun_sun.jpg" alt="Mingyu Choi">
-    <div style="padding: 10px;">
-      <h5>Gyeonghun Sun</h5>
-      <p>Full Time, Spring 2026~</p>
+    <div class="info">
+      <p class="name">Jeesu Jung</p>
+      <p class="role">March 2026~</p>
     </div>
   </div>
 </div>
 
-<br>
-##### Jointly Supervised Students
-<div class="card-container">
-  <div class="card">
-    <img src="/assets/img/bio-jihwan.png" alt="Jihwan Bang">
-    <div style="padding: 10px;">
-      <h5>Jihwan Bang</h5>
-      <p>Qualcomm, Spring 2023~</p>
-      <p class="small-note">Co-advised by Prof. Jae-Gil Lee</p>
+
+<h3 class="member-section-title">Senior Researchers (PhD Students) <span class="count">6</span></h3>
+
+<div class="member-grid">
+  <div class="member-card lead">
+    <div class="img-wrapper">
+      <img src="/assets/img/bio_hyangsuk.jpeg" alt="Hyangsuk Min">
+    </div>
+    <div class="info">
+      <p class="name">Hyangsuk Min</p>
+      <p class="role">Full Time, Fall 2024~</p>
     </div>
   </div>
-  <div class="card">
-    <img src="/assets/img/bio-yujin.png" alt="Yujin Kim">
-    <div style="padding: 10px;">
-      <h5>Yujin Kim</h5>
-      <p>Full Time, Spring 2025~</p>
-      <p class="small-note">Co-advised by Se-Young Yun</p>
+  <div class="member-card">
+    <div class="img-wrapper">
+      <img src="/assets/img/bio-jeonghwan.png" alt="Jeonghwan Choi">
+    </div>
+    <div class="info">
+      <p class="name">Jeonghwan Choi</p>
+      <p class="role">Full Time, Spring 2025~</p>
+      <p class="role">MS-PhD Integrated</p>
+    </div>
+  </div>
+  <div class="member-card">
+    <div class="img-wrapper">
+      <img src="/assets/img/bio-yuho.png" alt="Yuho Lee">
+    </div>
+    <div class="info">
+      <p class="name">Yuho Lee</p>
+      <p class="role">Full Time, Fall 2025~</p>
+    </div>
+  </div>
+  <div class="member-card">
+    <div class="img-wrapper">
+      <img src="/assets/img/bio-taewon.png" alt="Taewon Yun">
+    </div>
+    <div class="info">
+      <p class="name">Taewon Yun</p>
+      <p class="role">Full Time, Fall 2025~</p>
+    </div>
+  </div>
+  <div class="member-card">
+    <div class="img-wrapper">
+      <img src="/assets/img/bio-jihwanoh.png" alt="Jihwan Oh">
+    </div>
+    <div class="info">
+      <p class="name">Jihwan Oh</p>
+      <p class="role">Full Time, Spring 2026~</p>
+    </div>
+  </div>
+  <div class="member-card">
+    <div class="img-wrapper">
+      <img src="/assets/img/bio_jisu.png" alt="Jisu Shin">
+    </div>
+    <div class="info">
+      <p class="name">Jisu Shin</p>
+      <p class="role">Full Time, Spring 2026~</p>
     </div>
   </div>
 </div>
 
-<br>
-##### Research Interns
 
-<div class="card-container">
-  <div class="card">
-    <img src="/assets/img/bio-seonghwan.jpg" alt="Seunghwan Bang">
-    <div style="padding: 10px;">
-      <h5>Seunghwan Bang</h5>
-      <p>Janurary 2025~</p>
+<h3 class="member-section-title">Junior Researchers (MS Students) <span class="count">6</span></h3>
+
+<div class="member-grid">
+  <div class="member-card">
+    <div class="img-wrapper">
+      <img src="/assets/img/bio-jiaqi.png" alt="Jiaqi Deng">
+    </div>
+    <div class="info">
+      <p class="name">Jiaqi Deng</p>
+      <p class="role">Full Time, Fall 2024~</p>
     </div>
   </div>
-
-  <div class="card">
-    <img src="/assets/img/bio_jisoo_kim.jpg" alt="Jisoo Kim">
-    <div style="padding: 10px;">
-      <h5>Jisoo Kim</h5>
-      <p>July 2025~</p>
+  <div class="member-card">
+    <div class="img-wrapper">
+      <img src="/assets/img/bio-minjeong.png" alt="Minjeong Ban">
+    </div>
+    <div class="info">
+      <p class="name">Minjeong Ban</p>
+      <p class="role">Full Time, Spring 2025~</p>
     </div>
   </div>
-
-  <div class="card">
-    <img src="/assets/img/bio_jibin.jpg" alt="Hwang Jibin">
-    <div style="padding: 10px;">
-      <h5>Jibin Hwang</h5>
-      <p>Janurary 2026~</p>
+  <div class="member-card">
+    <div class="img-wrapper">
+      <img src="/assets/img/bio-kibeom.png" alt="Kibum Kim">
+    </div>
+    <div class="info">
+      <p class="name">Kibum Kim</p>
+      <p class="role">Hankook Tire, Spring 2025~</p>
     </div>
   </div>
-
-  <div class="card">
-    <img src="/assets/img/bio_hyeonseng.jpeg" alt="Hyeonseong Park">
-    <div style="padding: 10px;">
-      <h5>Hyeonseong Park</h5>
-      <p>Janurary 2026~</p>
+  <div class="member-card">
+    <div class="img-wrapper">
+      <img src="/assets/img/bio-shayekh.png" alt="Shayekh Bin Islam">
+    </div>
+    <div class="info">
+      <p class="name">Shayekh Bin Islam</p>
+      <p class="role">Full Time, Fall 2025~</p>
     </div>
   </div>
-
-  <div class="card">
-    <img src="/assets/img/bio_juseon_do.png" alt="Your Spot">
-    <div style="padding: 10px;">
-      <h5>Juseon Do</h5>
-      <p>March 2026~</p>
+  <div class="member-card">
+    <div class="img-wrapper">
+      <img src="/assets/img/bio_mingyu_choi.jpg" alt="Mingyu Choi">
+    </div>
+    <div class="info">
+      <p class="name">Mingyu Choi</p>
+      <p class="role">Full Time, Spring 2026~</p>
     </div>
   </div>
-
-  <div class="card">
-    <img src="/assets/img/bio_yeeun_choi.jpeg" alt="Your Spot">
-    <div style="padding: 10px;">
-      <h5>Yeeun Choi </h5>
-      <p>March 2026~</p>
+  <div class="member-card">
+    <div class="img-wrapper">
+      <img src="/assets/img/bio_gyeonghun_sun.jpg" alt="Gyeonghun Sun">
+    </div>
+    <div class="info">
+      <p class="name">Gyeonghun Sun</p>
+      <p class="role">Full Time, Spring 2026~</p>
+    </div>
   </div>
-  </div>
-
-  <div class="card">
-    <img src="/assets/img/bio_hayoon.jpg" alt="Your Spot">
-    <div style="padding: 10px;">
-      <h5>Hayoon Park</h5>
-      <p>March 2026~</p>
-  </div>
-  </div>
-
 </div>
 
-<br>
-##### Internship
 
-Summer 2025, Yuho Lee: Amazon Web Services Inc, Bedrock, US, Santa Clara
+<h3 class="member-section-title">Jointly Supervised Students <span class="count">2</span></h3>
 
-Summer 2026, Yujin Kim: NVIDIA Corp., US, Santa Clara
+<div class="member-grid">
+  <div class="member-card">
+    <div class="img-wrapper">
+      <img src="/assets/img/bio-jihwan.png" alt="Jihwan Bang">
+    </div>
+    <div class="info">
+      <p class="name">Jihwan Bang</p>
+      <p class="role">Qualcomm, Spring 2023~</p>
+      <p class="role">Co-advised by Prof. Jae-Gil Lee</p>
+    </div>
+  </div>
+  <div class="member-card">
+    <div class="img-wrapper">
+      <img src="/assets/img/bio-yujin.png" alt="Yujin Kim">
+    </div>
+    <div class="info">
+      <p class="name">Yujin Kim</p>
+      <p class="role">Full Time, Spring 2025~</p>
+      <p class="role">Co-advised by Se-Young Yun</p>
+    </div>
+  </div>
+</div>
 
-Summer 2026, Taewon Yun: Amazon Web Services Inc, Agentic AI, US, New York
 
-<br>
-##### Graduates
+<h3 class="member-section-title">Research Interns <span class="count">7</span></h3>
 
-Spring 2025, Jeonghwan Choi: PhD Program at KAIST
+<div class="member-grid">
+  <div class="member-card">
+    <div class="img-wrapper">
+      <img src="/assets/img/bio-seonghwan.jpg" alt="Seunghwan Bang">
+    </div>
+    <div class="info">
+      <p class="name">Seunghwan Bang</p>
+      <p class="role">January 2025~</p>
+    </div>
+  </div>
+  <div class="member-card">
+    <div class="img-wrapper">
+      <img src="/assets/img/bio_jisoo_kim.jpg" alt="Jisoo Kim">
+    </div>
+    <div class="info">
+      <p class="name">Jisoo Kim</p>
+      <p class="role">July 2025~</p>
+    </div>
+  </div>
+  <div class="member-card">
+    <div class="img-wrapper">
+      <img src="/assets/img/bio_jibin.jpg" alt="Jibin Hwang">
+    </div>
+    <div class="info">
+      <p class="name">Jibin Hwang</p>
+      <p class="role">January 2026~</p>
+    </div>
+  </div>
+  <div class="member-card">
+    <div class="img-wrapper">
+      <img src="/assets/img/bio_hyeonseng.jpeg" alt="Hyeonseong Park">
+    </div>
+    <div class="info">
+      <p class="name">Hyeonseong Park</p>
+      <p class="role">January 2026~</p>
+    </div>
+  </div>
+  <div class="member-card">
+    <div class="img-wrapper">
+      <img src="/assets/img/bio_juseon_do.png" alt="Juseon Do">
+    </div>
+    <div class="info">
+      <p class="name">Juseon Do</p>
+      <p class="role">March 2026~</p>
+    </div>
+  </div>
+  <div class="member-card">
+    <div class="img-wrapper">
+      <img src="/assets/img/bio_yeeun_choi.jpeg" alt="Yeeun Choi">
+    </div>
+    <div class="info">
+      <p class="name">Yeeun Choi</p>
+      <p class="role">March 2026~</p>
+    </div>
+  </div>
+  <div class="member-card">
+    <div class="img-wrapper">
+      <img src="/assets/img/bio_hayoon.jpg" alt="Hayoon Park">
+    </div>
+    <div class="info">
+      <p class="name">Hayoon Park</p>
+      <p class="role">March 2026~</p>
+    </div>
+  </div>
+</div>
 
-Fall 2025, Yuho Lee: PhD Program at KAIST
 
-Fall 2025, Taewon Yun: PhD Program at KAIST
+<h3 class="member-section-title">Internship</h3>
 
-Fall 2025, Jihwan Oh: PhD Program at KAIST
+<div class="info-list">
+  <div class="info-item">
+    <span class="semester intern-badge">Summer 2025</span>
+    <span class="detail"><strong>Yuho Lee</strong></span>
+    <span class="company">Amazon Web Services, Bedrock — Santa Clara, US</span>
+  </div>
+  <div class="info-item">
+    <span class="semester intern-badge">Summer 2026</span>
+    <span class="detail"><strong>Yujin Kim</strong></span>
+    <span class="company">NVIDIA Corp. — Santa Clara, US</span>
+  </div>
+  <div class="info-item">
+    <span class="semester intern-badge">Summer 2026</span>
+    <span class="detail"><strong>Taewon Yun</strong></span>
+    <span class="company">Amazon Web Services, Agentic AI — New York, US</span>
+  </div>
+</div>
 
-Fall 2025, Heeyoen Kim
 
+<h3 class="member-section-title">Graduates</h3>
+
+<div class="info-list">
+  <div class="info-item">
+    <span class="semester">Spring 2025</span>
+    <span class="detail"><strong>Jeonghwan Choi</strong> — PhD Program at KAIST</span>
+  </div>
+  <div class="info-item">
+    <span class="semester">Fall 2025</span>
+    <span class="detail"><strong>Yuho Lee</strong> — PhD Program at KAIST</span>
+  </div>
+  <div class="info-item">
+    <span class="semester">Fall 2025</span>
+    <span class="detail"><strong>Taewon Yun</strong> — PhD Program at KAIST</span>
+  </div>
+  <div class="info-item">
+    <span class="semester">Fall 2025</span>
+    <span class="detail"><strong>Jihwan Oh</strong> — PhD Program at KAIST</span>
+  </div>
+  <div class="info-item">
+    <span class="semester">Fall 2025</span>
+    <span class="detail"><strong>Heeyoen Kim</strong></span>
+  </div>
+</div>

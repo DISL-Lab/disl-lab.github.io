@@ -2,25 +2,76 @@
 layout: page
 permalink: /publications/
 title: Publications
-description: We publish our research in high-impact conferences and journals within the field of Computer Science. We have collaborated top IT tech companies such as AWS AI Labs, Google Research, and NAVER AI Lab. <br>As of now, we published more than 60+ CS top confernces in various domains, including NLP (ACL, EMNLP, NAACL), CV (ICCV, CVPR), ML (NeurIPS, ICLR, ICML, AAAI), DM (KDD, CIKM, ICDM, WWW, SIGMOD). <br>Asterisk (*) denotes corresponding authors and co-first authorship is denoted by {}.
+description: ""
 
 nav: true
 nav_order: 2
 ---
 
+<div style="background: linear-gradient(135deg, #f8f9fa 0%, #e8f0fe 100%); border-radius: 12px; padding: 1.5rem 2rem; margin-bottom: 2rem; border: 1px solid #e0e7ef;">
+  <p style="font-size: 0.95rem; color: #444; line-height: 1.7; margin: 0;">
+    We publish our research in high-impact conferences and journals within the field of Computer Science. We have collaborated with top IT tech companies such as AWS AI Labs, META, and NAVER AI Lab.
+  </p>
+  <p style="font-size: 0.95rem; color: #444; line-height: 1.7; margin: 0.5rem 0 0 0;">
+    As of now, we have published more than <strong>60+</strong> papers in CS top conferences across various domains, including
+    <span style="background: #e8f0fe; padding: 0.15rem 0.5rem; border-radius: 4px; font-size: 0.85rem; font-weight: 600;">NLP</span>
+    <span style="color: #666; font-size: 0.85rem;">(ACL, EMNLP, NAACL)</span>,
+    <span style="background: #fce8e6; padding: 0.15rem 0.5rem; border-radius: 4px; font-size: 0.85rem; font-weight: 600;">CV</span>
+    <span style="color: #666; font-size: 0.85rem;">(ICCV, CVPR)</span>,
+    <span style="background: #fef7e0; padding: 0.15rem 0.5rem; border-radius: 4px; font-size: 0.85rem; font-weight: 600;">ML</span>
+    <span style="color: #666; font-size: 0.85rem;">(NeurIPS, ICLR, ICML, AAAI)</span>,
+    <span style="background: #e6f4ea; padding: 0.15rem 0.5rem; border-radius: 4px; font-size: 0.85rem; font-weight: 600;">DM</span>
+    <span style="color: #666; font-size: 0.85rem;">(KDD, CIKM, ICDM, WWW, SIGMOD)</span>.
+  </p>
+  <p style="font-size: 0.8rem; color: #888; margin: 0.8rem 0 0 0; font-style: italic;">
+    * denotes corresponding authors &nbsp;|&nbsp; {} denotes co-first authorship &nbsp;|&nbsp; <span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Highlighted</span> denotes lab members
+  </p>
+</div>
+
 <style>
+/* Title styling */
+.post-header .post-title {
+  font-size: 2rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #4285f4, #34a853);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.3rem;
+}
+
+.post-header .post-description {
+  font-size: 0.9rem;
+  color: #777;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
 .project-block {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   gap: 1.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
   flex-wrap: wrap;
+  padding: 1.2rem;
+  border-radius: 12px;
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.project-block:hover {
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08), 0 2px 10px rgba(0,0,0,0.04);
+  border-color: #e0e0e0;
+  transform: translateY(-2px);
 }
 
 .project-block .img-col {
   flex: 1 1 10%;
-  max-width: 300px;
+  max-width: 280px;
+  overflow: hidden;
+  border-radius: 8px;
 }
 
 .project-block .text-col {
@@ -31,13 +82,19 @@ nav_order: 2
   width: 100%;
   height: auto;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: transform 0.4s ease;
+}
+
+.project-block:hover img {
+  transform: scale(1.03);
 }
 
 /* 모바일: 이미지 위, 텍스트 아래 */
 @media (max-width: 768px) {
   .project-block {
     flex-direction: column;
+    padding: 0.8rem;
   }
 
   .project-block .img-col,
@@ -48,7 +105,7 @@ nav_order: 2
 }
 </style>
 
-<h2 style="margin-bottom: 1.5rem;">Preprint</h2>
+<h2 style="margin-bottom: 1.5rem; font-size: 1.4rem; font-weight: 700; color: #333; border-left: 4px solid #4285f4; padding-left: 0.8rem;">Preprint</h2>
 
 
 <div class="project-block">
@@ -59,7 +116,7 @@ nav_order: 2
     <h3 style="font-size: 0.9rem; margin-bottom: 0.2rem; font-weight: bold;">
     <span style="
         display: inline-block;
-        background-color:rgb(7, 95, 41);  /* 원하는 색으로 변경 가능 */
+        background-color:rgb(196, 138, 4);  /* 원하는 색으로 변경 가능 */
         color: white;
         font-weight: bold;
         font-size: 0.75rem;
@@ -84,7 +141,7 @@ nav_order: 2
       What Makes a Sale? Rethinking End-to-End Seller–Buyer Retail Dynamics with LLM Agents
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-      Jeonghwan Choi, Jibin Hwang, Gyeonghun Sun, Minjeong Ban, Taewon Yun,Hyeonjae Cheon, and Hwanjun Song*
+      <span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Jeonghwan Choi</span>, <span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Jibin Hwang</span>, <span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Gyeonghun Sun</span>, <span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Minjeong Ban</span>, <span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Taewon Yun</span>, Hyeonjae Cheon, and <span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song</span>*
       <span style="color: #1a73e8; font-weight: bold;">(with GS Retail)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
@@ -102,7 +159,7 @@ nav_order: 2
     <h3 style="font-size: 0.9rem; margin-bottom: 0.2rem; font-weight: bold;">
    <span style="
         display: inline-block;
-        background-color:rgb(7, 95, 41);  /* 원하는 색으로 변경 가능 */
+        background-color:rgb(196, 138, 4);  /* 원하는 색으로 변경 가능 */
         color: white;
         font-weight: bold;
         font-size: 0.75rem;
@@ -127,7 +184,7 @@ nav_order: 2
       Reasoning over Video: Evaluating How MLLMs Extract, Integrate, and Reconstruct Spatiotemporal Evidence
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-      Seunghwan Bang, and Hwanjun Song*
+      <span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Seunghwan Bang</span>, and <span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song</span>*
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
      arXiv preprint arXiv:2603.13091, 2026
@@ -136,12 +193,12 @@ nav_order: 2
 </div>
 
 
-<h2 style="margin-bottom: 1.5rem;">International Conferences and Journals</h2>
+<h2 style="margin-top: 3.5rem; margin-bottom: 0.5rem; font-size: 1.4rem; font-weight: 700; color: #333; border-left: 4px solid #4285f4; padding-left: 0.8rem;">International Conferences and Journals</h2>
 
 
-<div style="display: flex; align-items: center; margin-top: 2rem; margin-bottom: 0.5rem;">
-  <div style="flex: 1; border-top: 1px solid #ddd;"></div>
-  <div style="margin-left: 0.5rem; font-size: 1.5rem; color: #e0e0e0;">
+<div style="display: flex; align-items: center; margin-top: 1rem; margin-bottom: 1rem;">
+  <div style="flex: 1; height: 2px; background: linear-gradient(to right, transparent, #d0d0d0, transparent);"></div>
+  <div style="margin: 0 1rem; font-size: 1.6rem; font-weight: 700; color: #bbb; letter-spacing: 0.1em;">
     2026
   </div>
 </div>
@@ -179,7 +236,7 @@ nav_order: 2
       Alignment Tuning for Large Language Models: A Data-Centric Lens on Alignment Data Pipelines
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-     Hwanjun Song*
+     <span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song</span>*
     <span style="color: #1a73e8; font-weight: bold;"> (Sole-authored!)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
@@ -223,7 +280,7 @@ nav_order: 2
       QuDAR: Query-Wise Dual-Perspective Adaptive Retrieval
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-      Joeun Kim, Seunghyouk Yoon, Xuan-Bach Le, Youngeun Nam, Doyoung Kim, Hwanjun Song, and Jae-Gil Lee*
+      Joeun Kim, Seunghyouk Yoon, Xuan-Bach Le, Youngeun Nam, Doyoung Kim, <span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song</span>, and Jae-Gil Lee*
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
       In Annual Meeting of the Association for Computational Linguistics (Main), 2026
@@ -266,7 +323,7 @@ nav_order: 2
       Distilling Long-CoT Reasoning through Collaborative Step-wise Multi-Teacher Decoding
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-      Taewon Yun, Jisu Shin, Jeonghwan Choi, Seunghwan Bang, Hwanjun Song*
+      <span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Taewon Yun</span>, <span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Jisu Shin</span>, <span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Jeonghwan Choi</span>, <span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Seunghwan Bang</span>, <span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song</span>*
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
       In Annual Meeting of the Association for Computational Linguistics (Findings), 2026
@@ -309,7 +366,7 @@ nav_order: 2
       Distilling LLM Reasoning into Dense Encoders: Bridging the Accuracy-Efficiency Gap in Recommendation
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-      Donghee Han, Daeyoung Roh, A Young Kim, Hwanjun Song*, Mun Yong Yi*
+      Donghee Han, Daeyoung Roh, A Young Kim, <span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song</span>*, Mun Yong Yi*
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
       In Annual Meeting of the Association for Computational Linguistics (Findings), 2026
@@ -319,6 +376,93 @@ nav_order: 2
   </div>
 </div>
 
+
+<div class="project-block">
+  <div class="img-col">
+    <img src="/assets/img/paper/26-acl-tracing.png" alt="Project 1">
+  </div>
+  <div class="text-col">
+    <h3 style="font-size: 0.9rem; margin-bottom: 0.2rem; font-weight: bold;">
+    <span style="
+        display: inline-block;
+        background-color:rgb(7, 95, 41);  /* 원하는 색으로 변경 가능 */
+        color: white;
+        font-weight: bold;
+        font-size: 0.75rem;
+        padding: 0.2rem 0.6rem;
+        border-radius: 6px;
+        margin-right: 0.1rem;
+    ">
+        ACL
+    </span>
+    <span style="
+        display: inline-block;
+        background-color:rgb(197, 38, 179);  /* 원하는 색으로 변경 가능 */
+        color: white;
+        font-weight: bold;
+        font-size: 0.75rem;
+        padding: 0.2rem 0.6rem;
+        border-radius: 6px;
+        margin-right: 0.1rem;
+    ">
+        NLP
+    </span>
+      Tracing Logit Trajectories Across Layer Depth: Dataset-Level Explainability for Language Models
+    </h3>
+    <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
+    <span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Jeesu Jung</span>, Sangkeun Jung*
+    </p>
+    <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
+      In Annual Meeting of the Association for Computational Linguistics (Main), 2026
+    </p>
+    <div style="font-size: 0.8rem; color: #555; margin-top: 0.0rem;">
+    </div>
+  </div>
+</div>
+
+
+<div class="project-block">
+  <div class="img-col">
+    <img src="/assets/img/paper/26-acl-empirical.png" alt="Project 1">
+  </div>
+  <div class="text-col">
+    <h3 style="font-size: 0.9rem; margin-bottom: 0.2rem; font-weight: bold;">
+    <span style="
+        display: inline-block;
+        background-color:rgb(7, 95, 41);  /* 원하는 색으로 변경 가능 */
+        color: white;
+        font-weight: bold;
+        font-size: 0.75rem;
+        padding: 0.2rem 0.6rem;
+        border-radius: 6px;
+        margin-right: 0.1rem;
+    ">
+        ACL
+    </span>
+    <span style="
+        display: inline-block;
+        background-color:rgb(197, 38, 179);  /* 원하는 색으로 변경 가능 */
+        color: white;
+        font-weight: bold;
+        font-size: 0.75rem;
+        padding: 0.2rem 0.6rem;
+        border-radius: 6px;
+        margin-right: 0.1rem;
+    ">
+        NLP
+    </span>
+      Empirical Analysis of Task Mixture Effects in Instruction Tuning: A Statistical Approach
+    </h3>
+    <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
+    <span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Jeesu Jung</span>, Sangkeun Jung*
+    </p>
+    <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
+      In Annual Meeting of the Association for Computational Linguistics (Findings), 2026
+    </p>
+    <div style="font-size: 0.8rem; color: #555; margin-top: 0.0rem;">
+    </div>
+  </div>
+</div>
 
 <div class="project-block">
   <div class="img-col">
@@ -353,7 +497,7 @@ nav_order: 2
       Completing Missing Annotation: Multi-Agent Debate for Accurate and Scalable Relevant Assessment for IR Benchmarks
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-      {Minjeong Ban, Jeonghwan Choi, Hyangsuk Min}, Nicole Hee-Yeon Kim, Minseok Kim, Jae-Gil Lee, and Hwanjun Song*
+      {<span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Minjeong Ban</span>, <span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Jeonghwan Choi</span>, <span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Hyangsuk Min</span>}, Nicole Hee-Yeon Kim, Minseok Kim, Jae-Gil Lee, and <span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song</span>*
       <span style="color: #1a73e8; font-weight: bold;">(with Meta)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
@@ -395,7 +539,7 @@ nav_order: 2
       Aligning Extraction and Generation for Robust Retrieval-Augmented Generation
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-      Hwanjun Song*, Jeonghwan Choi, and Minseok Kim
+      <span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song</span>*, <span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Jeonghwan Choi</span>, and Minseok Kim
       <span style="color: #1a73e8; font-weight: bold;">(with Meta)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
@@ -409,9 +553,9 @@ nav_order: 2
 </div>
 
 
-<div style="display: flex; align-items: center; margin-top: 2rem; margin-bottom: 0.5rem;">
-  <div style="flex: 1; border-top: 1px solid #ddd;"></div>
-  <div style="margin-left: 0.5rem; font-size: 1.5rem; color: #e0e0e0;">
+<div style="display: flex; align-items: center; margin-top: 1rem; margin-bottom: 1rem;">
+  <div style="flex: 1; height: 2px; background: linear-gradient(to right, transparent, #d0d0d0, transparent);"></div>
+  <div style="margin: 0 1rem; font-size: 1.6rem; font-weight: 700; color: #bbb; letter-spacing: 0.1em;">
     2025
   </div>
 </div>
@@ -451,7 +595,7 @@ nav_order: 2
       Towards a Holistic and Automated Evaluation Framework for Multi-Level Comprehension of LLMs in Book-Length Contexts
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-      {Yuho Lee, Jiaqi Deng}, Nicole Hee-yeon Kim, Hyangsuk Min, Taewon Yun, Minjeong Ban, Yul Kim, and Hwanjun Song*
+      {<span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Yuho Lee</span>, <span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Jiaqi Deng</span>}, Nicole Hee-yeon Kim, <span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Hyangsuk Min</span>, <span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Taewon Yun</span>, <span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Minjeong Ban</span>, Yul Kim, and <span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song</span>*
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
      In International Conference on Empirical Methods in Natural Language Processing (Main), 2025
@@ -494,7 +638,7 @@ nav_order: 2
       Rethinking LLM-Based Recommendations: A Personalized Query-Driven Parallel Integration
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-      Donghee Han, Hwanjun Song*, and Mun Young Yi*
+      Donghee Han, <span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song</span>*, and Mun Young Yi*
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
      In International Conference on Empirical Methods in Natural Language Processing (Findings), 2025
@@ -535,7 +679,7 @@ nav_order: 2
       ReFeed: Multi-Dimensional Summarization Refinement with Reflective Reasoning on Feedback
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-      Taewon Yun, Jihwan Oh, Hyangsuk Min, Yuho Lee, Jihwan Bang, Jason Cai, and Hwanjun Song*
+      <span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Taewon Yun</span>, <span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Jihwan Oh</span>, <span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Hyangsuk Min</span>, <span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Yuho Lee</span>, <span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Jihwan Bang</span>, Jason Cai, and <span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song</span>*
       <span style="color: #1a73e8; font-weight: bold;">(with Amazon)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
@@ -578,7 +722,7 @@ nav_order: 2
      Robust Dataset Condensation using Supervised Contrastive Learning
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-      Nicole Hee-Yeon Kim and Hwanjun Song*
+      Nicole Hee-Yeon Kim and <span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song</span>*
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
      In International Conference on Computer Vision, 2025
@@ -623,7 +767,7 @@ nav_order: 2
       Fine-Grained Multi-Prompt Essay Scoring with Multi-Level Disentanglement
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-      Donghee Han, Daeyoung Roh, Euihwan Han, Hwanjun Song*, and Mun Yong Yi*
+      Donghee Han, Daeyoung Roh, Euihwan Han, <span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song</span>*, and Mun Yong Yi*
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
       Data Mining and Knowledge Discovery (SCIE, IF=5.3), 2025
@@ -668,7 +812,7 @@ nav_order: 2
       LLM-based User Profile Management for Recommender System
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-      Seunghwan Bang, and Hwanjun Song*
+      <span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Seunghwan Bang</span>, and <span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song</span>*
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
       International ACM SIGIR Conference on Research and Development in Information Retrieval (GENNEXT Workshop), 2025
@@ -713,7 +857,7 @@ nav_order: 2
       Towards Multi-dimensional Evaluation of LLM Summarization across Domains and Languages
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-      {Hyangsuk Min, Yuho Lee}, Minjeong Ban, Jiaqi Deng, Nicole Hee-Yeon Kim, Taewon Yun, Hang Su, Jason Cai, and Hwanjun Song*
+      {<span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Hyangsuk Min</span>, <span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Yuho Lee</span>}, <span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Minjeong Ban</span>, <span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Jiaqi Deng</span>, Nicole Hee-Yeon Kim, <span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Taewon Yun</span>, Hang Su, Jason Cai, and <span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song</span>*
       <span style="color: #1a73e8; font-weight: bold;">(with Amazon)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
@@ -759,7 +903,7 @@ nav_order: 2
       Word2Passage : Word-level Importance Re-weighting for Query Expansion
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-      Jeonghwan Choi, Minjeong Ban, Minseok Kim, and Hwanjun Song*
+      <span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Jeonghwan Choi</span>, <span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Minjeong Ban</span>, Minseok Kim, and <span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song</span>*
       <span style="color: #1a73e8; font-weight: bold;">(with Meta)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
@@ -805,7 +949,7 @@ nav_order: 2
       Bi-Modal Learning for Networked Time Series
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-      Youngeun Nam, Jihye Na, Susik Yoon, Hwanjun Song, Jae-Gil Lee*, and Byung Suk Lee
+      Youngeun Nam, Jihye Na, Susik Yoon, <span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song</span>, Jae-Gil Lee*, and Byung Suk Lee
       <span style="color: #1a73e8; font-weight: bold;">(with UVM)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
@@ -851,7 +995,7 @@ nav_order: 2
       Mobility Networked Time-Series Forecasting Benchmark Datasets
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-      Jihye Na, Youngeun Nam, Susik Yoon, Hwanjun Song, Byung Suk Lee, and Jae-Gil Lee*
+      Jihye Na, Youngeun Nam, Susik Yoon, <span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song</span>, Byung Suk Lee, and Jae-Gil Lee*
       <span style="color: #1a73e8; font-weight: bold;">(with UVM)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
@@ -896,7 +1040,7 @@ nav_order: 2
       Learning to Summarize from LLM-generated Feedback
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-      Hwanjun Song*, Taewon Yun, Yuho Lee, Jihwan Oh, Gihun Lee, Jason Cai, and Hang Su
+      <span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song</span>*, <span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Taewon Yun</span>, <span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Yuho Lee</span>, <span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Jihwan Oh</span>, Gihun Lee, Jason Cai, and Hang Su
       <span style="color: #1a73e8; font-weight: bold;">(with Amazon, HyperConnect)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
@@ -943,7 +1087,7 @@ nav_order: 2
       Faithful, Unfaithful or Ambiguous? Multi-Agent Debate with Initial Stance for Summary Evaluation
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-      Mahnaz Koupaee, Jake W. Vincent, Saab Mansour, Igor Shalyminov, Han He, Hwanjun Song, Raphael Shu, Jianfeng He, Yi Nian, Amy Wing-mei Wong, and Kyu J. Han, Hang Su*
+      Mahnaz Koupaee, Jake W. Vincent, Saab Mansour, Igor Shalyminov, Han He, <span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song</span>, Raphael Shu, Jianfeng He, Yi Nian, Amy Wing-mei Wong, and Kyu J. Han, Hang Su*
       <span style="color: #1a73e8; font-weight: bold;">(with Amazon)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
@@ -988,7 +1132,7 @@ nav_order: 2
       RA-TTA: Retrieval-Augmented Test-Time Adaptation for Vision-Language Models
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-      Youngjun Lee, Doyoung Kim, Junhyeok Kang, Jihwan Bang, Hwanjun Song, and Jae-Gil Lee*
+      Youngjun Lee, Doyoung Kim, Junhyeok Kang, <span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Jihwan Bang</span>, <span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song</span>, and Jae-Gil Lee*
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
       In International Conference on Learning Representations, 2025
@@ -1032,7 +1176,7 @@ nav_order: 2
       Learning to Verify Summary Facts with Fine-Grained LLM Feedback
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-      Jihwan Oh, Jeonghwan Choi, Nicole Hee-Yeon Kim, Taewon Yun, and Hwanjun Song*
+      <span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Jihwan Oh</span>, <span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Jeonghwan Choi</span>, Nicole Hee-Yeon Kim, <span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Taewon Yun</span>, and <span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song</span>*
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
      In International Conference on Computational Linguistics, 2025
@@ -1043,9 +1187,9 @@ nav_order: 2
   </div>
 </div>
 
-<div style="display: flex; align-items: center; margin-top: 2rem; margin-bottom: 0.5rem;">
-  <div style="flex: 1; border-top: 1px solid #ddd;"></div>
-  <div style="margin-left: 0.5rem; font-size: 1.5rem; color: #e0e0e0;">
+<div style="display: flex; align-items: center; margin-top: 1rem; margin-bottom: 1rem;">
+  <div style="flex: 1; height: 2px; background: linear-gradient(to right, transparent, #d0d0d0, transparent);"></div>
+  <div style="margin: 0 1rem; font-size: 1.6rem; font-weight: 700; color: #bbb; letter-spacing: 0.1em;">
     2024
   </div>
 </div>
@@ -1083,7 +1227,7 @@ nav_order: 2
       UniSumEval: Towards Unified, Fine-grained, Multi-dimensional Summarization Evaluation for LLMs
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-      {Yuho Lee, Taewon Yun}, Jason Cai, Hang Su, and Hwanjun Song*
+      {<span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Yuho Lee</span>, <span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Taewon Yun</span>}, Jason Cai, Hang Su, and <span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song</span>*
       <span style="color: #1a73e8; font-weight: bold;">(with Amazon)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
@@ -1129,7 +1273,7 @@ nav_order: 2
       Exploiting Representation Curvature for Boundary Detection in Time Series
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-      Yooju Shin, Jaehyun Park, Susik Yoon, Hwanjun Song, Byung Suk Lee, and Jae-Gil Lee*
+      Yooju Shin, Jaehyun Park, Susik Yoon, <span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song</span>, Byung Suk Lee, and Jae-Gil Lee*
       <span style="color: #1a73e8; font-weight: bold;">(with UVM)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
@@ -1174,7 +1318,7 @@ nav_order: 2
       Controllable Contextualized Image Captioning: Directing the Visual Narrative through User-Defined Highlights
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-      Shunqi Mao, Chaoyi Zhang, Hang Su, Hwanjun Song, Igor Shalyminov, and Weidong Cai*
+      Shunqi Mao, Chaoyi Zhang, Hang Su, <span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song</span>, Igor Shalyminov, and Weidong Cai*
       <span style="color: #1a73e8; font-weight: bold;">(with Amazon, USYD)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
@@ -1219,7 +1363,7 @@ nav_order: 2
       Prompt-Guided DETR with RoI-Pruned Masked Attention for Open-Vocabulary Object Detection
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-     {Hwanjun Song* and Jihwan Bang}
+     {<span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song</span>* and <span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Jihwan Bang</span>}
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
       Pattern Recognition (SCIE, IF=8.0), 2024
@@ -1264,7 +1408,7 @@ nav_order: 2
       Q-HyViT: Post-Training Quantization of Hybrid Vision Transformers with Bridge Block Reconstruction for IoT Systems
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-     Jemin Lee, Yongin Kwon, Sihyeong Park, Misun Yu, Jeman Park, and Hwanjun Song*
+     Jemin Lee, Yongin Kwon, Sihyeong Park, Misun Yu, Jeman Park, and <span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song</span>*
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
       IEEE Internet of Things Journal (SCIE, IF=10.6), 2024
@@ -1308,7 +1452,7 @@ nav_order: 2
       FineSurE: Fine-grained Summarization Evaluation using LLMs
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-     Hwanjun Song*, Hang Su, Igore Shalyminov, Jason Cai, and Saab Mansour
+     <span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song</span>*, Hang Su, Igore Shalyminov, Jason Cai, and Saab Mansour
       <span style="color: #1a73e8; font-weight: bold;">(with Amazon)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
@@ -1353,7 +1497,7 @@ nav_order: 2
       Can Your Model Tell a Negation from an Implicature? Unravelling Challenges With Intent Encoders
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-     Yuwei Zhang, Siffi Singh, Sailik Sengupta, Igor Shalyminov, Hwanjun Song, and Saab Mansour
+     Yuwei Zhang, Siffi Singh, Sailik Sengupta, Igor Shalyminov, <span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song</span>, and Saab Mansour
       <span style="color: #1a73e8; font-weight: bold;">(with Amazon)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
@@ -1399,7 +1543,7 @@ nav_order: 2
       One Size Fits All for Semantic Shifts: Adaptive Prompt Tuning for Continual Learning
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-      Doyoung Kim, Susik Yoon, Dongmin Park, Youngjun Lee, Hwanjun Song, Jihwan Bang, and Jae-Gil Lee*
+      Doyoung Kim, Susik Yoon, Dongmin Park, Youngjun Lee, <span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song</span>, <span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Jihwan Bang</span>, and Jae-Gil Lee*
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
       In International Conference on Machine Learning, 2024
@@ -1443,7 +1587,7 @@ nav_order: 2
       MAGID: An Automated Pipeline for Generating Synthetic Multi-modal Datasets
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-     Hossein Aboutalebi, Hwanjun Song*, Yusheng Xie, Arshit Gupta, Justin Sun, Hang Su, Igor Shalyminov, Nikolaos Pappas, Siffi Singh, and Saab Mansour
+     Hossein Aboutalebi, <span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song</span>*, Yusheng Xie, Arshit Gupta, Justin Sun, Hang Su, Igor Shalyminov, Nikolaos Pappas, Siffi Singh, and Saab Mansour
       <span style="color: #1a73e8; font-weight: bold;">(with Amazon)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
@@ -1488,7 +1632,7 @@ nav_order: 2
      TofuEval: Evaluating Hallucinations of LLMs on Topic-Focused Dialogue Summarization
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-     Liyan Tang, Igor Shalyminov, Amy Wing-mei Wong, Jon Burnsky, Jake W Vincent, Yu’an Yang, Siffi Singh, Song Feng, Hwanjun Song, Hang Su, Lijia Sun, Yi Zhang, Saab Mansour, and Kathleen McKeown
+     Liyan Tang, Igor Shalyminov, Amy Wing-mei Wong, Jon Burnsky, Jake W Vincent, Yu’an Yang, Siffi Singh, Song Feng, <span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song</span>, Hang Su, Lijia Sun, Yi Zhang, Saab Mansour, and Kathleen McKeown
       <span style="color: #1a73e8; font-weight: bold;">(with Amazon)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
@@ -1534,7 +1678,7 @@ nav_order: 2
      Semi-Supervised Dialogue Abstractive Summarization via High-Quality Pseudolabel Selection
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-     Jianfeng He, Hang Su, Jason Cai, Igor Shalyminov, Hwanjun Song, and Saab Mansour
+     Jianfeng He, Hang Su, Jason Cai, Igor Shalyminov, <span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song</span>, and Saab Mansour
       <span style="color: #1a73e8; font-weight: bold;">(with Amazon)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
@@ -1580,7 +1724,7 @@ nav_order: 2
       Breaking the Time-Frequency Granularity Discrepancy in Time-Series Anomaly Detection
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-     Youngeun Nam, Susik Yoon, Yooju Shin, Minyoung Bae, Hwanjun Song, Jae-Gil Lee*, and Byung Suk Lee
+     Youngeun Nam, Susik Yoon, Yooju Shin, Minyoung Bae, <span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song</span>, Jae-Gil Lee*, and Byung Suk Lee
       <span style="color: #1a73e8; font-weight: bold;">(with UVM)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
@@ -1626,7 +1770,7 @@ nav_order: 2
      Adaptive Shortcut Debiasing for Online Continual Learning
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-      Doyoung Kim, Dongmin Park, Yooju Shin, Jihwan Bang, Hwanjun Song, and Jae-Gil Lee*
+      Doyoung Kim, Dongmin Park, Yooju Shin, <span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Jihwan Bang</span>, <span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song</span>, and Jae-Gil Lee*
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
      In AAAI Conference on Artificial Intelligence, 2024
@@ -1671,7 +1815,7 @@ nav_order: 2
      Toward Robustness in Multi-label Classification: A Data Augmentation Strategy against Imbalance and Noise
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-      Hwanjun Song*, Minseok Kim, and Jae-Gil Lee
+      <span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song</span>*, Minseok Kim, and Jae-Gil Lee
       <span style="color: #1a73e8; font-weight: bold;">(with Amazon)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
@@ -1685,9 +1829,9 @@ nav_order: 2
 
 
 
-<div style="display: flex; align-items: center; margin-top: 2rem; margin-bottom: 0.5rem;">
-  <div style="flex: 1; border-top: 1px solid #ddd;"></div>
-  <div style="margin-left: 0.5rem; font-size: 1.5rem; color: #e0e0e0;">
+<div style="display: flex; align-items: center; margin-top: 1rem; margin-bottom: 1rem;">
+  <div style="flex: 1; height: 2px; background: linear-gradient(to right, transparent, #d0d0d0, transparent);"></div>
+  <div style="margin: 0 1rem; font-size: 1.6rem; font-weight: 700; color: #bbb; letter-spacing: 0.1em;">
     2023
   </div>
 </div>
@@ -1725,7 +1869,7 @@ nav_order: 2
      Enhancing Abstractiveness of Summarization Models through Calibrated Distillation
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-     Hwanjun Song*, Igor Shalyminov, Hang Su, Siffi Singh, Kaisheng Yao, and Saab Mansour
+     <span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song</span>*, Igor Shalyminov, Hang Su, Siffi Singh, Kaisheng Yao, and Saab Mansour
       <span style="color: #1a73e8; font-weight: bold;">(with Amazon)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
@@ -1772,7 +1916,7 @@ nav_order: 2
      Fast and Robust Early-Exiting Framework for Autoregressive Language Models with Synchronized Parallel Decoding
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-     {Sangmin Bae, Jongwoo Ko}, Hwanjun Song*, and Se-Young Yun*
+     {Sangmin Bae, Jongwoo Ko}, <span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song</span>*, and Se-Young Yun*
       <span style="color: #1a73e8; font-weight: bold;">(with Amazon)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
@@ -1818,7 +1962,7 @@ nav_order: 2
      Robust Data Pruning under Label Noise via Maximizing Re-labeling Accuracy
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-      Dongmin Park, Seola Choi, Doyoung Kim, Hwanjun Song, and Jae-Gil Lee*
+      Dongmin Park, Seola Choi, Doyoung Kim, <span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song</span>, and Jae-Gil Lee*
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
      In Advances in Neural Information Processing Systems, 2023
@@ -1862,7 +2006,7 @@ nav_order: 2
      Generating instance-level prompts for rehearsal-free continual learning
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-      Dahuin Jung, Dongyoon Han, Jihwan Bang, and Hwanjun Song*
+      Dahuin Jung, Dongyoon Han, <span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Jihwan Bang</span>, and <span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song</span>*
       <span style="color: #1a73e8; font-weight: bold;">(with NAVER, Amazon, SNU)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
@@ -1908,7 +2052,7 @@ nav_order: 2
      Context Consistency Regularization for Label Sparsity in Time Series
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-      Yooju Shin, Susik Yoon, Hwanjun Song, Dongmin Park, Byunghyun Kim, Jae-Gil Lee*, and Byung Suk Lee
+      Yooju Shin, Susik Yoon, <span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song</span>, Dongmin Park, Byunghyun Kim, Jae-Gil Lee*, and Byung Suk Lee
       <span style="color: #1a73e8; font-weight: bold;">(with UVM)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
@@ -1954,7 +2098,7 @@ nav_order: 2
     Re-thinking Federated Active Learning based on Inter-class Diversity
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-     {SangMook Kim, Sangmin Bae}, Hwanjun Song*, and Se-Young Yun*
+     {SangMook Kim, Sangmin Bae}, <span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song</span>*, and Se-Young Yun*
       <span style="color: #1a73e8; font-weight: bold;">(with NAVER)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
@@ -2000,7 +2144,7 @@ nav_order: 2
      Online Boundary-Free Continual Learning by Scheduled Data Prior
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-      Hyunseo Koh, Minhyuk Seo, Jihwan Bang, Hwanjun Song, Deokki Hong, Seulki Park, Jung-Woo Ha, and Jonghyun Choi*
+      Hyunseo Koh, Minhyuk Seo, <span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Jihwan Bang</span>, <span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song</span>, Deokki Hong, Seulki Park, Jung-Woo Ha, and Jonghyun Choi*
       <span style="color: #1a73e8; font-weight: bold;">(with NAVER, GIST)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
@@ -2045,7 +2189,7 @@ nav_order: 2
      Data Collection and Quality Challenges in Deep Learning: A Data-centric AI Perspective
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-      Steven Euijong Whang, Yuji Roh, Hwanjun Song, and Jae-Gil Lee*
+      Steven Euijong Whang, Yuji Roh, <span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song</span>, and Jae-Gil Lee*
       <span style="color: #1a73e8; font-weight: bold;">(with NAVER)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
@@ -2059,9 +2203,9 @@ nav_order: 2
 </div>
 
 
-<div style="display: flex; align-items: center; margin-top: 2rem; margin-bottom: 0.5rem;">
-  <div style="flex: 1; border-top: 1px solid #ddd;"></div>
-  <div style="margin-left: 0.5rem; font-size: 1.5rem; color: #e0e0e0;">
+<div style="display: flex; align-items: center; margin-top: 1rem; margin-bottom: 1rem;">
+  <div style="flex: 1; height: 2px; background: linear-gradient(to right, transparent, #d0d0d0, transparent);"></div>
+  <div style="margin: 0 1rem; font-size: 1.6rem; font-weight: 700; color: #bbb; letter-spacing: 0.1em;">
     2022
   </div>
 </div>
@@ -2099,7 +2243,7 @@ nav_order: 2
       Meta-Query-Net: Resolving Purity-Informativeness Dilemma in Open-set Active Learning
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-      Dongmin Park, Yooju Shin, Jihwan Bang, Youngjun Lee, Hwanjun Song*, and Jae-Gil Lee*
+      Dongmin Park, Yooju Shin, <span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Jihwan Bang</span>, Youngjun Lee, <span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song</span>*, and Jae-Gil Lee*
       <span style="color: #1a73e8; font-weight: bold;">(with NAVER)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
@@ -2144,7 +2288,7 @@ nav_order: 2
       Understanding Cross-Domain Few-Shot Learning: An Experimental Study
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-      {Jaehoon Oh, Sungnyun Kim, Namgyu Ho}, Jin-Hwa Kim, Hwanjun Song*, and Se-Young Yun*
+      {Jaehoon Oh, Sungnyun Kim, Namgyu Ho}, Jin-Hwa Kim, <span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song</span>*, and Se-Young Yun*
       <span style="color: #1a73e8; font-weight: bold;">(with NAVER)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
@@ -2190,7 +2334,7 @@ nav_order: 2
      Multi-View POI-level Cellular Trajectory Reconstruction for Digital Contact Tracing of Infectious Diseases
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-      Dongmin Park, Junhyeok Kang, Hwanjun Song, Susik Yoon, and Jae-Gil Lee*
+      Dongmin Park, Junhyeok Kang, <span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song</span>, Susik Yoon, and Jae-Gil Lee*
       <span style="color: #1a73e8; font-weight: bold;">(with NAVER)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
@@ -2235,7 +2379,7 @@ nav_order: 2
      E-CLIP: Large-Scale Vision-Language Representation Learning in E-Commerce
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-      Wonyoung Shin, Jonghun Park, Taekang Woo, Yongwoo Cho, Kwangjin Oh, and Hwanjun Song*
+      Wonyoung Shin, Jonghun Park, Taekang Woo, Yongwoo Cho, Kwangjin Oh, and <span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song</span>*
       <span style="color: #1a73e8; font-weight: bold;">(with NAVER)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
@@ -2281,7 +2425,7 @@ nav_order: 2
     FedRN: Exploiting k-Reliable Neighbors Towards Robust Federated Learning
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-      Sangmook Kim, Wonyoung Shin, Soohyuk Jang, Hwanjun Song*, and Se-Young Yun*
+      Sangmook Kim, Wonyoung Shin, Soohyuk Jang, <span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song</span>*, and Se-Young Yun*
       <span style="color: #1a73e8; font-weight: bold;">(with NAVER)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
@@ -2327,7 +2471,7 @@ nav_order: 2
    ReFine: Re-randomization before Fine-tuning for Cross-domain Few-shot Learning
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-      {Jaehoon Oh, Sungnyun Kim, Namgyu Ho}, Jin-Hwa Kim, Hwanjun Song*, and Se-Young Yun*
+      {Jaehoon Oh, Sungnyun Kim, Namgyu Ho}, Jin-Hwa Kim, <span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song</span>*, and Se-Young Yun*
       <span style="color: #1a73e8; font-weight: bold;">(with NAVER)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
@@ -2373,7 +2517,7 @@ nav_order: 2
       Learning from Noisy Labels with Deep Neural Networks: A Survey
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-      Hwanjun Song, Minseok Kim, Dongmin Park, Yooju Shin, and Jae-Gil Lee*
+      <span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song</span>, Minseok Kim, Dongmin Park, Yooju Shin, and Jae-Gil Lee*
       <span style="color: #1a73e8; font-weight: bold;">(with NAVER)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
@@ -2421,7 +2565,7 @@ nav_order: 2
       Time Is MattEr: Temporal Self-supervision for Video Transformers
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-      Sukmin Yun, Jaehyung Kim, Dongyoon Han, Hwanjun Song, Jung-Woo Ha, and Jinwoo Shin*
+      Sukmin Yun, Jaehyung Kim, Dongyoon Han, <span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song</span>, Jung-Woo Ha, and Jinwoo Shin*
       <span style="color: #1a73e8; font-weight: bold;">(with NAVER)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
@@ -2468,7 +2612,7 @@ nav_order: 2
       Dataset Condensation via Efficient Synthetic-Data Parameterization
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-     Jang-Hyun Kim, Jinuk Kim, Seong Joon Oh, Sangdoo Yun, Hwanjun Song, Joonhyun Jeong, Jung-Woo Ha, and Hyun Oh Song*
+     Jang-Hyun Kim, Jinuk Kim, Seong Joon Oh, Sangdoo Yun, <span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song</span>, Joonhyun Jeong, Jung-Woo Ha, and Hyun Oh Song*
       <span style="color: #1a73e8; font-weight: bold;">(with NAVER, SNU)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
@@ -2516,7 +2660,7 @@ nav_order: 2
       Coherence-based Label Propagation over Time Series for Accelerated Active Learning
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-    Yooju Shin, Susik Yoon, Sundong Kim, Hwanjun Song, Jae-Gil Lee*, and Byung Suk Lee
+    Yooju Shin, Susik Yoon, Sundong Kim, <span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song</span>, Jae-Gil Lee*, and Byung Suk Lee
       <span style="color: #1a73e8; font-weight: bold;">(with UVM)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
@@ -2561,7 +2705,7 @@ nav_order: 2
       VIDT: An Efficient and Effective Fully Transformer-based Object Detector
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-    Hwanjun Song*, Deqing Sun, Sanghyuk Chun, Varun Jampani, Dongyoon Han, Byeongho Heo, Wonjae Kim, and Ming-Hsuan Yang
+    <span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song</span>*, Deqing Sun, Sanghyuk Chun, Varun Jampani, Dongyoon Han, Byeongho Heo, Wonjae Kim, and Ming-Hsuan Yang
       <span style="color: #1a73e8; font-weight: bold;">(with NAVER, Google)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
@@ -2608,7 +2752,7 @@ nav_order: 2
       Meta-Learning for Online Update of Recommender Systems
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-    Minseok Kim, Hwanjun Song, Yooju Shin, Dongmin Park, Kijung Shin, and Jae-Gil Lee*
+    Minseok Kim, <span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song</span>, Yooju Shin, Dongmin Park, Kijung Shin, and Jae-Gil Lee*
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
   In AAAI Conference on Artificial Intelligence, 2022
@@ -2653,7 +2797,7 @@ nav_order: 2
      Covid-EENet: Predicting Fine-Grained Impact of COVID-19 on Local Economies
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-    Doyoung Kim, Hyangsuk Min, Youngeun Nam, Hwanjun Song, Susik Yoon, Minseok Kim, and Jae-Gil Lee*
+    Doyoung Kim, <span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Hyangsuk Min</span>, Youngeun Nam, <span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song</span>, Susik Yoon, Minseok Kim, and Jae-Gil Lee*
       <span style="color: #1a73e8; font-weight: bold;">(with NAVER)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
@@ -2698,7 +2842,7 @@ nav_order: 2
    Online Continual Learning on A Contaminated Data Stream with Blurry Task Boundaries
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-     Jihwan Bang, Hyunseo Koh, Seulki Park, Hwanjun Song, Jung-Woo Ha, and Jonghyun Choi*
+     <span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Jihwan Bang</span>, Hyunseo Koh, Seulki Park, <span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song</span>, Jung-Woo Ha, and Jonghyun Choi*
       <span style="color: #1a73e8; font-weight: bold;">(with NAVER, GIST)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
@@ -2712,9 +2856,9 @@ nav_order: 2
 
 
 
-<div style="display: flex; align-items: center; margin-top: 2rem; margin-bottom: 0.5rem;">
-  <div style="flex: 1; border-top: 1px solid #ddd;"></div>
-  <div style="margin-left: 0.5rem; font-size: 1.5rem; color: #e0e0e0;">
+<div style="display: flex; align-items: center; margin-top: 1rem; margin-bottom: 1rem;">
+  <div style="flex: 1; height: 2px; background: linear-gradient(to right, transparent, #d0d0d0, transparent);"></div>
+  <div style="margin: 0 1rem; font-size: 1.6rem; font-weight: 700; color: #bbb; letter-spacing: 0.1em;">
     2021
   </div>
 </div>
@@ -2754,7 +2898,7 @@ nav_order: 2
       Task-agnostic undesirable feature deactivation using out-of-distribution data
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-   Dongmin Park, Hwanjun Song, MinSeok Kim, and Jae-Gil Lee*
+   Dongmin Park, <span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song</span>, MinSeok Kim, and Jae-Gil Lee*
       <span style="color: #1a73e8; font-weight: bold;">(with NAVER)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
@@ -2801,7 +2945,7 @@ nav_order: 2
    Exploiting Scene Depth for Object Detection with Multimodal Transformers
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-     Hwanjun Song*, Eunyoung Kim, Varun Jampan, Deqing Sun, Jae-Gil Lee, and Ming-Hsuan Yang
+     <span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song</span>*, Eunyoung Kim, Varun Jampan, Deqing Sun, Jae-Gil Lee, and Ming-Hsuan Yang
       <span style="color: #1a73e8; font-weight: bold;">(with NAVER, Google)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
@@ -2847,7 +2991,7 @@ nav_order: 2
      Robust Learning by Self-Transition for Handling Noisy Labels
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-      Hwanjun Song, Minseok Kim, Dongmin Park, Yooju Shin, and Jae-Gil Lee*
+      <span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song</span>, Minseok Kim, Dongmin Park, Yooju Shin, and Jae-Gil Lee*
       <span style="color: #1a73e8; font-weight: bold;">(with NAVER)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
@@ -2894,7 +3038,7 @@ nav_order: 2
      Machine Learning Robustness, Fairness, and their Convergence
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-     Jae-Gil Lee, Yuji Roh, Hwanjun Song, and Steven Euijong Whang*
+     Jae-Gil Lee, Yuji Roh, <span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song</span>, and Steven Euijong Whang*
       <span style="color: #1a73e8; font-weight: bold;">(with NAVER)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
@@ -2940,7 +3084,7 @@ nav_order: 2
      Premere: Meta-Reweighting via Self-Ensembling for Point-of-Interest Recommendation
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-    Minseok Kim, Hwanjun Song, Doyoung Kim, Kijung Shin, and Jae-Gil Lee*
+    Minseok Kim, <span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song</span>, Doyoung Kim, Kijung Shin, and Jae-Gil Lee*
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
  In AAAI Conference on Artificial Intelligence, 2021
@@ -2952,9 +3096,9 @@ nav_order: 2
 </div>
 
 
-<div style="display: flex; align-items: center; margin-top: 2rem; margin-bottom: 0.5rem;">
-  <div style="flex: 1; border-top: 1px solid #ddd;"></div>
-  <div style="margin-left: 0.5rem; font-size: 1.5rem; color: #e0e0e0;">
+<div style="display: flex; align-items: center; margin-top: 1rem; margin-bottom: 1rem;">
+  <div style="flex: 1; height: 2px; background: linear-gradient(to right, transparent, #d0d0d0, transparent);"></div>
+  <div style="margin: 0 1rem; font-size: 1.6rem; font-weight: 700; color: #bbb; letter-spacing: 0.1em;">
     2017-2020
   </div>
 </div>
@@ -2993,7 +3137,7 @@ nav_order: 2
      Carpe Diem, Seize the Samples Uncertain" at the Moment" for Adaptive Batch Selection
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-      Hwanjun Song, Minseok Kim, Sundong Kim, and Jae-Gil Lee*
+      <span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song</span>, Minseok Kim, Sundong Kim, and Jae-Gil Lee*
       <span style="color: #1a73e8; font-weight: bold;">(with IBS)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
@@ -3038,7 +3182,7 @@ nav_order: 2
       Ada-Boundary: Accelerating DNN Training via Adaptive Boundary Batch Selection
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-   Hwanjun Song, Sundong Kim, Minseok Kim, and Jae-Gil Lee*
+   <span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song</span>, Sundong Kim, Minseok Kim, and Jae-Gil Lee*
       <span style="color: #1a73e8; font-weight: bold;">(with IBS)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
@@ -3084,7 +3228,7 @@ nav_order: 2
      Hi-COVIDNet: Deep Learning Approach to Predict Inbound COVID-19 Patients and Case Study in South Korea
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-    Minseok Kim, Junhyeok Kang, Doyoung Kim, Hwanjun Song, Hyangsuk Min, Youngeun Nam, Dongmin Park, and Jae-Gil Lee*
+    Minseok Kim, Junhyeok Kang, Doyoung Kim, <span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song</span>, <span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Hyangsuk Min</span>, Youngeun Nam, Dongmin Park, and Jae-Gil Lee*
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
      In International Conference on Knowledge Discovery and Data Mining, 2020
@@ -3128,7 +3272,7 @@ nav_order: 2
      Revisit Prediction by Deep Survival Analysis
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-   Sundong Kim, Hwanjun Song, Sejin Kim, Beomyoung Kim, and Jae-Gil Lee*
+   Sundong Kim, <span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song</span>, Sejin Kim, Beomyoung Kim, and Jae-Gil Lee*
       <span style="color: #1a73e8; font-weight: bold;">(with IBS)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
@@ -3173,7 +3317,7 @@ nav_order: 2
       TRAP: Two-level regularized autoencoder-based embedding for power-law distributed data
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-     Dongmin Park, Hwanjun Song, Minseok Kim, and Jae-Gil Lee*
+     Dongmin Park, <span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song</span>, Minseok Kim, and Jae-Gil Lee*
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
      In Proceedings of The Web Conference, 2020
@@ -3218,7 +3362,7 @@ nav_order: 2
      SELFIE: Refurbishing Unclean Samples for Robust Deep Learning
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-      Hwanjun Song, Minseok Kim, and Jae-Gil Lee*
+      <span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song</span>, Minseok Kim, and Jae-Gil Lee*
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
       In International Conference on Machine Learning, 2019
@@ -3263,7 +3407,7 @@ nav_order: 2
     RP-DBSCAN: A Superfast Parallel DBSCAN Algorithm based on Random Partitioning
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-      Hwanjun Song, and Jae-Gil Lee*
+      <span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song</span>, and Jae-Gil Lee*
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
       In International Conference on Management of Data, 2018
@@ -3307,7 +3451,7 @@ nav_order: 2
       PAMAE: Parallel k-Medoids Clustering with High Accuracy and Efficiency
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-      Hwanjun Song, Jae-Gil Lee*, and Wook-Shin Han
+      <span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song</span>, Jae-Gil Lee*, and Wook-Shin Han
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
       In International Conference on Knowledge Discovery and Data Mining, 2017
