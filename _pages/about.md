@@ -24,11 +24,28 @@ social: false
 }
 
 .post-header .desc {
+  display: none;
+}
+
+.dept-highlight {
+  display: block;
   font-size: 0.9rem;
   color: #777;
   font-weight: 400;
   letter-spacing: 0.02em;
+  margin-top: -0.3rem;
 }
+
+.dept-highlight .affiliated {
+  display: block;
+  font-size: 0.8rem;
+  color: #999;
+  margin-top: 0.2rem;
+}
+
+.dept-ise { color: #4285f4; font-weight: 600; }
+.dept-ds { color: #34a853; font-weight: 600; }
+.dept-ai { color: #e8a817; font-weight: 600; }
 
 .hero-section {
   display: flex;
@@ -236,6 +253,11 @@ social: false
   margin-bottom: 0.8rem;
 }
 </style>
+
+<p class="dept-highlight">
+  <span class="dept-ise">Department of Industrial and Systems Engineering</span> & <span class="dept-ds">Graduate School of Data Science</span>, KAIST, South Korea
+  <span class="affiliated">Also, affiliated with <span class="dept-ai">Department of AX at the KAIST College of AI</span></span>
+</p>
 
 <div class="hero-section">
   <div class="img-col">
