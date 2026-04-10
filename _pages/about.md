@@ -60,6 +60,72 @@ social: false
   box-shadow: 0 6px 20px rgba(0,0,0,0.1);
 }
 
+/* Slideshow */
+.slideshow {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 aspect ratio */
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  background: #f0f0f0;
+}
+
+.slideshow .slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slideshow .slide.active {
+  opacity: 1;
+}
+
+.slideshow .slide img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: none;
+}
+
+.slide-caption {
+  font-size: 0.75rem;
+  color: #999;
+  text-align: center;
+  margin: 0.3rem 0 0 0;
+  font-style: italic;
+  min-height: 1.2em;
+  transition: opacity 0.5s ease;
+}
+
+.slide-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+}
+
+.slide-dots .dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #ccc;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.slide-dots .dot.active {
+  background: #4285f4;
+}
+
 .hero-section .text-col p {
   font-size: 0.95rem;
   line-height: 1.8;
@@ -173,8 +239,27 @@ social: false
 
 <div class="hero-section">
   <div class="img-col">
-    <img src="/assets/img/lab-2026-2.png" alt="DISLab 2026">
-    <p style="font-size: 0.75rem; color: #999; text-align: center; margin: 0.3rem 0 0 0; font-style: italic;">2026 Strawberry Party at KAIST</p>
+    <div class="slideshow" id="heroSlideshow">
+      <div class="slide active">
+        <img src="/assets/img/main/26-04-02.png" alt="2026 Strawberry Party at KAIST">
+      </div>
+      <div class="slide">
+        <img src="/assets/img/main/26-02-12.png" alt="2026 Graduation Ceremony at KAIST">
+      </div>
+      <div class="slide">
+        <img src="/assets/img/main/25-07-04.png" alt="2025 KCC at Jeju Island">
+      </div>
+      <div class="slide">
+        <img src="/assets/img/main/25-04-07.png" alt="2025 Strawberry Party at KAIST">
+      </div>
+    </div>
+    <p class="slide-caption" id="slideCaption">2026 Strawberry Party at KAIST</p>
+    <div class="slide-dots" id="slideDots">
+      <button class="dot active" onclick="goToSlide(0)"></button>
+      <button class="dot" onclick="goToSlide(1)"></button>
+      <button class="dot" onclick="goToSlide(2)"></button>
+      <button class="dot" onclick="goToSlide(3)"></button>
+    </div>
   </div>
   <div class="text-col">
     <p>
@@ -218,3 +303,44 @@ social: false
 <div class="cta-box info">
   You can catch up on our recent research on <a href="https://www.youtube.com/channel/UCrEpnN7_2BmrHsPWns_Vx3Q" target="_blank" style="color: #166534; font-weight: 600;">our YouTube channel</a>.
 </div>
+
+<script>
+(function() {
+  const captions = [
+    "2026 Strawberry Party at KAIST",
+    "2026 Graduation Ceremony at KAIST",
+    "2025 KCC at Jeju Island",
+    "2025 Strawberry Party at KAIST"
+  ];
+  const slides = document.querySelectorAll('#heroSlideshow .slide');
+  const dots = document.querySelectorAll('#slideDots .dot');
+  const caption = document.getElementById('slideCaption');
+  let current = 0;
+  let timer;
+
+  function goTo(idx) {
+    slides[current].classList.remove('active');
+    dots[current].classList.remove('active');
+    current = idx;
+    slides[current].classList.add('active');
+    dots[current].classList.add('active');
+    caption.textContent = captions[current];
+  }
+
+  function next() {
+    goTo((current + 1) % slides.length);
+  }
+
+  function startTimer() {
+    timer = setInterval(next, 5000);
+  }
+
+  window.goToSlide = function(idx) {
+    clearInterval(timer);
+    goTo(idx);
+    startTimer();
+  };
+
+  startTimer();
+})();
+</script>

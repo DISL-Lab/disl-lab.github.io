@@ -168,6 +168,34 @@ horizontal: false
   vertical-align: middle;
 }
 
+/* Lab Manager */
+.member-card.manager {
+  border: 2px solid #34a853;
+  background: linear-gradient(135deg, #fff 0%, #f0fff4 100%);
+}
+
+.member-card.manager .img-wrapper img {
+  border-color: #34a853;
+}
+
+.member-card.manager:hover .img-wrapper img {
+  border-color: #34a853;
+  box-shadow: 0 4px 15px rgba(52,168,83,0.25);
+}
+
+.member-card.manager .name::after {
+  content: 'Lab Manager';
+  display: inline-block;
+  font-size: 0.55rem;
+  font-weight: 600;
+  color: #fff;
+  background: #34a853;
+  padding: 0.1rem 0.4rem;
+  border-radius: 4px;
+  margin-left: 0.4rem;
+  vertical-align: middle;
+}
+
 /* Director */
 .member-card.director {
   border: 2px solid #e8a817;
@@ -301,7 +329,7 @@ horizontal: false
 <h3 class="member-section-title">Lab Manager (Postdoctoral Researcher)</h3>
 
 <div class="member-grid">
-  <div class="member-card">
+  <div class="member-card manager">
     <div class="img-wrapper">
       <img src="/assets/img/bio_jeesu_jung.png" alt="Jeesu Jung">
     </div>
