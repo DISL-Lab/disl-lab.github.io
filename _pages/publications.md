@@ -205,6 +205,50 @@ nav_order: 2
 
 <div class="project-block">
   <div class="img-col">
+    <img src="/assets/img/paper/26-aclswr-raqe.png" alt="Project 1">
+  </div>
+  <div class="text-col">
+    <h3 style="font-size: 0.9rem; margin-bottom: 0.2rem; font-weight: bold;">
+    <span style="
+        display: inline-block;
+        background-color:rgb(7, 95, 41);  /* 원하는 색으로 변경 가능 */
+        color: white;
+        font-weight: bold;
+        font-size: 0.75rem;
+        padding: 0.2rem 0.6rem;
+        border-radius: 6px;
+        margin-right: 0.1rem;
+    ">
+        ACL
+    </span>
+    <span style="
+        display: inline-block;
+        background-color:rgb(197, 38, 179);  /* 원하는 색으로 변경 가능 */
+        color: white;
+        font-weight: bold;
+        font-size: 0.75rem;
+        padding: 0.2rem 0.6rem;
+        border-radius: 6px;
+        margin-right: 0.1rem;
+    ">
+        NLP
+    </span>
+      Reranker-Aligned Query Expansion via Label-Free Group-Relative Policy Optimization
+    </h3>
+    <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
+      <span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Gyeonghun Sun</span>, <span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Jeonghwan Choi</span>, and <span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song*</span>
+    </p>
+    <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
+      In Annual Meeting of the Association for Computational Linguistics (Student Research Workshop, SWR), Non-archival, 2026
+    </p>
+    <div style="font-size: 0.8rem; color: #555; margin-top: 0.0rem;">
+    </div>
+  </div>
+</div>
+
+
+<div class="project-block">
+  <div class="img-col">
     <img src="/assets/img/paper/26-acl-alignment.png" alt="Project 1">
   </div>
   <div class="text-col">
