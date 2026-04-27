@@ -46,7 +46,7 @@ repo_trophies:
 # will use title and url fields
 # Take a look to https://github.com/jekyll/jekyll-feed for more customization
 
-rss_icon: true
+rss_icon: false
 
 # -----------------------------------------------------------------------------
 # Layout
@@ -76,7 +76,7 @@ github_username: songhwanjun # your GitHub user name
 gitlab_username: # your GitLab user name
 twitter_username: # your Twitter handle
 mastodon_username: # your mastodon instance+username in the format instance.tld/@username
-linkedin_username: jhwanjun-song-a1742515a/ # your LinkedIn user name
+linkedin_username: # jhwanjun-song-a1742515a/ # your LinkedIn user name
 telegram_username: # your Telegram user name
 scholar_userid: https://scholar.google.com/citations?user=http://scholar.google.com/citations?user=BcVJExUAAAAJ&hl=en&user=Ijzuc-8AAAAJ # your Google Scholar ID
 semanticscholar_id: # your Semantic Scholar ID
@@ -217,6 +217,7 @@ exclude:
   - Gemfile.lock
   - vendor
   - backups
+  - "assets/jupyter copy"
 keep_files:
   - CNAME
   - .nojekyll

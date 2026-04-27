@@ -7,25 +7,21 @@ nav: true
 nav_order: 5
 ---
 
+{% capture teach_stats %}
+<span class="ph-stat s1">KAIST · ISE</span>
+<span class="ph-stat s2">Graduate School of Data Science</span>
+<span class="ph-stat s3">College of AI</span>
+{% endcapture %}
+{% include page_hero.html
+   eyebrow="Education"
+   title="Courses & Teaching"
+   subtitle="Courses I teach at KAIST on data science, machine learning, and trustworthy AI — bridging foundational theory with hands-on research-grade projects."
+   stats=teach_stats
+   orb_a="#fbbc04"
+   orb_b="#4285f4"
+   eyebrow_color="#fbbc04" %}
+
 <style>
-/* Title styling */
-.post-header .post-title {
-  font-size: 2rem;
-  font-weight: 800;
-  background: linear-gradient(135deg, #4285f4, #34a853);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  margin-bottom: 0.3rem;
-}
-
-.post-header .post-description {
-  font-size: 0.9rem;
-  color: #777;
-  font-weight: 400;
-  letter-spacing: 0.02em;
-}
-
 .teaching-timeline {
   position: relative;
   padding-left: 2rem;
@@ -114,12 +110,6 @@ nav_order: 5
   }
 }
 </style>
-
-<div style="background: linear-gradient(135deg, #f8f9fa 0%, #e8f0fe 100%); border-radius: 12px; padding: 1.5rem 2rem; margin-bottom: 2rem; border: 1px solid #e0e7ef;">
-  <p style="font-size: 0.95rem; color: #444; line-height: 1.7; margin: 0;">
-    If it has <span style="background-color: #fff8e1; padding: 0.1rem 0.4rem; border-radius: 3px; font-weight: 600;">Data</span> in the course title at KAIST, there's a good chance I'm teaching it.
-  </p>
-</div>
 
 <div class="teaching-timeline">
 

@@ -5,21 +5,45 @@
       <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}">
         <div class="container">
           {% if page.permalink != '/' -%}
-          <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl }}/">
-            {%- if site.title == "blank" -%}
-              {%- if site.first_name -%}
-                <span class="font-weight-bold">{{- site.first_name -}}&nbsp;</span>
-              {%- endif -%}
-              {%- if site.middle_name -%}
-                {{- site.middle_name -}}&nbsp;
-              {%- endif -%}
-              {%- if site.last_name -%}
-                {{- site.last_name -}}
-              {%- endif -%}
-            {%- else -%}
-              {{- site.title -}}
-            {%- endif -%}
+          <a class="navbar-brand lab-brand" href="{{ site.baseurl }}/" aria-label="DISLab — Home">
+            <span class="brand-dis">DIS</span><span class="brand-lab">Lab</span>
           </a>
+          <style>
+            .navbar .lab-brand {
+              font-family: 'Space Grotesk', system-ui, -apple-system, sans-serif;
+              font-size: 1.35rem;
+              font-weight: 700;
+              letter-spacing: -0.02em;
+              line-height: 1;
+              padding: 0.2rem 0;
+              text-decoration: none;
+              transition: transform 0.25s ease;
+            }
+            .navbar .lab-brand:hover {
+              transform: translateY(-1px);
+              text-decoration: none;
+            }
+            .navbar .lab-brand .brand-dis {
+              background: linear-gradient(135deg, #4285f4 0%, #34a853 100%);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              background-clip: text;
+            }
+            .navbar .lab-brand .brand-lab {
+              color: #333;
+              font-weight: 500;
+              margin-left: 1px;
+            }
+            .navbar .lab-brand::after {
+              content: "";
+              display: block;
+              height: 2px;
+              width: 100%;
+              background: linear-gradient(90deg, #4285f4, #34a853);
+              border-radius: 2px;
+              margin-top: 2px;
+            }
+          </style>
           {%- elsif site.enable_navbar_social -%}
           <!-- Social Icons -->
           <div class="navbar-brand social">

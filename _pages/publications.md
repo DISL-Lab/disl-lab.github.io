@@ -8,45 +8,27 @@ nav: true
 nav_order: 2
 ---
 
-<div style="background: linear-gradient(135deg, #f8f9fa 0%, #e8f0fe 100%); border-radius: 12px; padding: 1.5rem 2rem; margin-bottom: 2rem; border: 1px solid #e0e7ef;">
-  <p style="font-size: 0.95rem; color: #444; line-height: 1.7; margin: 0;">
-    We publish our research in high-impact conferences and journals within the field of Computer Science. We have collaborated with top IT tech companies such as AWS AI Labs, META, and NAVER AI Lab.
-  </p>
-  <p style="font-size: 0.95rem; color: #444; line-height: 1.7; margin: 0.5rem 0 0 0;">
-    As of now, we have published more than <strong>60+</strong> papers in CS top conferences across various domains, including
-    <span style="background: #e8f0fe; padding: 0.15rem 0.5rem; border-radius: 4px; font-size: 0.85rem; font-weight: 600;">NLP</span>
-    <span style="color: #666; font-size: 0.85rem;">(ACL, EMNLP, NAACL)</span>,
-    <span style="background: #fce8e6; padding: 0.15rem 0.5rem; border-radius: 4px; font-size: 0.85rem; font-weight: 600;">CV</span>
-    <span style="color: #666; font-size: 0.85rem;">(ICCV, CVPR)</span>,
-    <span style="background: #fef7e0; padding: 0.15rem 0.5rem; border-radius: 4px; font-size: 0.85rem; font-weight: 600;">ML</span>
-    <span style="color: #666; font-size: 0.85rem;">(NeurIPS, ICLR, ICML, AAAI)</span>,
-    <span style="background: #e6f4ea; padding: 0.15rem 0.5rem; border-radius: 4px; font-size: 0.85rem; font-weight: 600;">DM</span>
-    <span style="color: #666; font-size: 0.85rem;">(KDD, CIKM, ICDM, WWW, SIGMOD)</span>.
-  </p>
-  <p style="font-size: 0.8rem; color: #888; margin: 0.8rem 0 0 0; font-style: italic;">
-    * denotes corresponding authors &nbsp;|&nbsp; {} denotes co-first authorship &nbsp;|&nbsp; <span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Highlighted</span> denotes lab members
-  </p>
-</div>
+{% capture pub_stats %}
+<span class="ph-stat s1"><span class="num">60+</span> Papers</span>
+<span class="ph-stat s2">NLP <span style="color:#888;font-weight:500;">· ACL/EMNLP/NAACL</span></span>
+<span class="ph-stat s4">CV <span style="color:#888;font-weight:500;">· ICCV/CVPR</span></span>
+<span class="ph-stat s3">ML <span style="color:#888;font-weight:500;">· NeurIPS/ICLR/ICML/AAAI</span></span>
+<span class="ph-stat s5">DM <span style="color:#888;font-weight:500;">· KDD/SIGMOD/WWW</span></span>
+{% endcapture %}
+{% include page_hero.html
+   eyebrow="Research Output"
+   title="Publications & Preprints"
+   subtitle="We publish in high-impact CS conferences and journals, collaborating with leading industry labs including AWS AI Labs, Meta, and NAVER AI Lab. Our work spans NLP, CV, ML, and Data Mining."
+   stats=pub_stats
+   orb_a="#4285f4"
+   orb_b="#ea4335"
+   eyebrow_color="#4285f4" %}
+
+<p style="font-size: 0.8rem; color: #888; margin: -1rem 0 1.5rem 0; font-style: italic;">
+  * denotes corresponding authors &nbsp;|&nbsp; {} denotes co-first authorship &nbsp;|&nbsp; <span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Highlighted</span> denotes lab members
+</p>
 
 <style>
-/* Title styling */
-.post-header .post-title {
-  font-size: 2rem;
-  font-weight: 800;
-  background: linear-gradient(135deg, #4285f4, #34a853);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  margin-bottom: 0.3rem;
-}
-
-.post-header .post-description {
-  font-size: 0.9rem;
-  color: #777;
-  font-weight: 400;
-  letter-spacing: 0.02em;
-}
-
 .project-block {
   display: flex;
   flex-direction: row;

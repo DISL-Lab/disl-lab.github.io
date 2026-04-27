@@ -1,0 +1,174 @@
+{%- comment -%}
+Reusable fancy page hero header.
+Parameters: eyebrow, title, subtitle, stats (pre-rendered HTML via capture),
+orb_a (default #4285f4), orb_b (default #34a853), eyebrow_color (default #4285f4).
+{%- endcomment -%}
+
+{%- assign orb_a = include.orb_a | default: "#4285f4" -%}
+{%- assign orb_b = include.orb_b | default: "#34a853" -%}
+{%- assign eyebrow_color = include.eyebrow_color | default: "#4285f4" -%}
+
+<style>
+/* Hide default page title - replaced by custom hero */
+.post > .post-header { display: none; }
+
+/* Reusable page hero */
+.page-hero {
+  position: relative;
+  margin: 0 0 2.5rem 0;
+  padding: 2rem 1.8rem;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e8f0fe 100%);
+  border: 1px solid #e0e7ef;
+  border-radius: 18px;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.page-hero::before,
+.page-hero::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  border-radius: 50%;
+  filter: blur(60px);
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.page-hero::before {
+  width: 280px;
+  height: 280px;
+  top: -100px;
+  right: -60px;
+  background: radial-gradient(circle, var(--orb-a, #4285f4) 0%, transparent 70%);
+  animation: ph-orb-a 14s ease-in-out infinite;
+}
+
+.page-hero::after {
+  width: 240px;
+  height: 240px;
+  bottom: -90px;
+  left: -50px;
+  background: radial-gradient(circle, var(--orb-b, #34a853) 0%, transparent 70%);
+  animation: ph-orb-b 18s ease-in-out infinite;
+}
+
+@keyframes ph-orb-a {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50%      { transform: translate(-30px, 30px) scale(1.1); }
+}
+@keyframes ph-orb-b {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50%      { transform: translate(40px, -25px) scale(1.15); }
+}
+
+.page-hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 0.6rem;
+}
+
+.page-hero-eyebrow::before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 2px;
+  background: linear-gradient(90deg, currentColor, transparent);
+  border-radius: 2px;
+}
+
+.page-hero h1 {
+  margin: 0 0 0.5rem 0;
+  font-size: 2.1rem;
+  font-weight: 800;
+  background: linear-gradient(120deg, #4285f4 0%, #34a853 25%, #fbbc04 50%, #ea4335 75%, #4285f4 100%);
+  background-size: 300% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: ph-title-shimmer 8s ease-in-out infinite;
+  letter-spacing: -0.01em;
+}
+
+@keyframes ph-title-shimmer {
+  0%, 100% { background-position: 0% 50%; }
+  50%      { background-position: 100% 50%; }
+}
+
+.page-hero-sub {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.65;
+  margin: 0 0 1.1rem 0;
+  max-width: 680px;
+}
+
+.page-hero-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.ph-stat {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.4rem 0.8rem;
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid #e0e7ef;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #444;
+  backdrop-filter: blur(6px);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.ph-stat:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.06);
+}
+
+.ph-stat .num {
+  font-size: 1rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--stat-c1, #4285f4), var(--stat-c2, #34a853));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.ph-stat.s1 { --stat-c1: #4285f4; --stat-c2: #1e40af; }
+.ph-stat.s2 { --stat-c1: #34a853; --stat-c2: #15803d; }
+.ph-stat.s3 { --stat-c1: #fbbc04; --stat-c2: #b45309; }
+.ph-stat.s4 { --stat-c1: #ea4335; --stat-c2: #b91c1c; }
+.ph-stat.s5 { --stat-c1: #9333ea; --stat-c2: #6b21a8; }
+.ph-stat.s6 { --stat-c1: #0891b2; --stat-c2: #155e75; }
+
+@media (max-width: 600px) {
+  .page-hero {
+    padding: 1.5rem 1.2rem;
+  }
+  .page-hero h1 {
+    font-size: 1.7rem;
+  }
+}
+</style>
+
+<div class="page-hero" style="--orb-a: {{ orb_a }}; --orb-b: {{ orb_b }};">
+  <div class="page-hero-eyebrow" style="color: {{ eyebrow_color }};">{{ include.eyebrow }}</div>
+  <h1>{{ include.title }}</h1>
+  {% if include.subtitle %}
+  <p class="page-hero-sub">{{ include.subtitle }}</p>
+  {% endif %}
+  {% if include.stats %}
+  <div class="page-hero-stats">
+    {{ include.stats }}
+  </div>
+  {% endif %}
+</div>

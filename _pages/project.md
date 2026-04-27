@@ -7,25 +7,18 @@ nav: true
 nav_order: 3
 ---
 
+{% capture proj_stats %}
+{% endcapture %}
+{% include page_hero.html
+   eyebrow="Funded Research"
+   title="Lab Projects"
+   subtitle="A portfolio of ongoing and completed research projects spanning agentic AI, data-centric ML, and trustworthy systems — funded by leading industry partners and national research agencies."
+   stats=proj_stats
+   orb_a="#34a853"
+   orb_b="#fbbc04"
+   eyebrow_color="#34a853" %}
+
 <style>
-/* Title styling */
-.post-header .post-title {
-  font-size: 2rem;
-  font-weight: 800;
-  background: linear-gradient(135deg, #4285f4, #34a853);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  margin-bottom: 0.3rem;
-}
-
-.post-header .post-description {
-  font-size: 0.9rem;
-  color: #777;
-  font-weight: 400;
-  letter-spacing: 0.02em;
-}
-
 .project-block {
   display: flex;
   flex-direction: row;
@@ -142,12 +135,6 @@ nav_order: 3
   }
 }
 </style>
-
-<div style="background: linear-gradient(135deg, #f8f9fa 0%, #e8f0fe 100%); border-radius: 12px; padding: 1.5rem 2rem; margin-bottom: 2rem; border: 1px solid #e0e7ef;">
-  <p style="font-size: 0.95rem; color: #444; line-height: 1.7; margin: 0;">
-    Here are our current on-going and completed research projects.
-  </p>
-</div>
 
 <h4 class="section-title">National Research Projects</h4>
 <div class="project-block">

@@ -7,25 +7,18 @@ nav: true
 nav_order: 4
 ---
 
+{% capture os_stats %}
+{% endcapture %}
+{% include page_hero.html
+   eyebrow="Open Source"
+   title="Tools, Datasets & Benchmarks"
+   subtitle="We release the artifacts behind our research — codebases, datasets, and benchmarks — so the community can reproduce, build on, and stress-test what we publish. Everything below is freely available on GitHub and Hugging Face."
+   stats=os_stats
+   orb_a="#9333ea"
+   orb_b="#0891b2"
+   eyebrow_color="#9333ea" %}
+
 <style>
-/* Title styling */
-.post-header .post-title {
-  font-size: 2rem;
-  font-weight: 800;
-  background: linear-gradient(135deg, #4285f4, #34a853);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  margin-bottom: 0.3rem;
-}
-
-.post-header .post-description {
-  font-size: 0.9rem;
-  color: #777;
-  font-weight: 400;
-  letter-spacing: 0.02em;
-}
-
 .os-section-title {
   font-size: 1.3rem;
   font-weight: 700;
@@ -142,13 +135,6 @@ nav_order: 4
   }
 }
 </style>
-
-<div style="background: linear-gradient(135deg, #f8f9fa 0%, #e8f0fe 100%); border-radius: 12px; padding: 1.5rem 2rem; margin-bottom: 2rem; border: 1px solid #e0e7ef;">
-  <p style="font-size: 0.95rem; color: #444; line-height: 1.7; margin: 0;">
-    We are conducting research with an open-source policy. So far, we have released many open-source projects for <strong>models</strong>, <strong>benchmark datasets</strong>, and <strong>algorithms</strong>.
-  </p>
-</div>
-
 
 <h3 class="os-section-title">Large Language Models</h3>
 

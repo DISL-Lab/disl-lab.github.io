@@ -1,7 +1,374 @@
 ---
-layout: page
-title: news
+layout: default
+title: News
 permalink: /news/
 ---
 
-{% include news.html %}
+<style>
+.news-page {
+  position: relative;
+  padding-bottom: 3rem;
+}
+
+/* Hero header */
+.news-hero {
+  position: relative;
+  margin: 0 0 2.5rem 0;
+  padding: 2rem 1.8rem;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e8f0fe 100%);
+  border: 1px solid #e0e7ef;
+  border-radius: 18px;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.news-hero::before,
+.news-hero::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  border-radius: 50%;
+  filter: blur(60px);
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.news-hero::before {
+  width: 280px;
+  height: 280px;
+  background: radial-gradient(circle, #4285f4 0%, transparent 70%);
+  top: -100px;
+  right: -60px;
+  animation: news-orb-a 14s ease-in-out infinite;
+}
+
+.news-hero::after {
+  width: 240px;
+  height: 240px;
+  background: radial-gradient(circle, #ea4335 0%, transparent 70%);
+  bottom: -90px;
+  left: -50px;
+  animation: news-orb-b 18s ease-in-out infinite;
+}
+
+@keyframes news-orb-a {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50%      { transform: translate(-30px, 30px) scale(1.1); }
+}
+@keyframes news-orb-b {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50%      { transform: translate(40px, -25px) scale(1.15); }
+}
+
+.news-hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #ea4335;
+  margin-bottom: 0.6rem;
+}
+
+.news-hero-eyebrow .live-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #ea4335;
+  box-shadow: 0 0 0 0 rgba(234, 67, 53, 0.6);
+  animation: live-pulse 2s infinite;
+}
+
+@keyframes live-pulse {
+  0%   { box-shadow: 0 0 0 0 rgba(234, 67, 53, 0.6); }
+  70%  { box-shadow: 0 0 0 8px rgba(234, 67, 53, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(234, 67, 53, 0); }
+}
+
+.news-hero h1 {
+  margin: 0 0 0.5rem 0;
+  font-size: 2.1rem;
+  font-weight: 800;
+  background: linear-gradient(120deg, #4285f4 0%, #34a853 25%, #fbbc04 50%, #ea4335 75%, #4285f4 100%);
+  background-size: 300% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: title-shimmer 8s ease-in-out infinite;
+  letter-spacing: -0.01em;
+}
+
+@keyframes title-shimmer {
+  0%, 100% { background-position: 0% 50%; }
+  50%      { background-position: 100% 50%; }
+}
+
+.news-hero-sub {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+  margin: 0 0 1rem 0;
+  max-width: 580px;
+}
+
+.news-hero-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.news-stat {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.7rem;
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid #e0e7ef;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #444;
+  backdrop-filter: blur(6px);
+}
+
+.news-stat .num {
+  font-size: 0.95rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #4285f4, #34a853);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Timeline */
+.news-timeline {
+  position: relative;
+  margin-left: 0.5rem;
+  padding-left: 1.8rem;
+}
+
+.news-timeline::before {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 8px;
+  bottom: 8px;
+  width: 2px;
+  background: linear-gradient(180deg, #4285f4 0%, #34a853 33%, #fbbc04 66%, #ea4335 100%);
+  border-radius: 2px;
+  opacity: 0.35;
+}
+
+.news-year-group {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.news-year-group:last-child {
+  margin-bottom: 0;
+}
+
+.news-year-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin: 0 0 1rem -1.8rem;
+  padding-left: 1.8rem;
+}
+
+.news-year-header::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #fff;
+  border: 3px solid var(--year-color, #4285f4);
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 1), 0 4px 10px rgba(66, 133, 244, 0.2);
+}
+
+.news-year {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--year-color, #4285f4);
+  letter-spacing: -0.02em;
+}
+
+.news-year-count {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #fff;
+  background: var(--year-color, #4285f4);
+  padding: 0.15rem 0.55rem;
+  border-radius: 999px;
+}
+
+.news-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.news-card {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.9rem;
+  padding: 0.85rem 1.05rem;
+  background: #fff;
+  border: 1px solid #eef0f3;
+  border-radius: 12px;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  opacity: 0;
+  transform: translateX(-10px);
+  animation: card-in 0.5s ease forwards;
+}
+
+@keyframes card-in {
+  to { opacity: 1; transform: none; }
+}
+
+.news-card:hover {
+  border-color: #d4dbe5;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.05);
+  transform: translateX(4px);
+}
+
+.news-card-date {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 76px;
+  padding: 0.25rem 0.55rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #fff;
+  background: var(--year-color, #4285f4);
+  border-radius: 6px;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  margin-top: 0.15rem;
+}
+
+.news-card-content {
+  font-size: 0.88rem;
+  color: #333;
+  line-height: 1.65;
+  flex: 1;
+}
+
+.news-card-content a {
+  color: #4285f4;
+  font-weight: 500;
+}
+
+.news-empty {
+  padding: 2rem;
+  text-align: center;
+  color: #888;
+  font-style: italic;
+}
+
+@media (max-width: 600px) {
+  .news-hero {
+    padding: 1.5rem 1.2rem;
+  }
+  .news-hero h1 {
+    font-size: 1.7rem;
+  }
+  .news-timeline {
+    padding-left: 1.4rem;
+  }
+  .news-year-header {
+    margin-left: -1.4rem;
+    padding-left: 1.4rem;
+  }
+  .news-card {
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+}
+</style>
+
+<div class="news-page">
+
+  <div class="news-hero">
+    <div class="news-hero-eyebrow"><span class="live-dot"></span>News &amp; Announcements</div>
+    <h1>What's Happening at DISLab</h1>
+    <p class="news-hero-sub">
+      Paper acceptances, talks, awards, and lab milestones — a chronological feed of everything happening in our group.
+    </p>
+    {%- assign all_news = site.news -%}
+    {%- assign news_total = all_news | size -%}
+    {%- assign first_year = all_news | sort: 'date' | first -%}
+    {%- assign last_year = all_news | sort: 'date' | last -%}
+    <div class="news-hero-stats">
+      <span class="news-stat"><span class="num">{{ news_total }}</span> Updates</span>
+      {% if first_year and last_year %}
+      <span class="news-stat">
+        <span class="num">{{ first_year.date | date: '%Y' }}</span>
+        <span style="color:#888;">→</span>
+        <span class="num">{{ last_year.date | date: '%Y' }}</span>
+      </span>
+      {% endif %}
+    </div>
+  </div>
+
+  {% if site.news != blank %}
+
+  {%- assign sorted_news = site.news | sort: 'date' | reverse -%}
+  {%- assign year_palette = "#4285f4,#34a853,#fbbc04,#ea4335,#9333ea,#0891b2" | split: "," -%}
+  {%- assign current_year = "" -%}
+  {%- assign year_idx = 0 -%}
+
+  <div class="news-timeline">
+  {%- for item in sorted_news -%}
+    {%- assign item_year = item.date | date: '%Y' -%}
+    {%- if item_year != current_year -%}
+      {%- unless forloop.first -%}
+        </div></div>
+      {%- endunless -%}
+      {%- assign year_color = year_palette[year_idx] -%}
+      {%- assign year_idx = year_idx | plus: 1 -%}
+      {%- if year_idx >= 6 -%}{%- assign year_idx = 0 -%}{%- endif -%}
+      {%- assign year_count = 0 -%}
+      {%- for n in sorted_news -%}
+        {%- assign n_year = n.date | date: '%Y' -%}
+        {%- if n_year == item_year -%}{%- assign year_count = year_count | plus: 1 -%}{%- endif -%}
+      {%- endfor -%}
+      <div class="news-year-group" style="--year-color: {{ year_color }};">
+        <div class="news-year-header">
+          <span class="news-year">{{ item_year }}</span>
+          <span class="news-year-count">{{ year_count }}</span>
+        </div>
+        <div class="news-cards">
+      {%- assign current_year = item_year -%}
+    {%- endif -%}
+    <div class="news-card" style="animation-delay: {{ forloop.index | times: 30 }}ms;">
+      <span class="news-card-date">{{ item.date | date: "%b %-d" }}</span>
+      <div class="news-card-content">
+        {% if item.inline -%}
+          {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
+        {%- else -%}
+          <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+        {%- endif %}
+      </div>
+    </div>
+    {%- if forloop.last -%}
+        </div></div>
+    {%- endif -%}
+  {%- endfor -%}
+  </div>
+
+  {% else %}
+    <div class="news-empty">No news so far...</div>
+  {% endif %}
+
+</div>

@@ -9,25 +9,23 @@ display_categories:
 horizontal: false
 ---
 
+{% capture members_stats %}
+<span class="ph-stat s3"><span class="num">1</span> Faculty</span>
+<span class="ph-stat s2"><span class="num">1</span> Postdoc</span>
+<span class="ph-stat s1"><span class="num">12</span> Graduate Students</span>
+<span class="ph-stat s4"><span class="num">7</span> Research Interns</span>
+<span class="ph-stat s5"><span class="num">3</span> Industry Internships</span>
+{% endcapture %}
+{% include page_hero.html
+   eyebrow="Our Team"
+   title="Meet the People at DISLab"
+   subtitle="A growing team of researchers building trustworthy, data-centric Agentic AI — from foundational reasoning and memory to perception and modeling. We collaborate across KAIST and with leading industry labs around the world."
+   stats=members_stats
+   orb_a="#4285f4"
+   orb_b="#34a853"
+   eyebrow_color="#4285f4" %}
+
 <style>
-/* Title styling */
-.post-header .post-title {
-  font-size: 2rem;
-  font-weight: 800;
-  background: linear-gradient(135deg, #4285f4, #34a853);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  margin-bottom: 0.3rem;
-}
-
-.post-header .post-description {
-  font-size: 0.9rem;
-  color: #777;
-  font-weight: 400;
-  letter-spacing: 0.02em;
-}
-
 .member-section-title {
   font-size: 1.05rem;
   font-weight: 600;
