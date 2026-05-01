@@ -221,9 +221,6 @@ nav_order: 2
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
       In International Conference on Machine Learning, 2026
     </p>
-    <div style="font-size: 0.8rem; color: #555; margin-top: 0.0rem;">
-    [<a href="https://openreview.net/pdf?id=WK2KxPAMQv" style="text-decoration: none; color: #1a73e8;">PDF</a>] 
-    </div>
   </div>
 </div>
 
@@ -265,9 +262,6 @@ nav_order: 2
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
       In International Conference on Machine Learning, 2026
     </p>
-    <div style="font-size: 0.8rem; color: #555; margin-top: 0.0rem;">
-    [<a href="https://openreview.net/pdf?id=WK2KxPAMQv" style="text-decoration: none; color: #1a73e8;">PDF</a>] 
-    </div>
   </div>
 </div>
 
