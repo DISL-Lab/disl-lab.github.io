@@ -176,14 +176,102 @@ nav_order: 2
 
 
 <h2 style="margin-top: 3.5rem; margin-bottom: 0.5rem; font-size: 1.4rem; font-weight: 700; color: #333; border-left: 4px solid #4285f4; padding-left: 0.8rem;">International Conferences and Journals</h2>
-
-
 <div style="display: flex; align-items: center; margin-top: 1rem; margin-bottom: 1rem;">
   <div style="flex: 1; height: 2px; background: linear-gradient(to right, transparent, #d0d0d0, transparent);"></div>
   <div style="margin: 0 1rem; font-size: 1.6rem; font-weight: 700; color: #bbb; letter-spacing: 0.1em;">
     2026
   </div>
 </div>
+
+<div class="project-block">
+  <div class="img-col">
+    <img src="/assets/img/paper/26-icml-doyoung.png" alt="Project 1">
+  </div>
+  <div class="text-col">
+    <h3 style="font-size: 0.9rem; margin-bottom: 0.2rem; font-weight: bold;">
+    <span style="
+        display: inline-block;
+        background-color:rgb(225, 132, 33);  /* 원하는 색으로 변경 가능 */
+        color: white;
+        font-weight: bold;
+        font-size: 0.75rem;
+        padding: 0.2rem 0.6rem;
+        border-radius: 6px;
+        margin-right: 0.1rem;
+    ">
+        ICML
+    </span>
+    <span style="
+        display: inline-block;
+        background-color:rgb(197, 38, 179);  /* 원하는 색으로 변경 가능 */
+        color: white;
+        font-weight: bold;
+        font-size: 0.75rem;
+        padding: 0.2rem 0.6rem;
+        border-radius: 6px;
+        margin-right: 0.1rem;
+    ">
+        NLP
+    </span>
+      Breaking the Reference Bottleneck via Learning to Rewrite Conversational Queries without Gold Reference Passages
+    </h3>
+    <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
+      Doyoung Kim, Youngjun Lee, Joeun Kim, Jihwan Bang, <span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song</span>, Susik Yoon, and Jae-Gil Lee*
+    </p>
+    <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
+      In International Conference on Machine Learning, 2026
+    </p>
+    <div style="font-size: 0.8rem; color: #555; margin-top: 0.0rem;">
+    [<a href="https://openreview.net/pdf?id=WK2KxPAMQv" style="text-decoration: none; color: #1a73e8;">PDF</a>] 
+    </div>
+  </div>
+</div>
+
+<div class="project-block">
+  <div class="img-col">
+    <img src="/assets/img/paper/26-icml-soyoung.png" alt="Project 1">
+  </div>
+  <div class="text-col">
+    <h3 style="font-size: 0.9rem; margin-bottom: 0.2rem; font-weight: bold;">
+    <span style="
+        display: inline-block;
+        background-color:rgb(225, 132, 33);  /* 원하는 색으로 변경 가능 */
+        color: white;
+        font-weight: bold;
+        font-size: 0.75rem;
+        padding: 0.2rem 0.6rem;
+        border-radius: 6px;
+        margin-right: 0.1rem;
+    ">
+        ICML
+    </span>
+    <span style="
+        display: inline-block;
+        background-color:rgb(80, 13, 114);  /* 원하는 색으로 변경 가능 */
+        color: white;
+        font-weight: bold;
+        font-size: 0.75rem;
+        padding: 0.2rem 0.6rem;
+        border-radius: 6px;
+        margin-right: 0.1rem;
+    ">
+        Graph
+    </span>
+      Quantile-Free Uncertainty Quantification in Graph Neural Networks
+    </h3>
+    <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
+      Soyoung Park, <span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song</span>, and Sungsu Lim*
+    </p>
+    <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
+      In International Conference on Machine Learning, 2026
+    </p>
+    <div style="font-size: 0.8rem; color: #555; margin-top: 0.0rem;">
+    [<a href="https://openreview.net/pdf?id=WK2KxPAMQv" style="text-decoration: none; color: #1a73e8;">PDF</a>] 
+    </div>
+  </div>
+</div>
+
+
 
 <div class="project-block">
   <div class="img-col">

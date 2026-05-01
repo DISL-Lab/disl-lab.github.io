@@ -287,7 +287,7 @@ nav_order: 6
 </div>
 
 <div class="yt-cta">
-  <p>For the full archive — including older talks and lectures — visit our channel directly.</p>
+  <p>For the full archive — including older talks and lectures —ㅆ visit our channel directly.</p>
   <a href="https://www.youtube.com/@DISL-LAB" target="_blank" rel="noopener" class="yt-cta-btn">
     <i class="fab fa-youtube"></i> Browse Full Archive on YouTube
   </a>
