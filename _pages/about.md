@@ -521,6 +521,13 @@ social: false
   <span class="affiliated">Also, affiliated with <span class="dept-ai">Department of AX at the KAIST College of AI</span></span>
 </p>
 
+<div class="cta-box recruit reveal">
+  <strong>Internship (상시 모집)</strong><br>
+  관심 있는 학생은 아래 양식을 작성하고 저에게 이메일 보내주세요.<br>
+  Internships are offered on a rolling basis. Interested students are encouraged to complete the form and email me.
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSezVnp3eepLI4CTD3_lLABNwDtvFue6EqhXKq1zhK5zLW9ZsQ/viewform?usp=sharing&ouid=114425768257170495941" target="_blank">[Apply Here]</a>
+</div>
+
 <div class="hero-section reveal">
   <div class="img-col">
     <div class="slideshow" id="heroSlideshow">
@@ -585,15 +592,8 @@ social: false
   </div>
 </div>
 
-<div class="cta-box recruit reveal">
-  <strong>Internship (상시 모집)</strong><br>
-  관심 있는 학생은 아래 양식을 작성하고 저에게 이메일 보내주세요.<br>
-  Internships are offered on a rolling basis. Interested students are encouraged to complete the form and email me.
-  <a href="https://docs.google.com/forms/d/e/1FAIpQLSezVnp3eepLI4CTD3_lLABNwDtvFue6EqhXKq1zhK5zLW9ZsQ/viewform?usp=sharing&ouid=114425768257170495941" target="_blank">[Apply Here]</a>
-</div>
-
 <div class="cta-box note reveal">
-  We are not recruiting MS/PhD students for Fall 2026, as all positions have been filled. If you are interested in joining our lab for graduate studies, we strongly encourage you to apply for an internship first, as priority will be given to those with prior research experience in our group.
+  <span style="background-color: #fff3bf; padding: 0.15rem 0.4rem; border-radius: 3px; font-weight: 700; color: #8a6d00;">We are recruiting MS students for Spring/Fall 2026 (1 Korean MS position).</span> If you are interested in joining our lab for graduate studies, we strongly encourage you to apply for an internship first, as priority will be given to those with prior research experience in our group. Intern positions are always open. During the internship, students will work closely with graduate students on ongoing academic research projects and gain hands-on experience in conducting research, developing ideas, and contributing to publications.
 </div>
 
 <div class="cta-box info reveal">

@@ -22,7 +22,7 @@ nav_order: 3
 .project-block {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
   gap: 1.5rem;
   margin-bottom: 0.5rem;
   flex-wrap: wrap;
@@ -209,6 +209,23 @@ nav_order: 3
 
 <div class="project-block">
   <div class="img-col">
+    <img src="/assets/img/kaist-innocore.png" alt="Project 2">
+  </div>
+  <div class="text-col">
+    <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">
+      AI 메타 과학자 연구단 (AI Meta-Scientis) - InnoCore PostDoc Fund
+    </h3>
+    <p style="font-size: 0.8rem; margin-bottom: 0.5rem;">
+      This project aims to develop an AI Meta Scientist that autonomously supports the entire research lifecycle, from literature understanding and knowledge synthesis to hypothesis generation, experiment design, and scientific discovery. By integrating long-context reasoning, retrieval-augmented generation, and agentic planning, the system continuously analyzes large-scale scientific knowledge, identifies promising research directions, and assists researchers in producing reliable and high-impact scientific outcomes.
+    </p>
+    <p style="font-size: 0.75rem; font-family: 'Roboto', monospace; color: #555;">
+      Duration: 2026.05 – 2030.12 &nbsp;&nbsp;|&nbsp;&nbsp; <span class="role-badge role-copi">Participating Investigator </span>
+    </p>
+  </div>
+</div>
+
+<div class="project-block">
+  <div class="img-col">
     <img src="/assets/img/kisti-logo.png" alt="Project 4">
   </div>
   <div class="text-col">
@@ -274,6 +291,23 @@ nav_order: 3
     </p>
     <p style="font-size: 0.75rem; font-family: 'Roboto', monospace; color: #555;">
       Duration: 2026.01 – 2026.05 &nbsp;&nbsp; |&nbsp;&nbsp; Funding: KRW 50M |&nbsp;&nbsp; <span class="role-badge role-pi">Principal Researcher</span>
+    </p>
+  </div>
+</div>
+
+<div class="project-block">
+  <div class="img-col">
+    <img src="/assets/img/samsung-sds.png" alt="Project 1">
+  </div>
+  <div class="text-col">
+    <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">
+      개인화 지속 에이전트 (Personalized Continual Agent)
+    </h3>    
+    <p style="font-size: 0.8rem; margin-bottom: 0.5rem;">
+      This project is supported by Samsung SDS. The project details are confidencial.
+    </p>
+    <p style="font-size: 0.75rem; font-family: 'Roboto', monospace; color: #555;">
+      Duration: 2026.05 – 2027.05 &nbsp;&nbsp; |&nbsp;&nbsp; Funding: KRW 77M |&nbsp;&nbsp; <span class="role-badge role-pi">Principal Researcher</span>
     </p>
   </div>
 </div>
