@@ -522,9 +522,9 @@ social: false
 </p>
 
 <div class="cta-box recruit reveal">
-  <strong>Internship (상시 모집)</strong><br>
-  관심 있는 학생은 아래 양식을 작성하고 저에게 이메일 보내주세요.<br>
-  Internships are offered on a rolling basis. Interested students are encouraged to complete the form and email me.
+  <strong>Internship (모집 완료)</strong><br>
+  모집이 완료되었습니다.<br>
+  Recruitment is closed.
   <a href="https://docs.google.com/forms/d/e/1FAIpQLSezVnp3eepLI4CTD3_lLABNwDtvFue6EqhXKq1zhK5zLW9ZsQ/viewform?usp=sharing&ouid=114425768257170495941" target="_blank">[Apply Here]</a>
 </div>
 
