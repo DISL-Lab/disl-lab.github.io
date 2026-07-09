@@ -457,6 +457,33 @@ horizontal: false
       <p class="role">Full Time, Spring 2026~</p>
     </div>
   </div>
+  <div class="member-card">
+    <div class="img-wrapper">
+      <img src="/assets/img/bio-seonghwan.jpg" alt="Seunghwan Bang">
+    </div>
+    <div class="info">
+      <p class="name">Seunghwan Bang</p>
+      <p class="role">Full Time, September 2026~</p>
+    </div>
+  </div>
+    <div class="member-card">
+    <div class="img-wrapper">
+      <img src="/assets/img/bio_jibin.jpg" alt="Jibin Hwang">
+    </div>
+    <div class="info">
+      <p class="name">Jibin Hwang</p>
+      <p class="role">Full Time, September 2026~</p>
+    </div>
+  </div>
+  <div class="member-card">
+    <div class="img-wrapper">
+      <img src="/assets/img/bio_yeeun_choi.jpeg" alt="Yeeun Choi">
+    </div>
+    <div class="info">
+      <p class="name">Yeeun Choi</p>
+      <p class="role">Full Time, September 2026~</p>
+    </div>
+  </div>
 </div>
 
 
@@ -491,11 +518,11 @@ horizontal: false
 <div class="member-grid">
   <div class="member-card">
     <div class="img-wrapper">
-      <img src="/assets/img/bio-seonghwan.jpg" alt="Seunghwan Bang">
+      <img src="/assets/img/bio_changhwan.jpg" alt="Hwan Chang">
     </div>
     <div class="info">
-      <p class="name">Seunghwan Bang</p>
-      <p class="role">January 2025~</p>
+      <p class="name">Hwan Chang</p>
+      <p class="role">MS Intern, July 2026~</p>
     </div>
   </div>
   <div class="member-card">
@@ -504,16 +531,7 @@ horizontal: false
     </div>
     <div class="info">
       <p class="name">Jisoo Kim</p>
-      <p class="role">July 2025~</p>
-    </div>
-  </div>
-  <div class="member-card">
-    <div class="img-wrapper">
-      <img src="/assets/img/bio_jibin.jpg" alt="Jibin Hwang">
-    </div>
-    <div class="info">
-      <p class="name">Jibin Hwang</p>
-      <p class="role">January 2026~</p>
+      <p class="role">BS Intern, July 2025~</p>
     </div>
   </div>
   <div class="member-card">
@@ -522,7 +540,7 @@ horizontal: false
     </div>
     <div class="info">
       <p class="name">Hyeonseong Park</p>
-      <p class="role">January 2026~</p>
+      <p class="role">BS Intern, January 2026~</p>
     </div>
   </div>
   <div class="member-card">
@@ -531,16 +549,7 @@ horizontal: false
     </div>
     <div class="info">
       <p class="name">Juseon Do</p>
-      <p class="role">March 2026~</p>
-    </div>
-  </div>
-  <div class="member-card">
-    <div class="img-wrapper">
-      <img src="/assets/img/bio_yeeun_choi.jpeg" alt="Yeeun Choi">
-    </div>
-    <div class="info">
-      <p class="name">Yeeun Choi</p>
-      <p class="role">March 2026~</p>
+      <p class="role">BS Intern, March 2026~</p>
     </div>
   </div>
   <div class="member-card">
@@ -549,7 +558,25 @@ horizontal: false
     </div>
     <div class="info">
       <p class="name">Hayoon Park</p>
-      <p class="role">March 2026~</p>
+      <p class="role">BS Intern, March 2026~</p>
+    </div>
+  </div>
+  <div class="member-card">
+    <div class="img-wrapper">
+      <img src="/assets/img/bio_byeongjun.jpg" alt="Byeongjun Joung">
+    </div>
+    <div class="info">
+      <p class="name">Byeongjun Joung</p>
+      <p class="role">BS Intern, July 2026~</p>
+    </div>
+  </div>
+  <div class="member-card">
+    <div class="img-wrapper">
+      <img src="/assets/img/bio_chanjoong.jpg" alt="Chanjoong Kim">
+    </div>
+    <div class="info">
+      <p class="name">Chanjoong Kim</p>
+      <p class="role">BS Intern, July 2026~</p>
     </div>
   </div>
 </div>
