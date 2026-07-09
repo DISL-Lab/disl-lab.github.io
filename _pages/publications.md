@@ -89,6 +89,47 @@ nav_order: 2
 
 <h2 style="margin-bottom: 1.5rem; font-size: 1.4rem; font-weight: 700; color: #333; border-left: 4px solid #4285f4; padding-left: 0.8rem;">Preprint</h2>
 
+<div class="project-block">
+  <div class="img-col">
+    <img src="/assets/img/paper/26-NeurIPS-VRAG.png" alt="Project 1">
+  </div>
+  <div class="text-col">
+    <h3 style="font-size: 0.9rem; margin-bottom: 0.2rem; font-weight: bold;">
+   <span style="
+        display: inline-block;
+        background-color:rgb(196, 138, 4);  /* 원하는 색으로 변경 가능 */
+        color: white;
+        font-weight: bold;
+        font-size: 0.75rem;
+        padding: 0.2rem 0.6rem;
+        border-radius: 6px;
+        margin-right: 0.1rem;
+    ">
+        arXiv
+    </span>
+    <span style="
+        display: inline-block;
+        background-color:rgb(80, 13, 114);  /* 원하는 색으로 변경 가능 */
+        color: white;
+        font-weight: bold;
+        font-size: 0.75rem;
+        padding: 0.2rem 0.6rem;
+        border-radius: 6px;
+        margin-right: 0.1rem;
+    ">
+        Video
+    </span>
+      Rethinking RAG in Long Videos: What to Retrieve and How to Use It?
+    </h3>
+    <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
+      <span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Yuho Lee</span>, <span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Jisu Shin</span>, <span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Hee-Yeon Kim</span>, <span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Jihwan Bang</span>, Juntae Lee, Kyuwoong Hwang, Fatih Porikli, and <span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song</span>*
+      <span style="color: #1a73e8; font-weight: bold;">(with Qualcomm)</span>
+    </p>
+    <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
+     arXiv preprint arXiv:2606.13141, 2026
+    </p>
+  </div>
+</div>
 
 
 <div class="project-block">
@@ -216,7 +257,7 @@ nav_order: 2
       Quality of Rejections Matters: Preference Data Construction for Faithful Summarization
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-      <span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Jihwan Oh</span>, <span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Taewon Yun</span>, <span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Minkyu Che</span>, Sundong Kim, and <span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song</span>
+      <span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Jihwan Oh</span>, <span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Taewon Yun</span>, <span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Minkyu Che</span>, Sundong Kim, and <span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song</span>*
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
      In Conference on Language Modeling, 2026
@@ -342,7 +383,6 @@ nav_order: 2
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
       Youngjun Lee, Doyoung Kim, Junhyeok Kang, <span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song</span>, and Jae-Gil Lee*
-      <span style="color: #1a73e8; font-weight: bold;">(with Amazon, USYD)</span>
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
      In International Conference on European Conference on Computer Vision, 2026
