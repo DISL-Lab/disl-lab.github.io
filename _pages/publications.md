@@ -90,48 +90,6 @@ nav_order: 2
 <h2 style="margin-bottom: 1.5rem; font-size: 1.4rem; font-weight: 700; color: #333; border-left: 4px solid #4285f4; padding-left: 0.8rem;">Preprint</h2>
 
 
-<div class="project-block">
-  <div class="img-col">
-    <img src="/assets/img/paper/26-colm-retailsim.png" alt="Project 1">
-  </div>
-  <div class="text-col">
-    <h3 style="font-size: 0.9rem; margin-bottom: 0.2rem; font-weight: bold;">
-    <span style="
-        display: inline-block;
-        background-color:rgb(196, 138, 4);  /* 원하는 색으로 변경 가능 */
-        color: white;
-        font-weight: bold;
-        font-size: 0.75rem;
-        padding: 0.2rem 0.6rem;
-        border-radius: 6px;
-        margin-right: 0.1rem;
-    ">
-        arXiv
-    </span>
-    <span style="
-        display: inline-block;
-        background-color:rgb(197, 38, 179);  /* 원하는 색으로 변경 가능 */
-        color: white;
-        font-weight: bold;
-        font-size: 0.75rem;
-        padding: 0.2rem 0.6rem;
-        border-radius: 6px;
-        margin-right: 0.1rem;
-    ">
-        NLP
-    </span>
-      What Makes a Sale? Rethinking End-to-End Seller–Buyer Retail Dynamics with LLM Agents
-    </h3>
-    <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-      <span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Jeonghwan Choi</span>, <span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Jibin Hwang</span>, <span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Gyeonghun Sun</span>, <span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Minjeong Ban</span>, <span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Taewon Yun</span>, Hyeonjae Cheon, and <span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song</span>*
-      <span style="color: #1a73e8; font-weight: bold;">(with GS Retail)</span>
-    </p>
-    <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
-     arXiv preprint arXiv (To Appear), 2026
-    </p>
-  </div>
-</div>
-
 
 <div class="project-block">
   <div class="img-col">
@@ -182,6 +140,216 @@ nav_order: 2
     2026
   </div>
 </div>
+
+<div class="project-block">
+  <div class="img-col">
+    <img src="/assets/img/paper/26-colm-retailsim.png" alt="Project 1">
+  </div>
+  <div class="text-col">
+    <h3 style="font-size: 0.9rem; margin-bottom: 0.2rem; font-weight: bold;">
+    <span style="
+        display: inline-block;
+        background-color:rgb(196, 138, 4);  /* 원하는 색으로 변경 가능 */
+        color: white;
+        font-weight: bold;
+        font-size: 0.75rem;
+        padding: 0.2rem 0.6rem;
+        border-radius: 6px;
+        margin-right: 0.1rem;
+    ">
+        COLM
+    </span>
+    <span style="
+        display: inline-block;
+        background-color:rgb(197, 38, 179);  /* 원하는 색으로 변경 가능 */
+        color: white;
+        font-weight: bold;
+        font-size: 0.75rem;
+        padding: 0.2rem 0.6rem;
+        border-radius: 6px;
+        margin-right: 0.1rem;
+    ">
+        NLP
+    </span>
+      What Makes a Sale? Rethinking End-to-End Seller–Buyer Retail Dynamics with LLM Agents
+    </h3>
+    <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
+      <span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Jeonghwan Choi</span>, <span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Jibin Hwang</span>, <span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Gyeonghun Sun</span>, <span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Minjeong Ban</span>, <span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Taewon Yun</span>, Hyeonjae Cheon, and <span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song</span>*
+      <span style="color: #1a73e8; font-weight: bold;">(with GS Retail)</span>
+    </p>
+    <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
+     In Conference on Language Modeling, 2026
+    </p>
+  </div>
+</div>
+
+<div class="project-block">
+  <div class="img-col">
+    <img src="/assets/img/paper/26-COLM-SPICE.png" alt="Project 1">
+  </div>
+  <div class="text-col">
+    <h3 style="font-size: 0.9rem; margin-bottom: 0.2rem; font-weight: bold;">
+    <span style="
+        display: inline-block;
+        background-color:rgb(196, 138, 4);  /* 원하는 색으로 변경 가능 */
+        color: white;
+        font-weight: bold;
+        font-size: 0.75rem;
+        padding: 0.2rem 0.6rem;
+        border-radius: 6px;
+        margin-right: 0.1rem;
+    ">
+        COLM
+    </span>
+    <span style="
+        display: inline-block;
+        background-color:rgb(197, 38, 179);  /* 원하는 색으로 변경 가능 */
+        color: white;
+        font-weight: bold;
+        font-size: 0.75rem;
+        padding: 0.2rem 0.6rem;
+        border-radius: 6px;
+        margin-right: 0.1rem;
+    ">
+        NLP
+    </span>
+      Quality of Rejections Matters: Preference Data Construction for Faithful Summarization
+    </h3>
+    <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
+      <span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Jihwan Oh</span>, <span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Taewon Yun</span>, <span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Minkyu Che</span>, Sundong Kim, and <span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song</span>
+    </p>
+    <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
+     In Conference on Language Modeling, 2026
+    </p>
+  </div>
+</div>
+
+<div class="project-block">
+  <div class="img-col">
+    <img src="/assets/img/paper/26-COLM-RaQE.png" alt="Project 1">
+  </div>
+  <div class="text-col">
+    <h3 style="font-size: 0.9rem; margin-bottom: 0.2rem; font-weight: bold;">
+    <span style="
+        display: inline-block;
+        background-color:rgb(196, 138, 4);  /* 원하는 색으로 변경 가능 */
+        color: white;
+        font-weight: bold;
+        font-size: 0.75rem;
+        padding: 0.2rem 0.6rem;
+        border-radius: 6px;
+        margin-right: 0.1rem;
+    ">
+        COLM
+    </span>
+    <span style="
+        display: inline-block;
+        background-color:rgb(197, 38, 179);  /* 원하는 색으로 변경 가능 */
+        color: white;
+        font-weight: bold;
+        font-size: 0.75rem;
+        padding: 0.2rem 0.6rem;
+        border-radius: 6px;
+        margin-right: 0.1rem;
+    ">
+        NLP
+    </span>
+      RAQE: Reranker-Aligned Query Expansion via Label-Free Group-Relative Policy Optimization
+    </h3>
+    <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
+      <span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Gyeonghun Sun</span>, <span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Jeonghwan Choi</span>, Sundong Kim, and <span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song</span>*
+    </p>
+    <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
+     In Conference on Language Modeling, 2026
+    </p>
+  </div>
+</div>
+
+
+<div class="project-block">
+  <div class="img-col">
+    <img src="/assets/img/paper/26-COLM-QCaRE.png" alt="Project 1">
+  </div>
+  <div class="text-col">
+    <h3 style="font-size: 0.9rem; margin-bottom: 0.2rem; font-weight: bold;">
+    <span style="
+        display: inline-block;
+        background-color:rgb(196, 138, 4);  /* 원하는 색으로 변경 가능 */
+        color: white;
+        font-weight: bold;
+        font-size: 0.75rem;
+        padding: 0.2rem 0.6rem;
+        border-radius: 6px;
+        margin-right: 0.1rem;
+    ">
+        COLM
+    </span>
+    <span style="
+        display: inline-block;
+        background-color:rgb(197, 38, 179);  /* 원하는 색으로 변경 가능 */
+        color: white;
+        font-weight: bold;
+        font-size: 0.75rem;
+        padding: 0.2rem 0.6rem;
+        border-radius: 6px;
+        margin-right: 0.1rem;
+    ">
+        NLP
+    </span>
+      Towards Query-Agnostic RAG Evaluation via Query Coverage and Claim Verifiability
+    </h3>
+    <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
+      <span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Jeonghwan Choi</span>, <span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Taewon Yun</span>, <span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Minjeong Ban</span>, Jae-Gil Lee, and <span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song</span>*
+      <span style="color: #1a73e8; font-weight: bold;">(with GS Retail)</span>
+    </p>
+    <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
+     In Conference on Language Modeling, 2026
+    </p>
+  </div>
+</div>
+
+<div class="project-block">
+  <div class="img-col">
+    <img src="/assets/img/paper/26-ECCV-CURE.png" alt="Project 1">
+  </div>
+  <div class="text-col">
+    <h3 style="font-size: 0.9rem; margin-bottom: 0.2rem; font-weight: bold;">
+    <span style="
+        display: inline-block;
+        background-color:rgb(163, 19, 176);  /* 원하는 색으로 변경 가능 */
+        color: white;
+        font-weight: bold;
+        font-size: 0.75rem;
+        padding: 0.2rem 0.6rem;
+        border-radius: 6px;
+        margin-right: 0.1rem;
+    ">
+        ECCV
+    </span>
+    <span style="
+        display: inline-block;
+        background-color:rgb(9, 120, 124);  /* 원하는 색으로 변경 가능 */
+        color: white;
+        font-weight: bold;
+        font-size: 0.75rem;
+        padding: 0.2rem 0.6rem;
+        border-radius: 6px;
+        margin-right: 0.1rem;
+    ">
+        Vision
+    </span>
+      CURE: Cumulative Knowledge Reuse for Efficient Device-Server Hybrid Inference in Vision-Language Models
+    </h3>
+    <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
+      Youngjun Lee, Doyoung Kim, Junhyeok Kang, <span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song</span>, and Jae-Gil Lee*
+      <span style="color: #1a73e8; font-weight: bold;">(with Amazon, USYD)</span>
+    </p>
+    <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
+     In International Conference on European Conference on Computer Vision, 2026
+    </p>
+  </div>
+</div>
+
 
 <div class="project-block">
   <div class="img-col">
@@ -264,52 +432,6 @@ nav_order: 2
     </p>
   </div>
 </div>
-
-
-
-<div class="project-block">
-  <div class="img-col">
-    <img src="/assets/img/paper/26-aclswr-raqe.png" alt="Project 1">
-  </div>
-  <div class="text-col">
-    <h3 style="font-size: 0.9rem; margin-bottom: 0.2rem; font-weight: bold;">
-    <span style="
-        display: inline-block;
-        background-color:rgb(7, 95, 41);  /* 원하는 색으로 변경 가능 */
-        color: white;
-        font-weight: bold;
-        font-size: 0.75rem;
-        padding: 0.2rem 0.6rem;
-        border-radius: 6px;
-        margin-right: 0.1rem;
-    ">
-        ACL
-    </span>
-    <span style="
-        display: inline-block;
-        background-color:rgb(197, 38, 179);  /* 원하는 색으로 변경 가능 */
-        color: white;
-        font-weight: bold;
-        font-size: 0.75rem;
-        padding: 0.2rem 0.6rem;
-        border-radius: 6px;
-        margin-right: 0.1rem;
-    ">
-        NLP
-    </span>
-      Reranker-Aligned Query Expansion via Label-Free Group-Relative Policy Optimization
-    </h3>
-    <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-      <span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Gyeonghun Sun</span>, <span style="background-color: #fff8e1; padding: 0.1rem 0.3rem; border-radius: 3px;">Jeonghwan Choi</span>, and <span style="background-color: #e8f0fe; padding: 0.1rem 0.3rem; border-radius: 3px;">Hwanjun Song*</span>
-    </p>
-    <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
-      In Annual Meeting of the Association for Computational Linguistics (Student Research Workshop, SRW), Non-archival, 2026
-    </p>
-    <div style="font-size: 0.8rem; color: #555; margin-top: 0.0rem;">
-    </div>
-  </div>
-</div>
-
 
 <div class="project-block">
   <div class="img-col">
