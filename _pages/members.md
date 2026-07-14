@@ -432,15 +432,6 @@ horizontal: false
   </div>
   <div class="member-card">
     <div class="img-wrapper">
-      <img src="/assets/img/bio-shayekh.png" alt="Shayekh Bin Islam">
-    </div>
-    <div class="info">
-      <p class="name">Shayekh Bin Islam</p>
-      <p class="role">Full Time, Fall 2025~</p>
-    </div>
-  </div>
-  <div class="member-card">
-    <div class="img-wrapper">
       <img src="/assets/img/bio_mingyu_choi.jpg" alt="Mingyu Choi">
     </div>
     <div class="info">
