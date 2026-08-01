@@ -522,9 +522,9 @@ social: false
 </p>
 
 <div class="cta-box recruit reveal">
-  <strong>Internship (모집 완료)</strong><br>
-  모집이 완료되었습니다.<br>
-  Recruitment is closed.
+  <strong>Internship (모집 중)</strong><br> 
+  공장/제조 Foundation Model과 로봇 기반 Physical AI에 관심 있는 인턴 학생을 모집합니다. (현재 대학 재학 중인 학생 대상)<br>
+  Recruitment is now open for interns interested in factory/manufacturing foundation models and physical AI for robots. Applicants must be currently enrolled in an undergraduate or graduate program.
   <a href="https://docs.google.com/forms/d/e/1FAIpQLSezVnp3eepLI4CTD3_lLABNwDtvFue6EqhXKq1zhK5zLW9ZsQ/viewform?usp=sharing&ouid=114425768257170495941" target="_blank">[Apply Here]</a>
 </div>
 
