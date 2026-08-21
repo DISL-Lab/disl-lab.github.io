@@ -12,7 +12,7 @@ horizontal: false
 {% capture members_stats %}
 <span class="ph-stat s3"><span class="num">1</span> Faculty</span>
 <span class="ph-stat s2"><span class="num">1</span> Postdoc</span>
-<span class="ph-stat s1"><span class="num">12</span> Graduate Students</span>
+<span class="ph-stat s1"><span class="num">14</span> Graduate Students</span>
 <span class="ph-stat s4"><span class="num">7</span> Research Interns</span>
 <span class="ph-stat s5"><span class="num">3</span> Industry Internships</span>
 {% endcapture %}
@@ -400,7 +400,7 @@ horizontal: false
 </div>
 
 
-<h3 class="member-section-title">Junior Researchers (MS Students) <span class="count">6</span></h3>
+<h3 class="member-section-title">Junior Researchers (MS Students) <span class="count">8</span></h3>
 
 <div class="member-grid">
   <div class="member-card">
