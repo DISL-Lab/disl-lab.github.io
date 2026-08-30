@@ -91,6 +91,49 @@ nav_order: 2
 
 <div class="project-block">
   <div class="img-col">
+    <img src="/assets/img/paper/26-arXiv-solar.png" alt="Project 1">
+  </div>
+  <div class="text-col">
+    <h3 style="font-size: 0.9rem; margin-bottom: 0.2rem; font-weight: bold;">
+   <span style="
+        display: inline-block;
+        background-color:rgb(196, 138, 4);  /* 원하는 색으로 변경 가능 */
+        color: white;
+        font-weight: bold;
+        font-size: 0.75rem;
+        padding: 0.2rem 0.6rem;
+        border-radius: 6px;
+        margin-right: 0.1rem;
+    ">
+        arXiv
+    </span>
+    <span style="
+        display: inline-block;
+        background-color:rgb(197, 38, 179);  /* 원하는 색으로 변경 가능 */
+        color: white;
+        font-weight: bold;
+        font-size: 0.75rem;
+        padding: 0.2rem 0.6rem;
+        border-radius: 6px;
+        margin-right: 0.1rem;
+    ">
+        NLP
+    </span>
+      Solar Open 2 Technical Report
+    </h3>
+    <!-- Full author list (53): Sungrae Park, Sanghoon Kim, Gyoungjin Gim, Jungho Cho, Hyunwoong Ko, Minbyul Jeong, Minjeong Kim, Keunwoo Choi, Chaehun Shin, Chanwoong Yoon, Dongjun Kim, Eunwon Kim, Gyungin Shin, Hyeonju Lee, Hyungkyu Kang, Inseo Song, Jisu Bae, Jiyoon Han, Jiyun Lee, Joonkee Kim, Junyeop Lee, Mikyoung Cha, Sangwon Yu, Sehwan Joo, Seokyoon Kang, Seonghoon Yang, Seung Shin, Seunghyun Lee, Seungseop Lim, Seungyoun Shin, Sukyung Lee, Taegyeong Eo, Taehwan Oh, Taewhoo Lee, Wonho Song, Wonjun Oh, Wonseok Hwang, Yunsu Kim, Yura Shim, Hwalsuk Lee, Sunghun Kim, Du-Seong Chang, Kyunghyun Cho, Seungju Han, Yejin Choi, Junsuk Choe, Hwaran Lee, Minjeong Ban, Taewon Yun, Hwanjun Song, Jae-Gil Lee, KyungTae Lim, Alice Oh -->
+    <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
+      Sungrae Park, Sanghoon Kim, Gyoungjin Gim, <i>et al.</i>, Minjeong Ban, Taewon Yun, Hwanjun Song, Jae-Gil Lee, KyungTae Lim, and Alice Oh <span style="color:#888;">(53 authors)</span>
+      <span style="color: #1a73e8; font-weight: bold;">(with Upstage)</span>
+    </p>
+    <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
+     arXiv preprint arXiv:2607.20062, 2026
+    </p>
+  </div>
+</div>
+
+<div class="project-block">
+  <div class="img-col">
     <img src="/assets/img/paper/26-NeurIPS-VRAG.png" alt="Project 1">
   </div>
   <div class="text-col">
