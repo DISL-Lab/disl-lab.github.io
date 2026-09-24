@@ -13,7 +13,7 @@ horizontal: false
 <span class="ph-stat s3"><span class="num">1</span> Faculty</span>
 <span class="ph-stat s2"><span class="num">1</span> Postdoc</span>
 <span class="ph-stat s1"><span class="num">14</span> Graduate Students</span>
-<span class="ph-stat s4"><span class="num">7</span> Research Interns</span>
+<span class="ph-stat s4"><span class="num">6</span> Research Interns</span>
 <span class="ph-stat s5"><span class="num">3</span> Industry Internships</span>
 {% endcapture %}
 {% include page_hero.html
@@ -504,7 +504,7 @@ horizontal: false
 </div>
 
 
-<h3 class="member-section-title">Research Interns <span class="count">7</span></h3>
+<h3 class="member-section-title">Research Interns <span class="count">6</span></h3>
 
 <div class="member-grid">
   <div class="member-card">
@@ -514,15 +514,6 @@ horizontal: false
     <div class="info">
       <p class="name">Hwan Chang</p>
       <p class="role">MS Intern, July 2026~</p>
-    </div>
-  </div>
-  <div class="member-card">
-    <div class="img-wrapper">
-      <img src="/assets/img/bio_jisoo_kim.jpg" alt="Jisoo Kim">
-    </div>
-    <div class="info">
-      <p class="name">Jisoo Kim</p>
-      <p class="role">BS Intern, July 2025~</p>
     </div>
   </div>
   <div class="member-card">
