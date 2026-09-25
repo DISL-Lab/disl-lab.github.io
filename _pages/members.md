@@ -478,7 +478,7 @@ horizontal: false
 </div>
 
 
-<h3 class="member-section-title">Jointly Supervised Students <span class="count">2</span></h3>
+<h3 class="member-section-title">Jointly Supervised Students <span class="count">3</span></h3>
 
 <div class="member-grid">
   <div class="member-card">
@@ -487,8 +487,18 @@ horizontal: false
     </div>
     <div class="info">
       <p class="name">Jihwan Bang</p>
-      <p class="role">Qualcomm, Spring 2023~</p>
+      <p class="role">Qualcomm, Fall 2023~</p>
       <p class="role">Co-advised by Prof. Jae-Gil Lee</p>
+    </div>
+  </div>
+  <div class="member-card">
+    <div class="img-wrapper">
+      <img src="/assets/img/bio-donghee.png" alt="Donghee Han">
+    </div>
+    <div class="info">
+      <p class="name">Donghee Han</p>
+      <p class="role">Fall 2023~</p>
+      <p class="role">Co-advised by Prof. Mun Yong Yi</p>
     </div>
   </div>
   <div class="member-card">
