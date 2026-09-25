@@ -406,7 +406,7 @@ nav_order: 2
         border-radius: 6px;
         margin-right: 0.1rem;
     ">
-        EMNLP
+        EMNLP (Oral)
     </span>
     <span style="
         display: inline-block;
