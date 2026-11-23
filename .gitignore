@@ -11,3 +11,6 @@ _site/
 .jekyll-cache/
 .sass-cache/
 .DS_Store
+
+# drop folder for new photos/images (originals are large)
+_updates/

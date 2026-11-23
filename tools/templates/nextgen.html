@@ -920,7 +920,7 @@ $("#vctl").onclick = () => { const v = $("#heroVideo"), p = v.paused; p ? v.play
 
 /* papers */
 const Papers = (() => {
-  const MEM = ["Hyangsuk Min","Jeonghwan Choi","Yuho Lee","Taewon Yun","Jihwan Oh","Jisu Shin","Jiaqi Deng","Minjeong Ban","Kibum Kim","Mingyu Choi","Gyeonghun Sun","Seunghwan Bang","Jibin Hwang","Yeeun Choi","Jihwan Bang","Donghee Han","Yujin Kim","Hwan Chang","Hyeonseong Park","Juseon Do","Hayoon Park","Byeongjun Joung","Chanjoong Kim","Jeesu Jung","Hee-Yeon Kim"];
+  const MEM = ["Hyangsuk Min","Jeonghwan Choi","Yuho Lee","Taewon Yun","Jihwan Oh","Jisu Shin","Jiaqi Deng","Minjeong Ban","Kibum Kim","Mingyu Choi","Gyeonghun Sun","Seunghwan Bang","Jibin Hwang","Yeeun Choi","Jihwan Bang","Donghee Han","Yujin Kim","Hwan Chang","Hyeonseong Park","Juseon Do","Hayoon Park","Byeongjun Joung","Chanjoong Kim","Minsun Yu","Jeesu Jung","Hee-Yeon Kim"];
   const YRS = [["All","전체"], ...[...new Set(PUBS.map(p => p.year))].filter(y => y !== "Preprint").map(y => [y]), ["Preprint","프리프린트"]];
   let year = "All", q = "", shown = 12;
   const au = a => esc(a).replace(/Hwanjun Song(\*?)/g,"<b>Hwanjun Song$1</b>");
@@ -996,9 +996,10 @@ const GROUPS = [
     ["Hwan Chang","bio_changhwan.jpg",S("M.S. Intern","석사 인턴"),S("Since Jul 2026","2026.07~")],
     ["Hyeonseong Park","bio_hyeonseng.jpeg",S("B.S. Intern","학부 인턴"),S("Since Jan 2026","2026.01~")],
     ["Juseon Do","bio_juseon_do.png",S("B.S. Intern","학부 인턴"),S("Since Mar 2026","2026.03~")],
-    ["Hayoon Park","bio_hayoon.jpg",S("B.S. Intern","학부 인턴"),S("Since Mar 2026","2026.03~")],
+    ["Hayoon Park","bio-hayoon.jpg",S("B.S. Intern","학부 인턴"),S("Since Mar 2026","2026.03~")],
     ["Byeongjun Joung","bio_byeongjun.jpg",S("B.S. Intern","학부 인턴"),S("Since Jul 2026","2026.07~")],
-    ["Chanjoong Kim","bio_chanjoong.jpg",S("B.S. Intern","학부 인턴"),S("Since Jul 2026","2026.07~")]]}
+    ["Chanjoong Kim","bio_chanjoong.jpg",S("B.S. Intern","학부 인턴"),S("Since Jul 2026","2026.07~")],
+    ["Minsun Yu","bio-minsun.jpg",S("B.S. Intern","학부 인턴"),S("Since Fall 2026","2026 가을~")]]}
 ];
 const PEOPLE = GROUPS.flatMap(g => g.m.map(([n,img,r1]) => [n,img,r1]));
 $("#groups").innerHTML = GROUPS.map(g => `<div class="grp rv"><div class="grp-h"><h4>${T(...g.g)}</h4><span>${String(g.m.length).padStart(2,"0")}</span></div>
