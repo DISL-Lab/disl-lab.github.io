@@ -30,6 +30,7 @@ ACTIVE_PROJECTS = 10
 MEMBERS = 25  # postdoc + Ph.D. + M.S. + co-advised + interns (PI and staff excluded)
 
 KO_NEWS = [
+    ("Retail Agents was accepted at KDD 2027", "리테일 에이전트에 관한 논문이 KDD 2027에 채택되었습니다."),
     ("Three papers were accepted at NeurIPS 2026", "NeurIPS 2026에 논문 3편이 채택되었습니다."),
     ("Six papers were accepted at EMNLP 2026", "EMNLP 2026에 논문 6편, CIKM 2026에 논문 2편이 채택되었습니다."),
     ("Three MS students", "석사과정 3명(Seunghwan, Jibin, Yeeun)과 인턴 3명(Hwan, Byeongjun, Chanjoong)이 DISLab에 합류했습니다."),
