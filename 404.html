@@ -1,9 +1,11 @@
----
-layout: page
-permalink: /404.html
-title: "Page not found"
-description: "Looks like there has been a mistake. Nothing exists here."
-redirect: true
----
-
-<p>You will be redirected to the main page within 3 seconds. If not redirected, please go back to the <a href="{{ site.baseurl }}/">home page</a>.</p>
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>DISLab | KAIST</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script>
+  // Old Jekyll pages (/publications/, /news/, ...) now live as sections of the single-page site.
+  var p = location.pathname.toLowerCase(), map = [["/publications","#papers"],["/news","#now"],["/projects","#projects"],["/lab_project","#projects"],["/people","#people"],["/cv","#people"]];
+  var h = ""; for (var i = 0; i < map.length; i++) if (p.indexOf(map[i][0]) === 0) { h = map[i][1]; break; }
+  location.replace("/" + h);
+</script>
+<style>body{background:#05070c;color:#c9d1e0;font:16px/1.6 system-ui,sans-serif;display:grid;place-items:center;min-height:100vh;margin:0}a{color:#5eead4}</style>
+</head><body><p>Redirecting to <a href="/">DISLab</a>…</p></body></html>

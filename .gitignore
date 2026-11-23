@@ -1,0 +1,13 @@
+# secrets — Gemini API key for tools/generate_videos.py
+.env.local
+.env*.local
+
+# raw model outputs (large)
+media/raw/
+
+# local drafts / old Jekyll build artifacts
+new_version/
+_site/
+.jekyll-cache/
+.sass-cache/
+.DS_Store

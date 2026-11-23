@@ -1,0 +1,1053 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DISLab | KAIST</title>
+<meta name="description" content="DISLab at KAIST builds trustworthy agentic AI grounded in data — AI Scientists and video foundation models for Factory AI.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+:root{
+  --bg:#05070c; --bg-2:#0a0e17; --panel:#0d121d; --panel-2:#111827;
+  --line:rgba(255,255,255,.09); --line-2:rgba(255,255,255,.16);
+  --fg:#eef2f8; --fg-2:#b6c0d0; --muted:#7d8899; --faint:#4d5869;
+  --blue:#4d8dff; --blue-2:#2563eb; --cyan:#5eead4; --amber:#f5b041;
+  --display:"Inter Tight", Inter, "Pretendard Variable", sans-serif;
+  --sans:Inter, "Pretendard Variable", Pretendard, -apple-system, sans-serif;
+  --kr:"Pretendard Variable", Pretendard, -apple-system, "Apple SD Gothic Neo", sans-serif;
+  --mono:"JetBrains Mono", ui-monospace, Menlo, monospace;
+  --wrap:1320px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:90px;background:var(--bg)}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--sans);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+html[lang="ko"] body{font-family:var(--kr);word-break:keep-all}
+html[lang="ko"] .t-en, html[lang="en"] .t-ko{display:none!important}
+.t-ko{font-family:var(--kr)}
+img,video{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit}
+::selection{background:var(--blue);color:#fff}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 40px}
+@media (max-width:700px){.wrap{padding:0 18px}}
+.label{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.label b{color:var(--blue);font-weight:500}
+
+/* ---------- top bar (KR) ---------- */
+.topbar{position:relative;z-index:70;background:#0b1222;border-bottom:1px solid var(--line);font-family:var(--kr);font-size:13px;color:#c9d3e2}
+.topbar .wrap{display:flex;gap:12px;align-items:center;justify-content:center;min-height:38px;flex-wrap:wrap;padding-top:6px;padding-bottom:6px;text-align:center}
+.topbar .tag{font-weight:700;font-size:11px;color:#1b1200;background:var(--amber);padding:2px 8px;border-radius:4px}
+.topbar a{color:#fff;font-weight:600;border-bottom:1px solid rgba(255,255,255,.35)}
+
+/* ---------- header ---------- */
+.nav{position:absolute;top:var(--tb,38px);left:0;right:0;z-index:80;border-bottom:1px solid transparent;transition:background .3s,border-color .3s}
+.nav.fixed{position:fixed;top:0;background:rgba(5,7,12,.86);backdrop-filter:blur(16px) saturate(160%);-webkit-backdrop-filter:blur(16px) saturate(160%);border-bottom-color:var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;height:76px}
+.brand{display:flex;align-items:center;gap:12px}
+.brand svg{width:30px;height:30px;flex:none}
+.brand-t{display:flex;flex-direction:column;line-height:1.2}
+.brand-t strong{font-family:var(--display);font-size:19px;font-weight:700;letter-spacing:-.02em;color:#fff}
+.brand-t span{font-size:12.5px;color:var(--fg-2)}
+.nav-links{display:flex;gap:30px}
+.nav-links a{position:relative;font-size:15px;font-weight:500;color:var(--fg-2);padding:6px 0;transition:color .15s}
+.nav-links a:hover,.nav-links a.active{color:#fff}
+.nav-links a.active::after{content:"";position:absolute;left:0;right:0;bottom:-2px;height:2px;border-radius:2px;background:var(--cyan)}
+.nav-r{display:flex;align-items:center;gap:22px}
+.lang{display:flex;align-items:center;gap:6px;font-size:13.5px;color:var(--faint)}
+.lang button{border:0;background:none;padding:2px 0;font-size:13.5px;font-weight:600;color:var(--muted);cursor:pointer}
+.lang button.on{color:#fff}
+.lang i{font-style:normal;color:var(--faint)}
+.join-btn{font-size:14px;font-weight:600;background:#fff;color:#000;padding:9px 16px;border-radius:8px}
+.join-btn:hover{background:#dfe7f5}
+.menu-btn{display:none;border:0;background:none;width:36px;height:36px;cursor:pointer;place-items:center}
+@media (max-width:1000px){
+  .nav-links{display:none;position:absolute;top:76px;left:0;right:0;flex-direction:column;gap:0;background:rgba(5,7,12,.97);border-bottom:1px solid var(--line);padding:8px 18px 16px}
+  .nav-links.open{display:flex}
+  .nav-links a{padding:13px 0;border-bottom:1px solid var(--line)}
+  .nav-links a.active::after{display:none}
+  .menu-btn{display:grid}
+  .join-btn{display:none}
+  .brand-t span{display:none}
+}
+.hero-kicker{display:flex;align-items:center;gap:10px;font-size:clamp(17px,1.5vw,21px);font-weight:600;color:#fff;letter-spacing:-.01em;margin:0}
+.hero-kicker i{width:8px;height:8px;border-radius:50%;background:var(--cyan);flex:none}
+
+/* ---------- hero ---------- */
+.hero{position:relative;min-height:calc(100svh - 38px);display:flex;align-items:flex-end;isolation:isolate;overflow:hidden;padding:150px 0 56px}
+.hero-bg{position:absolute;inset:0;z-index:-1;background:radial-gradient(1000px 600px at 75% 30%,rgba(37,99,235,.22),transparent 60%),var(--bg)}
+.hero-bg video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 2s}
+.hero-bg.ready video{opacity:1}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,var(--bg) 0%,rgba(5,7,12,.55) 38%,rgba(5,7,12,.15) 70%,rgba(5,7,12,.5) 100%),linear-gradient(90deg,rgba(5,7,12,.75),transparent 60%)}
+.hero h1{font-family:var(--display);font-weight:600;font-size:clamp(48px,8.4vw,124px);line-height:.95;letter-spacing:-.045em;margin:18px 0 28px;max-width:1100px}
+.hero h1 .dim{color:rgba(238,242,248,.42)}
+.hero h1 .grad{background:linear-gradient(90deg,#9cc2ff,#5eead4);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero-links{display:flex;gap:22px;flex-wrap:wrap}
+.hero-links a{font-size:15px;font-weight:600;color:#fff;padding-bottom:3px;border-bottom:1px solid rgba(255,255,255,.3)}
+.hero-links a:hover{border-color:#fff}
+.hero .lead{font-size:clamp(17px,1.5vw,21px);color:var(--fg-2);max-width:760px;margin:0 0 30px}
+.hero .lead b{color:#fff;font-weight:600}
+.vctl{position:absolute;right:24px;top:120px;z-index:2;width:34px;height:34px;border-radius:50%;border:1px solid var(--line-2);background:rgba(5,7,12,.5);display:none;place-items:center;cursor:pointer}
+.hero-bg.ready ~ .vctl{display:grid}
+.vctl svg{width:13px;height:13px}
+
+
+/* ---------- section heads ---------- */
+section.sec{padding:140px 0;position:relative}
+.sh{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end;margin-bottom:64px}
+.sh h2{font-family:var(--display);font-weight:600;font-size:clamp(36px,5vw,72px);line-height:1;letter-spacing:-.04em;margin:16px 0 0}
+.sh h2 .t-ko{font-family:var(--kr);font-weight:700;letter-spacing:-.04em}
+.sh h2 .dim{color:rgba(238,242,248,.38)}
+.sh p{color:var(--fg-2);margin:0;font-size:17px;max-width:520px;justify-self:end}
+.sh > div:only-child{grid-column:1/-1}
+@media (max-width:900px){.sh{grid-template-columns:1fr}.sh p{justify-self:start}section.sec{padding:96px 0}}
+
+/* ---------- stack story ---------- */
+.story{display:grid;grid-template-columns:1.05fr 1fr;gap:80px}
+.stack-wrap{position:sticky;top:120px;height:calc(100vh - 160px);display:flex;align-items:center}
+.stack{width:100%;display:grid;gap:30px;position:relative}
+.flow-cv{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:3;mix-blend-mode:screen}
+.layer{position:relative;z-index:1}
+.layer{border:1px solid var(--line);border-radius:16px;padding:18px;background:var(--panel);opacity:.32;transform:scale(.97);transition:opacity .5s,transform .5s,border-color .5s,box-shadow .5s}
+.layer .lt{display:flex;justify-content:space-between;font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:12px}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.row3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.row4{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.blk{border:1px solid var(--line-2);border-radius:10px;padding:14px;background:rgba(255,255,255,.02);font-weight:600;font-size:15px;transition:all .5s}
+.blk small{display:block;font-weight:400;font-size:12.5px;color:var(--muted);margin-top:3px}
+.row4 .blk{text-align:center;font-size:13.5px;padding:12px 6px}
+.core{text-align:center;font-size:14px;color:var(--fg-2)}
+.core b{color:#fff}
+.stack[data-step="0"] .l0,.stack[data-step="1"] .l1,.stack[data-step="2"] .l2,.stack[data-step="3"] .l2,.stack[data-step="4"] .l2{opacity:1;transform:none;border-color:rgba(77,141,255,.45);box-shadow:0 0 0 1px rgba(77,141,255,.15),0 30px 80px -30px rgba(37,99,235,.55)}
+.stack:not([data-step="0"]) .l0{opacity:.85;transform:none}
+.stack[data-step="2"] .l1,.stack[data-step="3"] .l1,.stack[data-step="4"] .l1{opacity:.6;transform:none}
+.stack[data-step="2"] .f1,.stack[data-step="3"] .f2,.stack[data-step="4"] .f3{border-color:var(--blue);background:linear-gradient(180deg,rgba(77,141,255,.22),rgba(77,141,255,.05))}
+.stack[data-step="2"] .l2 .blk:not(.f1),.stack[data-step="3"] .l2 .blk:not(.f2),.stack[data-step="4"] .l2 .blk:not(.f3){opacity:.4}
+.stack[data-step="1"] .row4 .blk{border-color:rgba(94,234,212,.45);color:#fff}
+.steps{display:grid}
+.step{min-height:78vh;display:flex;flex-direction:column;justify-content:center;padding:40px 0 40px 22px;border-left:2px solid var(--line);transition:border-color .4s}
+.step.on{border-left-color:var(--cyan)}
+.step .label{margin-bottom:16px}
+.step h3{font-family:var(--display);font-size:clamp(30px,3.4vw,46px);line-height:1.05;letter-spacing:-.035em;margin:0 0 18px;font-weight:600}
+.step h3 .t-ko{font-family:var(--kr);font-weight:700}
+.step p{color:var(--fg-2);font-size:17px;margin:0 0 18px;max-width:520px}
+.step ul{list-style:none;padding:0;margin:0;display:grid;gap:8px}
+.step li{display:flex;gap:12px;font-size:15px;color:var(--fg-2)}
+.step li::before{content:"";flex:none;width:14px;height:1px;background:var(--blue);margin-top:12px}
+.step .more-link{display:inline-block;margin-top:22px;font-size:14px;font-weight:600;color:var(--blue)}
+@media (max-width:980px){.story{grid-template-columns:1fr;gap:20px}.stack-wrap{position:sticky;top:76px;height:auto;z-index:2;background:linear-gradient(var(--bg) 80%,transparent);padding:8px 0 20px}.layer{padding:10px}.layer .lt{margin-bottom:6px}.blk{padding:8px;font-size:13px}.blk small{display:none}.row4 .blk{font-size:11.5px;padding:7px 2px}.step{min-height:60vh}}
+
+.dc{display:grid;grid-template-columns:1.35fr 1fr;gap:56px;margin:-20px 0 96px;align-items:start}
+.dc-lead{font-size:clamp(19px,1.7vw,24px);line-height:1.55;color:var(--fg);margin:0 0 18px;letter-spacing:-.01em}
+.dc-lead b{color:var(--cyan);font-weight:600}
+.dc-def p:not(.dc-lead){color:var(--fg-2);font-size:16.5px;margin:0 0 14px}
+.dc-cmp{display:grid;gap:10px}
+.cmp{border:1px solid var(--line);border-radius:14px;padding:18px 20px;background:var(--panel)}
+.cmp p{margin:8px 0 0;color:var(--fg-2);font-size:14.5px}
+.cmp.on{border-color:rgba(94,234,212,.4);background:linear-gradient(180deg,rgba(94,234,212,.07),var(--panel))}
+.cmp.on .label{color:var(--cyan)}
+@media (max-width:900px){.dc{grid-template-columns:1fr;gap:24px;margin-bottom:56px}}
+
+/* data core */
+.l0.data{border-color:rgba(94,234,212,.3);background:linear-gradient(180deg,rgba(94,234,212,.07),var(--panel) 70%)}
+.l0.data .lt{color:var(--cyan)}
+.dblk{border:1px solid rgba(94,234,212,.28);border-radius:10px;padding:14px;background:rgba(94,234,212,.04);transition:all .5s}
+.dblk .dk{display:block;font-family:var(--display);font-weight:600;font-size:21px;letter-spacing:-.02em;color:#fff}
+.dblk small{font-size:12px;color:var(--muted)}
+.sources{margin-bottom:12px;padding-bottom:10px;border-bottom:1px dashed var(--line-2);font-family:var(--mono);font-size:11px;letter-spacing:.06em;color:var(--fg-2);text-align:center}
+.stack[data-step="0"] .dblk{border-color:var(--cyan);box-shadow:inset 0 0 30px rgba(94,234,212,.12)}
+.blk .dt{display:block;font-family:var(--mono);font-size:10.5px;color:var(--cyan);margin-top:6px;font-weight:400;letter-spacing:.03em}
+.qsu{display:grid;gap:0;margin:6px 0 22px;border-top:1px solid var(--line)}
+.qsu div{display:grid;grid-template-columns:120px 1fr;gap:16px;padding:14px 0;border-bottom:1px solid var(--line)}
+.qsu b{font-family:var(--display);font-size:20px;letter-spacing:-.02em;font-weight:600;color:var(--cyan)}
+.qsu > div > span{color:var(--fg-2);font-size:15px}
+.qsu b span{color:inherit;font:inherit}
+.evid{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px}
+.evid a{font-size:12.5px;border:1px solid var(--line-2);border-radius:999px;padding:5px 11px;color:var(--fg-2);cursor:pointer}
+.evid a:hover{border-color:var(--cyan);color:#fff}
+.evid a em{font-style:normal;font-family:var(--mono);font-size:10.5px;color:var(--cyan);margin-right:6px}
+.dtag{display:inline-block;font-family:var(--mono);font-size:11.5px;letter-spacing:.04em;color:var(--cyan);border:1px solid rgba(94,234,212,.35);border-radius:6px;padding:3px 9px;margin-bottom:16px}
+@media (max-width:980px){.dblk{padding:8px}.dblk .dk{font-size:14px}.dblk small,.blk .dt{display:none}.sources{font-size:9.5px;margin-bottom:6px;padding-bottom:6px}.stack{gap:12px}.qsu div{grid-template-columns:1fr;gap:2px}}
+
+/* ---------- core research areas ---------- */
+.ra{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.ra-c{border:1px solid var(--line);border-radius:16px;background:var(--panel);padding:24px;display:flex;flex-direction:column;gap:12px;transition:border-color .25s,transform .25s}
+.ra-c:hover{border-color:rgba(77,141,255,.45);transform:translateY(-3px)}
+.ra-c .n{font-family:var(--mono);font-size:12px;color:var(--blue)}
+.ra-c h3{font-family:var(--display);font-size:24px;letter-spacing:-.02em;margin:0;font-weight:600;line-height:1.15}
+.ra-c p{margin:0;color:var(--fg-2);font-size:14.5px}
+.ra-c .df{font-family:var(--mono);font-size:11px;color:var(--cyan);letter-spacing:.04em}
+.ra-c .tp{display:flex;flex-wrap:wrap;gap:6px}
+.ra-c .tp span{font-size:12px;border:1px solid var(--line-2);border-radius:999px;padding:3px 9px;color:var(--fg-2)}
+.ra-c .rp{margin-top:auto;padding-top:12px;border-top:1px solid var(--line);display:grid;gap:7px}
+.ra-c .rp a{font-size:13px;color:var(--fg-2);cursor:pointer;display:flex;gap:8px;align-items:baseline;line-height:1.4}
+.ra-c .rp a:hover{color:#fff}
+.ra-c .rp em{font-style:normal;font-family:var(--mono);font-size:10.5px;color:var(--cyan);white-space:nowrap}
+@media (max-width:1100px){.ra{grid-template-columns:1fr 1fr}}
+@media (max-width:600px){.ra{grid-template-columns:1fr}}
+
+/* ---------- application panels ---------- */
+.panels{display:flex;gap:12px;height:min(60vh,580px)}
+.panel{position:relative;flex:1;border-radius:22px;overflow:hidden;border:1px solid var(--line);background:var(--panel);transition:flex .7s cubic-bezier(.2,.7,.2,1);isolation:isolate;cursor:default}
+.panels:hover .panel{flex:.8}
+.panels .panel:hover,.panels .panel:focus-within{flex:1.9}
+.panel video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;opacity:0;transition:opacity 1.4s,transform 8s linear;transform:scale(1.04)}
+.panel.ready video{opacity:.9}
+.panel:hover video{transform:scale(1.0)}
+.panel::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,rgba(5,7,12,.96) 8%,rgba(5,7,12,.55) 50%,rgba(5,7,12,.2) 100%)}
+.panel .pin{position:absolute;inset:0;padding:28px;display:flex;flex-direction:column;justify-content:space-between}
+.panel .top{display:flex;justify-content:space-between;align-items:flex-start}
+.panel .num{font-family:var(--display);font-size:64px;font-weight:600;letter-spacing:-.04em;line-height:1;color:rgba(255,255,255,.16)}
+.panel h3{font-family:var(--display);font-size:clamp(26px,2.6vw,40px);line-height:1;letter-spacing:-.04em;margin:10px 0 12px;font-weight:600}
+.panel h3 .t-ko{font-family:var(--kr);font-weight:700}
+.panel .sub{color:var(--fg-2);font-size:15.5px;max-width:520px;margin:0}
+.panel .dline{font-family:var(--mono);font-size:11px;letter-spacing:.05em;color:var(--cyan);margin:0 0 10px}
+.panel .detail{max-height:0;overflow:hidden;opacity:0;transition:max-height .7s ease,opacity .5s ease .1s}
+.panel:hover .detail,.panel:focus-within .detail{max-height:420px;opacity:1}
+.thr{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 18px}
+.thr span{font-size:12.5px;padding:5px 10px;border-radius:999px;border:1px solid var(--line-2);background:rgba(5,7,12,.4);color:var(--fg-2)}
+.papers{display:grid;gap:6px;margin-bottom:16px}
+.papers a{display:flex;gap:10px;align-items:baseline;font-size:13.5px;color:var(--fg-2);cursor:pointer}
+.papers a:hover{color:#fff}
+.papers a em{font-style:normal;font-family:var(--mono);font-size:10.5px;color:var(--cyan);white-space:nowrap;flex:none}
+.progs{display:flex;flex-wrap:wrap;gap:8px}
+.progs span{font-family:var(--mono);font-size:11px;color:var(--amber);border:1px solid rgba(245,176,65,.35);padding:3px 8px;border-radius:5px}
+@media (hover:none),(max-width:900px){.panels{flex-direction:column;height:auto}.panel{min-height:560px}.panel .detail{max-height:none;opacity:1}.panels:hover .panel,.panels .panel:hover{flex:1}}
+
+/* ---------- bento ---------- */
+.bento{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:minmax(150px,auto);gap:14px}
+.card{position:relative;border:1px solid var(--line);border-radius:20px;background:var(--panel);padding:26px;overflow:hidden;transition:border-color .25s}
+.card:hover{border-color:var(--line-2)}
+.card .label{margin-bottom:14px;display:block}
+.c-count{grid-column:span 5}
+.c-news{grid-column:span 7}
+.big{font-family:var(--display);font-size:clamp(80px,9vw,140px);font-weight:600;letter-spacing:-.06em;line-height:.9;background:linear-gradient(180deg,#fff,#7aa7ff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.c-count .cap{color:var(--fg-2);margin:6px 0 22px}
+.vb{display:grid;grid-template-columns:118px 1fr 24px;gap:10px;align-items:center;font-size:13px;margin-bottom:8px;color:var(--fg-2)}
+.vb .bar{height:6px;border-radius:3px;background:rgba(255,255,255,.07);overflow:hidden}
+.vb .bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--blue-2),var(--cyan));border-radius:3px;transition:width 1.2s cubic-bezier(.2,.7,.2,1)}
+.vb b{text-align:right;color:#fff}
+.nlist{display:grid}
+.nrow{display:grid;grid-template-columns:96px 1fr;gap:16px;padding:13px 0;border-bottom:1px solid var(--line)}
+.nrow:last-child{border-bottom:0}
+.nrow time{font-family:var(--mono);font-size:12px;color:var(--muted);padding-top:2px}
+.nrow p{margin:0;font-size:15px;color:var(--fg-2)}
+.nrow .tg{font-family:var(--mono);font-size:10.5px;text-transform:uppercase;letter-spacing:.08em;margin-right:8px}
+.tg.paper{color:var(--blue)}.tg.award{color:var(--amber)}.tg.people{color:var(--cyan)}.tg.service{color:#c4b5fd}
+.nmore{margin-top:10px;background:none;border:0;color:var(--blue);font-weight:600;font-size:14px;cursor:pointer;padding:0}
+@media (max-width:1000px){.c-count,.c-news{grid-column:span 12}}
+
+/* ---------- papers index ---------- */
+.pbar{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:20px}
+.seg{display:flex;flex-wrap:wrap;gap:4px;padding:4px;border:1px solid var(--line);border-radius:12px}
+.seg button{border:0;background:transparent;color:var(--muted);font-size:13.5px;padding:7px 12px;border-radius:8px;cursor:pointer}
+.seg button.on{background:#fff;color:#000}
+.seg button .c{opacity:.5;margin-left:5px;font-size:11.5px}
+.psearch{display:flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:12px;padding:0 14px;min-width:280px}
+.psearch svg{width:15px;height:15px;color:var(--muted)}
+.psearch input{flex:1;background:transparent;border:0;outline:none;color:var(--fg);font:inherit;font-size:14px;padding:11px 0}
+.prow{display:grid;grid-template-columns:170px 1fr 90px;gap:24px;align-items:baseline;padding:20px 0;border-top:1px solid var(--line);transition:background .2s}
+.prow:hover{background:linear-gradient(90deg,rgba(77,141,255,.06),transparent)}
+.prow .v{font-family:var(--mono);font-size:12px;color:var(--cyan)}
+.prow .v.oral{color:var(--amber)}
+.prow .v.pre{color:var(--muted)}
+.prow h4{margin:0 0 4px;font-size:17px;font-weight:500;letter-spacing:-.01em;line-height:1.4}
+.prow .au{margin:0;font-size:13.5px;color:var(--muted)}
+.prow .au b{color:var(--fg-2);font-weight:600}
+.prow .au u{text-decoration:none;color:var(--fg-2)}
+.prow .y{font-family:var(--mono);font-size:12px;color:var(--faint);text-align:right}
+.prow .co{color:var(--blue);font-size:12.5px}
+.prow.flash{animation:flash 2.2s ease}
+@keyframes flash{0%,40%{background:rgba(77,141,255,.18)}100%{background:transparent}}
+.pfoot{display:flex;justify-content:space-between;align-items:center;padding-top:20px;border-top:1px solid var(--line);color:var(--muted);font-size:13px;flex-wrap:wrap;gap:12px}
+.btn-o{border:1px solid var(--line-2);background:transparent;color:#fff;border-radius:10px;padding:10px 16px;font-weight:600;font-size:14px;cursor:pointer}
+.btn-o:hover{border-color:#fff}
+.peek{position:fixed;z-index:90;width:280px;aspect-ratio:16/10;border-radius:12px;overflow:hidden;background:#fff;border:1px solid var(--line-2);pointer-events:none;opacity:0;transform:scale(.94);transition:opacity .2s,transform .2s;box-shadow:0 30px 60px -20px rgba(0,0,0,.6)}
+.peek.on{opacity:1;transform:none}
+.peek img{width:100%;height:100%;object-fit:contain}
+@media (max-width:760px){.prow{grid-template-columns:1fr;gap:6px}.prow .y{text-align:left}.psearch{min-width:0;flex:1 1 100%}}
+
+/* ---------- people ---------- */
+.alumni{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:56px}
+.alumni h4{font-family:var(--mono);font-weight:500;font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:0 0 6px}
+.arow{display:grid;grid-template-columns:110px 1fr;gap:14px;padding:12px 0;border-bottom:1px solid var(--line);font-size:14.5px}
+.arow span{font-family:var(--mono);font-size:12px;color:var(--muted);padding-top:2px}
+.arow small{display:block;color:var(--muted);font-size:13px}
+@media (max-width:760px){.alumni{grid-template-columns:1fr}}
+
+.pi-card{display:grid;grid-template-columns:150px 1fr;gap:28px;align-items:center;max-width:760px;margin:0 auto 72px;padding:22px;border:1px solid var(--line);border-radius:18px;background:var(--panel)}
+.pi-card img{width:150px;aspect-ratio:1;object-fit:cover;border-radius:12px}
+.pi-card h3{font-family:var(--display);font-size:30px;letter-spacing:-.02em;margin:6px 0 6px;font-weight:600}
+.pi-card h3 .t-ko{font-family:var(--kr);font-weight:700}
+.pi-card .ttl{color:var(--fg-2);margin:0;font-size:15px;line-height:1.65}
+.grp{margin-bottom:56px}
+.grp-h{display:flex;align-items:center;justify-content:center;gap:14px;margin-bottom:22px}
+.grp-h::before,.grp-h::after{content:"";flex:1;max-width:220px;height:1px;background:var(--line)}
+.grp-h h4{margin:0;font-size:15px;font-weight:600;letter-spacing:.01em}
+.grp-h > span{font-family:var(--mono);font-size:11.5px;color:var(--muted);border:1px solid var(--line-2);border-radius:999px;padding:1px 8px}
+.mgrid{display:flex;flex-wrap:wrap;justify-content:center;gap:28px 18px}
+.mem{width:164px;text-align:center}
+.mem .ph{aspect-ratio:4/5;border-radius:18px;overflow:hidden;border:1px solid var(--line);background:var(--panel)}
+.mem img{width:100%;height:100%;object-fit:cover;transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+.mem:hover img{transform:scale(1.05)}
+.mem b{display:block;font-size:15px;font-weight:600;margin-top:12px;line-height:1.3}
+.mem small{display:block;font-size:12.5px;color:var(--muted);line-height:1.5}
+@media (max-width:760px){.pi-card{grid-template-columns:1fr;text-align:center;justify-items:center}.pi-card img{width:130px}.mem{width:calc(50% - 9px)}}
+
+/* ---------- projects ---------- */
+.projs{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.pj{border:1px solid var(--line);border-radius:16px;background:var(--panel);padding:20px;display:flex;flex-direction:column;gap:14px;transition:border-color .2s}
+.pj:hover{border-color:var(--line-2)}
+.pj .lg{height:46px;border-radius:10px;background:#fff;display:flex;align-items:center;justify-content:center;padding:6px 12px}
+.pj .lg img{max-height:34px;max-width:100%;object-fit:contain}
+.pj .kd{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.pj .kd.fl{color:var(--cyan)}
+.pj h4{margin:0;font-size:15.5px;line-height:1.4;font-weight:600}
+.pj .meta{margin-top:auto;display:flex;justify-content:space-between;gap:8px;font-size:12.5px;color:var(--muted);flex-wrap:wrap}
+.pj .meta .pi-tag{color:var(--blue);font-weight:600}
+.ptabs{display:flex;gap:4px;padding:4px;border:1px solid var(--line);border-radius:12px;width:max-content;margin-bottom:22px}
+.ptabs button{border:0;background:transparent;color:var(--muted);font-size:13.5px;padding:7px 14px;border-radius:8px;cursor:pointer;font-weight:600}
+.ptabs button.on{background:#fff;color:#000}
+@media (max-width:1000px){.projs{grid-template-columns:1fr 1fr}}
+@media (max-width:640px){.projs{grid-template-columns:1fr}}
+
+/* ---------- join ---------- */
+.join{padding:160px 0 140px;position:relative;overflow:hidden;border-top:1px solid var(--line)}
+.join::before{content:"";position:absolute;left:50%;top:-30%;width:1200px;height:900px;transform:translateX(-50%);background:radial-gradient(closest-side,rgba(37,99,235,.35),transparent);z-index:-1}
+.join h2{font-family:var(--display);font-weight:600;font-size:clamp(44px,7vw,108px);letter-spacing:-.05em;line-height:.95;margin:20px 0 28px;max-width:1100px}
+.join h2 .t-ko{font-family:var(--kr);font-weight:700;letter-spacing:-.05em}
+.join h2 .dim{color:rgba(238,242,248,.38)}
+.join .lead{color:var(--fg-2);font-size:18px;max-width:700px;margin:0 0 32px}
+.cta-row{display:flex;gap:12px;flex-wrap:wrap}
+.cta-main{display:inline-flex;align-items:center;gap:10px;background:#fff;color:#000;font-weight:600;padding:15px 24px;border-radius:12px;font-size:16px}
+.cta-main:hover{background:#dfe7f5}
+.cta-main svg{width:16px;height:16px}
+.cta-sec{display:inline-flex;align-items:center;border:1px solid var(--line-2);padding:15px 24px;border-radius:12px;font-weight:600}
+.cta-sec:hover{border-color:#fff}
+
+footer{border-top:1px solid var(--line);padding:40px 0 34px;color:var(--muted);font-size:13.5px}
+.foot{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:flex-start}
+.foot address{font-style:normal;line-height:1.7}
+.foot nav{display:flex;gap:18px;flex-wrap:wrap}
+.foot nav a:hover{color:#fff}
+
+
+.rv{opacity:0;transform:translateY(24px);transition:opacity .9s ease,transform .9s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}html{scroll-behavior:auto}}
+
+/* ---------- fewer boxes: plain layout overrides ---------- */
+.card{border:0;background:none;padding:0;border-radius:0}
+.bento{gap:56px}
+.c-count .vb{margin-bottom:7px}
+.ra{gap:36px}
+.ra-c{border:0;border-top:1px solid var(--line-2);border-radius:0;background:none;padding:20px 0 0}
+.ra-c:hover{transform:none;border-color:var(--line-2)}
+.ra-c .tp,.thr{gap:0}
+.ra-c .tp span,.thr span{border:0;padding:0;border-radius:0;background:none;color:var(--muted);font-size:12.5px}
+.ra-c .tp span:not(:last-child)::after,.thr span:not(:last-child)::after{content:"·";margin:0 8px;color:var(--faint)}
+.thr span{color:#c3cddb}
+.ra-c .rp{border-top:0;padding-top:4px}
+.progs{gap:0}
+.progs span{border:0;padding:0;border-radius:0}
+.progs span:not(:last-child)::after{content:"·";margin:0 8px;color:var(--faint)}
+.evid{display:grid;gap:8px}
+.evid a{border:0;padding:0;border-radius:0;justify-self:start}
+.dtag{border:0;padding:0;border-radius:0}
+.cmp{border:0;border-left:2px solid var(--line-2);border-radius:0;background:none;padding:4px 0 4px 18px}
+.cmp.on{border-left-color:var(--cyan);background:none}
+.dc-cmp{gap:22px}
+.pi-card{border:0;background:none;padding:0;border-radius:0}
+.pi-card img{border-radius:14px}
+.mem .ph{border:0}
+.grp-h > span{border:0;padding:0}
+.pj{border:0;background:none;padding:0;border-radius:0}
+.projs{gap:36px 28px}
+.pj .lg{width:128px;height:44px;padding:6px 12px;border-radius:8px}
+.scope{display:flex;align-items:center;gap:8px;margin-bottom:14px;font-family:var(--mono);font-size:12px;letter-spacing:.08em;color:var(--faint)}
+.scope button{border:0;background:none;padding:0;font:inherit;letter-spacing:inherit;color:var(--muted);cursor:pointer}
+.scope button.on{color:#fff}
+.vb.other span:first-child{color:var(--muted)}
+.status{display:inline-block;font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--amber);margin:0 0 14px}
+.grad-note{margin-top:48px;max-width:760px;padding-left:20px;border-left:2px solid var(--cyan)}
+.grad-note .label{display:block;margin-bottom:8px;color:var(--cyan)}
+.grad-note p{margin:0;color:var(--fg);font-size:17px;line-height:1.65}
+.pl{display:grid;gap:16px;margin-top:4px}
+.pl-i{padding-top:14px;border-top:1px solid var(--line)}
+.pl-i b{font-size:16.5px;font-weight:600}
+.pl-i p{margin:2px 0 8px;color:var(--fg-2);font-size:14.5px}
+.pl-p{display:grid;gap:5px}
+.pl-p a{font-size:13.5px;color:var(--fg-2);cursor:pointer;display:flex;gap:10px;align-items:baseline;line-height:1.45}
+.pl-p a:hover{color:#fff}
+.pl-p em{font-style:normal;font-family:var(--mono);font-size:11px;color:var(--cyan);white-space:nowrap;min-width:118px}
+/* mobile: compact pinned strip — one line per layer, opaque background, active layer highlighted */
+@media (max-width:980px){
+  .stack-wrap{position:sticky;top:76px;height:auto;z-index:20;background:var(--bg);margin:0 -18px;padding:8px 18px 10px;border-bottom:1px solid var(--line)}
+  .stack{gap:6px}
+  .flow-cv,.layer .lt,.sources,.dblk small,.blk .dt{display:none}
+  .layer{display:grid;grid-template-columns:24px 1fr;align-items:center;gap:6px;padding:6px 8px;border-radius:10px;transform:none!important;box-shadow:none!important;opacity:.45}
+  .layer::before{font-family:var(--mono);font-size:10px;letter-spacing:.06em;color:var(--muted)}
+  .l0::before{content:"L0"}.l1::before{content:"L1"}.l2::before{content:"L2"}
+  .row3,.row4{gap:5px}
+  .dblk,.blk,.row4 .blk{padding:5px 3px;border-radius:7px;text-align:center;font-size:11.5px;line-height:1.25;font-weight:600}
+  .dblk .dk{font-size:12px}
+  .stack[data-step="0"] .l0::before,.stack[data-step="1"] .l1::before,.stack[data-step="2"] .l2::before,.stack[data-step="3"] .l2::before,.stack[data-step="4"] .l2::before{color:var(--cyan)}
+  .step{min-height:0;padding:40px 0 40px 18px}
+  .step h3{font-size:28px}
+  .pl-p{gap:12px}
+  .pl-p a{flex-direction:column;gap:2px}
+  .pl-p em{min-width:0}
+}
+@media (max-width:1000px){.bento{grid-template-columns:1fr;gap:48px}.c-count,.c-news{grid-column:auto}}
+</style>
+</head>
+<body>
+
+<div class="topbar"><div class="wrap">
+  <span class="tag">후보 접수 중</span>
+  <span>겨울방학 연구 인턴 모집은 마감되었습니다 · 2027년 연구 인턴 후보를 받고 있습니다 (학부 4학년 재학생 대상)</span>
+  <a href="#join">자세히 보기 →</a>
+</div></div>
+
+
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="DISLab home"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="2.6"/><circle cx="4.5" cy="6" r="1.6"/><circle cx="19.5" cy="6" r="1.6"/><circle cx="4.5" cy="18" r="1.6"/><circle cx="19.5" cy="18" r="1.6"/><path d="M6 7l4 3.4M18 7l-4 3.4M6 17l4-3.4M18 17l-4-3.4"/></svg>
+      <span class="brand-t"><strong>DISLab</strong><span><span class="t-en">KAIST · Data Intelligence System Lab</span><span class="t-ko">KAIST 데이터 지능 시스템 연구실</span></span></span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#now"><span class="t-en">News</span><span class="t-ko">소식</span></a>
+      <a href="#stack"><span class="t-en">Research</span><span class="t-ko">연구</span></a>
+      <a href="#papers"><span class="t-en">Publications</span><span class="t-ko">논문</span></a>
+      <a href="#people"><span class="t-en">People</span><span class="t-ko">구성원</span></a>
+      <a href="#projects"><span class="t-en">Projects</span><span class="t-ko">과제</span></a>
+    </nav>
+    <div class="nav-r">
+      <div class="lang" role="group" aria-label="Language"><button data-l="en">EN</button><i>/</i><button data-l="ko">KO</button></div>
+      <a class="join-btn" href="#join"><span class="t-en">Join us</span><span class="t-ko">함께하기</span></a>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="hero-bg" id="heroBg"><video id="heroVideo" muted loop playsinline preload="auto" poster="media/hero.jpg" data-src="media/hero.mp4"></video></div>
+  <button class="vctl" id="vctl" aria-label="Pause background video"><svg viewBox="0 0 24 24" fill="#fff"><path d="M7 5h3v14H7zM14 5h3v14h-3z"/></svg></button>
+  <div class="wrap" style="width:100%">
+    <p class="hero-kicker"><i></i><span class="t-en">Data Intelligence System Lab, KAIST</span><span class="t-ko">KAIST 데이터 지능 시스템 연구실 (DISLab)</span></p>
+    <h1>Trustworthy agentic AI, <span class="grad">grounded in data.</span></h1>
+    <p class="lead"><span class="t-en">We study data-centric methods for trustworthy AI agents. Our foundational research improves the <b>accuracy</b>, <b>robustness</b>, and <b>sustainability</b> of agents, and we apply it to enterprise agents, AI Scientist, and video understanding for manufacturing.</span><span class="t-ko">신뢰할 수 있는 AI 에이전트를 위한 데이터 중심 방법론을 연구합니다. 에이전트의 <b>정확성</b>, <b>안정성</b>, <b>지속가능성</b>을 높이는 기반 연구를 수행하고, 이를 엔터프라이즈 에이전트, AI Scientist, 제조 현장을 위한 비디오 이해에 적용하고 있습니다.</span></p>
+    <div class="hero-links">
+      <a href="#stack"><span class="t-en">Research</span><span class="t-ko">연구 소개</span> →</a>
+      <a href="#papers"><span class="t-en">Publications</span><span class="t-ko">논문</span> →</a>
+      <a href="#people"><span class="t-en">People</span><span class="t-ko">구성원</span> →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ NOW ============ -->
+<section class="sec" id="now" style="padding:96px 0 40px">
+  <div class="wrap">
+    <div class="sh rv">
+      <div><span class="label"><b>01</b> — <span class="t-en">News</span><span class="t-ko">소식</span></span>
+        <h2><span class="t-en">News</span><span class="t-ko">소식</span></h2></div>
+    </div>
+    <div class="bento">
+      <div class="card c-count rv">
+        <div class="scope" role="group" aria-label="Statistics range"><button data-s="2026" class="on">2026</button><i>/</i><button data-s="all"><span class="t-en">All years</span><span class="t-ko">전체</span></button></div>
+        <div class="big">0</div>
+        <p class="cap" id="statCap"></p>
+        <div id="vbars"></div>
+      </div>
+      <div class="card c-news rv">
+        <span class="label"><span class="t-en">Latest</span><span class="t-ko">최신 소식</span></span>
+        <div class="nlist" id="nlist"></div>
+        <button class="nmore" id="nmore"></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STACK STORY ============ -->
+<section class="sec" id="stack">
+  <div class="wrap">
+    <div class="sh rv">
+      <div><span class="label"><b>02</b> — <span class="t-en">Overview</span><span class="t-ko">개요</span></span>
+        <h2><span class="t-en">What is data-centric AI?</span><span class="t-ko">데이터 중심 인공지능이란?</span></h2></div>
+    </div>
+    <div class="dc rv">
+      <div class="dc-def">
+        <p class="dc-lead"><span class="t-en">Data-centric AI improves AI systems by systematically improving the <b>data</b> they learn from and use — rather than only changing model architectures or scaling model size.</span><span class="t-ko">데이터 중심 인공지능(Data-centric AI)은 모델 구조를 바꾸거나 규모를 키우는 데 그치지 않고, AI가 학습하고 사용하는 <b>데이터 자체</b>를 체계적으로 개선하여 AI 시스템의 성능과 신뢰성을 높이는 접근입니다.</span></p>
+        <p><span class="t-en">It covers the whole data lifecycle: how data is collected, cleaned, labeled, structured, selected, and retrieved.</span><span class="t-ko">데이터의 수집·정제·레이블링·구조화·선별·검색에 이르는 전 과정을 연구 대상으로 합니다.</span></p>
+        <p><span class="t-en">For agentic AI, an agent's accuracy, robustness, and sustainability depend on the quality of the data it perceives, how knowledge is structured in its memory, and how data is used for reasoning and learning. This is the basis of our research.</span><span class="t-ko">에이전틱 AI에서는 에이전트가 인지하는 데이터의 품질, 기억 속 지식의 구조, 그리고 추론과 학습에 데이터를 활용하는 방식이 에이전트의 정확성·안정성·지속가능성을 결정합니다. 이것이 우리 연구의 기반입니다.</span></p>
+      </div>
+      <div class="dc-cmp">
+        <div class="cmp"><span class="label"><span class="t-en">Model-centric AI</span><span class="t-ko">모델 중심 AI</span></span><p><span class="t-en">Data is treated as fixed; performance is improved by changing the model — architecture, size, and training techniques.</span><span class="t-ko">데이터는 고정된 것으로 보고, 모델의 구조·크기·학습 기법을 바꿔 성능을 높입니다.</span></p></div>
+        <div class="cmp on"><span class="label"><span class="t-en">Data-centric AI</span><span class="t-ko">데이터 중심 AI</span></span><p><span class="t-en">Data is the primary object of research; its quality, structure, and utilization are improved systematically.</span><span class="t-ko">데이터를 주된 연구 대상으로 삼아 품질·구조·활용을 체계적으로 개선합니다.</span></p></div>
+      </div>
+    </div>
+    <div class="story">
+      <div class="stack-wrap">
+        <div class="stack" id="stackViz" data-step="0">
+          <canvas class="flow-cv" id="flowCv" aria-hidden="true"></canvas>
+          <div class="layer l0 data"><div class="lt"><span>L0 · <span class="t-en">Data — the foundation</span><span class="t-ko">데이터 — 기반</span></span><span>data-centric</span></div>
+            <div class="sources">TEXT · IMAGES · VIDEO · SENSORS · DOCUMENTS · LITERATURE</div>
+            <div class="row3">
+              <div class="dblk"><span class="dk"><span class="t-en">Quality</span><span class="t-ko">품질</span></span><small><span class="t-en">noise · bias · hallucination</span><span class="t-ko">노이즈 · 편향 · 환각</span></small></div>
+              <div class="dblk"><span class="dk"><span class="t-en">Structure</span><span class="t-ko">구조</span></span><small><span class="t-en">memory · index · compression</span><span class="t-ko">기억 · 색인 · 압축</span></small></div>
+              <div class="dblk"><span class="dk"><span class="t-en">Utilization</span><span class="t-ko">활용</span></span><small><span class="t-en">retrieval · alignment · distillation</span><span class="t-ko">검색 · 정렬 · 증류</span></small></div>
+            </div></div>
+          <div class="layer l1"><div class="lt"><span>L1 · <span class="t-en">Research areas</span><span class="t-ko">연구 분야</span></span><span>agentic ai</span></div>
+            <div class="row4"><div class="blk">Perception</div><div class="blk">Intelligence</div><div class="blk">Memory</div><div class="blk">Modeling</div></div></div>
+          <div class="layer l2"><div class="lt"><span>L2 · <span class="t-en">Applications</span><span class="t-ko">응용 분야</span></span><span>applications</span></div>
+            <div class="row3">
+              <div class="blk f1">Enterprise Agents<span class="dt">docs · logs · tools</span></div>
+              <div class="blk f2">AI Scientist<span class="dt">papers · citations</span></div>
+              <div class="blk f3">Video FM · Factory AI<span class="dt">video · sensors</span></div>
+            </div></div>
+        </div>
+      </div>
+      <div class="steps">
+        <div class="step" data-step="0">
+          <span class="label">L0 — <span class="t-en">Data</span><span class="t-ko">데이터</span></span>
+          <h3><span class="t-en">Data quality, structure, and utilization</span><span class="t-ko">데이터의 품질, 구조, 활용</span></h3>
+          <p><span class="t-en">We study how the quality, structure, and utilization of data affect an agent's ability to reason, act, and adapt.</span><span class="t-ko">데이터의 품질·구조·활용이 에이전트의 추론·행동·적응 능력에 미치는 영향을 연구합니다.</span></p>
+          <div class="qsu">
+            <div><b><span class="t-en">Quality</span><span class="t-ko">품질</span></b><span><span class="t-en">Learning from noisy labels, hallucinated outputs, and imperfect feedback.</span><span class="t-ko">노이즈 레이블, 환각 출력, 불완전한 피드백 환경에서의 학습.</span></span></div>
+            <div><b><span class="t-en">Structure</span><span class="t-ko">구조</span></b><span><span class="t-en">Memory, indexing, and compression of knowledge for retrieval by agents.</span><span class="t-ko">에이전트의 검색을 위한 지식의 기억·색인·압축.</span></span></div>
+            <div><b><span class="t-en">Utilization</span><span class="t-ko">활용</span></b><span><span class="t-en">Retrieval, alignment data, and distillation.</span><span class="t-ko">검색, 정렬 데이터, 증류.</span></span></div>
+          </div>
+          <div class="evid">
+            <a data-q="Learning from Noisy Labels with Deep Neural Networks"><em>TNNLS'22</em><span class="t-en">Noisy-label survey</span><span class="t-ko">노이즈 레이블 서베이</span></a>
+            <a data-q="Data Collection and Quality Challenges"><em>VLDB'23</em><span class="t-en">Data-centric AI</span><span class="t-ko">데이터 중심 AI</span></a>
+            <a data-q="Dataset Condensation"><em>ICML'22 · ICCV'25</em><span class="t-en">Dataset condensation</span><span class="t-ko">데이터셋 압축</span></a>
+            <a data-q="A Data-Centric Lens on Alignment Data"><em>ACL'26</em><span class="t-en">Alignment data pipelines</span><span class="t-ko">정렬 데이터 파이프라인</span></a>
+            <a data-q="Quality of Rejections Matters"><em>COLM'26</em><span class="t-en">Preference data quality</span><span class="t-ko">선호 데이터 품질</span></a>
+          </div>
+        </div>
+        <div class="step" data-step="1">
+          <span class="label">L1 — <span class="t-en">Research areas</span><span class="t-ko">연구 분야</span></span>
+          <h3><span class="t-en">Four research areas of agentic AI</span><span class="t-ko">에이전틱 AI의 4개 연구 분야</span></h3>
+          <div class="pl">
+            <div class="pl-i"><b>Agent Perception</b><p><span class="t-en">Understanding multi-modal, long-context data.</span><span class="t-ko">멀티모달·장문맥 데이터의 이해.</span></p><div class="pl-p"><a data-q="Training-Free Active Test-Time"><em>NeurIPS'26</em>Training-Free Active Test-Time Adaptation for Vision-Language Models</a><a data-q="RA-TTA"><em>ICLR'25</em>RA-TTA: Retrieval-Augmented Test-Time Adaptation for Vision-Language Models</a></div></div>
+            <div class="pl-i"><b>Agent Intelligence</b><p><span class="t-en">Reasoning shaped by alignment and preference data.</span><span class="t-ko">정렬·선호 데이터로 형성되는 추론.</span></p><div class="pl-p"><a data-q="LLM-as-a-Tutor"><em>NeurIPS'26</em>LLM-as-a-Tutor: Policy-Aware Prompt Adaptation for Non-Verifiable RL</a><a data-q="A Data-Centric Lens on Alignment"><em>ACL'26 Findings</em>Alignment Tuning for Large Language Models: A Data-Centric Lens</a></div></div>
+            <div class="pl-i"><b>Agent Memory</b><p><span class="t-en">Structured, compressed knowledge over long horizons.</span><span class="t-ko">장기간에 걸친 구조화·압축된 지식.</span></p><div class="pl-p"><a data-q="Missing-Evidence Memory"><em>EMNLP'26 Findings</em>Don't Scroll Back: Missing-Evidence Memory for Streaming Dialogue Summarization</a><a data-q="QuDAR"><em>ACL'26 Main</em>QuDAR: Query-Wise Dual-Perspective Adaptive Retrieval</a></div></div>
+            <div class="pl-i"><b>Agent Modeling</b><p><span class="t-en">Efficient models through distillation and evaluation data.</span><span class="t-ko">증류·평가 데이터를 통한 효율적 모델.</span></p><div class="pl-p"><a data-q="CURE"><em>ECCV'26</em>CURE: Cumulative Knowledge Reuse for Efficient Device-Server Hybrid Inference</a><a data-q="Distilling Long-CoT"><em>ACL'26 Findings</em>Distilling Long-CoT Reasoning through Collaborative Step-wise Multi-Teacher</a></div></div>
+          </div>
+        </div>
+        <div class="step" data-step="2">
+          <span class="label">L2 — <span class="t-en">Application</span><span class="t-ko">응용 분야</span> 01</span>
+          <h3>Enterprise Agent AI</h3>
+          <span class="dtag">DATA → documents · logs · catalogs · tools</span>
+          <p><span class="t-en">LLM agents that retrieve from document collections, use tools, and handle long, personalized workflows over business data.</span><span class="t-ko">기업 데이터 환경에서 문서 검색, 도구 사용, 장기·개인화 업무를 수행하는 LLM 에이전트를 연구합니다.</span></p>
+          <ul>
+            <li><span class="t-en">Reliability-aware RAG &amp; time-critical retrieval — EMNLP 2026</span><span class="t-ko">신뢰도 기반 RAG · 시간 민감 검색 — EMNLP 2026</span></li>
+            <li><span class="t-en">Seller–buyer retail agents with GS Retail — COLM 2026</span><span class="t-ko">GS리테일과의 판매자–구매자 리테일 에이전트 — COLM 2026</span></li>
+            <li><span class="t-en">Samsung SDS · Personalized Continual Agent</span><span class="t-ko">삼성SDS · 개인화 지속 에이전트</span></li>
+          </ul>
+        </div>
+        <div class="step" data-step="3">
+          <span class="label">L2 — <span class="t-en">Application</span><span class="t-ko">응용 분야</span> 02</span>
+          <h3>AI Scientist</h3>
+          <span class="dtag">DATA → papers · citations · claims</span>
+          <p><span class="t-en">Agents that survey scientific literature, verify claims, and generate text with accurate citations.</span><span class="t-ko">과학 문헌을 조사하고, 주장을 검증하며, 정확한 인용을 포함한 글을 생성하는 에이전트를 연구합니다.</span></p>
+          <ul>
+            <li><span class="t-en">Citation fidelity in AI scientific writing — EMNLP 2026 Oral</span><span class="t-ko">AI 과학 글쓰기의 인용 충실도 — EMNLP 2026 Oral</span></li>
+            <li><span class="t-en">Multi-agent debate for scalable annotation — ICLR 2026</span><span class="t-ko">확장 가능한 주석을 위한 멀티 에이전트 토론 — ICLR 2026</span></li>
+            <li><span class="t-en">NRF AI Co-Scientist · KAIST AI Meta-Scientist</span><span class="t-ko">한국연구재단 AI Co-Scientist · KAIST AI 메타 과학자 연구단</span></li>
+          </ul>
+        </div>
+        <div class="step" data-step="4">
+          <span class="label">L2 — <span class="t-en">Application</span><span class="t-ko">응용 분야</span> 03</span>
+          <h3><span class="t-en">Video FM · Factory AI</span><span class="t-ko">비디오 FM · Factory AI</span></h3>
+          <span class="dtag">DATA → long video · multi-camera · sensor time series</span>
+          <p><span class="t-en">Video foundation models for long, multi-camera video — retrieval, spatiotemporal reasoning, and efficient inference — and their application to manufacturing.</span><span class="t-ko">장시간·다중 카메라 영상을 위한 비디오 파운데이션 모델(검색, 시공간 추론, 효율적 추론)과 제조 현장 적용을 연구합니다.</span></p>
+          <ul>
+            <li><span class="t-en">Long-video RAG with Qualcomm · spatiotemporal reasoning</span><span class="t-ko">Qualcomm과의 장시간 영상 RAG · 시공간 추론</span></li>
+            <li><span class="t-en">Device–server hybrid VLM inference — ECCV 2026</span><span class="t-ko">디바이스–서버 하이브리드 VLM 추론 — ECCV 2026</span></li>
+            <li><span class="t-en">NIPA AI-based Dark Factory (2026–2030)</span><span class="t-ko">NIPA AI기반 다크팩토리 (2026–2030)</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RESEARCH AREAS (core) ============ -->
+<section class="sec" id="research" style="padding-top:40px">
+  <div class="wrap">
+    <div class="sh rv">
+      <div><span class="label"><b>03</b> — <span class="t-en">Research areas</span><span class="t-ko">연구 분야</span></span>
+        <h2><span class="t-en">Research areas</span><span class="t-ko">연구 분야</span></h2></div>
+      <p><span class="t-en">Our core research is data-centric agentic AI, organized around four components of an agent.</span><span class="t-ko">연구실의 핵심 연구는 데이터 중심 에이전틱 AI이며, 에이전트의 네 가지 구성 요소를 중심으로 진행됩니다.</span></p>
+    </div>
+    <div class="ra">
+      <article class="ra-c rv">
+        <span class="n">01</span>
+        <h3>Agent Perception</h3>
+        <p><span class="t-en">Understanding multi-modal and long-context signals across text, images, video, and other sensory inputs to perceive complex environments.</span><span class="t-ko">텍스트·이미지·영상 등 멀티모달·장문맥 신호를 이해하여 복잡한 환경을 인지합니다.</span></p>
+        <span class="df">DATA → multi-modal · long-context data</span>
+        <div class="tp"><span>Vision-language</span><span>Long video</span><span>Test-time adaptation</span></div>
+        <div class="rp"><a data-q="Training-Free Active Test-Time"><em>NeurIPS'26</em>Training-Free Active Test-Time Adaptation for VLMs</a><a data-q="RA-TTA"><em>ICLR'25</em>RA-TTA: Retrieval-Augmented Test-Time Adaptation</a></div>
+      </article>
+      <article class="ra-c rv">
+        <span class="n">02</span>
+        <h3>Agent Intelligence</h3>
+        <p><span class="t-en">Developing reasoning and decision-making capabilities that integrate world understanding with value alignment for purposeful and safe behavior.</span><span class="t-ko">세계에 대한 이해와 가치 정렬을 통합한 추론·의사결정 능력으로 목적 지향적이고 안전한 행동을 가능하게 합니다.</span></p>
+        <span class="df">DATA → alignment · preference · feedback data</span>
+        <div class="tp"><span>Reasoning</span><span>Alignment</span><span>Reinforcement learning</span></div>
+        <div class="rp"><a data-q="LLM-as-a-Tutor"><em>NeurIPS'26</em>LLM-as-a-Tutor: Prompt Adaptation for Non-Verifiable RL</a><a data-q="A Data-Centric Lens on Alignment"><em>ACL'26</em>Alignment Tuning: A Data-Centric Lens</a></div>
+      </article>
+      <article class="ra-c rv">
+        <span class="n">03</span>
+        <h3>Agent Memory</h3>
+        <p><span class="t-en">Designing memory and information compression mechanisms that organize, store, and retrieve knowledge over long horizons for consistent behavior.</span><span class="t-ko">장기간에 걸쳐 지식을 조직·저장·검색하는 기억 및 정보 압축 메커니즘을 설계합니다.</span></p>
+        <span class="df">DATA → structured · compressed knowledge</span>
+        <div class="tp"><span>RAG</span><span>Long-term memory</span><span>Summarization</span></div>
+        <div class="rp"><a data-q="Missing-Evidence Memory"><em>EMNLP'26</em>Don't Scroll Back: Missing-Evidence Memory</a><a data-q="QuDAR"><em>ACL'26</em>QuDAR: Query-Wise Adaptive Retrieval</a></div>
+      </article>
+      <article class="ra-c rv">
+        <span class="n">04</span>
+        <h3>Agent Modeling</h3>
+        <p><span class="t-en">Building efficient and controllable agent models through knowledge distillation, compression, safety guardrails, and automatic evaluation.</span><span class="t-ko">지식 증류, 압축, 안전 가드레일, 자동 평가를 통해 효율적이고 제어 가능한 에이전트 모델을 만듭니다.</span></p>
+        <span class="df">DATA → distillation · evaluation data</span>
+        <div class="tp"><span>Distillation</span><span>Efficient inference</span><span>LLM evaluation</span></div>
+        <div class="rp"><a data-q="Distilling Long-CoT"><em>ACL'26</em>Distilling Long-CoT Reasoning via Multi-Teacher</a><a data-q="CURE"><em>ECCV'26</em>CURE: Efficient Device-Server VLM Inference</a></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ APPLICATIONS ============ -->
+<section class="sec" id="areas" style="padding-top:40px">
+  <div class="wrap">
+    <div class="sh rv">
+      <div><span class="label"><b>04</b> — <span class="t-en">Applications</span><span class="t-ko">응용 분야</span></span>
+        <h2><span class="t-en">Applications</span><span class="t-ko">응용 분야</span></h2></div>
+      <p><span class="t-en">Representative applications of our data-centric agentic AI research.</span><span class="t-ko">데이터 중심 에이전틱 AI 연구의 대표 응용 분야입니다.</span></p>
+    </div>
+    <div class="panels rv">
+      <article class="panel" tabindex="0" data-media>
+        <video muted loop playsinline preload="none" poster="media/enterprise.jpg" data-src="media/enterprise.mp4" data-fallback="media/hero.mp4"></video>
+        <div class="pin">
+          <div class="top"><span class="label"><b>01</b> — <span class="t-en">Application</span><span class="t-ko">응용 분야</span></span><span class="num">01</span></div>
+          <div>
+            <p class="dline">DATA → documents · logs · catalogs · tools</p>
+            <h3>Enterprise Agent AI</h3>
+            <p class="sub"><span class="t-en">RAG, tool use, and personalization for LLM agents in enterprise settings.</span><span class="t-ko">기업 환경의 LLM 에이전트를 위한 RAG, 도구 사용, 개인화.</span></p>
+            <div class="detail">
+              <div class="thr"><span><span class="t-en">Enterprise RAG</span><span class="t-ko">엔터프라이즈 RAG</span></span><span><span class="t-en">Tool use &amp; reasoning</span><span class="t-ko">도구 사용 · 추론</span></span><span><span class="t-en">Personalized memory</span><span class="t-ko">개인화 기억</span></span><span><span class="t-en">Commerce agents</span><span class="t-ko">커머스 에이전트</span></span></div>
+              <div class="papers"><a data-q="Reliability-Aware Adaptive Evidence"><em>EMNLP'26</em>Robust RAG via Reliability-Aware Evidence Selection</a><a data-q="What Makes a Sale"><em>COLM'26</em>What Makes a Sale? Retail Dynamics with LLM Agents</a><a data-q="TAC-CoT"><em>EMNLP'26</em>TAC-CoT: Tool-Empowered Implicit Chain-of-Thought</a></div>
+              <div class="progs"><span>Samsung SDS · Continual Agent</span><span>GS Retail · Retail RAG</span></div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="panel" tabindex="0" data-media>
+        <video muted loop playsinline preload="none" poster="media/ai-scientist.jpg" data-src="media/ai-scientist.mp4" data-fallback="media/hero.mp4"></video>
+        <div class="pin">
+          <div class="top"><span class="label"><b>02</b> — <span class="t-en">Application</span><span class="t-ko">응용 분야</span></span><span class="num">02</span></div>
+          <div>
+            <p class="dline">DATA → papers · citations · claims</p>
+            <h3>AI Scientist</h3>
+            <p class="sub"><span class="t-en">Literature survey, claim verification, and citation-grounded writing.</span><span class="t-ko">문헌 조사, 주장 검증, 인용 기반 글쓰기.</span></p>
+            <div class="detail">
+              <div class="thr"><span><span class="t-en">Literature survey agents</span><span class="t-ko">문헌 조사 에이전트</span></span><span><span class="t-en">Evidence-grounded writing</span><span class="t-ko">근거 기반 글쓰기</span></span><span><span class="t-en">Multi-agent verification</span><span class="t-ko">멀티 에이전트 검증</span></span></div>
+              <div class="papers"><a data-q="Show Me How You Cite"><em>EMNLP'26 Oral</em>Show Me How You Cite: Citation Fidelity in AI Scientific Writing</a><a data-q="Completing Missing Annotation"><em>ICLR'26</em>Completing Missing Annotation: Multi-Agent Debate</a><a data-q="Query-Agnostic RAG Evaluation"><em>COLM'26</em>Towards Query-Agnostic RAG Evaluation</a></div>
+              <div class="progs"><span>NRF · AI Co-Scientist</span><span>KAIST InnoCore · AI Meta-Scientist</span></div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="panel" tabindex="0" data-media>
+        <video muted loop playsinline preload="none" poster="media/factory-ai.jpg" data-src="media/factory-ai.mp4" data-fallback="media/hero.mp4"></video>
+        <div class="pin">
+          <div class="top"><span class="label"><b>03</b> — <span class="t-en">Application</span><span class="t-ko">응용 분야</span></span><span class="num">03</span></div>
+          <div>
+            <p class="dline">DATA → long video · multi-camera · sensors</p>
+            <h3><span class="t-en">Video FM · Factory AI</span><span class="t-ko">비디오 FM · Factory AI</span></h3>
+            <p class="sub"><span class="t-en">Long-video understanding and spatiotemporal reasoning for manufacturing.</span><span class="t-ko">제조 현장을 위한 장시간 영상 이해와 시공간 추론.</span></p>
+            <div class="detail">
+              <div class="thr"><span><span class="t-en">Long-video understanding</span><span class="t-ko">장시간 영상 이해</span></span><span><span class="t-en">Spatiotemporal reasoning</span><span class="t-ko">시공간 추론</span></span><span><span class="t-en">Edge–server inference</span><span class="t-ko">엣지–서버 추론</span></span><span>Physical AI</span></div>
+              <div class="papers"><a data-q="Rethinking RAG in Long Videos"><em>arXiv'26</em>Rethinking RAG in Long Videos (with Qualcomm)</a><a data-q="Reasoning over Video"><em>arXiv'26</em>Reasoning over Video: Spatiotemporal Evidence</a><a data-q="CURE"><em>ECCV'26</em>CURE: Device-Server Hybrid Inference for VLMs</a></div>
+              <div class="progs"><span>NIPA · Dark Factory</span><span>Qualcomm · Video Agent</span></div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PAPERS ============ -->
+<section class="sec" id="papers">
+  <div class="wrap">
+    <div class="sh rv">
+      <div><span class="label"><b>05</b> — <span class="t-en">Publications</span><span class="t-ko">논문</span></span>
+        <h2><span class="t-en">Publications</span><span class="t-ko">논문</span></h2></div>
+      <p><span class="t-en">Hover a row to preview · * corresponding author</span><span class="t-ko">행에 마우스를 올리면 미리보기가 나타납니다. *는 교신저자입니다.</span></p>
+    </div>
+    <div class="pbar">
+      <div class="seg" id="yseg"></div>
+      <label class="psearch"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><input id="pq" type="search" aria-label="Search papers"></label>
+    </div>
+    <div id="plist"></div>
+    <div class="pfoot"><span id="pnote"></span><button class="btn-o" id="pmore"><span class="t-en">Load more</span><span class="t-ko">더 보기</span></button></div>
+  </div>
+  <div class="peek" id="peek"><img alt=""></div>
+</section>
+
+<!-- ============ PEOPLE ============ -->
+<section class="sec" id="people">
+  <div class="wrap">
+    <div class="sh rv">
+      <div><span class="label"><b>06</b> — <span class="t-en">People</span><span class="t-ko">구성원</span></span>
+        <h2><span class="t-en">People</span><span class="t-ko">구성원</span></h2></div>
+    </div>
+    <div class="pi-card rv">
+      <img src="assets/img/bio-hwanjun.png" alt="Hwanjun Song">
+      <div>
+        <span class="label"><span class="t-en">Principal Investigator</span><span class="t-ko">지도교수</span></span>
+        <h3><span class="t-en">Hwanjun Song</span><span class="t-ko">송환준</span></h3>
+        <p class="ttl"><span class="t-en">Ewon Assistant Professor<br>Dept. of Industrial &amp; Systems Engineering · Graduate School of Data Science, KAIST</span><span class="t-ko">Ewon 조교수<br>KAIST 산업및시스템공학과 · 데이터사이언스대학원</span></p>
+      </div>
+    </div>
+    <div id="groups"></div>
+    <div class="alumni rv">
+      <div><h4><span class="t-en">Industry internships</span><span class="t-ko">기업 인턴십</span></h4>
+        <div class="arow"><span>Summer 2026</span><div><b>Yujin Kim</b><small>NVIDIA — Santa Clara, US</small></div></div>
+        <div class="arow"><span>Summer 2026</span><div><b>Taewon Yun</b><small>AWS Agentic AI — New York, US</small></div></div>
+        <div class="arow"><span>Summer 2025</span><div><b>Yuho Lee</b><small>AWS Bedrock — Santa Clara, US</small></div></div></div>
+      <div><h4><span class="t-en">Graduates</span><span class="t-ko">졸업생</span></h4>
+        <div class="arow"><span>Fall 2025</span><div><b>Yuho Lee · Taewon Yun · Jihwan Oh</b><small><span class="t-en">M.S. → Ph.D. at KAIST</span><span class="t-ko">석사 → KAIST 박사과정</span></small></div></div>
+        <div class="arow"><span>Fall 2025</span><div><b>Heeyeon Kim</b><small>M.S.</small></div></div>
+        <div class="arow"><span>Spring 2025</span><div><b>Jeonghwan Choi</b><small><span class="t-en">M.S. → Ph.D. at KAIST</span><span class="t-ko">석사 → KAIST 박사과정</span></small></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section class="sec" id="projects">
+  <div class="wrap">
+    <div class="sh rv">
+      <div><span class="label"><b>07</b> — <span class="t-en">Funded research</span><span class="t-ko">연구과제</span></span>
+        <h2><span class="t-en">Funded projects</span><span class="t-ko">연구과제</span></h2></div>
+    </div>
+    <div class="ptabs" id="ptabs"><button class="on" data-t="ongoing"></button><button data-t="completed"></button></div>
+    <div class="projs" id="projs"></div>
+  </div>
+</section>
+
+<!-- ============ JOIN ============ -->
+<section class="join" id="join">
+  <div class="wrap">
+    <span class="label"><b>08</b> — <span class="t-en">Join us</span><span class="t-ko">함께하기</span></span>
+    <h2><span class="t-en">Join us</span><span class="t-ko">함께하기</span></h2>
+    <p class="status"><span class="t-en">Winter internship: closed · Now accepting candidates for 2027</span><span class="t-ko">겨울방학 인턴 모집 마감 · 2027년 인턴 후보 접수 중</span></p>
+    <p class="lead"><span class="t-en">Applications for the winter internship are closed. We are now accepting candidates for 2027 research internships. Senior undergraduates interested in enterprise agents, factory/manufacturing foundation models, or physical AI for robots can register using the form below. Interns work closely with graduate students on ongoing research projects.</span><span class="t-ko">겨울방학 연구 인턴 모집은 마감되었습니다. 현재 2027년 연구 인턴 후보를 받고 있습니다. 엔터프라이즈 에이전트, 공장/제조 Foundation Model, 로봇 기반 Physical AI에 관심 있는 학부 4학년 재학생은 아래 양식으로 등록해 주세요. 인턴은 대학원생과 함께 실제 연구 프로젝트에 참여합니다.</span></p>
+    <div class="cta-row">
+      <a class="cta-main" href="https://docs.google.com/forms/d/e/1FAIpQLSezVnp3eepLI4CTD3_lLABNwDtvFue6EqhXKq1zhK5zLW9ZsQ/viewform?usp=sharing&amp;ouid=114425768257170495941" target="_blank" rel="noopener"><span class="t-en">Register as a 2027 candidate</span><span class="t-ko">2027 인턴 후보 등록</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+      <a class="cta-sec" href="mailto:songhwanjun@kaist.ac.kr"><span class="t-en">Contact the PI</span><span class="t-ko">교수님께 문의</span></a>
+    </div>
+    <div class="grad-note">
+      <span class="label"><span class="t-en">Graduate admission</span><span class="t-ko">대학원 진학 안내</span></span>
+      <p><span class="t-en">If you are interested in joining our lab for graduate studies, we strongly encourage you to apply for an internship first. Priority is given to students with prior research experience in our group.</span><span class="t-ko">연구실 대학원 진학을 희망한다면 인턴십에 먼저 지원하기를 강력히 권장합니다. 연구실에서 연구 경험이 있는 학생에게 우선권이 주어집니다.</span></p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap foot">
+  <address><b style="color:#fff">Data Intelligence System Lab (DISLab)</b><br><span class="t-en">KAIST · 291 Daehak-ro, Yuseong-gu, Daejeon 34141, Republic of Korea</span><span class="t-ko">KAIST · 대전광역시 유성구 대학로 291 (34141)</span></address>
+  <nav><a href="mailto:songhwanjun@kaist.ac.kr">Email</a><a href="https://github.com/DISL-Lab" target="_blank" rel="noopener">GitHub</a><a href="https://huggingface.co/DISLab" target="_blank" rel="noopener">Hugging Face</a><a href="https://www.youtube.com/@DISL-LAB" target="_blank" rel="noopener">YouTube</a></nav>
+  <span>© 2026 DISLab, KAIST</span>
+</div></footer>
+
+<script>
+const IMG = "assets/img/";
+const PUBS = __PUBS__;
+const NEWS = __NEWS__;
+const T = (en, ko) => `<span class="t-en">${en}</span><span class="t-ko">${ko ?? en}</span>`;
+const $ = s => document.querySelector(s);
+const $$ = s => [...document.querySelectorAll(s)];
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const RM = matchMedia("(prefers-reduced-motion: reduce)").matches;
+const lang = () => document.documentElement.lang;
+const store = { get(k){ try { return localStorage.getItem(k); } catch(e){ return null; } }, set(k,v){ try { localStorage.setItem(k,v); } catch(e){} } };
+
+/* language */
+function setLang(l){
+  document.documentElement.lang = l;
+  $$(".lang button").forEach(b => b.classList.toggle("on", b.dataset.l === l));
+  $("#pq").placeholder = l === "ko" ? "제목, 저자, 학회 검색…" : "Search title, author, venue…";
+  store.set("dislab-lang-v3", l);
+}
+$$(".lang button").forEach(b => b.onclick = () => setLang(b.dataset.l));
+
+/* nav */
+const tb = () => { const t = document.querySelector(".topbar"); return t ? t.offsetHeight : 0; };
+document.documentElement.style.setProperty("--tb", tb() + "px");
+const onScroll = () => $("#nav").classList.toggle("fixed", scrollY >= tb());
+addEventListener("scroll", onScroll, {passive:true}); addEventListener("resize", () => { document.documentElement.style.setProperty("--tb", tb() + "px"); onScroll(); }); onScroll();
+$("#menuBtn").onclick = () => $("#navLinks").classList.toggle("open");
+$$("#navLinks a").forEach(a => a.addEventListener("click", () => $("#navLinks").classList.remove("open")));
+const NAVMAP = {research:"stack", areas:"stack"};
+const navObs = new IntersectionObserver(es => es.forEach(e => { if (!e.isIntersecting) return; const id = NAVMAP[e.target.id] || e.target.id; $$("#navLinks a").forEach(a => a.classList.toggle("active", a.getAttribute("href") === "#" + id)); }), {rootMargin:"-45% 0px -50% 0px"});
+$$("main section[id]").forEach(s => navObs.observe(s));
+
+/* videos */
+function attachVideo(v, holder, auto){
+  if (!v) return;
+  v.addEventListener("loadeddata", () => holder.classList.add("ready"));
+  v.addEventListener("error", function onErr(){
+    if (v.dataset.fallback && v.src.indexOf(v.dataset.fallback) < 0) { v.removeAttribute("poster"); v.src = v.dataset.fallback; if (!RM) v.play().catch(()=>{}); return; }
+    v.removeEventListener("error", onErr);
+  });
+  v.src = v.dataset.src;
+  if (RM) return;
+  if (auto) v.play().catch(()=>{});
+  else new IntersectionObserver(es => es.forEach(e => e.isIntersecting ? v.play().catch(()=>{}) : v.pause()), {threshold:.2}).observe(holder);
+}
+attachVideo($("#heroVideo"), $("#heroBg"), true);
+$$("[data-media]").forEach(p => attachVideo(p.querySelector("video"), p, false));
+$("#vctl").onclick = () => { const v = $("#heroVideo"), p = v.paused; p ? v.play() : v.pause();
+  $("#vctl").innerHTML = p ? '<svg viewBox="0 0 24 24" fill="#fff"><path d="M7 5h3v14H7zM14 5h3v14h-3z"/></svg>' : '<svg viewBox="0 0 24 24" fill="#fff"><path d="M8 5v14l11-7z"/></svg>'; };
+
+/* stack story + data flow particles */
+(() => {
+  const viz = $("#stackViz"), cv = $("#flowCv"), ctx = cv.getContext("2d");
+  let W = 0, H = 0, src = [], dst = [], running = false, last = 0;
+  const dpr = Math.min(2, devicePixelRatio || 1), parts = Array.from({length: 110}, () => ({}));
+  const rel = el => { const a = viz.getBoundingClientRect(), b = el.getBoundingClientRect(); return {x: b.left - a.left + b.width/2, y: b.top - a.top + b.height/2, w: b.width, h: b.height}; };
+  function targets(){
+    const st = +viz.dataset.step, dbl = $$(".dblk").map(rel);
+    if (st === 0) { const s0 = rel($(".sources")); src = [{x: s0.x, y: s0.y + 4, w: s0.w * .95, h: 2}]; dst = dbl; }
+    else { src = dbl; dst = st === 1 ? $$(".l1 .blk").map(rel) : [rel($(".f" + (st - 1)))]; }
+  }
+  function spawn(p, fresh){
+    const a = src[Math.random() * src.length | 0], b = dst[Math.random() * dst.length | 0];
+    if (!a || !b) return;
+    p.sx = a.x + (Math.random() - .5) * a.w * .8; p.sy = a.y + (Math.random() - .5) * a.h * .3;
+    p.tx = b.x + (Math.random() - .5) * b.w * .7; p.ty = b.y + (Math.random() - .5) * b.h * .4;
+    p.t = fresh ? Math.random() : 0; p.d = 1.3 + Math.random() * 1.7; p.c = Math.random() < .55 ? "94,234,212" : "120,170,255";
+  }
+  const at = (p, t) => { const e = t < .5 ? 2*t*t : 1 - Math.pow(-2*t + 2, 2)/2, u = 1 - e, cx = p.sx, cy = (p.sy + p.ty)/2;
+    return [u*u*p.sx + 2*u*e*cx + e*e*p.tx, u*u*p.sy + 2*u*e*cy + e*e*p.ty]; };
+  function layout(){ const r = viz.getBoundingClientRect(); W = r.width; H = r.height; cv.width = W*dpr; cv.height = H*dpr; ctx.setTransform(dpr,0,0,dpr,0,0); targets(); }
+  function frame(now){
+    if (!running) return;
+    const dt = Math.min(.05, (now - last) / 1000); last = now;
+    ctx.clearRect(0, 0, W, H);
+    for (const p of parts) {
+      if (p.sx === undefined) { spawn(p, true); continue; }
+      p.t += dt / p.d; if (p.t >= 1) spawn(p, false);
+      const [x, y] = at(p, p.t), [x2, y2] = at(p, Math.max(0, p.t - .07)), a = Math.sin(Math.PI * Math.min(1, p.t));
+      ctx.strokeStyle = `rgba(${p.c},${.5*a})`; ctx.lineWidth = 1.1; ctx.beginPath(); ctx.moveTo(x2, y2); ctx.lineTo(x, y); ctx.stroke();
+      ctx.fillStyle = `rgba(${p.c},${.95*a})`; ctx.beginPath(); ctx.arc(x, y, 1.6, 0, 6.283); ctx.fill();
+    }
+    requestAnimationFrame(frame);
+  }
+  const reflow = () => { layout(); parts.forEach(p => spawn(p, true)); };
+  if (!RM) {
+    new IntersectionObserver(es => es.forEach(e => { running = e.isIntersecting; if (running) { last = performance.now(); reflow(); requestAnimationFrame(frame); } })).observe(viz);
+    addEventListener("resize", () => running && reflow());
+  }
+  const io = new IntersectionObserver(es => es.forEach(e => {
+    if (!e.isIntersecting || viz.dataset.step === e.target.dataset.step) return;
+    viz.dataset.step = e.target.dataset.step;
+    $$(".step").forEach(s => s.classList.toggle("on", s === e.target));
+    if (!RM) setTimeout(reflow, 520);
+  }), {rootMargin: "-30% 0px -55% 0px"});
+  $$(".step").forEach(s => io.observe(s));
+  const s0 = $('.step[data-step="0"]'); if (s0) s0.classList.add("on");
+})();
+
+/* bento: counts, bars, news */
+(() => {
+  const accepted = PUBS.filter(p => p.year !== "Preprint");
+  const years = accepted.map(p => p.year.slice(0, 4)).sort();
+  const first = years[0], last = years[years.length - 1];
+  const SCOPES = {
+    "2026": {list: PUBS.filter(p => p.year === "2026"), cap: T("papers accepted in 2026", "2026년 채택 논문")},
+    "all":  {list: accepted, cap: T(`accepted papers, ${first}–${last}`, `전체 채택 논문 (${first}–${last})`)}
+  };
+  const big = $(".big"); let shownN = 0, started = false, scope = "2026", runId = 0;
+  const countTo = n => {
+    const id = ++runId;
+    if (RM || !started) { big.textContent = n; shownN = n; return; }
+    const from = +big.textContent || 0, t0 = performance.now();
+    const st = now => { if (id !== runId) return;
+      const p = Math.min(1, Math.max(0, (now - t0) / 900));
+      big.textContent = Math.round(from + (n - from) * (1 - Math.pow(1 - p, 3)));
+      if (p < 1) requestAnimationFrame(st); };
+    requestAnimationFrame(st); shownN = n;
+  };
+  function drawStats(k){
+    scope = k;
+    const {list, cap} = SCOPES[k], cnt = {};
+    list.forEach(p => cnt[p.venue_short] = (cnt[p.venue_short] || 0) + 1);
+    let rows = Object.entries(cnt).sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
+    if (rows.length > 11) {
+      const top = rows.slice(0, 10), rest = rows.slice(10);
+      rows = top.concat([[T(`Other ${rest.length} venues`, `기타 ${rest.length}개 학회`), rest.reduce((a, r) => a + r[1], 0), true]]);
+    }
+    const max = Math.max(...rows.map(r => r[1]));
+    $("#vbars").innerHTML = rows.map(([v, c, other]) => `<div class="vb${other ? " other" : ""}"><span>${v}</span><span class="bar"><i data-w="${c / max * 100}"></i></span><b>${c}</b></div>`).join("");
+    $("#statCap").innerHTML = cap;
+    $$(".scope button").forEach(b => b.classList.toggle("on", b.dataset.s === k));
+    if (started) { void $("#vbars").offsetWidth; $$("#vbars i").forEach(x => x.style.width = x.dataset.w + "%"); }
+    countTo(list.length);
+  }
+  $$(".scope button").forEach(b => b.onclick = () => drawStats(b.dataset.s));
+  big.textContent = "0";
+  drawStats("2026"); big.textContent = "0"; shownN = 0;
+  const io = new IntersectionObserver(es => es.forEach(e => { if (!e.isIntersecting) return; io.disconnect();
+    started = true; drawStats(scope);
+  }), {threshold:.4});
+  io.observe($(".c-count"));
+  const tg = {paper:["Paper","논문"],award:["Honor","수상"],people:["People","구성원"],service:["Service","학술"]};
+  let all = false;
+  const draw = () => {
+    $("#nlist").innerHTML = (all ? NEWS : NEWS.slice(0,6)).map(n => `<div class="nrow"><time>${n.date.replace(/-/g,".")}</time><p><span class="tg ${n.tag}">${T(...tg[n.tag])}</span>${T(esc(n.text), esc(n.ko||n.text))}</p></div>`).join("");
+    $("#nmore").innerHTML = all ? T("Show less","접기") : T(`All news (${NEWS.length}) →`, `전체 소식 (${NEWS.length}) →`);
+  };
+  $("#nmore").onclick = () => { all = !all; draw(); };
+  draw();
+})();
+
+/* papers */
+const Papers = (() => {
+  const MEM = ["Hyangsuk Min","Jeonghwan Choi","Yuho Lee","Taewon Yun","Jihwan Oh","Jisu Shin","Jiaqi Deng","Minjeong Ban","Kibum Kim","Mingyu Choi","Gyeonghun Sun","Seunghwan Bang","Jibin Hwang","Yeeun Choi","Jihwan Bang","Donghee Han","Yujin Kim","Hwan Chang","Hyeonseong Park","Juseon Do","Hayoon Park","Byeongjun Joung","Chanjoong Kim","Jeesu Jung","Hee-Yeon Kim"];
+  const YRS = [["All","전체"],["2026"],["2025"],["2024"],["2023"],["2022"],["2021"],["2017-2020"],["Preprint","프리프린트"]];
+  let year = "All", q = "", shown = 12;
+  const au = a => esc(a).replace(/Hwanjun Song(\*?)/g,"<b>Hwanjun Song$1</b>");
+  const list = () => PUBS.filter(p => (year==="All"||p.year===year) && (!q || (p.title+" "+p.authors+" "+p.label+" "+p.topic+" "+p.collab).toLowerCase().includes(q)));
+  function draw(flash){
+    $("#yseg").innerHTML = YRS.map(([v,k]) => `<button class="${v===year?"on":""}" data-v="${v}">${T(v,k)}<span class="c">${v==="All"?PUBS.length:PUBS.filter(p=>p.year===v).length}</span></button>`).join("");
+    const f = list();
+    $("#plist").innerHTML = f.slice(0,shown).map((p,i) => `<div class="prow" data-img="${esc(p.img)}">
+      <span class="v ${p.year==="Preprint"?"pre":/oral/i.test(p.venue_tag)?"oral":""}">${esc(p.label)}</span>
+      <div><h4>${esc(p.title)}</h4><p class="au">${au(p.authors)} ${p.collab?`<span class="co">· ${esc(p.collab)}</span>`:""}</p></div>
+      <span class="y">${p.year==="Preprint"?"arXiv":p.year} · ${esc(p.topic)}</span></div>`).join("") || `<div class="prow"><span></span><p class="au">${T("No matches.","결과가 없습니다.")}</p></div>`;
+    $("#pnote").innerHTML = T(`${Math.min(shown,f.length)} / ${f.length} papers`, `${f.length}편 중 ${Math.min(shown,f.length)}편`);
+    $("#pmore").style.display = f.length > shown ? "" : "none";
+    if (flash) { const r = $("#plist .prow"); r && r.classList.add("flash"); }
+  }
+  $("#yseg").onclick = e => { const b = e.target.closest("button"); if (b) { year = b.dataset.v; shown = 12; draw(); } };
+  $("#pmore").onclick = () => { shown += 15; draw(); };
+  let tm; $("#pq").oninput = e => { clearTimeout(tm); tm = setTimeout(() => { q = e.target.value.trim().toLowerCase(); shown = 12; draw(); }, 120); };
+  draw();
+  // hover preview
+  const peek = $("#peek"), pimg = peek.querySelector("img");
+  if (matchMedia("(pointer:fine)").matches) {
+    $("#plist").addEventListener("mousemove", e => {
+      const r = e.target.closest(".prow");
+      if (!r || !r.dataset.img) { peek.classList.remove("on"); return; }
+      if (pimg.getAttribute("src") !== r.dataset.img) pimg.src = r.dataset.img;
+      const x = Math.min(e.clientX + 24, innerWidth - 300), y = Math.min(e.clientY + 16, innerHeight - 190);
+      peek.style.left = x + "px"; peek.style.top = y + "px"; peek.classList.add("on");
+    });
+    $("#plist").addEventListener("mouseleave", () => peek.classList.remove("on"));
+  }
+  return { find(term){ year="All"; q=term.toLowerCase(); shown=12; $("#pq").value=term; draw(true); $("#papers").scrollIntoView({behavior: RM?"auto":"smooth"}); } };
+})();
+/* order hand-picked paper lists by recency (publication-list order) */
+document.querySelectorAll(".pl-p, .rp, .papers").forEach(box => {
+  const idx = a => { const q = (a.dataset.q || "").toLowerCase(); const k = PUBS.findIndex(x => x.title.toLowerCase().includes(q)); return k < 0 ? 1e9 : k; };
+  [...box.querySelectorAll("a[data-q]")].sort((x, y) => idx(x) - idx(y)).forEach(a => box.appendChild(a));
+});
+/* venue labels on hand-picked paper links come from the publication data, so Main/Findings stays correct */
+document.querySelectorAll("[data-q]").forEach(a => {
+  const q = a.dataset.q.toLowerCase(), pub = PUBS.find(x => x.title.toLowerCase().includes(q)), lab = a.querySelector("em, .vn");
+  if (pub && lab && pub.track) lab.textContent = pub.short;
+});
+$$("[data-q]").forEach(a => { a.setAttribute("role","link"); a.tabIndex = 0; a.onclick = () => Papers.find(a.dataset.q); });
+
+/* people */
+const S = (a,b) => [a,b];
+const GROUPS = [
+  {g:S("Postdoctoral Researcher & Staff","박사후연구원 · 행정"), m:[
+    ["Jeesu Jung","bio_jeesu_jung.png",S("Postdoc · Lab Manager","박사후연구원 · 랩 매니저"),S("Since Mar 2026","2026.03~")],
+    ["Sun-Min Jeong","bio-sunmin.png",S("Administrative Staff","행정원"),S("Since Spring 2025","2025 봄~")]]},
+  {g:S("Ph.D. Students","박사과정"), m:[
+    ["Hyangsuk Min","bio_hyangsuk.jpeg",S("Ph.D.","박사과정"),S("Since Fall 2024","2024 가을~")],
+    ["Jeonghwan Choi","bio-jeonghwan.png",S("Ph.D. (Integrated)","석박통합과정"),S("Since Spring 2025","2025 봄~")],
+    ["Yuho Lee","bio-yuho.png",S("Ph.D.","박사과정"),S("Since Fall 2025","2025 가을~")],
+    ["Taewon Yun","bio-taewon.png",S("Ph.D.","박사과정"),S("Since Fall 2025","2025 가을~")],
+    ["Jihwan Oh","bio-jihwanoh.png",S("Ph.D.","박사과정"),S("Since Spring 2026","2026 봄~")],
+    ["Jisu Shin","bio_jisu.png",S("Ph.D.","박사과정"),S("Since Spring 2026","2026 봄~")]]},
+  {g:S("M.S. Students","석사과정"), m:[
+    ["Jiaqi Deng","bio-jiaqi.png",S("M.S.","석사과정"),S("Since Fall 2024","2024 가을~")],
+    ["Minjeong Ban","bio-minjeong.png",S("M.S.","석사과정"),S("Since Spring 2025","2025 봄~")],
+    ["Kibum Kim","bio-kibeom.png",S("M.S. · Hankook Tire","석사과정 · 한국타이어"),S("Since Spring 2025","2025 봄~")],
+    ["Mingyu Choi","bio_mingyu_choi.jpg",S("M.S.","석사과정"),S("Since Spring 2026","2026 봄~")],
+    ["Gyeonghun Sun","bio_gyeonghun_sun.jpg",S("M.S.","석사과정"),S("Since Spring 2026","2026 봄~")],
+    ["Seunghwan Bang","bio-seonghwan.jpg",S("M.S.","석사과정"),S("Since Sep 2026","2026.09~")],
+    ["Jibin Hwang","bio_jibin.jpg",S("M.S.","석사과정"),S("Since Sep 2026","2026.09~")],
+    ["Yeeun Choi","bio_yeeun_choi.jpeg",S("M.S.","석사과정"),S("Since Sep 2026","2026.09~")]]},
+  {g:S("Co-advised Students","공동지도 학생"), m:[
+    ["Jihwan Bang","bio-jihwan.png",S("Qualcomm","Qualcomm"),S("w/ Prof. Jae-Gil Lee","이재길 교수 공동지도")],
+    ["Donghee Han","bio-donghee.png",S("Since Fall 2023","2023 가을~"),S("w/ Prof. Mun Yong Yi","이문용 교수 공동지도")],
+    ["Yujin Kim","bio-yujin.png",S("Since Spring 2025","2025 봄~"),S("w/ Prof. Se-Young Yun","윤세영 교수 공동지도")]]},
+  {g:S("Research Interns","연구 인턴"), m:[
+    ["Hwan Chang","bio_changhwan.jpg",S("M.S. Intern","석사 인턴"),S("Since Jul 2026","2026.07~")],
+    ["Hyeonseong Park","bio_hyeonseng.jpeg",S("B.S. Intern","학부 인턴"),S("Since Jan 2026","2026.01~")],
+    ["Juseon Do","bio_juseon_do.png",S("B.S. Intern","학부 인턴"),S("Since Mar 2026","2026.03~")],
+    ["Hayoon Park","bio_hayoon.jpg",S("B.S. Intern","학부 인턴"),S("Since Mar 2026","2026.03~")],
+    ["Byeongjun Joung","bio_byeongjun.jpg",S("B.S. Intern","학부 인턴"),S("Since Jul 2026","2026.07~")],
+    ["Chanjoong Kim","bio_chanjoong.jpg",S("B.S. Intern","학부 인턴"),S("Since Jul 2026","2026.07~")]]}
+];
+const PEOPLE = GROUPS.flatMap(g => g.m.map(([n,img,r1]) => [n,img,r1]));
+$("#groups").innerHTML = GROUPS.map(g => `<div class="grp rv"><div class="grp-h"><h4>${T(...g.g)}</h4><span>${String(g.m.length).padStart(2,"0")}</span></div>
+  <div class="mgrid">${g.m.map(([n,img,r1,r2]) => `<div class="mem"><div class="ph"><img src="${IMG+img}" alt="${esc(n)}" loading="lazy"></div><b>${esc(n)}</b><small>${T(...r1)}</small><small>${T(...r2)}</small></div>`).join("")}</div></div>`).join("");
+
+/* projects */
+const PROJ = {
+  ongoing:[
+    ["nrf-logo.png","National","Intelligent Survey Agents toward AI Co-Scientists","AI Co-Scientist 실현을 위한 지능형 Survey 에이전트","2026.04 – 2027.03","PI","AI Scientist"],
+    ["kaist-innocore.png","National","AI Meta-Scientist (InnoCore)","AI 메타 과학자 연구단","2026.05 – 2030.12","Participating","AI Scientist"],
+    ["nipa-logo.png","National","AI-based Dark Factory Design & Construction","AI기반 다크팩토리 설계-구축 솔루션 개발","2026.08 – 2030.12","Participating","Factory AI"],
+    ["qualcom-logo.png","Industry","Personalized Video Agent","개인화 비디오 에이전트","2025.12 – 2026.12","PI","Video FM"],
+    ["samsung-sds.png","Industry","Personalized Continual Agent","개인화 지속 에이전트","2026.05 – 2027.05","PI","Enterprise Agent"],
+    ["nrf-logo.png","National","LM Reliability with High-Quality Data & Automated Quality Assessment","고품질 데이터 및 자동 품질 평가를 통한 언어 모델 신뢰성 향상 시스템","2024.04 – 2027.03","PI"],
+    ["iitp-logo.png","National","Domain-Specific Automated Value Alignment Assessment","도메인 특화 자동 가치 연계 평가를 통한 AI 모델 신뢰성 향상","2024.09 – 2027.08","PI"],
+    ["iitp-logo.png","National","Multimodal Agentic Platform for Conflict Mediation","갈등 중재용 멀티모달 에이전틱 플랫폼","2025.10 – 2028.09","Co-PI"],
+    ["kisti-logo.png","National","RAG for Multi-Document Analysis and Generation","다중문서 분석 및 생성을 위한 RAG 기술 연구","2026.04 – 2026.11","Collaborating"],
+    ["icon_upstage.png","National","Sovereign Foundation Model (Upstage Consortium)","독자 파운데이션 모델 (업스테이지 컨소시엄)","2026.03 –","Collaborating"]
+  ],
+  completed:[
+    ["logo_gs.png","Industry","RAG for Retail","리테일 특화 RAG 프레임워크","2026.01 – 2026.05","PI","Enterprise Agent"],
+    ["kisti-logo.png","National","Output Quality of Scientific RAG Systems","과학기술정보 RAG 시스템 출력 품질 향상","2025.06 – 2025.12","Collaborating"],
+    ["etri-logo.png","National","VLM-based PDF Understanding & Road Coordinate Extraction","VLM 기반 PDF 문서 이해 및 도로 노선 좌표 자동화","2025.09 – 2025.11","PI"],
+    ["ict-logo3.png","National","Omni Foundation Model (NAVER Cloud Consortium)","옴니 파운데이션 모델 (네이버 클라우드 컨소시엄)","2025.08 – 2025.12","Collaborating"],
+    ["iitp-logo.png","National","Human-Level Game-Playing Agents","인간 수준 게임 플레잉 에이전트","2025.08 – 2025.12","Co-PI"],
+    ["kisti-logo.png","National","RAG-Supported Data for Scientific LLMs","과학기술정보 특화 LLM을 위한 RAG 데이터 구축","2024.06 – 2024.12","Collaborating"]
+  ]};
+(() => {
+  const R = {PI:["Principal Investigator","연구책임자"],"Co-PI":["Co-PI","공동연구책임자"],Participating:["Participating","참여연구원"],Collaborating:["Collaborating","공동연구원"]};
+  const K = {National:["National","국가 과제"],Industry:["Industry","산업체 과제"]};
+  const draw = t => $("#projs").innerHTML = PROJ[t].map(([lg,k,en,ko,per,role,fl]) => `<div class="pj"><div class="lg"><img src="${IMG+lg}" alt="" loading="lazy"></div>
+    <span class="kd ${fl?"fl":""}">${T(...K[k])}${fl?" · "+fl:""}</span><h4>${T(esc(en),esc(ko))}</h4>
+    <div class="meta"><span>${per}</span><span class="${role==="PI"?"pi-tag":""}">${T(...R[role])}</span></div></div>`).join("");
+  const b = $("#ptabs").children;
+  b[0].innerHTML = T(`Ongoing ${PROJ.ongoing.length}`, `진행 중 ${PROJ.ongoing.length}`);
+  b[1].innerHTML = T(`Completed ${PROJ.completed.length}`, `완료 ${PROJ.completed.length}`);
+  $("#ptabs").onclick = e => { const x = e.target.closest("button"); if (!x) return; [...b].forEach(y => y.classList.toggle("on", y===x)); draw(x.dataset.t); };
+  draw("ongoing");
+})();
+
+/* reveal */
+(() => {
+  const els = $$(".rv");
+  if (RM || !("IntersectionObserver" in window)) return els.forEach(e => e.classList.add("in"));
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } }), {threshold:.08});
+  els.forEach(e => io.observe(e));
+})();
+
+setLang(new URLSearchParams(location.search).get("lang") || store.get("dislab-lang-v3") || "en");
+</script>
+</body>
+</html>
