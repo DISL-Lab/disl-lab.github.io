@@ -923,7 +923,7 @@ const Papers = (() => {
   const MEM = ["Hyangsuk Min","Jeonghwan Choi","Yuho Lee","Taewon Yun","Jihwan Oh","Jisu Shin","Jiaqi Deng","Minjeong Ban","Kibum Kim","Mingyu Choi","Gyeonghun Sun","Seunghwan Bang","Jibin Hwang","Yeeun Choi","Jihwan Bang","Donghee Han","Yujin Kim","Hwan Chang","Hyeonseong Park","Juseon Do","Hayoon Park","Byeongjun Joung","Chanjoong Kim","Minsun Yu","Jeesu Jung","Hee-Yeon Kim"];
   const YRS = [["All","전체"], ...[...new Set(PUBS.map(p => p.year))].filter(y => y !== "Preprint").map(y => [y]), ["Preprint","프리프린트"]];
   let year = "All", q = "", shown = 12;
-  const au = a => esc(a).replace(/Hwanjun Song(\*?)/g,"<b>Hwanjun Song$1</b>");
+  const au = a => esc(a);
   const list = () => PUBS.filter(p => (year==="All"||p.year===year) && (!q || (p.title+" "+p.authors+" "+p.label+" "+p.topic+" "+p.collab).toLowerCase().includes(q)));
   function draw(flash){
     $("#yseg").innerHTML = YRS.map(([v,k]) => `<button class="${v===year?"on":""}" data-v="${v}">${T(v,k)}<span class="c">${v==="All"?PUBS.length:PUBS.filter(p=>p.year===v).length}</span></button>`).join("");
