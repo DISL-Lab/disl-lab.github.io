@@ -262,6 +262,54 @@ nav_order: 2
 <div style="display: flex; align-items: center; margin-top: 1rem; margin-bottom: 1rem;">
   <div style="flex: 1; height: 2px; background: linear-gradient(to right, transparent, #d0d0d0, transparent);"></div>
   <div style="margin: 0 1rem; font-size: 1.6rem; font-weight: 700; color: #bbb; letter-spacing: 0.1em;">
+    2027
+  </div>
+</div>
+
+<div class="project-block">
+  <div class="img-col">
+    <img src="/assets/img/paper/27-KDD-Retail.png" alt="Project 1">
+  </div>
+  <div class="text-col">
+    <h3 style="font-size: 0.9rem; margin-bottom: 0.2rem; font-weight: bold;">
+    <span style="
+        display: inline-block;
+        background-color:rgb(196, 138, 4);  /* 원하는 색으로 변경 가능 */
+        color: white;
+        font-weight: bold;
+        font-size: 0.75rem;
+        padding: 0.2rem 0.6rem;
+        border-radius: 6px;
+        margin-right: 0.1rem;
+    ">
+        KDD
+    </span>
+    <span style="
+        display: inline-block;
+        background-color:rgb(197, 38, 179);  /* 원하는 색으로 변경 가능 */
+        color: white;
+        font-weight: bold;
+        font-size: 0.75rem;
+        padding: 0.2rem 0.6rem;
+        border-radius: 6px;
+        margin-right: 0.1rem;
+    ">
+        NLP
+    </span>
+      Toward Agentic Retrieval-Augmented Generation for Enterprise Retail Workflows over Heterogeneous Data Sources
+    </h3>
+    <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
+      Jeonghwan Choi, Jibin Hwang, HaYoon Park, Hyeonjae Cheon, and Hwanjun Song*
+    </p>
+    <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
+      In International Conference on Knowledge Discovery and Data Mining, 2027
+    </p>
+  </div>
+</div>
+
+<div style="display: flex; align-items: center; margin-top: 1rem; margin-bottom: 1rem;">
+  <div style="flex: 1; height: 2px; background: linear-gradient(to right, transparent, #d0d0d0, transparent);"></div>
+  <div style="margin: 0 1rem; font-size: 1.6rem; font-weight: 700; color: #bbb; letter-spacing: 0.1em;">
     2026
   </div>
 </div>

@@ -921,7 +921,7 @@ $("#vctl").onclick = () => { const v = $("#heroVideo"), p = v.paused; p ? v.play
 /* papers */
 const Papers = (() => {
   const MEM = ["Hyangsuk Min","Jeonghwan Choi","Yuho Lee","Taewon Yun","Jihwan Oh","Jisu Shin","Jiaqi Deng","Minjeong Ban","Kibum Kim","Mingyu Choi","Gyeonghun Sun","Seunghwan Bang","Jibin Hwang","Yeeun Choi","Jihwan Bang","Donghee Han","Yujin Kim","Hwan Chang","Hyeonseong Park","Juseon Do","Hayoon Park","Byeongjun Joung","Chanjoong Kim","Jeesu Jung","Hee-Yeon Kim"];
-  const YRS = [["All","전체"],["2026"],["2025"],["2024"],["2023"],["2022"],["2021"],["2017-2020"],["Preprint","프리프린트"]];
+  const YRS = [["All","전체"], ...[...new Set(PUBS.map(p => p.year))].filter(y => y !== "Preprint").map(y => [y]), ["Preprint","프리프린트"]];
   let year = "All", q = "", shown = 12;
   const au = a => esc(a).replace(/Hwanjun Song(\*?)/g,"<b>Hwanjun Song$1</b>");
   const list = () => PUBS.filter(p => (year==="All"||p.year===year) && (!q || (p.title+" "+p.authors+" "+p.label+" "+p.topic+" "+p.collab).toLowerCase().includes(q)));
