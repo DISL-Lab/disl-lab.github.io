@@ -27,7 +27,7 @@ OUT = REPO
 TPL = os.path.join(TOOLS, "templates")
 
 ACTIVE_PROJECTS = 10
-MEMBERS = 24  # postdoc + Ph.D. + M.S. + co-advised + interns (PI and staff excluded)
+MEMBERS = 25  # postdoc + Ph.D. + M.S. + co-advised + interns (PI and staff excluded)
 
 KO_NEWS = [
     ("Three papers were accepted at NeurIPS 2026", "NeurIPS 2026에 논문 3편이 채택되었습니다."),
