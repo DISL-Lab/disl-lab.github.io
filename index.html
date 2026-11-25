@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>DISLab | KAIST</title>
-<script>(function(){var t=new URLSearchParams(location.search).get("theme");try{t=t||localStorage.getItem("dislab-theme")}catch(e){}document.documentElement.setAttribute("data-theme",t==="light"?"light":"dark");})();</script>
+<script>(function(){var t=new URLSearchParams(location.search).get("theme");try{t=t||localStorage.getItem("dislab-theme")}catch(e){}document.documentElement.setAttribute("data-theme",t==="dark"?"dark":"light");})();</script>
 <meta name="description" content="DISLab at KAIST builds trustworthy agentic AI grounded in data — AI Scientists and video foundation models for Factory AI.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -440,10 +440,26 @@ html[data-theme="light"] .hero h1 .grad{background:linear-gradient(90deg,#2563eb
 html[data-theme="light"] .hero h1 .dim{color:rgba(11,18,32,.38)}
 html[data-theme="light"] .hero-links a{border-bottom-color:rgba(15,23,42,.25)}
 html[data-theme="light"] .vctl{background:rgba(255,255,255,.75);color:var(--hi)}
-html[data-theme="light"] .panel::after{background:linear-gradient(0deg,rgba(255,255,255,.97) 8%,rgba(255,255,255,.62) 50%,rgba(255,255,255,.12) 100%)}
+html[data-theme="light"] .panel.ready video{opacity:1;filter:contrast(1.18) saturate(1.25)}
+html[data-theme="light"] .panel::after{background:linear-gradient(0deg,rgba(255,255,255,.94) 0%,rgba(255,255,255,.8) 26%,rgba(255,255,255,.3) 52%,rgba(255,255,255,0) 78%)}
 html[data-theme="light"] .panel .num{color:rgba(11,18,32,.14)}
 html[data-theme="light"] .thr span{background:rgba(255,255,255,.75)}
 html[data-theme="light"] .nav:not(.fixed){background:linear-gradient(rgba(255,255,255,.55),rgba(255,255,255,0))}
+/* photos */
+.ph-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:40px 24px}
+.ph-it{margin:0;grid-column:span 6}
+.ph-it:nth-child(4n+1),.ph-it:nth-child(4n+4){grid-column:span 7}
+.ph-it:nth-child(4n+2),.ph-it:nth-child(4n+3){grid-column:span 5}
+.ph-img{display:block;width:100%;padding:0;border:0;background:var(--panel);border-radius:16px;overflow:hidden;cursor:zoom-in;height:clamp(240px,30vw,430px)}
+.ph-img img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+.ph-img:hover img{transform:scale(1.03)}
+.ph-it figcaption{display:flex;gap:14px;align-items:baseline;margin-top:14px;font-size:15px;font-weight:600}
+.ph-it time{font-family:var(--mono);font-size:12px;font-weight:400;letter-spacing:.06em;color:var(--muted)}
+.ph-box{position:fixed;inset:0;z-index:100;background:rgba(5,7,12,.92);display:grid;place-items:center;padding:4vh 4vw;cursor:zoom-out}
+.ph-box[hidden]{display:none}
+.ph-box img{max-width:100%;max-height:92vh;border-radius:10px;object-fit:contain}
+.ph-x{position:absolute;top:18px;right:22px;border:0;background:none;color:#fff;font-size:34px;line-height:1;cursor:pointer}
+@media (max-width:760px){.ph-grid{grid-template-columns:1fr;gap:32px}.ph-it,.ph-it:nth-child(n){grid-column:auto}.ph-img{height:auto;aspect-ratio:3/2}}
 </style>
 </head>
 <body>
@@ -465,6 +481,7 @@ html[data-theme="light"] .nav:not(.fixed){background:linear-gradient(rgba(255,25
       <a href="#papers"><span class="t-en">Publications</span><span class="t-ko">논문</span></a>
       <a href="#people"><span class="t-en">People</span><span class="t-ko">구성원</span></a>
       <a href="#projects"><span class="t-en">Projects</span><span class="t-ko">과제</span></a>
+      <a href="#photos"><span class="t-en">Photos</span><span class="t-ko">사진</span></a>
     </nav>
     <div class="nav-r">
       <button class="theme-btn" id="themeBtn" aria-label="Switch light / dark theme" title="Light / Dark"><svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/></svg><svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg></button>
@@ -483,7 +500,7 @@ html[data-theme="light"] .nav:not(.fixed){background:linear-gradient(rgba(255,25
   <div class="wrap" style="width:100%">
     <p class="hero-kicker"><i></i><span class="t-en">Data Intelligence System Lab, KAIST</span><span class="t-ko">KAIST 데이터 지능 시스템 연구실 (DISLab)</span></p>
     <h1>Trustworthy agentic AI, <span class="grad">grounded in data.</span></h1>
-    <p class="lead"><span class="t-en">We study data-centric methods for trustworthy AI agents. Our foundational research improves the <b>accuracy</b>, <b>robustness</b>, and <b>sustainability</b> of agents, and we apply it to enterprise agents, AI Scientist, and video understanding for manufacturing.</span><span class="t-ko">신뢰할 수 있는 AI 에이전트를 위한 데이터 중심 방법론을 연구합니다. 에이전트의 <b>정확성</b>, <b>안정성</b>, <b>지속가능성</b>을 높이는 기반 연구를 수행하고, 이를 엔터프라이즈 에이전트, AI Scientist, 제조 현장을 위한 비디오 이해에 적용하고 있습니다.</span></p>
+    <p class="lead"><span class="t-en">We study data-centric methods for trustworthy AI agents. Our foundational research improves the <b>accuracy</b>, <b>robustness</b>, and <b>sustainability</b> of agents, and we apply it to enterprise agents, AI Scientist, and video understanding for manufacturing.</span><span class="t-ko">신뢰할 수 있는 AI 에이전트를 위한 데이터 중심 방법론을 연구합니다. 에이전트의 <b>정확성</b>, <b>안정성</b>, <b>지속가능성</b>을 높이는 기반 연구를 수행하고, 이를 엔터프라이즈 에이전트, AI 과학자, 제조 현장을 위한 비디오 이해에 적용하고 있습니다.</span></p>
     <div class="hero-links">
       <a href="#stack"><span class="t-en">Research</span><span class="t-ko">연구 소개</span> →</a>
       <a href="#papers"><span class="t-en">Publications</span><span class="t-ko">논문</span> →</a>
@@ -549,7 +566,7 @@ html[data-theme="light"] .nav:not(.fixed){background:linear-gradient(rgba(255,25
           <div class="layer l2"><div class="lt"><span>L2 · <span class="t-en">Applications</span><span class="t-ko">응용 분야</span></span><span>applications</span></div>
             <div class="row3">
               <div class="blk f1">Enterprise Agents<span class="dt">docs · logs · tools</span></div>
-              <div class="blk f2">AI Scientist<span class="dt">papers · citations</span></div>
+              <div class="blk f2"><span class="t-en">AI Scientist</span><span class="t-ko">AI 과학자</span><span class="dt">papers · citations</span></div>
               <div class="blk f3">Video FM · Factory AI<span class="dt">video · sensors</span></div>
             </div></div>
         </div>
@@ -595,7 +612,7 @@ html[data-theme="light"] .nav:not(.fixed){background:linear-gradient(rgba(255,25
         </div>
         <div class="step" data-step="3">
           <span class="label">L2 — <span class="t-en">Application</span><span class="t-ko">응용 분야</span> 02</span>
-          <h3>AI Scientist</h3>
+          <h3><span class="t-en">AI Scientist</span><span class="t-ko">AI 과학자</span></h3>
           <span class="dtag">DATA → papers · citations · claims</span>
           <p><span class="t-en">Agents that survey scientific literature, verify claims, and generate text with accurate citations.</span><span class="t-ko">과학 문헌을 조사하고, 주장을 검증하며, 정확한 인용을 포함한 글을 생성하는 에이전트를 연구합니다.</span></p>
           <ul>
@@ -696,7 +713,7 @@ html[data-theme="light"] .nav:not(.fixed){background:linear-gradient(rgba(255,25
           <div class="top"><span class="label"><b>02</b> — <span class="t-en">Application</span><span class="t-ko">응용 분야</span></span><span class="num">02</span></div>
           <div>
             <p class="dline">DATA → papers · citations · claims</p>
-            <h3>AI Scientist</h3>
+            <h3><span class="t-en">AI Scientist</span><span class="t-ko">AI 과학자</span></h3>
             <p class="sub"><span class="t-en">Literature survey, claim verification, and citation-grounded writing.</span><span class="t-ko">문헌 조사, 주장 검증, 인용 기반 글쓰기.</span></p>
             <div class="detail">
               <div class="thr"><span><span class="t-en">Literature survey agents</span><span class="t-ko">문헌 조사 에이전트</span></span><span><span class="t-en">Evidence-grounded writing</span><span class="t-ko">근거 기반 글쓰기</span></span><span><span class="t-en">Multi-agent verification</span><span class="t-ko">멀티 에이전트 검증</span></span></div>
@@ -785,6 +802,27 @@ html[data-theme="light"] .nav:not(.fixed){background:linear-gradient(rgba(255,25
   </div>
 </section>
 
+<!-- ============ PHOTOS ============ -->
+<section class="sec" id="photos">
+  <div class="wrap">
+    <div class="sh rv">
+      <div><span class="label"><b>08</b> — <span class="t-en">Lab life</span><span class="t-ko">연구실 생활</span></span>
+        <h2><span class="t-en">Photos</span><span class="t-ko">사진</span></h2></div>
+    </div>
+    <div class="ph-grid">
+      <figure class="ph-it rv"><button class="ph-img" data-full="assets/img/photos/lab-26-04-02.jpg" aria-label="Strawberry Party at KAIST, 2026.04"><img src="assets/img/photos/lab-26-04-02.jpg" alt="Strawberry Party at KAIST, 2026.04" loading="lazy"></button>
+        <figcaption><time>2026.04</time><span class="t-en">Strawberry Party at KAIST</span><span class="t-ko">KAIST 딸기 파티</span></figcaption></figure>
+      <figure class="ph-it rv"><button class="ph-img" data-full="assets/img/photos/lab-26-02-12.jpg" aria-label="Graduation Ceremony at KAIST, 2026.02"><img src="assets/img/photos/lab-26-02-12.jpg" alt="Graduation Ceremony at KAIST, 2026.02" loading="lazy"></button>
+        <figcaption><time>2026.02</time><span class="t-en">Graduation Ceremony at KAIST</span><span class="t-ko">KAIST 졸업식</span></figcaption></figure>
+      <figure class="ph-it rv"><button class="ph-img" data-full="assets/img/photos/lab-25-07-04.jpg" aria-label="KCC 2025 at Jeju Island, 2025.07"><img src="assets/img/photos/lab-25-07-04.jpg" alt="KCC 2025 at Jeju Island, 2025.07" loading="lazy"></button>
+        <figcaption><time>2025.07</time><span class="t-en">KCC 2025 at Jeju Island</span><span class="t-ko">KCC 2025 · 제주</span></figcaption></figure>
+      <figure class="ph-it rv"><button class="ph-img" data-full="assets/img/photos/lab-25-04-07.jpg" aria-label="Strawberry Party at KAIST, 2025.04"><img src="assets/img/photos/lab-25-04-07.jpg" alt="Strawberry Party at KAIST, 2025.04" loading="lazy"></button>
+        <figcaption><time>2025.04</time><span class="t-en">Strawberry Party at KAIST</span><span class="t-ko">KAIST 딸기 파티</span></figcaption></figure>
+    </div>
+  </div>
+  <div class="ph-box" id="phBox" role="dialog" aria-modal="true" aria-label="Photo" hidden><img alt=""><button class="ph-x" aria-label="Close">×</button></div>
+</section>
+
 <!-- ============ JOIN ============ -->
 <section class="join" id="join">
   <div class="wrap">
@@ -821,6 +859,15 @@ const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":
 const RM = matchMedia("(prefers-reduced-motion: reduce)").matches;
 const lang = () => document.documentElement.lang;
 const store = { get(k){ try { return localStorage.getItem(k); } catch(e){ return null; } }, set(k,v){ try { localStorage.setItem(k,v); } catch(e){} } };
+
+/* photo viewer */
+(() => {
+  const box = $("#phBox"), im = box.querySelector("img");
+  const close = () => { box.hidden = true; im.src = ""; };
+  $$(".ph-img").forEach(b => b.onclick = () => { im.src = b.dataset.full; im.alt = b.querySelector("img").alt; box.hidden = false; box.querySelector(".ph-x").focus(); });
+  box.onclick = close;
+  addEventListener("keydown", e => { if (e.key === "Escape" && !box.hidden) close(); });
+})();
 
 /* language */
 $("#themeBtn").onclick = () => {
@@ -1106,8 +1153,9 @@ const PROJ = {
 (() => {
   const R = {PI:["Principal Investigator","연구책임자"],"Co-PI":["Co-PI","공동연구책임자"],Participating:["Participating","참여연구원"],Collaborating:["Collaborating","공동연구원"]};
   const K = {National:["National","국가 과제"],Industry:["Industry","산업체 과제"]};
+  const FL = {"AI Scientist":"AI 과학자"};
   const draw = t => $("#projs").innerHTML = PROJ[t].map(([lg,k,en,ko,per,role,fl]) => `<div class="pj"><div class="lg"><img src="${IMG+lg}" alt="" loading="lazy"></div>
-    <span class="kd ${fl?"fl":""}">${T(...K[k])}${fl?" · "+fl:""}</span><h4>${T(esc(en),esc(ko))}</h4>
+    <span class="kd ${fl?"fl":""}">${T(...K[k])}${fl?" · "+T(fl, FL[fl]):""}</span><h4>${T(esc(en),esc(ko))}</h4>
     <div class="meta"><span>${per}</span><span class="${role==="PI"?"pi-tag":""}">${T(...R[role])}</span></div></div>`).join("");
   const b = $("#ptabs").children;
   b[0].innerHTML = T(`Ongoing ${PROJ.ongoing.length}`, `진행 중 ${PROJ.ongoing.length}`);
