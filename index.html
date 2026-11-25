@@ -36,13 +36,6 @@ html[data-theme="light"]{
   --bar-bg:rgba(15,23,42,.07); --big-grad:linear-gradient(180deg,#0b1220,#2563eb);
   --flow-on:15,118,110; --flow-off:100,116,139;
 }
-/* parts that sit on top of video stay dark in both themes */
-html[data-theme="light"] .hero, html[data-theme="light"] .panel, html[data-theme="light"] .nav:not(.fixed){
-  --bg:#05070c; --panel:#0d121d; --line:rgba(255,255,255,.09); --line-2:rgba(255,255,255,.16);
-  --fg:#eef2f8; --fg-2:#b6c0d0; --muted:#7d8899; --faint:#4d5869; --cyan:#5eead4; --blue:#4d8dff;
-  --hi:#fff; --inv-bg:#fff; --inv-fg:#000; --inv-hover:#dfe7f5; --nav-solid:rgba(5,7,12,.97);
-  color:var(--fg);
-}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:90px;background:var(--bg)}
 body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--sans);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
@@ -94,7 +87,7 @@ button{font:inherit;color:inherit}
   .join-btn{display:none}
   .brand-t span{display:none}
 }
-.hero-kicker{display:flex;align-items:center;gap:10px;font-size:clamp(17px,1.5vw,21px);font-weight:600;color:#fff;letter-spacing:-.01em;margin:0}
+.hero-kicker{display:flex;align-items:center;gap:10px;font-size:clamp(17px,1.5vw,21px);font-weight:600;color:var(--hi);letter-spacing:-.01em;margin:0}
 .hero-kicker i{width:8px;height:8px;border-radius:50%;background:var(--cyan);flex:none}
 
 /* ---------- hero ---------- */
@@ -107,11 +100,11 @@ button{font:inherit;color:inherit}
 .hero h1 .dim{color:rgba(238,242,248,.42)}
 .hero h1 .grad{background:linear-gradient(90deg,#9cc2ff,#5eead4);-webkit-background-clip:text;background-clip:text;color:transparent}
 .hero-links{display:flex;gap:22px;flex-wrap:wrap}
-.hero-links a{font-size:15px;font-weight:600;color:#fff;padding-bottom:3px;border-bottom:1px solid rgba(255,255,255,.3)}
-.hero-links a:hover{border-color:#fff}
+.hero-links a{font-size:15px;font-weight:600;color:var(--hi);padding-bottom:3px;border-bottom:1px solid rgba(255,255,255,.3)}
+.hero-links a:hover{border-color:var(--hi)}
 .hero .lead{font-size:clamp(17px,1.5vw,21px);color:var(--fg-2);max-width:760px;margin:0 0 30px}
-.hero .lead b{color:#fff;font-weight:600}
-.vctl{position:absolute;right:24px;top:120px;z-index:2;width:34px;height:34px;border-radius:50%;border:1px solid var(--line-2);background:rgba(5,7,12,.5);display:none;place-items:center;cursor:pointer}
+.hero .lead b{color:var(--hi);font-weight:600}
+.vctl{position:absolute;right:24px;top:120px;z-index:2;width:34px;height:34px;border-radius:50%;border:1px solid var(--line-2);background:rgba(5,7,12,.5);color:#fff;display:none;place-items:center;cursor:pointer}
 .hero-bg.ready ~ .vctl{display:grid}
 .vctl svg{width:13px;height:13px}
 
@@ -429,6 +422,28 @@ footer{border-top:1px solid var(--line);padding:40px 0 34px;color:var(--muted);f
 .theme-btn:hover{color:var(--hi)}
 .theme-btn svg{width:18px;height:18px}
 html[data-theme="light"] .theme-btn .i-sun, html:not([data-theme="light"]) .theme-btn .i-moon{display:none}
+/* stack diagram on a white background: stronger edges, teal/blue tints instead of pale mint, less fading */
+html[data-theme="light"] .layer{background:#fff;border-color:rgba(15,23,42,.14);opacity:.6;box-shadow:0 1px 2px rgba(15,23,42,.04)}
+html[data-theme="light"] .blk{background:#fff;border-color:rgba(15,23,42,.16);color:var(--fg)}
+html[data-theme="light"] .l0.data{border-color:rgba(15,118,110,.35);background:linear-gradient(180deg,rgba(15,118,110,.07),#fff 70%)}
+html[data-theme="light"] .dblk{border-color:rgba(15,118,110,.32);background:rgba(15,118,110,.04)}
+html[data-theme="light"] .stack[data-step="0"] .dblk{border-color:#0f766e;box-shadow:inset 0 0 0 1px rgba(15,118,110,.25),0 6px 18px -10px rgba(15,118,110,.45)}
+html[data-theme="light"] .stack[data-step="0"] .l0,html[data-theme="light"] .stack[data-step="1"] .l1,html[data-theme="light"] .stack[data-step="2"] .l2,html[data-theme="light"] .stack[data-step="3"] .l2,html[data-theme="light"] .stack[data-step="4"] .l2{opacity:1;border-color:rgba(37,99,235,.5);box-shadow:0 0 0 1px rgba(37,99,235,.12),0 24px 60px -30px rgba(37,99,235,.45)}
+html[data-theme="light"] .stack:not([data-step="0"]) .l0{opacity:.9}
+html[data-theme="light"] .stack[data-step="2"] .l1,html[data-theme="light"] .stack[data-step="3"] .l1,html[data-theme="light"] .stack[data-step="4"] .l1{opacity:.8}
+html[data-theme="light"] .stack[data-step="1"] .row4 .blk{border-color:#0f766e;background:rgba(15,118,110,.07);color:var(--hi)}
+html[data-theme="light"] .stack[data-step="2"] .f1,html[data-theme="light"] .stack[data-step="3"] .f2,html[data-theme="light"] .stack[data-step="4"] .f3{border-color:#2563eb;background:linear-gradient(180deg,rgba(37,99,235,.14),rgba(37,99,235,.04));color:var(--hi)}
+html[data-theme="light"] .stack[data-step="2"] .l2 .blk:not(.f1),html[data-theme="light"] .stack[data-step="3"] .l2 .blk:not(.f2),html[data-theme="light"] .stack[data-step="4"] .l2 .blk:not(.f3){opacity:.55}
+/* light theme over light videos */
+html[data-theme="light"] .hero-bg::after{background:linear-gradient(0deg,var(--bg) 0%,rgba(255,255,255,.6) 38%,rgba(255,255,255,.12) 70%,rgba(255,255,255,.5) 100%),linear-gradient(90deg,rgba(255,255,255,.88),rgba(255,255,255,.35) 45%,transparent 70%)}
+html[data-theme="light"] .hero h1 .grad{background:linear-gradient(90deg,#2563eb,#0f766e);-webkit-background-clip:text;background-clip:text;color:transparent}
+html[data-theme="light"] .hero h1 .dim{color:rgba(11,18,32,.38)}
+html[data-theme="light"] .hero-links a{border-bottom-color:rgba(15,23,42,.25)}
+html[data-theme="light"] .vctl{background:rgba(255,255,255,.75);color:var(--hi)}
+html[data-theme="light"] .panel::after{background:linear-gradient(0deg,rgba(255,255,255,.97) 8%,rgba(255,255,255,.62) 50%,rgba(255,255,255,.12) 100%)}
+html[data-theme="light"] .panel .num{color:rgba(11,18,32,.14)}
+html[data-theme="light"] .thr span{background:rgba(255,255,255,.75)}
+html[data-theme="light"] .nav:not(.fixed){background:linear-gradient(rgba(255,255,255,.55),rgba(255,255,255,0))}
 </style>
 </head>
 <body>
@@ -463,8 +478,8 @@ html[data-theme="light"] .theme-btn .i-sun, html:not([data-theme="light"]) .them
 <main id="top">
 <!-- ============ HERO ============ -->
 <section class="hero">
-  <div class="hero-bg" id="heroBg"><video id="heroVideo" muted loop playsinline preload="auto" poster="media/hero.jpg" data-src="media/hero.mp4"></video></div>
-  <button class="vctl" id="vctl" aria-label="Pause background video"><svg viewBox="0 0 24 24" fill="#fff"><path d="M7 5h3v14H7zM14 5h3v14h-3z"/></svg></button>
+  <div class="hero-bg" id="heroBg"><video id="heroVideo" muted loop playsinline preload="auto" poster="media/hero.jpg" data-src="media/hero.mp4" data-src-light="media/hero-light.mp4" data-poster-light="media/hero-light.jpg"></video></div>
+  <button class="vctl" id="vctl" aria-label="Pause background video"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 5h3v14H7zM14 5h3v14h-3z"/></svg></button>
   <div class="wrap" style="width:100%">
     <p class="hero-kicker"><i></i><span class="t-en">Data Intelligence System Lab, KAIST</span><span class="t-ko">KAIST 데이터 지능 시스템 연구실 (DISLab)</span></p>
     <h1>Trustworthy agentic AI, <span class="grad">grounded in data.</span></h1>
@@ -660,7 +675,7 @@ html[data-theme="light"] .theme-btn .i-sun, html:not([data-theme="light"]) .them
     </div>
     <div class="panels rv">
       <article class="panel" tabindex="0" data-media>
-        <video muted loop playsinline preload="none" poster="media/enterprise.jpg" data-src="media/enterprise.mp4" data-fallback="media/hero.mp4"></video>
+        <video muted loop playsinline preload="none" poster="media/enterprise.jpg" data-src="media/enterprise.mp4" data-src-light="media/enterprise-light.mp4" data-poster-light="media/enterprise-light.jpg" data-fallback="media/hero.mp4"></video>
         <div class="pin">
           <div class="top"><span class="label"><b>01</b> — <span class="t-en">Application</span><span class="t-ko">응용 분야</span></span><span class="num">01</span></div>
           <div>
@@ -676,7 +691,7 @@ html[data-theme="light"] .theme-btn .i-sun, html:not([data-theme="light"]) .them
         </div>
       </article>
       <article class="panel" tabindex="0" data-media>
-        <video muted loop playsinline preload="none" poster="media/ai-scientist.jpg" data-src="media/ai-scientist.mp4" data-fallback="media/hero.mp4"></video>
+        <video muted loop playsinline preload="none" poster="media/ai-scientist.jpg" data-src="media/ai-scientist.mp4" data-src-light="media/ai-scientist-light.mp4" data-poster-light="media/ai-scientist-light.jpg" data-fallback="media/hero.mp4"></video>
         <div class="pin">
           <div class="top"><span class="label"><b>02</b> — <span class="t-en">Application</span><span class="t-ko">응용 분야</span></span><span class="num">02</span></div>
           <div>
@@ -692,7 +707,7 @@ html[data-theme="light"] .theme-btn .i-sun, html:not([data-theme="light"]) .them
         </div>
       </article>
       <article class="panel" tabindex="0" data-media>
-        <video muted loop playsinline preload="none" poster="media/factory-ai.jpg" data-src="media/factory-ai.mp4" data-fallback="media/hero.mp4"></video>
+        <video muted loop playsinline preload="none" poster="media/factory-ai.jpg" data-src="media/factory-ai.mp4" data-src-light="media/factory-ai-light.mp4" data-poster-light="media/factory-ai-light.jpg" data-fallback="media/hero.mp4"></video>
         <div class="pin">
           <div class="top"><span class="label"><b>03</b> — <span class="t-en">Application</span><span class="t-ko">응용 분야</span></span><span class="num">03</span></div>
           <div>
@@ -833,22 +848,38 @@ const navObs = new IntersectionObserver(es => es.forEach(e => { if (!e.isInterse
 $$("main section[id]").forEach(s => navObs.observe(s));
 
 /* videos */
+const isLight = () => document.documentElement.dataset.theme === "light";
+const VIDEOS = [];
+function themeVideo(v){
+  const light = isLight() && v.dataset.srcLight;
+  v.poster = light ? v.dataset.posterLight : v.dataset.poster;
+  v.src = light ? v.dataset.srcLight : v.dataset.src;
+}
 function attachVideo(v, holder, auto){
   if (!v) return;
+  v.dataset.poster = v.getAttribute("poster") || "";
   v.addEventListener("loadeddata", () => holder.classList.add("ready"));
-  v.addEventListener("error", function onErr(){
-    if (v.dataset.fallback && v.src.indexOf(v.dataset.fallback) < 0) { v.removeAttribute("poster"); v.src = v.dataset.fallback; if (!RM) v.play().catch(()=>{}); return; }
-    v.removeEventListener("error", onErr);
+  v.addEventListener("error", () => {
+    const cur = v.getAttribute("src") || "";
+    if (v.dataset.srcLight && cur === v.dataset.srcLight) { v.poster = v.dataset.poster; v.src = v.dataset.src; }   // light clip missing
+    else if (v.dataset.fallback && cur !== v.dataset.fallback) { v.removeAttribute("poster"); v.src = v.dataset.fallback; }
+    else return;
+    if (!RM && (auto || holder.dataset.visible === "1")) v.play().catch(()=>{});
   });
-  v.src = v.dataset.src;
+  themeVideo(v);
+  VIDEOS.push([v, holder, auto]);
   if (RM) return;
   if (auto) v.play().catch(()=>{});
-  else new IntersectionObserver(es => es.forEach(e => e.isIntersecting ? v.play().catch(()=>{}) : v.pause()), {threshold:.2}).observe(holder);
+  else new IntersectionObserver(es => es.forEach(e => { holder.dataset.visible = e.isIntersecting ? "1" : "0"; e.isIntersecting ? v.play().catch(()=>{}) : v.pause(); }), {threshold:.2}).observe(holder);
 }
+addEventListener("themechange", () => VIDEOS.forEach(([v, holder, auto]) => {
+  themeVideo(v);
+  if (!RM && (auto || holder.dataset.visible === "1")) v.play().catch(()=>{});
+}));
 attachVideo($("#heroVideo"), $("#heroBg"), true);
 $$("[data-media]").forEach(p => attachVideo(p.querySelector("video"), p, false));
 $("#vctl").onclick = () => { const v = $("#heroVideo"), p = v.paused; p ? v.play() : v.pause();
-  $("#vctl").innerHTML = p ? '<svg viewBox="0 0 24 24" fill="#fff"><path d="M7 5h3v14H7zM14 5h3v14h-3z"/></svg>' : '<svg viewBox="0 0 24 24" fill="#fff"><path d="M8 5v14l11-7z"/></svg>'; };
+  $("#vctl").innerHTML = p ? '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 5h3v14H7zM14 5h3v14h-3z"/></svg>' : '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>'; };
 
 /* stack story: data-flow connectors — dashed pipelines between layers; the active stage flows downward */
 (() => {
