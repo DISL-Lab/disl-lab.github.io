@@ -41,6 +41,15 @@ STYLE = (
     "Avoid: any text, letters, numbers, captions, watermarks, logos, visible faces, flicker, fast motion, scene cuts."
 )
 
+LIGHT_STYLE = (
+    " Visual style: premium research-lab aesthetic on a bright background — clean white (#ffffff) to very light "
+    "cool gray-blue (#eef3fb) backdrop, with nodes and lines in deep navy (#0b1f44), cool blue (#2563eb) and a "
+    "touch of teal (#0f9488); soft diffused daylight, gentle shadows, shallow depth of field, airy and elegant, "
+    "high-key exposure. Camera: one continuous, slow, steady movement with no cuts, so the clip can loop. "
+    "Avoid: dark backgrounds, neon glow, any text, letters, numbers, captions, watermarks, logos, visible faces, "
+    "flicker, fast motion, scene cuts."
+)
+
 CLIPS = {
     # Full-bleed hero background. Abstract so the headline stays readable on top.
     "hero": (
@@ -48,6 +57,14 @@ CLIPS = {
         "flow like streams of data from the edges of the frame and gradually self-organize into a delicate, "
         "glowing three-dimensional network of nodes and thin connecting lines, like an AI agent's memory "
         "taking shape. Most of the frame stays dark and uncluttered, especially the left half." + STYLE
+    ),
+    # Same scene for the light theme: bright backdrop, dark nodes. Left half stays empty for the headline.
+    "hero-light": (
+        "A slow forward dolly through an abstract bright white space where thousands of fine navy and blue "
+        "particles flow like streams of data from the edges of the frame and gradually self-organize into a "
+        "delicate three-dimensional network of small spherical nodes and thin connecting lines, like an AI "
+        "agent's memory taking shape. The network sits on the right side of the frame; most of the frame, "
+        "especially the left half, stays clean, bright and uncluttered." + LIGHT_STYLE
     ),
     # Research area — Enterprise Agent AI
     "enterprise": (
@@ -71,6 +88,27 @@ CLIPS = {
         "motion trails, and timeline markers appear over objects and arms, as if a video foundation model is "
         "perceiving and reasoning over the scene in real time. Reflective floor, cool lighting, no workers' "
         "faces visible." + STYLE
+    ),
+    # Light-theme versions of the three application clips: same scenes, bright palette.
+    "enterprise-light": (
+        "A slow, smooth glide through a bright, minimal white digital archive: translucent frosted-glass panels "
+        "of documents, tables, charts, and dashboards float in orderly rows like a vast, airy library. Thin navy "
+        "and blue threads route between the panels as an AI agent retrieves, cross-references, and passes "
+        "information between tools; small blue pulses travel along the routes and converge into one organized "
+        "structure. Clean, precise, corporate." + LIGHT_STYLE
+    ),
+    "ai-scientist-light": (
+        "A slow orbit around translucent white sheets of scientific papers, charts, and equations floating in a "
+        "bright, softly lit white space. Thin navy and blue threads link passages between the sheets, forming an "
+        "evolving citation and knowledge graph; small blue points travel along the threads as if an AI agent is "
+        "reading, cross-checking evidence, and writing. Macro lens, soft diffused daylight." + LIGHT_STYLE
+    ),
+    "factory-ai-light": (
+        "A slow cinematic tracking shot along a clean, modern, fully automated factory production line in bright "
+        "daylight, with white walls, white robot arms and a light polished floor. Precise industrial robot arms "
+        "assemble components; subtle translucent blue bounding boxes, motion trails, and timeline markers appear "
+        "over objects and arms, as if a video foundation model is perceiving and reasoning over the scene in real "
+        "time. No workers' faces visible." + LIGHT_STYLE
     ),
 }
 
