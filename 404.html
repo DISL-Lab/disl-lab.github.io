@@ -3,7 +3,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script>
   // Old Jekyll pages (/publications/, /news/, ...) now live as sections of the single-page site.
-  var p = location.pathname.toLowerCase(), map = [["/publications","#papers"],["/news","#now"],["/projects","#projects"],["/lab_project","#projects"],["/people","#people"],["/cv","#people"]];
+  var p = location.pathname.toLowerCase(), map = [["/publications","#papers"],["/news","#now"],["/projects","#projects"],["/lab_project","#projects"],["/people","#people"],["/cv","#people"],["/photos","#photos"]];
   var h = ""; for (var i = 0; i < map.length; i++) if (p.indexOf(map[i][0]) === 0) { h = map[i][1]; break; }
   location.replace("/" + h);
 </script>
