@@ -382,7 +382,7 @@ nav_order: 2
       Toward Agentic Retrieval-Augmented Generation for Enterprise Retail Workflows over Heterogeneous Data Sources
     </h3>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; font-family: 'Roboto', monospace; color: #111;">
-      Jeonghwan Choi, Jibin Hwang, HaYoon Park, Hyeonjae Cheon, and Hwanjun Song*
+      {Jeonghwan Choi, Jibin Hwang}, HaYoon Park, Hyeonjae Cheon, and Hwanjun Song*
     </p>
     <p style="font-size: 0.9rem; margin-bottom: 0.2rem; color:rgb(2, 4, 6); font-style: italic">
       In International Conference on Knowledge Discovery and Data Mining, 2027
